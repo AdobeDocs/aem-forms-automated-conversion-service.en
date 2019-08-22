@@ -7,9 +7,6 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Best practices and considerations {#best-practices-and-considerations}

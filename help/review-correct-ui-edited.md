@@ -7,9 +7,6 @@ uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Review and correct converted forms{#review-and-correct-converted-forms}
@@ -51,7 +48,7 @@ After the first successful conversion, the conversion service overlays the sourc
 * Field: Combination of text or icon label associated with a value or input box. For example, the First field name in above image. It has text label and an input box. A field supports text, numeric, dropdown, date, email, telephone number, signature, currency, and password data types.  
 * Panel: Logical collection of content and components. For example, Personal Details of Person 1 and Person 2 panels in above image.   
 * Choice group: Combination of text associated with multiple choice options : check box and radio button. For example, Marital status and Existing customer in above image.  
-  Based on the choice group caption and its multiple-choice options, the conversion service automatically converts a choice group into a single-select radio button or a multi-select check box. For example, if there is **Select any one **as the** **choice group caption or the multiple-choice options allow you to select only one option, **Yes** or **No**, the conversion service automatically converts the choice group into a single-select radio button. Similarly, if there is **Select all that apply** or **Select multiple **as the choice group caption or the multiple-choice options allow you to select multiple options, the conversion service automatically converts the choice group into a multi-select check box.
+  Based on the choice group caption and its multiple-choice options, the conversion service automatically converts a choice group into a single-select radio button or a multi-select check box. For example, if there is **Select any one** as the choice group caption or the multiple-choice options allow you to select only one option, **Yes** or **No**, the conversion service automatically converts the choice group into a single-select radio button. Similarly, if there is **Select all that apply** or **Select multiple** as the choice group caption or the multiple-choice options allow you to select multiple options, the conversion service automatically converts the choice group into a multi-select check box.
 
 * Table: A 2-d table with information represented in columns and rows. You can add or remove rows or columns to a table.
 
@@ -81,9 +78,9 @@ To start reviewing conversions, select the source PDF document used for conversi
 
    You can delete or ungroup a panel to remove it. On using the delete option, the child fields or components of the panel are also deleted:
 
-    * To delete a panel, select the panel, and tap the delete ![](assets/delete-icon.png) icon in the toolbar. On the confirmation dialog, tap **Confirm**. Tap **Save **to save the changes.  
+    * To delete a panel, select the panel, and tap the delete ![](assets/delete-icon.png) icon in the toolbar. On the confirmation dialog, tap **Confirm**. Tap **Save** to save the changes.  
     
-    * To ungroup a panel, select the panel, and tap the ungroup icon in the toolbar. The panel is ungrouped and child fields of the ungrouped panel are adjusted to parent field. Tap **Save **to save the changes.
+    * To ungroup a panel, select the panel, and tap the ungroup icon in the toolbar. The panel is ungrouped and child fields of the ungrouped panel are adjusted to parent field. Tap **Save**to save the changes.
 
 1. **Create logical groups of text**: Validate the identified texts for completeness and correctness. Also check, the texts are logically placed in correct panels or groups. For example, in a multicolumn layout, the texts of one logical group and placed in another group.
 
@@ -93,9 +90,9 @@ To start reviewing conversions, select the source PDF document used for conversi
 
 1. **Review tables:** Ensure that all the borders of the table are identified. Also ensure, the content of the cells are identified correctly.
 
-    * To identify missed borders, use the** Add Column** or **Add Row** option.
+    * To identify missed borders, use the **Add Column** or **Add Row** option.
     
-    * To remove extra borders, use the** Delete Column **or **Delete Row** option.
+    * To remove extra borders, use the **Delete Column** or **Delete Row** option.
 
    <!--
    Comment Type: draft
@@ -132,7 +129,7 @@ The conversion service might not identify some components of the print form. For
 
 To add a component to the form, tap **+ **and tap **Field**. Draw a box covering label and input box of the field. For example, the above example image uses the field component to add the** Date of Birth** label and value box below it to the form. When you draw the box, the conversion service identifies the type of the field. You can change the type of field from properties browser, if required. After creating the component, open the properties browser, and set the properties of the component.
 
-Tap **Save** button to save the modifications or use the **[!UICONTROL Save & Convert]**button to resend the PDF forms to conversion service.
+Tap **Save** button to save the modifications or use the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service.
 
 ### Add or edit a table {#addedittable}
 
@@ -141,7 +138,7 @@ The conversion can leave a few cells, boundaries, or content of a table cell uni
 * To select a table, click on any cell of the table.
 * To modify properties of a cell such as, name, title, or type, double click a cell. You can also double click on the cell to modify the content, mark a field required, and select other properties.
 * To add/identify a completely unidentified or new table to the form, use the **+** tool.
-* To resize cells or rows of a table, single-click on the empty area of the table, hover on the row or column boundary, when the cursor pointer changes, select and move the boundary. After resizing, click **[!UICONTROL **Done**]**to commit the changes. You can press the **[!UICONTROL ESC]**key to discard the resizing.  
+* To resize cells or rows of a table, single-click on the empty area of the table, hover on the row or column boundary, when the cursor pointer changes, select and move the boundary. After resizing, click **[!UICONTROL **Done**]** to commit the changes. You can press the **[!UICONTROL ESC]** key to discard the resizing.  
 
 * To add or delete rows or columns, select a cell in the row of the table, and select the **[!UICONTROL Add Row]**, **[!UICONTROL Add Column]**, **[!UICONTROL Delete Row]**, or **[!UICONTROL Delete Column]** option from the ![](assets/table_18x18.png) menu.  
 
@@ -189,7 +186,7 @@ Tap **Save** button to save the modifications or use the **Save & Convert** butt
 
 ### Send a form for conversion {#send-a-form-for-conversion}
 
-Once you have made all the required changes in Review and Correct editor, you can resend the form for conversion. To send the form for conversion, tap **[!UICONTROL Save & Convert]**. The **[!UICONTROL Sent for conversion label]**is applied to the folder containing the source document and the updated source form is uploaded to conversion service running on Adobe I/O.
+Once you have made all the required changes in Review and Correct editor, you can resend the form for conversion. To send the form for conversion, tap **[!UICONTROL Save & Convert]**. The **[!UICONTROL Sent for conversion label]** is applied to the folder containing the source document and the updated source form is uploaded to conversion service running on Adobe I/O.
 
 Depending on the complexity of the form, the conversion service can take some time to convert the form. After the conversion is complete the converted adaptive form and related assets is downloaded to your machine. You can review the form in the editor after the conversion is complete and open the adaptive form in [adaptive form editor](review-correct-ui-edited.md#open-adaptive-forms-editor) for the final set of fixes, if required.
 

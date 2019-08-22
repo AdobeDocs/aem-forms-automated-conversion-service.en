@@ -7,9 +7,6 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Known Issues{#known-issues}

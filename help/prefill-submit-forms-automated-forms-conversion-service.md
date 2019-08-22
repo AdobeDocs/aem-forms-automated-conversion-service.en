@@ -8,9 +8,6 @@ contentOwner: anujkapo
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Recommended data source-based prefill and submit workflows for adaptive forms{#recommended-data-source-based-prefill-and-submit-workflows-for-adaptive-forms}
