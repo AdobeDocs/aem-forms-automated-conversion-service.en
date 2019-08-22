@@ -7,9 +7,6 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Extend the default meta-model{#extend-the-default-meta-model}

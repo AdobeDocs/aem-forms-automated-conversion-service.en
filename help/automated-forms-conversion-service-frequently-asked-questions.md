@@ -7,9 +7,6 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Frequently asked questions{#frequently-asked-questions}

@@ -8,9 +8,6 @@ contentOwner: vishgupt
 topic-tags: migration
 discoiquuid: 3e01b5b5-d9e1-4592-b084-9ddc7fb3fc12
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # AEM Forms Automated Forms Conversion service prerelease notes{#aem-forms-automated-forms-conversion-service-prerelease-notes}

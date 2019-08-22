@@ -8,9 +8,6 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 43559311-50d4-4616-b84a-f54bdf9cc3fb
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure the Automated Forms Conversion service{#configure-the-automated-forms-conversion-service}

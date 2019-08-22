@@ -8,9 +8,6 @@ contentOwner: khsingh
 topic-tags: introduction
 discoiquuid: 1ba6f616-fb0d-4f3c-9889-aca7ac2aac22
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Introduction to Automated Forms Conversion service{#introduction-to-automated-forms-conversion-service}

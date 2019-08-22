@@ -8,9 +8,6 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 privatebeta: true
-index: y
-internal: n
-snippet: y
 ---
 
 # Convert print forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
