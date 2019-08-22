@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+    <xs:schema targetNamespace="http://adobe.com/sample.xsd"
+                    xmlns="http://adobe.com/sample.xsd"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+					
+<xs:element name="sample" type="SampleType"/>
+
+  <xs:complexType name="SampleType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+	  <xs:element name="address" type="xs:string"/>
+	  <xs:element name="phonenumber" type="xs:int"/>
+	  <xs:element name="email" type="xs:string"/>
+	  <xs:element name="occupation" type="xs:string"/>
+	  <xs:element name="annualsalary" type="xs:string"/>
+	  <xs:element name="familymembers" type="xs:string"/>
+	</xs:sequence>
+  </xs:complexType>
+
+  </xs:schema>

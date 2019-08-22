@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "loanapplication": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+				"phonenumber": {
+                    "type": "number"
+                },
+				"email": {
+                    "type": "string"
+                },
+				"occupation": {
+                    "type": "string"
+                },
+				"annualsalary": {
+                    "type": "string"
+                },
+				"familymembers": {
+                    "type": "number"
+                }
+            }
+        }
+	},
+	"type": "object",
+    "properties": {
+        "employee": {
+            "$ref": "#/definitions/loanapplication"
+        }
+    }	
+}	
