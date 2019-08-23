@@ -98,7 +98,7 @@ Introduction to the Automated Forms Conversion service and conversion workflow  
 | [Configure the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md) |Prerequisites and steps to install and configure the Automated Forms Conversion service |
 | [Use Automated Forms Conversion service](convert-existing-forms-to-adaptive-forms.md) |Steps to run the Automated Forms Conversion service  |
 | [Review and correct converted adaptive forms](review-correct-ui-edited.md) |Use Review and Correct editor to review and make corrections to converted adaptive forms  |
-| [Frequently asked questions](/help/forms/using/wip/automated-forms-conversion-service-frequently-asked-questions.md) |List of frequently asked questions |
+| [Frequently asked questions](automated-forms-conversion-service-frequently-asked-questions.md) |List of frequently asked questions |
 | [Known issues](known-issues.md) |List of known issues and possible workarounds |
 
 ## Known issues and workarounds {#known-issues-and-workarounds}
