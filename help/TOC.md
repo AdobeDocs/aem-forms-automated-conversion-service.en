@@ -14,5 +14,5 @@ user-guide: null
 + [Recommended data source-based prefill and submit workflows for adaptive forms](prefill-submit-forms-automated-forms-conversion-service.md)
 + [Generate Document of Record during conversion](generate-document-of-record-during-conversion.md)
 + [Frequently asked questions](automated-forms-conversion-service-frequently-asked-questions.md)
-+ [Best practices and considerations](styles-and-pattern--considerations-and-best-practices-.md)
++ [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md)
 + [Known Issues](known-issues.md)
