@@ -223,7 +223,7 @@ After your AEM Forms environment is configured, to convert your print forms to a
 * Do not upload the protected forms. The service does not convert password-protected and encrypted forms. 
 * Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.  
 * Do not upload source forms with spaces in the filename.  
-* Make the suggested changes in source forms described in the [Best practices and considerations](styles-and-pattern--considerations-and-best-practices-.md) article.
+* Make the suggested changes in source forms described in the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) article.
 * Read the [Known issues](aem-forms-automated-forms-conversion-service-beta.md) article to avoid pitfalls.
 
 <!--

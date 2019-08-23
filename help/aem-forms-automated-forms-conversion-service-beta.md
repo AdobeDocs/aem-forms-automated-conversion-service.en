@@ -94,7 +94,7 @@ See the following documentation resources for detailed information about using A
 |---|---|
 | [Automated Forms Conversion service](introduction-to-automated-form-conversion-service.md) |
 Introduction to the Automated Forms Conversion service and conversion workflow  |
-| [Best practices and considerations](styles-and-pattern--considerations-and-best-practices-.md) |Patterns and styles of form fields to consider before starting the conversion |
+| [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) |Patterns and styles of form fields to consider before starting the conversion |
 | [Configure the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md) |Prerequisites and steps to install and configure the Automated Forms Conversion service |
 | [Use Automated Forms Conversion service](convert-existing-forms-to-adaptive-forms.md) |Steps to run the Automated Forms Conversion service  |
 | [Review and correct converted adaptive forms](review-correct-ui-edited.md) |Use Review and Correct editor to review and make corrections to converted adaptive forms  |
@@ -103,7 +103,7 @@ Introduction to the Automated Forms Conversion service and conversion workflow  
 
 ## Known issues and workarounds {#known-issues-and-workarounds}
 
-Before you begin using AEM Forms Automated Forms Conversion service, review the [Known issues](known-issues.md) and the [Best practices and considerations](styles-and-pattern--considerations-and-best-practices-.md) articles, and make suggested changes to your forms.
+Before you begin using AEM Forms Automated Forms Conversion service, review the [Known issues](known-issues.md) and the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) articles, and make suggested changes to your forms.
 
 ## Share feedback {#share-feedback}
 

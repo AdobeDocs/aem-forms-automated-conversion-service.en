@@ -16,7 +16,7 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
 ## Known issues {#known-issues}
 
 * Folder containing forms for conversion should not have more than 15 forms and 50 pages in total. The size of the source folder should not exceed 10 MB. Do not create subfolders in the source folder. 
-* Some form objects are easily visible to the human eye but are [difficult to identify for the service](styles-and-pattern--considerations-and-best-practices-.md). Use [Review and correct editor](review-correct-ui-edited.md) to identify and convert such form objects. Review and Correct editor:
+* Some form objects are easily visible to the human eye but are [difficult to identify for the service](styles-and-pattern-considerations-and-best-practices.md). Use [Review and correct editor](review-correct-ui-edited.md) to identify and convert such form objects. Review and Correct editor:
 
     * Does not support form fragments and tables. Use adaptive form editor to fix conversions that had the Extract Fragmentor Existing Fragments option enabled during conversions and fix table-related issues.  
     * Does not have undo action. The Save button saves the changes permanently.
