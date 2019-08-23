@@ -87,7 +87,7 @@ The service converts only English-language forms to adaptive forms. You can tran
 
 The service supports PDF forms created with any version of AEM Forms or Adobe LiveCycle, going all the way back to AEM 6.0 Forms and Adobe LiveCycle ES3. The service also supports forms created with Adobe Acrobat.
 
-The service supports non-interactive PDF forms, AcroForms, and XFA-based forms. [AcroForms and XFA-based forms has a limited support](/known-issues.md).
+The service supports non-interactive PDF forms, AcroForms, and XFA-based forms. [AcroForms and XFA-based forms has a limited support](known-issues.md).
 
 <!--
 Comment Type: annotation
