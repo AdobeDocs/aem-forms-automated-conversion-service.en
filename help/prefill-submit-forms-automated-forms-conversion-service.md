@@ -332,7 +332,8 @@ Execute the following steps:
 
    Sample XML data file
 
-   [Get File](assets/loan_application_data.txt)
+[Get File](assets/samplexmldata.zip)
+
    As an example, use the crx:// protocol to prefill user data in the adaptive form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content in the XML file to the crx-repository file. For example, create a file at: */content/loan_application_data*
