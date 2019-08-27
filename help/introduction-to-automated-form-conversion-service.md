@@ -128,7 +128,7 @@ Last Modified Date: 2018-11-21T07:17:59.738-0500
 Remove parenthetical content. These must already be covered below in detailed steps. From overview of this H1, no need to mention all details.
 -->
 
-![](assets/workflow.png)
+![Workflow](assets/workflow.png)
 
 ### 1. Set up the environment {#set-up-the-environment}
 
@@ -220,7 +220,7 @@ Comment Type: draft
 
 After your AEM Forms environment is configured, to convert your print forms to adaptive forms, [upload source forms](convert-existing-forms-to-adaptive-forms.md) to your AEM instance and [start the conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Before uploading the forms, consider the following:
 
-* Do not upload the protected forms. The service does not convert password-protected and encrypted forms. 
+* Do not upload the protected forms. The service does not convert password-protected and encrypted forms.
 * Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.  
 * Do not upload source forms with spaces in the filename.  
 * Make the suggested changes in source forms described in the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) article.
