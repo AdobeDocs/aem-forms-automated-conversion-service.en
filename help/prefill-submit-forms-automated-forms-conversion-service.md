@@ -294,7 +294,8 @@ Execute the following steps:
    Sample data file
 
    [Get File](assets/samplexmldata.zip)
-   As an example, use the crx:// protocol to prefill user data in the adaptive form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
+   As an example, use the crx:// protocol to prefill user data in the adaptive 
+   form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/loan_application_data_json*
 1. Tap **Preview** and edit the URL of the page to:
@@ -386,4 +387,3 @@ Execute the following steps:
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
    *http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;latest file available in the folder&gt;*
-

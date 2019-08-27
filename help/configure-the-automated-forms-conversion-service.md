@@ -10,8 +10,6 @@ discoiquuid: 43559311-50d4-4616-b84a-f54bdf9cc3fb
 privatebeta: true
 ---
 
-# Configure the Automated Forms Conversion service{#configure-the-automated-forms-conversion-service}
-
 ## About this help {#about-this-help}
 
 This Help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This Help is for IT and AEM administrators at your organization.
@@ -44,7 +42,7 @@ Comment Type: draft
 <p>AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatically converts your legacy forms to device-friendly and responsive adaptive forms. Whether you are using non-interactive PDF forms, Acro Forms, or XFA-based PDF forms, the service can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information see<a href="introduction-to-automated-form-conversion-service.md"> Automated Forms Conversion</a> service.</p>
 -->
 
-## Onboarding {#onboarding}
+## Onboarding{#onboarding}
 
 The service is available for free to AEM 6.5 Forms On-Premise term customers and Adobe-Managed Service enterprise customers. To request access to the service for your organization, send an email to [afc-beta@adobe.com](mailto:afc-beta@adobe.com) with the following details:
 
@@ -141,11 +139,10 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 
     1. Stop the AEM instance. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing.
 
-       If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\. 
-    
+       If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\.
     1. Add the following properties to the sling.properties file:
 
-       ```    
+       ```
        sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
        sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
        ```
@@ -238,7 +235,7 @@ Developers are members of your organization designated to run the conversion ser
 After an administrator provides you developer access, you can connect your local AEM Forms instance to Automated Forms conversion service running on Adobe Cloud. Perform the following steps in the listed sequence to connect your AEM Forms instance to the service:
 
 * [Configure email notifications and add user to the forms-users group](configure-the-automated-forms-conversion-service.md#configureemailnotification)
-* [Obtain public certificates](#obtainpubliccertificates) 
+* [Obtain public certificates](#obtainpubliccertificates)
 * [Create Adobe I/O integration](#createintegration)
 * [Configure the cloud service](configure-the-automated-forms-conversion-service.md#configure-the-cloud-service)
 
@@ -255,7 +252,7 @@ Last Modified Date: 2018-12-17T02:00:03.194-0500
 Day CQ Mail Service: - After beta, change the email link to /content/help/en/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService form users - After beta, change the email link to /content/help/en/experience-manager/6-5/forms/using/forms-groups-privileges-tasks.html
 -->
 
-1. Go to AEM configuration manager at http://[server]:[port]/system/console/configMgr
+1. Go to AEM configuration manager at `http://localhost:4502/system/console/configMgr`
 1. Open the Day CQ Mail Service configuration. Specify a value for the ****[!UICONTROL SMTP server host name]****, ****[!UICONTROL SMTP server port]**,** and ****[!UICONTROL From address]** **fields. Click ****[!UICONTROL Save]****.
 
    You can contact email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in from field. For example, notification@example.com or donotreply@example.com
@@ -270,8 +267,8 @@ Specify an email address in the profile of the AEM user designated to run the se
    >
    >Use your local AEM credentials to login. Do not use Adobe ID to login.
 
-1. Select a user designated to run the conversion service and tap **[!UICONTROL Properties]**. The Edit User Settings page opens. 
-1. Specify an email address in the **[!UICONTROL Email]**field and Tap **[!UICONTROL Save]**. The emails are sent to specified email address on successful completion or failure of the conversion. 
+1. Select a user designated to run the conversion service and tap **[!UICONTROL Properties]**. The Edit User Settings page opens.
+1. Specify an email address in the **[!UICONTROL Email]**field and Tap **[!UICONTROL Save]**. The emails are sent to specified email address on successful completion or failure of the conversion.
 1. Tap the **Groups** tab. In the select group tab, type and select the **forms-users** group. Tap **Save & Close**. The user is now a member of the forms-users group.
 
    <!--
@@ -292,7 +289,7 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
 
 1. Select the ****[!UICONTROL Create new certificate]**** check box and specify an alias. The alias serves as name of the dialog.
 
-   Tap ****[!UICONTROL Create certificate]****. A dialog appears. Click ****[!UICONTROL OK]****. The certificate is created. 
+   Tap ****[!UICONTROL Create certificate]****. A dialog appears. Click ****[!UICONTROL OK]****. The certificate is created.
 
 1. Tap ****[!UICONTROL Download Public Key]** **and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Tap ****[!UICONTROL Next]****.  
 
@@ -332,18 +329,18 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
    ![Select Automated Forms Conversion](assets/create-new-integration.png)
 
 1. Specify name and description for the integration. Tap **Select a File from your computer** and upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section.
-1. Select the profile created while [granting access to developers of your organization](#adduseranddevs) and tap **Create Integration**. The integration is created. 
-1. Tap **Continue to integration** **details** to view the integration information. The page contains API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine. 
+1. Select the profile created while [granting access to developers of your organization](#adduseranddevs) and tap **Create Integration**. The integration is created.
+1. Tap **Continue to integration** **details** to view the integration information. The page contains API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
 
    ![API Key, Client Secret, and payload information of an integration](assets/integration-details.png)
 
-1. Open the IMS Configuration page on your local instance. You kept the page open at the end of section, [Obtain public certificate](#obtainpubliccertificates). 
+1. Open the IMS Configuration page on your local instance. You kept the page open at the end of section, [Obtain public certificate](#obtainpubliccertificates).
 
    ![Specify Title, API Key, Client Secret, and payload ](assets/ims-configuration-details.png)
 
 1. On the Adobe IMS Technical page, specify API Key and Client Secret. Use the values specified on the integration page.
 
-   **For payload, use the code provided in the JWT tab of the integration page. **Tap Save. The IMS configuration is created. Close the integration page. 
+   **For payload, use the code provided in the JWT tab of the integration page. **Tap Save. The IMS configuration is created. Close the integration page.
 
    ![Use values of JWT field for payload field](assets/jwt.png)
 
@@ -351,9 +348,9 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
    >
    >Create only one IMS configuration. Do not create more than one IMS configurations.
 
-1. Select the IMS configuration and tap **Check Health**. A dialog box appears. Tap **Check. **On successful connection, the *Token retrieved successfully* message appears. 
+1. Select the IMS configuration and tap **Check Health**. A dialog box appears. Tap **Check. **On successful connection, the *Token retrieved successfully* message appears.
 
-   ![On successful connection, the token retrieved successfully message appears. ](assets/health-check.png) 
+   ![On successful connection, the token retrieved successfully message appears. ](assets/health-check.png)
 
    <!--
    Comment Type: draft
@@ -368,86 +365,44 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
 Create a cloud service configuration to connect your AEM instance to the conversion service. It also allows you to specify a template, theme, and form fragments for a conversion. You can create multiple cloud service configurations separate for each set of forms. For example, you can have a separate configuration for sales department forms and a separate one for customer support forms. Perform the following steps to create a cloud service configuration:
 
 1. On your AEM Forms instance, tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
-1. Tap the **[!UICONTROL **Global**]**folder and tap ****[!UICONTROL Create]****. The page to create Automated Forms Conversion configuration appears. The configuration is created in the Global folder. You can also create the configuration in a different folder that already exists or create a new folder for your configurations.   
+1. Tap the **[!UICONTROL **Global**]**folder and tap ****[!UICONTROL Create]****. The page to create Automated Forms Conversion configuration appears. The configuration is created in the Global folder. You can also create the configuration in a different folder that already exists or create a new folder for your configurations.
 
 1. On the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following fields and tap **Next**.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody> 
-  <tr> 
-   <td width="30%">Field</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td>Title</td> 
-   <td>Unique title for the configuration. The title is displayed in the UI used to start conversion.</td> 
-  </tr> 
-  <tr> 
-   <td>Name</td> 
-   <td>Unique name for the configuration. The configuration is saved in the CRX-Repository with the specified name. The name can be identical to the title. </td> 
-  </tr> 
-  <tr> 
-   <td>Thumbnail location</td> 
-   <td>Location of the thumbnail for the configuration. </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="96"><p>Service URL</p> </td> 
-   <td>URL of the Automated Forms Conversion service on Adobe Cloud. Use the <a href="https://aemformsconversion.adobe.io/">https://aemformsconversion.adobe.io/</a> URL.</td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="96"><p>Template</p> </td> 
-   <td><p>Default template to be applied to converted forms. You can always specify a different template before starting the conversion.</p> <p>A template contains basic structure and initial content for an adaptive form. You can choose a <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/custom-adaptive-forms-templates.html">template from the templates provided out-of-the-box</a>. You can also <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html">create a custom template</a>.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td>Theme</td> 
-   <td><p>Default theme to be applied to converted forms. You can always specify a different theme before starting the conversion. </p> <p>You can click the <img alt="" src="assets/yes_tick.png" />icon to choose a theme provided out-of the box. You can also create a <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">custom theme</a>.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="96"><p>Existing Fragments</p> </td> 
-   <td valign="top" width="456"><p>Location of existing fragments, if any.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Custom Meta-model</td> 
-   <td>Path of the .schema.json file of <a href="extending-the-default-meta-model.md">custom meta-model</a>. </td> 
-  </tr> 
- </tbody> 
-</table>
+|Field|Description|
+|--- |--- |
+|Title|Unique title for the configuration. The title is displayed in the UI used to start conversion.|
+|Name|Unique name for the configuration. The configuration is saved in the CRX-Repository with the specified name. The name can be identical to the title.|
+|Thumbnail location|Location of the thumbnail for the configuration.|
+|Service URL|URL of the Automated Forms Conversion service on Adobe Cloud. Use the `https://aemformsconversion.adobe.io/` URL.|
+|Template|Default template to be applied to converted forms. You can always specify a different template before starting the conversion. A template contains basic structure and initial content for an adaptive form. You can choose a template from the templates provided out-of-the-box. You can also create a custom template.|
+|Theme|Default theme to be applied to converted forms. You can always specify a different theme before starting the conversion.  You can click the icon to choose a theme provided out-of the box. You can also create a custom theme.|
+|Existing Fragments|Location of existing fragments, if any.|
+|Custom Meta-model|Path of the .schema.json file of custom meta-model.|
 
    ![Conversion Settings Dialog](assets/conversion-settings.png)
 
 1. In the **[!UICONTROL Advanced]**tab of the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following field:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody> 
-  <tr> 
-   <td width="20%">Field</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td width="30%">Generate Document of Record</td> 
-   <td><p>Select the option to automatically generate <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html">Document of Record</a> for converted forms. The option is only for XFA-based forms (XDP and PDF Forms).</p> <p>When you enable the option, after submitting a form, you can allow your customers to keep a record, in print or in document format, of the information they have filled in the form for their future reference. This is referred to as a document of record.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Enable Analytics</td> 
-   <td>Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html#creatingcloudserviceconfiguration">Adobe Analytics is enabled</a> for your AEM Forms instance.<br /> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Field|Description|
+|--- |--- |
+|Generate Document of Record|Select the option to automatically generate Document of Record for converted forms. The option is only for XFA-based forms (XDP and PDF Forms). When you enable the option, after submitting a form, you can allow your customers to keep a record, in print or in document format, of the information they have filled in the form for their future reference. This is referred to as a document of record.|
+|Enable Analytics|Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure Adobe Analytics is enabled for your AEM Forms instance.|
 
     * When the source is an XFA-based form with extension .XDP, then the output DOR retains the XFA layout, else the conversion service uses an out-of-the-box template to generate DOR for other XFA-based forms.
     * When an XFA form is submitted, submit data of the form is saved as an XML element or an attribute. For example, &lt;Amount currency="USD"&gt;10.00&lt;/Amount&gt;. The currency is saved as an attribute and currency amount, 10.00 is saved as an element. Submit data of an adaptive form does not have attributes, it has only elements. So, when an XFA-based form is converted to adaptive form, the adaptive form submit data contains an element for each such attribute. For example,
 
-   ```css
+```css
    {
-   
+
                   "Type": "Principal",
-   
+
                   "Amount": "10.00",
-   
+
                   "currency": "USD"
-   
-     } 
-   ```
+
+     }
+```
 
 1. Tap** Create**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
 
@@ -458,4 +413,3 @@ Create a cloud service configuration to connect your AEM instance to the convers
 ## Next {#next}
 
 * [Use Automated Forms Conversion service](convert-existing-forms-to-adaptive-forms.md)
-
