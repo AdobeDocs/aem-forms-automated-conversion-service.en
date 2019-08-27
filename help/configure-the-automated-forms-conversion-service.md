@@ -10,7 +10,7 @@ discoiquuid: 43559311-50d4-4616-b84a-f54bdf9cc3fb
 privatebeta: true
 ---
 
-## About this help {#about-this-help}
+# About this help {#about-this-help}
 
 This Help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This Help is for IT and AEM administrators at your organization.
 
