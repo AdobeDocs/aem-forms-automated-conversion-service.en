@@ -118,48 +118,15 @@ In this example, the conversion service searches for the phone, telephone, mobil
 
 The meta-model supports the following JSON schema common properties for adaptive form fields generated using the Automated Forms Conversion service:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody> 
-  <tr> 
-   <td width="25">Property Name</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td>title</td> 
-   <td>The text mentioned within the title property in a meta-model serves as a search keyword to perform actions on the generated adaptive form fields. For example, modifying the label of an adaptive form field. For more information, see <strong>Modify the label of a form field </strong>in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>description<br /> </td> 
-   <td>The description property sets the Help text for the generated adaptive form field. For more information, see <strong>Add Help text to a form field</strong> in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>type<br /> </td> 
-   <td><p>The type property defines the data type for the generated adaptive form field. The possible values for the title property include:</p> 
-    <ul> 
-     <li>string: Generates an adaptive form field of text data type.</li> 
-     <li>number: Generates an adaptive form field of numeric data type.</li> 
-     <li>integer: Generates an adaptive form field of numeric data type with sub-type set to integer.</li> 
-     <li>boolean: Generates a switch adaptive form component.</li> 
-    </ul> <p>For more information on using the type property in a meta-model, see <strong>Modify the type of a form field</strong> in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>pattern</td> 
-   <td><p>The pattern property restricts the value for the generated adaptive form field based on a regular expression. For example, the following code in the meta-model restricts the value for the generated adaptive form field to ten digits:</p> <p>"pattern": "/\\d{10}/"</p> <p>Similarly, the following code in the meta-model restricts the value of a field to a specific date format.</p> <p> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
-  </tr> 
-  <tr> 
-   <td>format</td> 
-   <td><p>The format property restricts the value for the generated adaptive form field based on a named pattern instead of a regular expression. The possible values for the format property include:</p> 
-    <ul> 
-     <li>email: Generates an email adaptive form component.</li> 
-     <li>hostname: Generates a textbox adaptive form component.</li> 
-    </ul> <p>For more information on using the format property in a meta-model, see <strong>Modify the format of a form field</strong> in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</p> <p>If you define both format and pattern properties for an adaptive form field, the pattern takes precedence over the format property.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>enum and enumNames</td> 
-   <td><p>The enum and enumNames properties restrict the values of drop-down, check box, or radio button fields to a fixed set. Values listed in enumNames are displayed on the user interface. The values listed using the enum property are used for calculation.</p> <p>For more information, see <strong>Convert a form field to multiple-choice check boxes in the adaptive form</strong>,<strong> Convert a text field to drop-down list in the adaptive form, </strong>and<strong> Add additional options to the drop-down list </strong>in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Property Name|Description|
+|--- |--- |
+|title|The text mentioned within the title property in a meta-model serves as a search keyword to perform actions on the generated adaptive form fields. For example, modifying the label of an adaptive form field. For more information, see Modify the label of a form field in Custom meta-model examples.|
+|description|The description property sets the Help text for the generated adaptive form field. For more information, see Add Help text to a form field in Custom meta-model examples.|
+|type|The type property defines the data type for the generated adaptive form field. The possible values for the title property include: `string: Generates an adaptive form field of text data type.` `number: Generates an adaptive form field of numeric data type.`  `integer: Generates an adaptive form field of numeric data type with sub-type set to integer.` ` boolean: Generates a switch adaptive form component.` For more information on using the type property in a meta-model, see Modify the type of a form field in Custom meta-model examples. |
+|pattern|The pattern property restricts the value for the generated adaptive form field based on a regular expression. For example, the following code in the meta-model restricts the value for the generated adaptive form field to ten digits: "pattern": "/\\d{10}/" Similarly, the following code in the meta-model restricts the value of a field to a specific date format.  "pattern": "date{DD MMMM, YYYY}",|
+|format|The format property restricts the value for the generated adaptive form field based on a named pattern instead of a regular expression. The possible values for the format property include: `email: Generates an email adaptive form component.` `hostname: Generates a textbox adaptive form component.` For more information on using the format property in a meta-model, see Modify the format of a form field in Custom meta-model examples. If you define both format and pattern properties for an adaptive form field, the pattern takes precedence over the format property.|
+|enum and enumNames|The enum and enumNames properties restrict the values of drop-down, check box, or radio button fields to a fixed set. Values listed in enumNames are displayed on the user interface. The values listed using the enum property are used for calculation. For more information, see Convert a form field to multiple-choice check boxes in the adaptive form, Convert a text field to drop-down list in the adaptive form, and Add additional options to the drop-down list in Custom meta-model examples.|
+
 
 ### Keyword-based search to apply properties to generated adaptive form fields {#keywordsearch}
 
@@ -461,4 +428,3 @@ In this custom meta-model, the conversion service uses text within **aem:affKeyw
   }
 }
 ```
-

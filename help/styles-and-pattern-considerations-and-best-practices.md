@@ -32,7 +32,7 @@ Comment Type: draft
 </ul>
 -->
 
-<table cellspacing="0" style="border-collapse: separate; border-spacing: 0.0px;" width="100%"> 
+<table width="100%"> 
  <tbody>
   <tr>
    <td width="30%">Pattern</td> 
