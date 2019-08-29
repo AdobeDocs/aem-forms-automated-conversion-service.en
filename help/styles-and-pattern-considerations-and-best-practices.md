@@ -32,103 +32,39 @@ Comment Type: draft
 </ul>
 -->
 
-<table width="100%"> 
- <tbody>
-  <tr>
-   <td width="30%">Pattern</td> 
-   <td width="70%">Resolution</td> 
-  </tr>
-  <tr>
-   <td><p>Service does not convert colored PDF forms to adaptive form.</p> <p> </p> </td> 
-   <td style="text-align: left;"><p>Use black and white or grayscale PDF forms. </p> </td> 
-  </tr>
-  <tr>
-   <td>Service does not convert filled PDF forms to adaptive form.</td> 
-   <td style="text-align: left;">Use empty adaptive forms.</td> 
-  </tr>
-  <tr>
-   <td>Service can fail to recognize text and fields in a dense form.</td> 
-   <td style="text-align: left;">Increase the width between text and fields of a dense form before starting the conversion.</td> 
-  </tr>
-  <tr>
-   <td>Service does not support scanned forms.</td> 
-   <td>Do not use scanned forms.<br /> </td> 
-  </tr>
-  <tr>
-   <td>Service does not extract images and text within images. </td> 
-   <td>Manually add images or text to converted forms.</td> 
-  </tr>
-  <tr>
-   <td><p>Tables with dotted or non-clear boundaries and borders do not convert.</p> <p> </p> </td> 
-   <td>Use tables with clear explicit boundaries and borders. supported.</td> 
-  </tr>
- </tbody>
-</table>
+|Pattern|Resolution|
+|--- |--- |
+|Service does not convert colored PDF forms to adaptive form.|Use black and white or grayscale PDF forms.|
+|Service does not convert filled PDF forms to adaptive form.|Use empty adaptive forms.|
+|Service can fail to recognize text and fields in a dense form.|Increase the width between text and fields of a dense form before starting the conversion.|
+|Service does not support scanned forms.|Do not use scanned forms.|
+|Service does not extract images and text within images.|Manually add images or text to converted forms.|
+|Tables with dotted or non-clear boundaries and borders do not convert.|Use tables with clear explicit boundaries and borders. supported.|
+
 
 ## Choice Group  {#choice-group}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody>
-  <tr>
-   <td width="30%">Pattern</td> 
-   <td width="70%">Resolution</td> 
-  </tr>
-  <tr>
-   <td><p>Choice group options with shapes other than box or circle are not converted to corresponding adaptive form components. </p> <p> </p> </td> 
-   <td>Change choice options shapes to box or circle or use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to identify the shapes.</td> 
-  </tr>
- </tbody>
-</table>
+|Pattern|Resolution|
+|--- |--- |
+|Choice group options with shapes other than box or circle are not converted to corresponding adaptive form components.|Change choice options shapes to box or circle or use Review and Correct editor to identify the shapes.|
+
 
 ## Form fields {#form-fields}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody>
-  <tr>
-   <td width="30%">Pattern</td> 
-   <td width="70%">Resolution</td> 
-  </tr>
-  <tr>
-   <td width="25%">Service does not identify fields without clear borders.</td> 
-   <td width="50%"><br /> Use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to identify such fields.</td> 
-  </tr>
-  <tr>
-   <td>Service may not identify some choice group form fields with captions at the bottom or right side of a form.</td> 
-   <td><br /> Use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to identify such fields</td> 
-  </tr>
-  <tr>
-   <td>Service merges or assigns a wrong type to some form fields which are placed very near to each other or do not have clear borders.</td> 
-   <td>Use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to identify such fields.</td> 
-  </tr>
-  <tr>
-   <td>Service can fail to recognize fields with far away captions or a dotted line between the caption and input field.</td> 
-   <td>Use forms fields with clear boundaries or use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to fix such issues.</td> 
-  </tr>
- </tbody>
-</table>
+|Pattern|Resolution|
+|--- |--- |
+|Service does not identify fields without clear borders.|Use Review and Correct editor to identify such fields.|
+|Service may not identify some choice group form fields with captions at the bottom or right side of a form.|Use Review and Correct editor to identify such fields|
+|Service merges or assigns a wrong type to some form fields which are placed very near to each other or do not have clear borders.|Use Review and Correct editor to identify such fields.|
+|Service can fail to recognize fields with far away captions or a dotted line between the caption and input field.|Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.|
+
 
 ## Lists {#lists}
-
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody>
-  <tr>
-   <td width="30%">Pattern</td> 
-   <td width="70%">Resolution</td> 
-  </tr>
-  <tr>
-   <td><p>Lists containing form fields are merged or not converted to corresponding adaptive form components</p> <p> </p> </td> 
-   <td>Use forms fields with clear boundaries or use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to fix such issues.</td> 
-  </tr>
-  <tr>
-   <td>Service can leave a few nested lists unidentified</td> 
-   <td>Use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to fix such issues.</td> 
-  </tr>
-  <tr>
-   <td>Service merges some lists containing choice groups with each other</td> 
-   <td>Use <a href="review-correct-ui-edited.md">Review and Correct</a> editor to fix such issues.</td> 
-  </tr>
- </tbody>
-</table>
+|Pattern|Resolution|
+|--- |--- |
+|Lists containing form fields are merged or not converted to corresponding adaptive form components|Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.|
+|Service can leave a few nested lists unidentified|Use Review and Correct editor to fix such issues.|
+|Service merges some lists containing choice groups with each other|Use Review and Correct editor to fix such issues.|
 
 <!--
 Comment Type: draft

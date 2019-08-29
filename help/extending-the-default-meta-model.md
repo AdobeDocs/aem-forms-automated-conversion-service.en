@@ -149,34 +149,13 @@ In this example, the conversion service uses the text within **aem:affKeyword** 
 
 You can use the **aem:afProperties** property in the meta-model to define following additional properties for adaptive forms fields generated using Automated Forms Conversion service:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody> 
-  <tr> 
-   <td width="25">Property Name</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td>multiline</td> 
-   <td>The multiline property converts a source form field into a multi-line field in the adaptive form after conversion. For more information, see <strong>Convert a string field to a multi-line field </strong>in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>mandatory</td> 
-   <td><p>The mandatory property sets the input for an adaptive form field after conversion as mandatory. </p> <p>For more information, see <strong>Add validations to adaptive form fields </strong>in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>jcr:title</td> 
-   <td><p>The jcr:title property, with the title JSON schema property, enables you to modify the label of an adaptive form field after conversion.</p> <p>For more information, see <strong>Modify the label of a form field </strong>in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</p> <p>See <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html">Creating adaptive forms using JSON schema</a> for information on more properties that you can apply to adaptive form fields using JSON schema.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>sling:resourceType and guideNodeClass</td> 
-   <td><p>sling:resourceType and guideNodeClass properties enable you to map a form field to a corresponding adaptive form component.</p> <p>For more information, see <strong>Convert a form field to multiple-choice check boxes in the adaptive form </strong>and<strong> Convert a text field to drop-down list in the adaptive form </strong>in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>validatePictureClause</td> 
-   <td><p>The validatePictureClause property sets a validation on the format allowed in the adaptive form field after conversion.</p> <p>For more information, see <strong>Add validations to adaptive form fields </strong>in <a href="extending-the-default-meta-model.md#custommetamodelexamples">Custom meta-model examples</a>.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Property Name|Description|
+|--- |--- |
+|multiline|The multiline property converts a source form field into a multi-line field in the adaptive form after conversion. For more information, see Convert a string field to a multi-line field in Custom meta-model examples.|
+|mandatory|The mandatory property sets the input for an adaptive form field after conversion as mandatory.  For more information, see Add validations to adaptive form fields in Custom meta-model examples.|
+|jcr:title|The jcr:title property, with the title JSON schema property, enables you to modify the label of an adaptive form field after conversion. For more information, see Modify the label of a form field in Custom meta-model examples. See Creating adaptive forms using JSON schema for information on more properties that you can apply to adaptive form fields using JSON schema.|
+|sling:resourceType and guideNodeClass|sling:resourceType and guideNodeClass properties enable you to map a form field to a corresponding adaptive form component. For more information, see Convert a form field to multiple-choice check boxes in the adaptive form and Convert a text field to drop-down list in the adaptive form in Custom meta-model examples.|
+|validatePictureClause|The validatePictureClause property sets a validation on the format allowed in the adaptive form field after conversion. For more information, see Add validations to adaptive form fields in Custom meta-model examples.|
 
 ## Modify adaptive form fields using custom meta-model {#modify-adaptive-form-fields-using-custom-meta-model}
 
