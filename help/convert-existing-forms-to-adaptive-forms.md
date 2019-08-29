@@ -105,7 +105,7 @@ After you have uploaded the forms and configured the service, perform the follow
 
    If you are converting an XFA-based PDF form in to an adaptive form, the conversion service automatically associates the PDF form to the converted adaptive form as the Document of Record template. After conversion, you can open the adaptive form properties to view the Document of Record template in the **[!UICONTROL Document of Record Template Configuration]** section of **[!UICONTROL Form Model]** tab.
 
-   The conversion service automatically uploads the PDF form to the converted adaptive form as the Document of Record template only if you enable the **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > <Properties of selected configuration> > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]**option.
+   The conversion service automatically uploads the PDF form to the converted adaptive form as the Document of Record template only if you enable the **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > `Properties of selected configuration` **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]**option.
 
    <!--
    Comment Type: draft
