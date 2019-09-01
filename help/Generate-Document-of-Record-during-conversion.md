@@ -18,19 +18,19 @@ The configuration steps to generate a Document of Record can vary based on the i
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody> 
   <tr> 
-   <td width="30%">Input Form</td> 
-   <td>Methods to generate Document of Record</td> 
+   <td width="30%" style="font-weight:bold">Input Form</td> 
+   <td style="font-weight:bold">Methods to generate Document of Record</td> 
   </tr> 
   <tr> 
    <td>Non-interactive PDF forms</td> 
-   <td><p>Generate Document of Record using Automated Forms Conversion service cloud configuration</p>
-   <p>Edit adaptive form properties after conversion to generate Document of Record</p>
+   <td><ul><li><a href="#generate-document-of-record-using-cloud-configuration">Generate Document of Record using Automated Forms Conversion service cloud configuration</a></li>
+   <li><a href="#edit-adptive-form-properties-generate-document-of-record">Edit adaptive form properties after conversion to generate Document of Record</a></li></ul>
    </td> 
   </tr> 
   <tr> 
    <td>Acro Forms or XFA-based PDF forms</td> 
-   <td><p>Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration</p>
-   <p>Edit adaptive form properties after conversion to generate Document of Record using the default template</p></td> 
+   <td><ul><li><a href="#use-input-form-as-template-to-generate-document-of-record">Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration</a></li>
+   <li><a href="#edit-adaptive-form-properties-to-generate-document-of-record">Edit adaptive form properties after conversion to generate Document of Record using the default template</a></li></ul></td> 
   </tr>   
  </tbody> 
 </table>
