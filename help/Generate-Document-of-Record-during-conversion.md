@@ -15,10 +15,26 @@ The Document of Record enables you to keep a record of the information that you 
 
 The configuration steps to generate a Document of Record can vary based on the input PDF form. This article describes the recommended paths to generate a Document of Record based on the input PDF form.
 
-| Input Form |Methods to generate Document of Record |
-|---|---|
-| Non-interactive PDF forms | <ul><li>[Generate Document of Record using Automated Forms Conversion service cloud configuration](#generate-document-of-record-using-cloud-configuration)</li><li>[Edit adaptive form properties after conversion to generate Document of Record](#edit-adptive-form-properties-generate-document-of-record)</li></ul>  |
-| Acro Forms or XFA-based PDF forms  | <ul><li>[Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration](#use-input-form-as-template-to-generate-document-of-record)</li><li>[Edit adaptive form properties after conversion to generate Document of Record using the default template](#edit-adaptive-form-properties-to-generate-document-of-record)</li></ul>
+<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+ <tbody> 
+  <tr> 
+   <td width="30%">Input Form</td> 
+   <td>Methods to generate Document of Record</td> 
+  </tr> 
+  <tr> 
+   <td>Non-interactive PDF forms</td> 
+   <td><p>Generate Document of Record using Automated Forms Conversion service cloud configuration</p>
+   <p>Edit adaptive form properties after conversion to generate Document of Record</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>Acro Forms or XFA-based PDF forms</td> 
+   <td><p>Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration</p>
+   <p>Edit adaptive form properties after conversion to generate Document of Record using the default template</p></td> 
+  </tr>   
+ </tbody> 
+</table>
+
 The following image illustrates the steps required to generate a Document of record using Automated Forms Conversion service cloud configuration:
 
 ![Generate Document of Record using cloud configuration](assets/generate_dor_cloud_config.gif)
