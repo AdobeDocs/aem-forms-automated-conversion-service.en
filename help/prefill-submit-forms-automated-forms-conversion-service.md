@@ -28,7 +28,6 @@ This article describes the recommended workflows to prefill field values and sub
 |JSON Schema|You select JSON schema as the data source. Based on the selected data source: Option 1: You generate an adaptive form with no data binding using the Automated Forms Conversion service and configure JSON schema as the data source. You bind the adaptive form fields to JSON schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository. For step-by-step instructions to execute the workflows, see Use JSON schema as the data source. Option 2: You generate an adaptive form with JSON data binding using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps. For step-by-step instructions to execute the workflows, see Use JSON schema as the data source.|
 |XSD schema|You select XSD schema as the data source. Based on the selected data source, you generate an adaptive form with no data binding using the Automated Forms Conversion service and configure XSD schema as the data source. You bind the adaptive form fields to XSD schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository. For step-by-step instructions to execute the workflows, see Use XSD schema as the data source.|
 
-
 For more information on the Automated Forms Conversion service, see the following articles:
 
 * [Introduction to Automated Forms Conversion service](introduction-to-automated-form-conversion-service.md)
@@ -52,7 +51,7 @@ Sample loan application form
 [Get File](assets/sample_loan_application_form.pdf)
 The PDF file serves as the input to the Automated Forms Conversion service. The service converts this file to an adaptive form. The following image depicts the sample loan application in a PDF format.
 
-![sample loan application form](assets/sample_form_new.png) 
+![sample loan application form](assets/sample_form_new.png)
 
 ## Prepare data for form model {#prepare-data-for-form-model}
 
@@ -80,11 +79,11 @@ CREATE TABLE `applicant` (
 If you are using an XSD schema as the form model to execute the use cases, create an XSD file with the following text:
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
     <xs:schema targetNamespace="http://adobe.com/sample.xsd"
                     xmlns="http://adobe.com/sample.xsd"
                     xmlns:xs="http://www.w3.org/2001/XMLSchema">
-     
+
 <xs:element name="sample" type="SampleType"/>
 
   <xs:complexType name="SampleType">
@@ -112,7 +111,7 @@ For more information on using XSD schema as the form model in adaptive forms, se
 
 If you are using a JSON schema as the form model to execute the use cases, create a JSON file with the following text:
 
-```
+```JSON
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "definitions": {
@@ -148,8 +147,8 @@ If you are using a JSON schema as the form model to execute the use cases, creat
         "employee": {
             "$ref": "#/definitions/loanapplication"
         }
-    } 
-} 
+    }
+}
 
 ```
 
@@ -179,10 +178,10 @@ After generating an adaptive form with no data binding, select a data source for
 
 Before executing the use case:
 
-* [Configure MySQL database as the data source](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase) 
+* [Configure MySQL database as the data source](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
 * [Create the form data model](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-Based on the use case, create the **loanapplication** form data model and bind read service argument to a **Literal** value. The phone number literal value must be of one of the records configured in the **applicant** schema of the MySQL database. The services use the value as an argument to fetch details from the data source. You can also select [User Profile Attribute or Request Attribute](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) from the **Binding To** drop-down list 
+Based on the use case, create the **loanapplication** form data model and bind read service argument to a **Literal** value. The phone number literal value must be of one of the records configured in the **applicant** schema of the MySQL database. The services use the value as an argument to fetch details from the data source. You can also select [User Profile Attribute or Request Attribute](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) from the **Binding To** drop-down list
 
 ![Configure form data model](assets/configure_model_object.png)
 
@@ -199,16 +198,16 @@ Execute the following steps:
 
    ![configure form container](assets/configure_form_container.png)
 
-    1. In the **Basic** section, select **Form Data Model Prefill service** from the **Prefill Service** drop-down list. 
-    
+    1. In the **Basic** section, select **Form Data Model Prefill service** from the **Prefill Service** drop-down list.
+
     1. In the **Submission** section, select **Submit using Form Data Model** from the **Submit Action** drop-down list.
-    
+
     1. Select the data model using the **Data Model to submit** field.
-    1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
+    1. Tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
 
-1. Tap the Applicant Name text box and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 
-    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the form data model entities.
+    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the form data model entities.
 
    ![Bind references](assets/bind_references.png)
 
@@ -225,7 +224,7 @@ Execute the following steps to use [rule editor](https://helpx.adobe.com/experie
 
    ![configure form container](assets/configure_form_container.png)
 
-   In the **Basic** section, select **Form Data Model Prefill service** from the **Prefill Service** drop-down list. 
+   In the **Basic** section, select **Form Data Model Prefill service** from the **Prefill Service** drop-down list.
 
 1. Tap the **Applicant Name** text box and tap **Edit Rules.**
 
@@ -235,13 +234,13 @@ Execute the following steps to use [rule editor](https://helpx.adobe.com/experie
 1. On the **Rule Editor** page:
 
     1. Select a state for the Applicant Name text box. For example, **is initialized**, which results in execution of the **Then** condition when you render the form in **Preview** mode.
-    
+
     1. In the **Then** section, select **Invoke Service** from the **Select Action** drop-down list. All services on your Forms instance display in the drop-down list.
-    
+
     1. Select a **Get** service from the section listing the form data models. The Input field displays **phonenumber**, which is the primary key defined for the **applicant** data model. The system retrieves and prefills the values in the adaptive form for fields in the Output section based on this field.
-    
-    1. Create a binding for the adaptive form fields with the form data model entities using the Output section. For example, bind **Applicant Name** adaptive form field with the **name** entity. 
-    
+
+    1. Create a binding for the adaptive form fields with the form data model entities using the Output section. For example, bind **Applicant Name** adaptive form field with the **name** entity.
+
     1. Tap **Done. **Tap **Done** again on the Rule Editor page.
 
    ![Rule editor to bind references](assets/rule_editor_bind_references.png)
@@ -254,7 +253,7 @@ Execute the following steps to use [rule editor](https://helpx.adobe.com/experie
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
-   *http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;latest file available in the folder&gt;*
+   `*http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;latest file available in the folder&gt;*`
 
 ### Use JSON schema as the data source {#jsondatasource}
 
@@ -271,16 +270,16 @@ Execute the following steps:
 1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
 1. Tap the **Form Model** tab, select **Schema **from the **Select From** drop-down list, and tap **Select Schema **to upload the **demo.schema JSON** schema saved on the local file system. Tap **Save & Close** to save the form.
 1. Select the **sample loan application form** and tap **Edit**.
-1. Tap the Applicant Name text box and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 
-    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the JSON schema entities.
+    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the JSON schema entities.
 
 1. Create a file with data to prefill values in the adaptive form. Tap **Download** to download a sample file.
 
    Sample data file
 
    [Get File](assets/samplexmldata.zip)
-   As an example, use the crx:// protocol to prefill user data in the adaptive 
+   As an example, use the crx:// protocol to prefill user data in the adaptive
    form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/loan_application_data_json*
