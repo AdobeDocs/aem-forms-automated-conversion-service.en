@@ -136,12 +136,11 @@ privatebeta: true
  **What to do if I encounter an error related to RSA libraries? The error message is similar to the message mentioned below:** 
  <p><em>*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]</em></p> 
  <p>The aforementioned error occurs when boot delegation is not configured for RSA/BouncyCastle libraries. Perform the below steps to resolve the issue:</p> 
- <ol> 
- </ol> 
  <p> </p> 
  <ol> 
   <li>Stop the AEM instance. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing. If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\. </li> 
-  <li>Add the following properties to the sling.properties file:<br /> <em>sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*<br /> sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*</em></li> 
-  <li>Save and Close the file. <br /> </li> 
-  <li>Start the AEM instance<br /> </li> 
- </ol> 
+  <li>Add the following properties to the sling.properties file:<br /> <em>sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*<br /> sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*</em></li>
+  <li>Save and Close the file. <br /> </li>
+  <li>Start the AEM instance<br /> </li>
+ </ol>
+ 
