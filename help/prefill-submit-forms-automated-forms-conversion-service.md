@@ -275,7 +275,7 @@ Execute the following steps:
 
     1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the JSON schema entities.
 
-1. Create a file with data to prefill values in the adaptive form. Tap **Download** to download a sample file. 
+1. Create a file with data to prefill values in the adaptive form. Tap **Download** to download a sample file.
 
    Sample data file
 
@@ -294,7 +294,7 @@ Execute the following steps:
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
-   *http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;latest file available in the folder&gt;*
+   `*http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;`latest file available in the folder&gt;*
 
 ### Use XSD schema as the data source {#xsddatasource}
 
@@ -311,11 +311,11 @@ Execute the following steps:
 1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
 1. Tap the **Form Model** tab, select **Schema **from the **Select From** drop-down list, and tap **Select Schema **to upload the **loanapplication** XSD schema saved on the local file system. Select root element for the XSD schema and tap **Save & Close** to save the form.
 1. Select the **sample loan application form** and tap **Edit**.
-1. Tap the Applicant Name text box and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 
-    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the XSD schema entities.
+    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done Icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the XSD schema entities.
 
-1. Create an XML file with data to prefill values in the adaptive form. Tap **Download** to download a sample file. 
+1. Create an XML file with data to prefill values in the adaptive form. Tap **Download** to download a sample file.
 
    Sample XML data file
 
@@ -340,7 +340,7 @@ Execute the following steps:
 
 Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](prefill-submit-forms-automated-forms-conversion-service.md#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **Generate Form without data model** check box while generating the adaptive form.
 
-![Adaptive form with JSON binding](assets/generate_af_with_json_binding.png) 
+![Adaptive form with JSON binding](assets/generate_af_with_json_binding.png)
 
 ### Use JSON schema as the data source {#jsonwithdatabinding}
 
@@ -354,7 +354,7 @@ Before executing the use case, ensure that you have:
 Execute the following steps:
 
 1. Select the **sample loan application form** in the **output** folder and tap **Preview &gt; Preview as HTML**.
-1. Create a file with data to prefill values in the adaptive form. Tap **Download** to download a sample file. 
+1. Create a file with data to prefill values in the adaptive form. Tap **Download** to download a sample file.
 
    Sample data file
 
