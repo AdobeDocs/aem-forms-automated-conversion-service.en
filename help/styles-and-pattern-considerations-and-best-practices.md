@@ -9,6 +9,7 @@ discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 privatebeta: true
 ---
 
+# Best practices and considerations {#Best-practices-and-considerations2}
 
 AEM Forms Automated Conversion service converts a PDF form to an adaptive form. The service uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Every machine learning service continuously learns from source data and produces an improved output with every churn. These services learn from the experience like humans.
 
