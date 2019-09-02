@@ -11,7 +11,7 @@ discoiquuid: 75f6e6bc-7636-4b40-919c-8b20a6ccbb1f
 
 # Generate Document of Record during or after conversion {#generate-document-of-record-during-conversion}
 
-The [Document of Record](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) enables you to keep a record of the information that you provide in an adaptive form so that you can refer to it later. The Automated Forms Conversion service converts non-interactive PDF forms, Acro Forms, or XFA-based PDF forms to adaptive forms. You can easily configure generating a Document of Record for the adaptive forms that you generate using the Automated Forms Conversion service.
+The [Document of Record](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) enables you to keep a record of the information that you provide in an adaptive form so that you can refer to it later. The [Automated Forms Conversion service](../help/introduction-to-automated-form-conversion-service.md) converts non-interactive PDF forms, Acro Forms, or XFA-based PDF forms to adaptive forms. You can easily configure generating a Document of Record for the adaptive forms that you generate using the Automated Forms Conversion service.
 
 The configuration steps to generate a Document of Record can vary based on the input PDF form. This article describes the recommended paths to generate a Document of Record based on the input PDF form.
 
