@@ -358,7 +358,7 @@ Execute the following steps:
 
    Sample data file
 
-   [Get File](assets/_json_binding.txt)
+   [Get File](assets/loan_application_data_json_binding.txt)
    As an example, use the crx:// protocol to prefill user data in the adaptive form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/json-prefill*
