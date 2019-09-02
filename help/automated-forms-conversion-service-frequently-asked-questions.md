@@ -25,7 +25,7 @@ privatebeta: true
 
  **Does the service support all formats of PDF forms? What all languages are supported?** 
  <p>The service can convert non-interactive PDF forms, XFA-based XDP and PDF forms, and AcroForms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.<br /> </p> 
- <p>We are regularly adding support for other source types. Keep the <a data-disable-query="false" href="introduction-to-automated-form-conversion-service.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
+ <p>We are regularly adding support for other source types. Keep the <a href="introduction-to-automated-form-conversion-service.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
 
 
 
@@ -124,7 +124,7 @@ privatebeta: true
 
 
  **Where should the header and footers be placed?** 
- <p>Place header and footer in an adaptive forms template. If the source PDF form has header and footer, the service detects and replaces detected header and footer with header and footer available in adaptive form template, during the conversion. If any extra header or footer is included in the adaptive form, you can use the <a data-disable-query="false" href="review-correct-ui-edited.md">Review and Correct</a> editor to fix or remove such header or footer.</p> 
+ <p>Place header and footer in an adaptive forms template. If the source PDF form has header and footer, the service detects and replaces detected header and footer with header and footer available in adaptive form template, during the conversion. If any extra header or footer is included in the adaptive form, you can use the <a href="review-correct-ui-edited.md">Review and Correct</a> editor to fix or remove such header or footer.</p> 
 
 
 
