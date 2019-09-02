@@ -15,7 +15,7 @@ The [Document of Record](https://helpx.adobe.com/experience-manager/6-5/forms/us
 
 The configuration steps to generate a Document of Record can vary based on the input PDF form. This article describes the recommended paths to generate a Document of Record based on the input PDF form.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+```<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody> 
   <tr> 
    <td width="30%" style="font-weight:bold">Input Form</td> 
@@ -34,6 +34,7 @@ The configuration steps to generate a Document of Record can vary based on the i
   </tr>   
  </tbody> 
 </table>
+```
 
 The following image illustrates the steps required to generate a Document of record using Automated Forms Conversion service cloud configuration:
 

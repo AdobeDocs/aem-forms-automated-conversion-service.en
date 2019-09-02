@@ -8,15 +8,14 @@ topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 privatebeta: true
 ---
-
-# Known Issues{#known-issues}
+# Known issues and limitations {#known-issues-limitations}
 
 Before you begin using AEM Forms Automated Forms Conversion service, review the following known issues and limitations:
 
 ## Known issues {#known-issues}
 
 * Folder containing forms for conversion should not have more than 15 forms and 50 pages in total. The size of the source folder should not exceed 10 MB. Do not create subfolders in the source folder. 
-* Some form objects are easily visible to the human eye but are [difficult to identify for the service](https://helpx.adobe.com/experience-manager/6-5/forms/using/wip/styles-and-pattern--considerations-and-best-practices-.html). Use [Review and correct editor](review-correct-ui-edited.md) to identify and convert such form objects. Review and Correct editor:
+* Some form objects are easily visible to the human eye but are [difficult to identify for the service](styles-and-pattern-considerations-and-best-practices.md). Use [Review and correct editor](review-correct-ui-edited.md) to identify and convert such form objects. Review and Correct editor:
 
     * Does not support form fragments and tables. Use adaptive form editor to fix conversions that had the Extract Fragmentor Existing Fragments option enabled during conversions and fix table-related issues.  
     * Does not have undo action. The Save button saves the changes permanently.
@@ -24,11 +23,11 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
 
 * For XFA-based forms:
 
-    * Extracting fragments from an XFA-based form is not supported.
-    * XFA scripts are not supported. For example, scripts for automatically generating values for a drop-down component.
-    * Meta-model does not work for the choice group
-    * Choice Groups option with a single character are not identified 
-    * When the source document is a dynamic XFA (.XDP) and it [defines behavior of XFA properties in an adaptive form](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), then the presence property of source document is not honored. For example, a field in source document is marked hidden and a script makes the field visible, then the field remains visible in the output adaptive form.
+  * Extracting fragments from an XFA-based form is not supported.
+  * XFA scripts are not supported. For example, scripts for automatically generating values for a drop-down component.
+  * Meta-model does not work for the choice group
+  * Choice Groups option with a single character are not identified 
+  * When the source document is a dynamic XFA (.XDP) and it [defines behavior of XFA properties in an adaptive form](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), then the presence property of source document is not honored. For example, a field in source document is marked hidden and a script makes the field visible, then the field remains visible in the output adaptive form.
 
 * The **[!UICONTROL Auto-detect multi-column layout from input forms]**** **feature does not work with Review and Correct editor and Form Fragments.   
 

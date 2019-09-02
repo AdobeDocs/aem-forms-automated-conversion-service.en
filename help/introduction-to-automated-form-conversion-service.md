@@ -87,7 +87,7 @@ The service converts only English-language forms to adaptive forms. You can tran
 
 The service supports PDF forms created with any version of AEM Forms or Adobe LiveCycle, going all the way back to AEM 6.0 Forms and Adobe LiveCycle ES3. The service also supports forms created with Adobe Acrobat.
 
-The service supports non-interactive PDF forms, AcroForms, and XFA-based forms. [AcroForms and XFA-based forms has a limited support](/known-issues/jcr:content.md).
+The service supports non-interactive PDF forms, AcroForms, and XFA-based forms. [AcroForms and XFA-based forms has a limited support](known-issues.md).
 
 <!--
 Comment Type: annotation
@@ -128,7 +128,7 @@ Last Modified Date: 2018-11-21T07:17:59.738-0500
 Remove parenthetical content. These must already be covered below in detailed steps. From overview of this H1, no need to mention all details.
 -->
 
-![](assets/workflow.png)
+![Workflow](assets/workflow.png)
 
 ### 1. Set up the environment {#set-up-the-environment}
 
@@ -147,84 +147,17 @@ Last Modified Date: 2018-11-21T08:57:03.211-0500
 
 Automated Forms Conversion service runs on Adobe Cloud. [Configure your local AEM Instance and Adobe I/O account](configure-the-automated-forms-conversion-service.md) to connect to the conversion service running on Adobe Cloud.
 
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:22:56.068-0500
-with keywords?
--->
 
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:23:28.361-0500
-are all mapped...
--->
-
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:23:39.508-0500
-Space.
--->
-
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:24:58.106-0500
-Another idea to lessen the word count is to hyphenate like "organization-specific mapping and properties." 4 instead of 7 words :)
--->
-
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:25:50.144-0500
-via email. Or just remove via email to shorten.
--->
-
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:26:13.167-0500
-AEM instance.
--->
-
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:26:38.640-0500
-for conversion.
--->
-
-<!--
-Comment Type: annotation
-Last Modified By: asgupta
-Last Modified Date: 2018-11-21T07:31:40.657-0500
-Can re-write as, "Install AEM Forms add-on package to avail AEM Forms capabilities and Conversion Manager package to avail x, y, and z."
--->
-
-<!--
-Comment Type: draft
-
-<ol>
-<li><p><strong>Install AEM Forms add-on package and Conversion Manager package:</strong> Install <a href="aem-forms-automated-forms-conversion-service-beta.md" target="_blank">AEM Forms add-on package</a> to avail AEM Forms capabilities and <a href="aem-forms-automated-forms-conversion-service-beta.md" target="_blank">Conversion Manager</a> package to avail conversion service capabilities.</p> </li>
-<li><p><strong>Create an adaptive form theme:</strong> You can use a theme to provide a unique or organization-specific appearance to your adaptive forms. You can apply an out-of-the-box theme provided with adaptive forms or <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">create a custom theme</a> of your own.</p> </li>
-<li><p><strong>Create an adaptive form template: </strong>A template contains a set of adaptive form components common for a set of forms. For example, identical header, footer, and logo for the forms of an organization. You can use the <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html">template editor</a> to create a template. </p> </li>
-<li><p><strong>Configure email notifications:</strong> <a href="configure-the-automated-forms-conversion-service.md#main-pars-header-393337952">Configure email-service</a> to receive the status of conversion.</p> </li>
-<li><p><strong>Configure the cloud service:</strong> Create a <a href="configure-the-automated-forms-conversion-service.md#configure-the-cloud-service">cloud service configuration</a> to connect your AEM instance to the conversion service. It also allows you to specify a template, theme, and form fragments for conversion.</p> </li>
-<li><p><strong>(Optional) Customize meta-model:</strong> Meta-model defines mapping for all the adaptive form components. For example, a print form field with keywords phone, telephone, mobile phone, work phone, home phone, telephone number, telephone no, and phone number are all mapped to the adaptive form’s telephone component. It also allows the service to pre-configure validations, rules, data patterns, help text, and accessibility properties of adaptive form components. <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/wip/extending-the-default-meta-model.html">Extend the default meta-model</a> to add organization-specific mapping and validations.</p> </li>
-</ol>
--->
 
 ### 2. Use the conversion service {#use-the-conversion-service}
 
 After your AEM Forms environment is configured, to convert your print forms to adaptive forms, [upload source forms](convert-existing-forms-to-adaptive-forms.md) to your AEM instance and [start the conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Before uploading the forms, consider the following:
 
-* Do not upload the protected forms. The service does not convert password-protected and encrypted forms. 
+* Do not upload the protected forms. The service does not convert password-protected and encrypted forms.
 * Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.  
 * Do not upload source forms with spaces in the filename.  
-* Make the suggested changes in source forms described in the [Best practices and considerations](https://helpx.adobe.com/experience-manager/6-5/forms/using/wip/styles-and-pattern--considerations-and-best-practices-.html) article.
-* Read the [Known issues](aem-forms-automated-forms-conversion-service-beta.md) article to avoid pitfalls.
+* Make the suggested changes in source forms described in the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) article.
+* Read the [Known issues](known-issues.md) article to avoid pitfalls.
 
 <!--
 Comment Type: draft
@@ -259,7 +192,7 @@ Comment Type: draft
 <li>Install <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html" target="_blank">AEM Forms add-on package</a> and <a href="configure-the-automated-forms-conversion-service.md#download-and-install-the-connector-package" target="_blank">Conversion Manager package</a>: Install AEM Forms add-on package to avail AEM Forms capabilities and Conversion Manager package to avail conversion service capabilities.<br /> </li>
 <li>Create an adaptive form theme: A theme provides a unique appearance and style to an adaptive form. You can apply out of the box themes provided with adaptive forms or <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html" target="_blank">create custom themes</a> of your own.</li>
 <li>Create an adaptive form template: A template contains a set of adaptive form components common for a set of forms. For example, identical header, footer, and logo for the forms of an organization. You can use the <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html" target="_blank">template editor</a> to create a template. <br /> </li>
-<li>Customize meta-model: Meta-model defines mapping for all the adaptive form components. For example, a print form field with keywords phone, telephone, mobile phone, work phone, home phone, telephone number, telephone no, and phone number are all mapped to the adaptive form’s telephone component. It also allows the service to pre-configure validations, rules, data patterns, help text, and accessibility properties of adaptive form components. <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/wip/extending-the-default-meta-model.html" target="_blank">Extend the default meta-model</a> to add organization-specific mapping and validations.</li>
+<li>Customize meta-model: Meta-model defines mapping for all the adaptive form components. For example, a print form field with keywords phone, telephone, mobile phone, work phone, home phone, telephone number, telephone no, and phone number are all mapped to the adaptive form’s telephone component. It also allows the service to pre-configure validations, rules, data patterns, help text, and accessibility properties of adaptive form components. Extend the default meta-model to add organization-specific mapping and validations.</li>
 <li>Configure email notifications: <a href="configure-the-automated-forms-conversion-service.md#main-pars-header-393337952" target="_blank">Configure email-service</a> to receive the status of conversion.<br /> </li>
 <li>Configure cloud services: Create a <a href="configure-the-automated-forms-conversion-service.md#configure-the-cloud-service" target="_blank">cloud service configuration</a> to connect your AEM instance to the conversion service. It also allows you to specify a template, theme, and form fragments for conversion.</li>
 </ol>
