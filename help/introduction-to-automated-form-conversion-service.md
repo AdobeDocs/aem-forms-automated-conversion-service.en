@@ -12,12 +12,12 @@ privatebeta: true
 
 # Introduction to Automated Forms Conversion service{#introduction-to-automated-forms-conversion-service}
 
-Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of print forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms. While leveraging the existing investments in PDF Forms, the service also applies appropriate validations to adaptive form fields during conversion. The service helps:
+Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms. While leveraging the existing investments in PDF Forms, the service also applies appropriate validations to adaptive form fields during conversion. The service helps:
 
 * Save manual effort required to convert print forms to adaptive forms
 * Generate reusable adaptive form fragments
 * Generate Document of Record during conversion
-* Apply patterns and appropriate validations during conversion
+* Applies patterns and appropriate validations during conversion
 * Enables Adobe Analytics during conversion
 
 <!--
@@ -34,7 +34,7 @@ Last Modified Date: 2018-11-21T07:45:19.346-0500
 effort not labour. Also, labor not labour.
 -->
 
-![It is simple. You just provide us the source forms and leave everything to us. We will provide you beautiful adaptive forms. Of course, you will tinker with the output to your satisfaction. ](assets/introduction.gif)
+![It is simple. You just provide us the source forms and leave everything to us. We will provide you beautiful adaptive forms. Of course, you will tinker with the output to your satisfaction. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Onboarding {#onboarding}
 
@@ -45,13 +45,9 @@ Last Modified Date: 2018-11-21T07:11:53.395-0500
 Sounds like it should come before workflow. If it must come after w/f then elaborate in title what is being overboarded. Gerund.
 -->
 
-The service is available for free to AEM Forms 6.4 and later On-Premise term customers and Adobe Managed Service enterprise customers. To request access to the service for your organization, send an email to [afc-beta@adobe.com](mailto:afc-beta@adobe.com) with the following details:
+The service is available for free to AEM  6.5 Forms On-Premise term customers and Adobe Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service.
 
-* Name of your organization or business unit.  
-* Name, email address, and designation of an AEM administrator. Create an Adobe ID with similar email address.  
-* Geographic region and country of the administrator and other users. For example, EMEA, APAC, U.S.A.
-
-Adobe will enable access for your organization, provide required privileges to the administrator, and a link to Adobe I/O. The administrator can configure and connect your local AEM instance with Automated Forms Conversion service running on Adobe Cloud. See [integrate the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md) for details.
+Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can configure and connect your local AEM instance with Automated Forms Conversion service running on Adobe Cloud. See [integrate the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md) for details.
 
 <!--
 Comment Type: annotation
@@ -83,7 +79,7 @@ Last Modified Date: 2018-11-21T09:33:33.003-0500
 
 -->
 
-The service converts only English-language forms to adaptive forms. You can translate the output adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+The service can convert only English-language forms to adaptive forms. You can translate the generated adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 The service supports PDF forms created with any version of AEM Forms or Adobe LiveCycle, going all the way back to AEM 6.0 Forms and Adobe LiveCycle ES3. The service also supports forms created with Adobe Acrobat.
 
@@ -128,7 +124,7 @@ Last Modified Date: 2018-11-21T07:17:59.738-0500
 Remove parenthetical content. These must already be covered below in detailed steps. From overview of this H1, no need to mention all details.
 -->
 
-![Workflow](assets/workflow.png)
+![Workflow](assets/conversion-workflow.png)
 
 ### 1. Set up the environment {#set-up-the-environment}
 
@@ -145,18 +141,16 @@ Last Modified Date: 2018-11-21T08:57:03.211-0500
 </ul>
 -->
 
-Automated Forms Conversion service runs on Adobe Cloud. [Configure your local AEM Instance and Adobe I/O account](configure-the-automated-forms-conversion-service.md) to connect to the conversion service running on Adobe Cloud.
+Automated Forms Conversion service runs on Adobe Cloud. [Configure Adobe I/O account of your organization and connect your local AEM instance](configure-the-automated-forms-conversion-service.md) to the conversion service running on Adobe Cloud. You can use the service to convert a PDF form to an adaptive form only after creating a successful connection between your local AEM instance and Automated Forms Conversion service running on Adobe Cloud.
 
+### 2. Convert PDF forms to adaptive forms {#use-the-conversion-service}
 
+After your AEM Forms environment is configured, to convert your PDF forms to adaptive forms, [upload PDF forms](convert-existing-forms-to-adaptive-forms.md) to your AEM instance and [start the conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Before uploading the forms, consider the following:
 
-### 2. Use the conversion service {#use-the-conversion-service}
-
-After your AEM Forms environment is configured, to convert your print forms to adaptive forms, [upload source forms](convert-existing-forms-to-adaptive-forms.md) to your AEM instance and [start the conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Before uploading the forms, consider the following:
-
-* Do not upload the protected forms. The service does not convert password-protected and encrypted forms.
+* Do not upload the secured forms. The service does not convert password-protected and encrypted forms.
 * Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.  
-* Do not upload source forms with spaces in the filename.  
-* Make the suggested changes in source forms described in the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) article.
+* Do not upload PDF forms with spaces in the filename.  
+* Make the suggested changes in PDF forms described in the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) article.
 * Read the [Known issues](known-issues.md) article to avoid pitfalls.
 
 <!--
