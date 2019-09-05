@@ -52,8 +52,9 @@ Adobe enables access for your organization and provide required privileges to th
 
 You require the following to use the Automated Forms Conversion Service:
 
+* Automated Forms Conversion service is enabled for your organization
 * An Adobe ID account with administrator privileges for the conversion service
-* An up and running AEM 6.5 author instance with AEM 6.5 Service Pack 1 installed.  
+* An up and running AEM 6.5 author instance with AEM 6.5 Service Pack 1 installed
 * An AEM user (on your AEM instance) which is member of forms-user group
 
 <!--
@@ -68,21 +69,21 @@ Comment Type: draft
 
 ## Set up the environment {#setuptheservice}
 
-Before using the service, prepare your AEM author instance to connect to connect to the service running on Adobe Cloud. Perform the following steps in the listed sequence to prepare your instance for the service:
+Before using the service, prepare your AEM author instance to connect to the service running on Adobe Cloud. Perform the following steps in the listed sequence to prepare your instance for the service:
 
-1. [Download and install AEM 6.5 quickstart](#aemquickstart)
+1. [Download and install AEM 6.5](#aemquickstart)
 1. [Download and install AEM 6.5 Service Pack 1](#servicepack)  
 1. [Download and install AEM Forms add-on package](#downloadaemformsaddon)
 
-### Download and install AEM 6.5 quickstart {#aemquickstart}
+### Download and install AEM 6.5 {#aemquickstart}
 
 Automated Forms Conversion service runs on AEM 6.5 author instance. You require AEM 6.5 to set up an AEM 6.5 author instance. If you do not have AEM 6.5 up and running, download it from the following locations:
 
-* If you are an existing AEM customer, download AEM 6.5 quickstart from [Adobe Licensing website](http://licensing.adobe.com) or from [Adobe support website](https://daycare.day.com/home/products/cq_wcm.html).
+* If you are an existing AEM customer, download AEM 6.5  from [Adobe Licensing website](http://licensing.adobe.com) or from [Adobe support website](https://daycare.day.com/home/products/cq_wcm.html).
 
-* If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request the quickstart.
+* If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
 
-After you download the quickstart, for instructions to set up an AEM 6.5 author instance, see [deploying and maintaining](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+After you download AEM 6.5, for instructions to set up an AEM 6.5 author instance, see [deploying and maintaining](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### Download and install AEM 6.5 Service Pack 1 {#servicepack}
 
@@ -100,7 +101,11 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 
 Before you proceed to configure the service and connect your local instance with the service running on Adobe Cloud, learn about the personas and privileges required to connect to the service. The service uses two different types of personas, administrators and developers:
 
-* **Administrators**: Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect to Automated Forms Conversion service running on Adobe Cloud. When an administrator is provisioned for an organization, the administrator receives an email with title **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. If you are an administrator, check your mailbox for email with aforementioned title and proceed to [grant access to developers of your organization](#adduseranddevs).
+|   |   |
+|---|---|
+|**Administrators**: Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect to Automated Forms Conversion service running on Adobe Cloud. When an administrator is provisioned for an organization, the administrator receives an email with title **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. If you are an administrator, check your mailbox for email with aforementioned title and proceed to [grant access to developers of your organization](#adduseranddevs).   |[](assets/admin-console-adobe-io-access-granted.png) |
+|  **Developers**: A developer connects a local AEM Forms author instance to Automated Forms Conversion service running on Adobe Cloud. When an administrator grants rights to a developer to connect to Automated Forms Conversion service, an email with title You now have developer access to manage Adobe API integrations for your organization is sent to the developer. If you are a developer, check your mailbox for email with aforementioned title and proceed to [Connect your local AEM instance to Automated Forms Conversion service on Adobe Cloud.](#connectafcadobeio)  |[](assets/email-developer-access.png)|  
+
 
 ### (For administrators only) Grant access to developers of your organization {#adduseranddevs}
 
