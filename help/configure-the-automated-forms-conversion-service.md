@@ -12,23 +12,23 @@ privatebeta: true
 
 # About this help {#about-this-help}
 
-This Help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This Help is for IT and AEM administrators at your organization.
+This help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This Help is for IT and AEM administrators at your organization.
 
 **IT administrator:** Responsible for IT deployment planning and hardware preparation. Knowledgeable about application servers, network administration, and email server configuration.
 
-**Product administrator: **Responsible for installing, monitoring, maintaining, and troubleshooting AEM Forms environment. AEM Forms administrator works with the IT administrator before installing the AEM software into the corporate network.
+**Product administrator:** Responsible for installing, monitoring, maintaining, and troubleshooting AEM Forms environment. AEM Forms administrator works with the IT administrator before installing the AEM software into the corporate network.
 
 The information provided is based on the assumption that anyone reading this Help is familiar with the following technologies:
 
 * Installing, configuring, and administering Adobe Experience Manager and AEM packages,  
 
-* Using Linux and Microsoft® Windows operating systems,
+* Using Linux and Microsoft Windows operating systems,
 
 * Configuring SMTP mail servers
 
 >[!VIDEO](https://video.tv.adobe.com/v/27725)
 
-*Watch the video or read the article to configure Automated Forms Conversion service*
+***Watch the video or read the article to configure Automated Forms Conversion service**
 
 <!--
 Comment Type: draft
@@ -44,22 +44,17 @@ Comment Type: draft
 
 ## Onboarding{#onboarding}
 
-The service is available for free to AEM 6.5 Forms On-Premise term customers and Adobe-Managed Service enterprise customers. To request access to the service for your organization, send an email to [afc-beta@adobe.com](mailto:afc-beta@adobe.com) with the following details:
+The service is available for free to AEM  6.5 Forms On-Premise term customers and Adobe Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service.
 
-* Name of your organization or business unit.
-* Name, email address, and designation of an AEM administrator. [Create an Adobe ID](https://helpx.adobe.com/manage-account/using/create-update-adobe-id.html) with similar email address.
-* Geographic region and country of the administrator and other users. For example, EMEA, APAC, U.S.A.
-
-Adobe will enable access for your organization and provide required privileges to your administrator. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service.
+Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service.
 
 ## Prerequisites {#prerequisites}
 
 You require the following to use the Automated Forms Conversion Service:
 
-* An Adobe ID account that has administrator privileges for the organization
-* The Automated Forms Conversion service is enabled for your organization
+* An Adobe ID account with administrator privileges for the conversion service
 * An up and running AEM 6.5 author instance with AEM 6.5 Service Pack 1 installed.  
-* AEM user (developer) designated to run the service is member of forms-user group
+* An AEM user (on your AEM instance) which is member of forms-user group
 
 <!--
 Comment Type: draft
@@ -77,29 +72,11 @@ Before using the service, prepare your AEM author instance to connect to connect
 
 1. [Download and install AEM 6.5 quickstart](#aemquickstart)
 1. [Download and install AEM 6.5 Service Pack 1](#servicepack)  
-
 1. [Download and install AEM Forms add-on package](#downloadaemformsaddon)
-1. [Download and install Conversion Manager package](configure-the-automated-forms-conversion-service.md#download-and-install-the-connector-package)
-
->[!NOTE]
->
->If you already have an up and running Automated Forms Conversion service enviornment, to use the latest features of the conversion service, install the AEM 6.5 Service Pack 1, latest AEM Forms add-on package, and latest connector package in the aforementioned order.
-
-<!--
-Comment Type: draft
-
-<p>Before using the service, you connect your AEM Forms instance to the service running on Adobe Cloud. Perform the following steps in the listed sequence to prepare your instance for the service and connect your AEM Forms instance to the service:</p>
-<ul>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html" target="_blank">Download and install AEM Forms add-on package</a></li>
-<li><a href="configure-the-automated-forms-conversion-service.md#download-and-install-the-connector-package" target="_blank">Download and install Conversion Manager package</a></li>
-<li><a data-disable-query="false" href="#configureemailnotification">Configure email notifications and add user to the forms-users group</a></li>
-<li><a href="configure-the-automated-forms-conversion-service.md#configure-the-cloud-service" target="_blank">Configure the cloud service</a></li>
-</ul>
--->
 
 ### Download and install AEM 6.5 quickstart {#aemquickstart}
 
-Automated Forms Conversion service runs on AEM 6.5 author instance. You require AEM 6.5 quickstart to set up an AEM 6.5 author instance. If you do not have AEM quickstart, download it from the following locations:
+Automated Forms Conversion service runs on AEM 6.5 author instance. You require AEM 6.5 to set up an AEM 6.5 author instance. If you do not have AEM 6.5 up and running, download it from the following locations:
 
 * If you are an existing AEM customer, download AEM 6.5 quickstart from [Adobe Licensing website](http://licensing.adobe.com) or from [Adobe support website](https://daycare.day.com/home/products/cq_wcm.html).
 
@@ -113,96 +90,17 @@ Download and install AEM Service Pack 1 (6.5.1.0). For detailed instructions see
 
 ### Download and install AEM Forms add-on package  {#downloadaemformsaddon}
 
-An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service:
+An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service. For detailed instructions, see [Install and configure data capture capabilities.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
-1. Log in to [Adobe Prerelease](https://www.adobeprerelease.com/) site. Open the **My Programs **tab. Click view program for the **AEM - Automated Forms Conversion Service Beta** program. On the AEM - Automated Forms Conversion Service Beta page, click the **Download Builds** option. From the Download Builds section, download the **AEM Forms Add-on Package**.
-
-   <!--
-   Comment Type: draft
-
-   <p>Download the AEM 6.5 Forms add-on package from the <a href="https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html">AEM Forms Releases</a> page or from the <strong>Download Builds</strong> section on the <a href="https://www.adobeprerelease.com/" target="_blank">prerelease website</a>. The conversion service supports only Microsoft Windows and Linux operating systems. Do not download or install the add-on package for any other operating system.</p>
-   -->
-
-1. After you download the package, log in to AEM instance as an administrator and open the [Package Manager](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html). The default URL is [http://&lt;server&gt;:&lt;port&gt;/crx/packmgr/index.jsp](http://%3Cserver%3E:4502/crx/packmgr/index.jsp).
-
-   >[!CAUTION]
-   >
-   >Use your local AEM credentials to login to AEM instance. Do not use Adobe ID to login to AEM instance.
-
-1. Click **Upload Package**, select the AEM Forms add-on package, and click **Upload**. After the package is uploaded, click package name, and click **Install**. The package is installed.
-
-   >[!CAUTION]
-   >
-   >After the package is installed, you are prompted to restart the AEM instance. **Do not immediately restart the server.** Before stopping the AEM Forms server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the [AEM-Installation-Directory]/crx-quickstart/logs/error.log file and the log is stable.
-
-1. Configure Boot Delegation for RSA/BouncyCastle libraries:
-
-    1. Stop the AEM instance. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing.
-
-       If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\.
-    1. Add the following properties to the sling.properties file:
-
-       ```
-       sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
-       sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
-       ```
-
-    1. Save and close the file.
-    1. Start the AEM instance.
-
-       <!--    
-       Comment Type: draft    
-    
-       <li>Step text</li>    
-       -->
-
-   <!--
-   Comment Type: draft
-
-   <li>Step text</li>
-   -->
-
-### Download and install the Connector package  {#download-and-install-the-connector-package}
-
-The connector package allows you to connect your AEM instance with conversion service running on Adobe Cloud. It also provides the ability to create cloud configurations for the service and Review and Correct editor. Perform the following steps to download and install the package:
-
-1. Log in to [Adobe Prerelease](https://www.adobeprerelease.com/) site. Open the **My Programs **tab. Click view program for the **AEM - Automated Forms Conversion Service Beta** program. On the AEM - Automated Forms Conversion Service Beta page, click the **Download Builds** option. From the Download Builds section, download the **AEM Automated Forms Conversion Service - Connector Package**.
-1. Log in to AEM instance as an administrator and open the Package Manager. The default URL is [http://&lt;server&gt;:&lt;port&gt;/crx/packmgr/index.jsp](http://%3Cserver%3E:4502/crx/packmgr/index.jsp).
-1. Click **Upload Package**, select the AEM Forms Automated Forms Conversion service package, and click **Upload**. After the package is uploaded, click package name, and click **Install**. The package is installed.
-
-   >[!NOTE]
-   >
-   >If you already have a previous version of the connector package installed on your AEM author instance, do not uninstall it. Keep all the previous versions of the package installed and install the new version of package on top of previous versions. Uninstalling the connector package breaks the connection between local AEM author instance and Automated Forms Conversion service. If you uninstall the connector package by mistake, install the new connector package, delete the old IMS configuration, and [re-connect your local AEM author instance to Automated Forms Conversion service](#connectafcadobeio).
-
-1. Restart your AEM instance.
-
-   <!--
-   Comment Type: draft
-
-   <li>Step text</li>
-   -->
-
-<!--
-Comment Type: draft
-
-<ol>
-<li><p>Log in to AEM instance as an administrator and open the package share. The default URL of the package share is <a>http://[server]:[port]/crx/packageshare</a>.</p> </li>
-<li><p>In package share, search <strong>AEM Forms <strong>Conversion Manager package</strong></strong>, click the package applicable to your AEM Forms instance, and click <strong>Download</strong>. Read and accept the license agreement and click <strong>OK</strong>. The download starts.</p> </li>
-<li><p>After the download completes, click <strong>Downloaded</strong>. You are redirected to package manager. In the package manager, search the downloaded package, and click <strong>Install</strong>. </p> <p>After the package is successfully installed, the <strong>Start Automated Form Conversion</strong> option becomes visible in Forms & Documents UI. Do not start the conversion yet. </p> </li>
-<draft-comment type="draft">
-<li>Step text</li>
-</draft-comment>
-<draft-comment type="draft">
-<li>Step text</li>
-</draft-comment>
-</ol>
--->
+>[!NOTE]
+> Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
+>
 
 ## Configure the service {#configure-the-service}
 
 Before you proceed to configure the service and connect your local instance with the service running on Adobe Cloud, learn about the personas and privileges required to connect to the service. The service uses two different types of personas, administrators and developers:
 
-* **Administrators**: Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect to Automated Forms Conversion service running on Adobe Cloud. When an administrator is provisioned for an organization, the administrator receives an email with title ****[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']****. If you are an administrator, check your mailbox for email with aforementioned title and proceed to [grant access to developers of your organization](#adduseranddevs).
+* **Administrators**: Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect to Automated Forms Conversion service running on Adobe Cloud. When an administrator is provisioned for an organization, the administrator receives an email with title **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. If you are an administrator, check your mailbox for email with aforementioned title and proceed to [grant access to developers of your organization](#adduseranddevs).
 
 ### (For administrators only) Grant access to developers of your organization {#adduseranddevs}
 
@@ -214,11 +112,11 @@ Developers are members of your organization designated to run the conversion ser
 
    >[!CAUTION]
    >
-   >Use **Adobe ID **of administrator provisioned to use Automated Forms Conversion service to login. Do not any other ID or Federated ID to login.
+   >Use **Adobe ID** of administrator provisioned to use Automated Forms Conversion service to login. Do not any other ID or Federated ID to login.
 
    ![Click the Automated Forms Converion option under Products.  ](assets/create-profile-open-automated-forms-conversion-service-adminconsole.png)
 
-1. Click** New Profile** in the **Products **tab.
+1. Click **New Profile** in the **Products** tab.
 
    ![Click the New Profile option. ](assets/create-new-profile.png)
 
@@ -234,30 +132,24 @@ Developers are members of your organization designated to run the conversion ser
 
 After an administrator provides you developer access, you can connect your local AEM Forms instance to Automated Forms conversion service running on Adobe Cloud. Perform the following steps in the listed sequence to connect your AEM Forms instance to the service:
 
-* [Configure email notifications and add user to the forms-users group](configure-the-automated-forms-conversion-service.md#configureemailnotification)
+* [Configure email notifications](configure-the-automated-forms-conversion-service.md#configureemailnotification)
+* [Add user to the forms-users group](#adduserstousergroup)
 * [Obtain public certificates](#obtainpubliccertificates)
 * [Create Adobe I/O integration](#createintegration)
 * [Configure the cloud service](configure-the-automated-forms-conversion-service.md#configure-the-cloud-service)
 
-#### Configure email notification and add user to the forms-users group {#configureemailnotification}
+#### Configure email notification {#configureemailnotification}
 
-Configure the ****[!UICONTROL Day CQ Mail Service]**.** Automated Forms conversion service uses the Day CQ mail service to send email notifications. These email notifications contain information about successful or failed conversions. If you choose not receive notification, skip to configure the Day CQ Mail Service.
-
-Perform the following steps to configure the Day CQ Mail Service:
-
-<!--
-Comment Type: annotation
-Last Modified By: khsingh
-Last Modified Date: 2018-12-17T02:00:03.194-0500
-Day CQ Mail Service: - After beta, change the email link to /content/help/en/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService form users - After beta, change the email link to /content/help/en/experience-manager/6-5/forms/using/forms-groups-privileges-tasks.html
--->
+Automated Forms Conversion service uses the Day CQ mail service to send email notifications. These email notifications contain information about successful or failed conversions. If you choose not receive notification, skip these steps. Perform the following steps to configure the Day CQ Mail Service:
 
 1. Go to AEM configuration manager at `http://localhost:4502/system/console/configMgr`
-1. Open the Day CQ Mail Service configuration. Specify a value for the ****[!UICONTROL SMTP server host name]****, ****[!UICONTROL SMTP server port]**,** and ****[!UICONTROL From address]** **fields. Click ****[!UICONTROL Save]****.
+1. Open the Day CQ Mail Service configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL From address]** fields. Click **[!UICONTROL Save]**.
 
-   You can contact email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in from field. For example, notification@example.com or donotreply@example.com
+   You can contact ypuur email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in the from field. For example, notification@example.com or donotreply@example.com
 
-1. Open the ****[!UICONTROL Day CQ Link Externalizer]**** configuration. In the ****[!UICONTROL Domains]****field, specify the actual host name or IP address and port number for local, author, and publish instances. Click ****[!UICONTROL Save]****.
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
+
+#### Add user to the forms-users group (#adduserstousergroup)
 
 Specify an email address in the profile of the AEM user designated to run the service. Ensure that the user is the member of the [forms user](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) group. Emails are sent to the email address of user running the conversion. To specify an email address for the user and add user to the forms user group:
 
@@ -281,17 +173,17 @@ Specify an email address in the profile of the AEM user designated to run the se
 
 A public certificate allows you to authenticate your profile on Adobe I/O.
 
-1. Log in to your AEM Forms author instance. Navigate to **[!UICONTROL **Tools **> **Security** > **Adobe IMS Configurations**]****. **Tap ****[!UICONTROL Create]**. **The ****[!UICONTROL Adobe IMS Technical Account Configuration]**** page appears.
+1. Log in to your AEM Forms author instance. Navigate to **[!UICONTROL **Tools **> **Security** > **Adobe IMS Configurations**]**. **Tap **[!UICONTROL Create]**. **The **[!UICONTROL Adobe IMS Technical Account Configuration]** page appears.
 
    ![The Adobe IMS Technical Account Configuration page](assets/adobe-ims-technical-account-configuration.png)
 
 1. Select **[!UICONTROL **Automated Forms Conversion Service**]**in Cloud Solution.  
 
-1. Select the ****[!UICONTROL Create new certificate]**** check box and specify an alias. The alias serves as name of the dialog.
+1. Select the **[!UICONTROL Create new certificate]** check box and specify an alias. The alias serves as name of the dialog.
 
-   Tap ****[!UICONTROL Create certificate]****. A dialog appears. Click ****[!UICONTROL OK]****. The certificate is created.
+   Tap **[!UICONTROL Create certificate]**. A dialog appears. Click **[!UICONTROL OK]**. The certificate is created.
 
-1. Tap ****[!UICONTROL Download Public Key]** **and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Tap ****[!UICONTROL Next]****.  
+1. Tap **[!UICONTROL Download Public Key]** **and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Tap **[!UICONTROL Next]**.  
 
 1. Specify the below:
 
@@ -323,8 +215,8 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
    >Use your developer account that your administrator has provisioned to login to Adobe I/O console.
 
 1. Tap **[!UICONTROL **View** **Integrations**]**. A screen with all the available integrations appears.
-1. Select your organization from the drop-down under ****[!UICONTROL Integrations]****. Tap ****[!UICONTROL New Integration]****, select ****[!UICONTROL Access an API]****, and tap ****[!UICONTROL Continue]****.
-1. Select **[!UICONTROL **Experience Cloud** > **Automated Forms Conversion**]** and tap ****[!UICONTROL Continue]****. If the Automated Forms Conversion option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. If you do not know your organization, contact your administrator.
+1. Select your organization from the drop-down under **[!UICONTROL Integrations]**. Tap **[!UICONTROL New Integration]**, select **[!UICONTROL Access an API]**, and tap **[!UICONTROL Continue]**.
+1. Select **[!UICONTROL **Experience Cloud** > **Automated Forms Conversion**]** and tap **[!UICONTROL Continue]**. If the Automated Forms Conversion option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. If you do not know your organization, contact your administrator.
 
    ![Select Automated Forms Conversion](assets/create-new-integration.png)
 
@@ -365,7 +257,7 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
 Create a cloud service configuration to connect your AEM instance to the conversion service. It also allows you to specify a template, theme, and form fragments for a conversion. You can create multiple cloud service configurations separate for each set of forms. For example, you can have a separate configuration for sales department forms and a separate one for customer support forms. Perform the following steps to create a cloud service configuration:
 
 1. On your AEM Forms instance, tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
-1. Tap the **[!UICONTROL **Global**]**folder and tap ****[!UICONTROL Create]****. The page to create Automated Forms Conversion configuration appears. The configuration is created in the Global folder. You can also create the configuration in a different folder that already exists or create a new folder for your configurations.
+1. Tap the **[!UICONTROL **Global**]**folder and tap **[!UICONTROL Create]**. The page to create Automated Forms Conversion configuration appears. The configuration is created in the Global folder. You can also create the configuration in a different folder that already exists or create a new folder for your configurations.
 
 1. On the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following fields and tap **Next**.
 
@@ -394,13 +286,11 @@ Create a cloud service configuration to connect your AEM instance to the convers
 
 ```css
    {
+      "Type": "Principal",
 
-                  "Type": "Principal",
+      "Amount": "10.00",
 
-                  "Amount": "10.00",
-
-                  "currency": "USD"
-
+      "currency": "USD"
      }
 ```
 
