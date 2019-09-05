@@ -28,7 +28,7 @@ The information provided is based on the assumption that anyone reading this Hel
 
 >[!VIDEO](https://video.tv.adobe.com/v/27725)
 
-*Watch the video or read the article to configure Automated Forms Conversion service*
+***Watch the video or read the article to configure Automated Forms Conversion service**
 
 <!--
 Comment Type: draft
@@ -148,7 +148,9 @@ Automated Forms Conversion service uses the Day CQ mail service to send email no
    You can contact ypuur email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in the from field. For example, notification@example.com or donotreply@example.com
 
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
+
 #### Add user to the forms-users group (#adduserstousergroup)
+
 Specify an email address in the profile of the AEM user designated to run the service. Ensure that the user is the member of the [forms user](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) group. Emails are sent to the email address of user running the conversion. To specify an email address for the user and add user to the forms user group:
 
 1. Log in to your AEM Forms author instance as an AEM administrator. Tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Security]** > **[!UICONTROL Users]**.
@@ -284,13 +286,11 @@ Create a cloud service configuration to connect your AEM instance to the convers
 
 ```css
    {
+      "Type": "Principal",
 
-                  "Type": "Principal",
+      "Amount": "10.00",
 
-                  "Amount": "10.00",
-
-                  "currency": "USD"
-
+      "currency": "USD"
      }
 ```
 

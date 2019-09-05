@@ -141,7 +141,6 @@ privatebeta: true
   <li>Save and Close the file. <br /> </li>
   <li>Start the AEM instance<br /> </li>
  </ol>
- 
+
   **How to automatically change casing of all the text of an adaptive form?**
   <p>You can use adaptive from themes or style editor to change casing of a field of adaptive form. For example, you can open the theme editor and set value of Case property of all the text of form to uppercase, lowercase, or camelCase. You can also use the CSS Override option in theme editor to create different types of styles.</p>
-
