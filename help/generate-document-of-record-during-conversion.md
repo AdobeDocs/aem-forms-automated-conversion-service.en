@@ -15,26 +15,30 @@ The [Document of Record](https://helpx.adobe.com/experience-manager/6-5/forms/us
 
 The configuration steps to generate a Document of Record can vary based on the input PDF form. This article describes the recommended paths to generate a Document of Record based on the input PDF form.
 
-```<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
-   <td width="30%" style="font-weight:bold">Input Form</td> 
-   <td style="font-weight:bold">Methods to generate Document of Record</td> 
+   <th><strong>Input Form</strong></th> 
+   <th><strong>Methods to generate Document of Record</strong></th> 
   </tr> 
   <tr> 
-   <td>Non-interactive PDF forms</td> 
-   <td><ul><li><a href="#generate-document-of-record-using-cloud-configuration">Generate Document of Record using Automated Forms Conversion service cloud configuration</a></li>
-   <li><a href="#edit-adptive-form-properties-generate-document-of-record">Edit adaptive form properties after conversion to generate Document of Record</a></li></ul>
-   </td> 
-  </tr> 
+   <td><p>Non-interactive PDF forms</p></td> 
+   <td> 
+    <ul> 
+     <li>Generate Document of Record using Automated Forms Conversion service cloud configuration</li> 
+     <li>Edit adaptive form properties after conversion to generate Document of Record</li> 
+    </ul> </td> 
+  </tr>
   <tr> 
-   <td>Acro Forms or XFA-based PDF forms</td> 
-   <td><ul><li><a href="#use-input-form-as-template-to-generate-document-of-record">Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration</a></li>
-   <li><a href="#edit-adaptive-form-properties-to-generate-document-of-record">Edit adaptive form properties after conversion to generate Document of Record using default or any other template</a></li></ul></td> 
-  </tr>   
+   <td><p>Acro Forms or XFA-based PDF forms</p></td> 
+   <td> 
+    <ul> 
+     <li>Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration</li> 
+     <li>Edit adaptive form properties after conversion to generate Document of Record using the default template</li> 
+    </ul> </td> 
+  </tr>    
  </tbody> 
 </table>
-```
 
 The following image illustrates the steps required to generate a Document of record using Automated Forms Conversion service cloud configuration:
 
