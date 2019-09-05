@@ -47,7 +47,7 @@ Sounds like it should come before workflow. If it must come after w/f then elabo
 
 The service is available for free to AEM  6.5 Forms On-Premise term customers and Adobe Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service.
 
-Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can configure and connect your local AEM instance with Automated Forms Conversion service running on Adobe Cloud. See [integrate the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md) for details.
+Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service. See [Configure the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md) for details.
 
 <!--
 Comment Type: annotation
