@@ -131,8 +131,6 @@ privatebeta: true
  **How much time does the service save in comparison to the manual process of planning, creating assets (themes, templates), creating, and publishing an adaptive form?**
  <p>The amount of time depends on the size and complexity of input forms and number of requests. The service intends to significantly reduce time to value by converting PDF Forms to adaptive forms at a much faster pace in comparison to the manual process of converting forms. </p> 
 
-
-
  **What to do if I encounter an error related to RSA libraries? The error message is similar to the message mentioned below:** 
  <p><em>*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]</em></p> 
  <p>The aforementioned error occurs when boot delegation is not configured for RSA/BouncyCastle libraries. Perform the below steps to resolve the issue:</p> 
@@ -144,3 +142,6 @@ privatebeta: true
   <li>Start the AEM instance<br /> </li>
  </ol>
  
+  **How to automatically change casing of all the text of an adaptive form?**
+  <p>You can use adaptive from themes or style editor to change casing of a field of adaptive form. For example, you can open the theme editor and set value of Case property of all the text of form to uppercase, lowercase, or camelCase. You can also use the CSS Override option in theme editor to create different types of styles.</p>
+
