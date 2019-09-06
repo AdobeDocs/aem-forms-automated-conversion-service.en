@@ -127,28 +127,36 @@ The meta-model supports the following JSON schema common properties for adaptive
   <tr> 
    <td><p>title</p></td> 
    <td> 
-    <p>The text mentioned within the title property in a meta-model serves as a search keyword to perform actions on the generated adaptive form fields. For example, modifying the label of an adaptive form field. For more information, see <strong>Modify the label of a form field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</p> </td> 
+    <p>The text mentioned within the title property in a meta-model serves as a search keyword to perform actions on the generated adaptive form fields. For example, modifying the label of an adaptive form field. For more information, see <strong>Modify the label of a form field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
   </tr>
-  <tr> 
-   <td><p>Acro Forms or XFA-based PDF forms</p></td> 
+  <td><p>description</p></td> 
    <td> 
+    <p>The description property sets the Help text for the generated adaptive form field. For more information, see <strong>Add Help text to a form field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
+  </tr>
+  <td><p>type</p></td> 
+   <td> 
+    <p>The type property defines the data type for the generated adaptive form field. The possible values for the title property include:</p>
     <ul> 
-     <li>Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration</li> 
-     <li>Edit adaptive form properties after conversion to generate Document of Record using the default template</li> 
-    </ul> </td> 
-  </tr>    
+     <li>string: Generates an adaptive form field of text data type.</li> 
+     <li>number: Generates an adaptive form field of numeric data type.</li>
+     <li>integer: Generates an adaptive form field of numeric data type with sub-type set to integer.</li>
+     <li>boolean: Generates a switch adaptive form component.</li>
+     </ul><p>For more information on using the type property in a meta-model, see <strong>Modify the type of a form field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p></td> 
+  </tr>
+  <td><p>pattern</p></td> 
+   <td> 
+    <p>The pattern property restricts the value for the generated adaptive form field based on a regular expression. For example, the following code in the meta-model restricts the value for the generated adaptive form field to ten digits:<br>"pattern": "/\\d{10}/"<br>Similarly, the following code in the meta-model restricts the value of a field to a specific date format.<br> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
+  </tr>
+  <td><p>format</p></td> 
+   <td> 
+    <p>The format property restricts the value for the generated adaptive form field based on a named pattern instead of a regular expression. The possible values for the format property include:<ul><li>email: Generates an email adaptive form component.</li><li>hostname: Generates a textbox adaptive form component.</li></ul>For more information on using the format property in a meta-model, see <strong>Modify the format of a form field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
+  </tr>
+  <td><p>enum and enumNames</p></td> 
+   <td> 
+    <p>The enum and enumNames properties restrict the values of drop-down, check box, or radio button fields to a fixed set. Values listed in enumNames are displayed on the user interface. The values listed using the enum property are used for calculation.<br>For more information, see <strong>Convert a form field to multiple-choice check boxes in the adaptive form</strong>, <strong>Convert a text field to drop-down list in the adaptive form</strong>, and <strong>Add additional options to the drop-down list</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
+  </tr>
  </tbody> 
 </table>
-
-|Property Name|Description|
-|--- |--- |
-|title|The text mentioned within the title property in a meta-model serves as a search keyword to perform actions on the generated adaptive form fields. For example, modifying the label of an adaptive form field. For more information, see Modify the label of a form field in Custom meta-model examples.|
-|description|The description property sets the Help text for the generated adaptive form field. For more information, see Add Help text to a form field in Custom meta-model examples.|
-|type|The type property defines the data type for the generated adaptive form field. The possible values for the title property include: `string: Generates an adaptive form field of text data type.` `number: Generates an adaptive form field of numeric data type.`  `integer: Generates an adaptive form field of numeric data type with sub-type set to integer.` ` boolean: Generates a switch adaptive form component.` For more information on using the type property in a meta-model, see Modify the type of a form field in Custom meta-model examples. |
-|pattern|The pattern property restricts the value for the generated adaptive form field based on a regular expression. For example, the following code in the meta-model restricts the value for the generated adaptive form field to ten digits: "pattern": "/\\d{10}/" Similarly, the following code in the meta-model restricts the value of a field to a specific date format.  "pattern": "date{DD MMMM, YYYY}",|
-|format|The format property restricts the value for the generated adaptive form field based on a named pattern instead of a regular expression. The possible values for the format property include: `email: Generates an email adaptive form component.` `hostname: Generates a textbox adaptive form component.` For more information on using the format property in a meta-model, see Modify the format of a form field in Custom meta-model examples. If you define both format and pattern properties for an adaptive form field, the pattern takes precedence over the format property.|
-|enum and enumNames|The enum and enumNames properties restrict the values of drop-down, check box, or radio button fields to a fixed set. Values listed in enumNames are displayed on the user interface. The values listed using the enum property are used for calculation. For more information, see Convert a form field to multiple-choice check boxes in the adaptive form, Convert a text field to drop-down list in the adaptive form, and Add additional options to the drop-down list in Custom meta-model examples.|
-
 
 ### Keyword-based search to apply properties to generated adaptive form fields {#keywordsearch}
 
@@ -171,13 +179,37 @@ In this example, the conversion service uses the text within **aem:affKeyword** 
 
 You can use the **aem:afProperties** property in the meta-model to define following additional properties for adaptive forms fields generated using Automated Forms Conversion service:
 
-|Property Name|Description|
-|--- |--- |
-|multiline|The multiline property converts a source form field into a multi-line field in the adaptive form after conversion. For more information, see Convert a string field to a multi-line field in Custom meta-model examples.|
-|mandatory|The mandatory property sets the input for an adaptive form field after conversion as mandatory.  For more information, see Add validations to adaptive form fields in Custom meta-model examples.|
-|jcr:title|The jcr:title property, with the title JSON schema property, enables you to modify the label of an adaptive form field after conversion. For more information, see Modify the label of a form field in Custom meta-model examples. See Creating adaptive forms using JSON schema for information on more properties that you can apply to adaptive form fields using JSON schema.|
-|sling:resourceType and guideNodeClass|sling:resourceType and guideNodeClass properties enable you to map a form field to a corresponding adaptive form component. For more information, see Convert a form field to multiple-choice check boxes in the adaptive form and Convert a text field to drop-down list in the adaptive form in Custom meta-model examples.|
-|validatePictureClause|The validatePictureClause property sets a validation on the format allowed in the adaptive form field after conversion. For more information, see Add validations to adaptive form fields in Custom meta-model examples.|
+<table> 
+ <tbody> 
+  <tr> 
+   <th><strong>Property Name</strong></th> 
+   <th><strong>Description</strong></th> 
+  </tr> 
+  <tr> 
+   <td><p>multiline</p></td> 
+   <td> 
+    <p>The multiline property converts a source form field into a multi-line field in the adaptive form after conversion. For more information, see <strong>Convert a string field to a multi-line field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
+  </tr>
+  <td><p>mandatory</p></td> 
+   <td> 
+    <p>The mandatory property sets the input for an adaptive form field after conversion as mandatory.<br>For more information, see <strong>Add validations to adaptive form fields</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p>
+    </td> 
+  </tr>
+  <td><p>jcr:title</p></td> 
+   <td> 
+    <p>The jcr:title property, with the title JSON schema property, enables you to modify the label of an adaptive form field after conversion.<br>For more information, see <strong>Modify the label of a form field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a><br>See <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Creating adaptive forms using JSON schema</a> for information on more properties that you can apply to adaptive form fields using JSON schema.</p>
+    <p></p></td> 
+  </tr>
+  <td><p>sling:resourceType and guideNodeClass</p></td> 
+   <td> 
+    <p>sling:resourceType and guideNodeClass properties enable you to map a form field to a corresponding adaptive form component.<br>For more information, see <strong>Convert a form field to multiple-choice check boxes in the adaptive form</strong> and <strong>Convert a text field to drop-down list in the adaptive form</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
+  </tr>
+  <td><p>validatePictureClause</p></td> 
+   <td> 
+    <p>The validatePictureClause property sets a validation on the format allowed in the adaptive form field after conversion.<br>For more information, see <strong>Add validations to adaptive form fields</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</p> </td> 
+  </tr>
+ </tbody> 
+</table>
 
 ## Modify adaptive form fields using custom meta-model {#modify-adaptive-form-fields-using-custom-meta-model}
 
@@ -219,7 +251,7 @@ Some common examples of using a custom meta-model to modify adaptive form field 
 
 **Example:** Modify the Bank account number label in the form to Custom account Number in the adaptive form after conversion.
 
-In this custom meta-model, the conversion service uses the **title** property as a search keyword. After retrieving the **Bank account number** text in the form, the conversion service replaces the text with the **Customer account number** string mentioned with the **jcr:title **property in the **aem:afProperties **section.
+In this custom meta-model, the conversion service uses the **title** property as a search keyword. After retrieving the **Bank account number** text in the form, the conversion service replaces the text with the **Customer account number** string mentioned with the **jcr:title** property in the **aem:afProperties** section.
 
 ```
 {
@@ -237,7 +269,7 @@ In this custom meta-model, the conversion service uses the **title** property as
 
 **Example**: Modify the **Bank account number** field of text type in the form before conversion to a number type field in the adaptive form after conversion.
 
-In this custom meta-model, the conversion service uses the text within **aem:affKeyword **as a search keyword. After retrieving the **Bank account number** text in the form, the conversion service converts the field into a number type using the **type** property.
+In this custom meta-model, the conversion service uses the text within **aem:affKeyword** as a search keyword. After retrieving the **Bank account number** text in the form, the conversion service converts the field into a number type using the **type** property.
 
 ```
 {
@@ -252,7 +284,7 @@ In this custom meta-model, the conversion service uses the text within **aem:aff
 
 **Example**: Add Help text to the **Bank account number** field of adaptive form.
 
-In this custom meta-model, the conversion service uses the text within **aem:affKeyword **as a search keyword. After retrieving the **Bank account number** text in the form, the conversion service adds the Help text to the adaptive form field using the **description** property.
+In this custom meta-model, the conversion service uses the text within **aem:affKeyword** as a search keyword. After retrieving the **Bank account number** text in the form, the conversion service adds the Help text to the adaptive form field using the **description** property.
 
 ```
 {
@@ -268,7 +300,7 @@ In this custom meta-model, the conversion service uses the text within **aem:aff
 
 **Example**: Convert the **Country** field of string type in the form before conversion to check boxes in the adaptive form after conversion.
 
-In this custom meta-model, the conversion service uses text within **aem:affKeyword **as a search keyword. After retrieving the **Country **text in the form, the conversion service converts the field into following check boxes using the **enum** property:
+In this custom meta-model, the conversion service uses text within **aem:affKeyword** as a search keyword. After retrieving the **Country** text in the form, the conversion service converts the field into following check boxes using the **enum** property:
 
 * India
 * England
@@ -302,7 +334,7 @@ In this custom meta-model, the conversion service uses text within **aem:affKeyw
 
 **Example**: Modify the format of the **Email Address** field to an email format.
 
-In this custom meta-model, the conversion service uses text within **aem:affKeyword **as a search keyword. After retrieving the **Email Address** text in the form, the conversion service converts the field into an email format using the **format** property.
+In this custom meta-model, the conversion service uses text within **aem:affKeyword** as a search keyword. After retrieving the **Email Address** text in the form, the conversion service converts the field into an email format using the **format** property.
 
 ```
 {
@@ -318,7 +350,7 @@ In this custom meta-model, the conversion service uses text within **aem:affKeyw
 
 **Example 1:** Add a validation to the **Postal Code** field of the adaptive form.
 
-In this custom meta-model, the conversion service uses text within **aem:affKeyword **as the search keyword. After retrieving the **Postal Code** text in the form, the conversion service adds a validation to the field using the **validatePictureClause** property defined in the **aem:afProperties** section. Based on the validation, the input that you specify for the **Postal Code** field in the adaptive form after conversion must include six characters.
+In this custom meta-model, the conversion service uses text within **aem:affKeyword** as the search keyword. After retrieving the **Postal Code** text in the form, the conversion service adds a validation to the field using the **validatePictureClause** property defined in the **aem:afProperties** section. Based on the validation, the input that you specify for the **Postal Code** field in the adaptive form after conversion must include six characters.
 
 ```
 {
@@ -332,9 +364,9 @@ In this custom meta-model, the conversion service uses text within **aem:affKeyw
 }
 ```
 
-**Example 2: **Add a validation to the **Bank account number** field of the adaptive form.
+**Example 2:** Add a validation to the **Bank account number** field of the adaptive form.
 
-In this custom meta-model, the conversion service uses text within **aem:affKeyword **as the search keyword. After retrieving the **Bank account number** text in the form, the conversion service adds a validation to the field using the **mandatory** property defined in the **aem:afProperties** section. Based on the validation, you must specify a value for the **Bank account number** field before submitting the form after conversion.
+In this custom meta-model, the conversion service uses text within **aem:affKeyword** as the search keyword. After retrieving the **Bank account number** text in the form, the conversion service adds a validation to the field using the **mandatory** property defined in the **aem:afProperties** section. Based on the validation, you must specify a value for the **Bank account number** field before submitting the form after conversion.
 
 ```
 {
@@ -352,7 +384,7 @@ In this custom meta-model, the conversion service uses text within **aem:affKeyw
 
 **Example**: Convert the **Country** field of string type in the form before conversion to drop-down options in the adaptive form after conversion.
 
-In this custom meta-model, the conversion service uses text within **aem:affKeyword **as the search keyword. After retrieving the **Country **text in the form, the conversion service converts the field into following drop-down list options using the **enum** property:
+In this custom meta-model, the conversion service uses text within **aem:affKeyword** as the search keyword. After retrieving the **Country** text in the form, the conversion service converts the field into following drop-down list options using the **enum** property:
 
 * India
 * England
@@ -412,9 +444,9 @@ To add an extra option, update the **enum** property with the new option. In thi
 
 #### Convert a string field to a multi-line field {#convert-a-string-field-to-a-multi-line-field}
 
-**Example 2: **Convert the **Address** field of string type to a multi-line field in the form after conversion.
+**Example:** Convert the **Address** field of string type to a multi-line field in the form after conversion.
 
-In this custom meta-model, the conversion service uses text within **aem:affKeyword **as the search keyword. After retrieving the **Address** text in the form, the service converts the text field to a multi-line field using the **multiline** property defined in the **aem:afProperties** section.
+In this custom meta-model, the conversion service uses text within **aem:affKeyword** as the search keyword. After retrieving the **Address** text in the form, the service converts the text field to a multi-line field using the **multiline** property defined in the **aem:afProperties** section.
 
 ```
 {
