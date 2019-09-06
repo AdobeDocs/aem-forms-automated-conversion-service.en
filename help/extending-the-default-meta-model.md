@@ -94,19 +94,19 @@ A meta-model refers to a JSON schema file that contains entities. All entities i
     }
 ```
 
-In this example, **Event** represents the name of an entity with a value for **id **as **Eventid**. The Event entity includes multiple properties:
+In this example, **Event** represents the name of an entity with a value for **id** as **Eventid**. The Event entity includes multiple properties:
 
 * startDate
 * endDate
 * location
 
-The **allOf **construct in the meta-model enables inheritance among entities.
+The **allOf** construct in the meta-model enables inheritance among entities.
 
 Each property can further include:
 
-* [JSON schema properties](extending-the-default-meta-model.md#jsonschemaproperties)
-* [Keyword-based search to apply properties to generated adaptive form fields](extending-the-default-meta-model.md#keywordsearch)
-* [Additional properties](extending-the-default-meta-model.md#additionalproperties)
+* [JSON schema properties](#jsonschemaproperties)
+* [Keyword-based search to apply properties to generated adaptive form fields](#keywordsearch)
+* [Additional properties](#additionalproperties)
 
 ![Meta-model properties](assets/meta_model_elements.gif)
 
@@ -117,6 +117,28 @@ In this example, the conversion service searches for the phone, telephone, mobil
 ### JSON schema properties for generated adaptive form fields {#jsonschemaproperties}
 
 The meta-model supports the following JSON schema common properties for adaptive form fields generated using the Automated Forms Conversion service:
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><strong>Property Name</strong></th> 
+   <th><strong>Description</strong></th> 
+  </tr> 
+  <tr> 
+   <td><p>title</p></td> 
+   <td> 
+    <p>The text mentioned within the title property in a meta-model serves as a search keyword to perform actions on the generated adaptive form fields. For example, modifying the label of an adaptive form field. For more information, see <strong>Modify the label of a form field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</p> </td> 
+  </tr>
+  <tr> 
+   <td><p>Acro Forms or XFA-based PDF forms</p></td> 
+   <td> 
+    <ul> 
+     <li>Use input form as template to generate Document of Record using Automated Forms Conversion service cloud configuration</li> 
+     <li>Edit adaptive form properties after conversion to generate Document of Record using the default template</li> 
+    </ul> </td> 
+  </tr>    
+ </tbody> 
+</table>
 
 |Property Name|Description|
 |--- |--- |
