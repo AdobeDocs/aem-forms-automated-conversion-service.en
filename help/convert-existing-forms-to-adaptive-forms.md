@@ -1,6 +1,6 @@
 ---
-title: Convert print forms to adaptive forms 
-seo-title: Convert print forms to adaptive forms 
+title: Convert PDF forms to adaptive forms 
+seo-title: Convert PDF forms to adaptive forms 
 description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
 seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
@@ -10,7 +10,7 @@ discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 privatebeta: true
 ---
 
-# Convert print forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
+# Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
 
 AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms. Whether you are using non-interactive PDF forms, Acro Forms, or XFA-based PDF forms, the Automated Forms Conversion service can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information see [Automated Forms Conversion](introduction-to-automated-form-conversion-service.md) service.
 
@@ -18,13 +18,13 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 * [**Configure the conversion service**](configure-the-automated-forms-conversion-service.md)  
 
-* **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms: **Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form(s) during conversion.  
+* **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms:** Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form(s) during conversion.  
 
 * **Prepare the [themes](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) to be applied to converted forms:** Using a theme allows you to apply a consistent style to all the adaptive forms of your organization.
 
 ## Start the conversion process {#start-the-conversion-process}
 
-After you connect your AEM instance with AEM Forms Conversion Service, you can convert your print forms to adaptive forms. Perform the following steps in the listed order to convert the forms:
+After you connect your AEM instance with AEM Forms Conversion Service, you can convert your PDF forms to adaptive forms. Perform the following steps in the listed order to convert the forms:
 
 * [Upload PDF forms to your AEM Forms server](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [Run the conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)

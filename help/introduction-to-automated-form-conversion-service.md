@@ -12,12 +12,12 @@ privatebeta: true
 
 # Introduction to Automated Forms Conversion service{#introduction-to-automated-forms-conversion-service}
 
-Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms. While leveraging the existing investments in PDF Forms, the service also applies appropriate validations to adaptive form fields during conversion. The service helps:
+Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion. The service helps:
 
 * Save manual effort required to convert print forms to adaptive forms
-* Generate reusable adaptive form fragments
-* Generate Document of Record during conversion
 * Applies patterns and appropriate validations during conversion
+* Generate Document of Record during conversion
+* Group commonly occuring fields into reusable form fragments
 * Enables Adobe Analytics during conversion
 
 <!--
@@ -63,7 +63,7 @@ Last Modified Date: 2018-11-21T07:56:03.973-0500
 Froms?!
 -->
 
-## Supported languages and PDF forms {#supported-languages-and-pdf-forms}
+## Supported PDF forms and langugaes {#supported-languages-and-pdf-forms}
 
 <!--
 Comment Type: annotation
@@ -79,11 +79,10 @@ Last Modified Date: 2018-11-21T09:33:33.003-0500
 
 -->
 
+The service supports non-interactive PDF forms, Forms created with Adobe Acrobat known as AcroForms, and XFA-based created using AEM Forms or Adobe LiveCycle.
+
 The service can convert only English-language forms to adaptive forms. You can translate the generated adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
-The service supports PDF forms created with any version of AEM Forms or Adobe LiveCycle, going all the way back to AEM 6.0 Forms and Adobe LiveCycle ES3. The service also supports forms created with Adobe Acrobat.
-
-The service supports non-interactive PDF forms, AcroForms, and XFA-based forms. [AcroForms and XFA-based forms has a limited support](known-issues.md).
 
 <!--
 Comment Type: annotation
@@ -115,7 +114,7 @@ Last Modified Date: 2018-11-21T06:49:26.826-0500
 Need better title. Also, use sentence case.
 -->
 
-Automated Forms Conversion service runs on Adobe Cloud. You connect your AEM instance to the service, upload print forms to your AEM instance, and start the conversion. The complete conversion process is as listed below:
+Automated Forms Conversion service runs on Adobe Cloud. You connect your AEM instance to the service, upload forms to your AEM instance, and start the conversion. The complete conversion process is as listed below:
 
 <!--
 Comment Type: annotation
@@ -141,7 +140,7 @@ Last Modified Date: 2018-11-21T08:57:03.211-0500
 </ul>
 -->
 
-Automated Forms Conversion service runs on Adobe Cloud. [Configure Adobe I/O account of your organization and connect your local AEM instance](configure-the-automated-forms-conversion-service.md) to the conversion service running on Adobe Cloud. You can use the service to convert a PDF form to an adaptive form only after creating a successful connection between your local AEM instance and Automated Forms Conversion service running on Adobe Cloud.
+Automated Forms Conversion service runs on Adobe Cloud. [Configure Adobe I/O account of your organization and connect your local AEM instance](configure-the-automated-forms-conversion-service.md) to the conversion service running on Adobe Cloud.
 
 ### 2. Convert PDF forms to adaptive forms {#use-the-conversion-service}
 
@@ -173,9 +172,9 @@ Comment Type: draft
 
 ### 3. Review converted forms {#review-converted-forms}
 
-Your forms can have complex data capture requirements. Once automated conversion is complete, you can use the [Review and Correct editor](review-correct-ui-edited.md) to review converted form and make necessary updates and generate an enhanced output closer to desired experience. After making required changes, send the form again for the conversion.
+Real world forms can have complex data capture requirements in terms of field layout, naming or implicit suggestions which may not be accurately captured by AI/ML based detection logic. Once automated conversion is complete, you can use the [Review and Correct editor](review-correct-ui-edited.md) to review converted form and make necessary updates and generate an enhanced output closer to desired experience. After making required changes, send the form again for the conversion.
 
-Conversion of a PDF form to an adaptive form could some take time due to multiple factors such as size of input form, complexity of the form, loan on the processing queue of the service. When the conversion is complete, an email notification is sent to configured email address.
+The time taken for automated conversion depends on a variety of factor such as size of input form, complexity of the form, loan on the processing queue of the service. The user is notified of the progress regularly via status indicator on folder / file. When the conversion is complete, an email notification is also sent to configured email address.
 
 <!--
 Comment Type: draft
