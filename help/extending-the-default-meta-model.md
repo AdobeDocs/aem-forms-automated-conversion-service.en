@@ -9,7 +9,7 @@ discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 privatebeta: true
 ---
 
-# Extend the default meta-model{#extend-the-default-meta-model}
+# Extend the default meta-model {#extend-the-default-meta-model}
 
 Automated Forms Conversion service identifies and extracts form objects from source forms. Semantic mapper helps the service to decide how the extracted objects are represented in an adaptive form. For example, a source form can have many different types of representations of a date. The semantic mapper helps map all the representations of date form objects of the source form with date component of the adaptive forms. Semantic mapper also allows the service to pre-configure and apply validations, rules, data patterns, Help text, and accessibility properties to adaptive form components during conversion.
 

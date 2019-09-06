@@ -10,7 +10,7 @@ discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 ---
 
-# Recommended data source-based prefill and submit workflows for adaptive forms{#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
+# Recommended data source-based prefill and submit workflows for adaptive forms {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
 You can use any of the following data sources with adaptive forms converted using Automated Forms Conversion service:
 
@@ -22,11 +22,28 @@ Based on the data source, you can choose to generate an adaptive form with or wi
 
 This article describes the recommended workflows to prefill field values and submission options after selecting a data source and generating an adaptive form using the conversion service.
 
-|Data Source|Recommended workflow|
-|--- |--- |
-|Form data model, OData, or any other third-party service|Option 1: You select form data model, OData, or any other third-party service as the data source. You generate an adaptive form with no data binding using the Automated Forms Conversion service. You bind the adaptive form fields to form data model entities manually and use the Form Data Model Prefill Service option to prefill field values. You use the Submit using Form Data Model option to submit the adaptive form. Option 2: You select form data model, OData, or any other third-party service as the data source. You generate an adaptive form with no data binding using the Automated Forms Conversion service. You bind the adaptive form fields using the rule editor to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository. For step-by-step instructions to execute these workflows, see Use database, OData, or any third-party service as the data source.|
-|JSON Schema|You select JSON schema as the data source. Based on the selected data source: Option 1: You generate an adaptive form with no data binding using the Automated Forms Conversion service and configure JSON schema as the data source. You bind the adaptive form fields to JSON schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository. For step-by-step instructions to execute the workflows, see Use JSON schema as the data source. Option 2: You generate an adaptive form with JSON data binding using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps. For step-by-step instructions to execute the workflows, see Use JSON schema as the data source.|
-|XSD schema|You select XSD schema as the data source. Based on the selected data source, you generate an adaptive form with no data binding using the Automated Forms Conversion service and configure XSD schema as the data source. You bind the adaptive form fields to XSD schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository. For step-by-step instructions to execute the workflows, see Use XSD schema as the data source.|
+<table> 
+ <tbody> 
+  <tr> 
+   <th><strong>Data Source</strong></th> 
+   <th><strong>Recommended workflow</strong></th> 
+  </tr> 
+  <tr> 
+   <td><p>Form data model, OData, or any other third-party service</p></td> 
+   <td> 
+    <p><strong>Option 1</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields to form data model entities manually and use the Form Data Model Prefill Service option to prefill field values. You use the Submit using Form Data Model option to submit the adaptive form.<br><strong>Option 2</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields using the rule editor to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute these workflows, see Use database, OData, or any third-party service as the data source.</p> </td> 
+  </tr>
+  <td><p>JSON Schema</p></td> 
+   <td> 
+    <p>You select JSON schema as the data source. Based on the selected data source:<br><strong>Option 1</strong>: You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure JSON schema as the data source. You bind the adaptive form fields to JSON schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute the workflows, see Use JSON schema as the data source.<br><strong>Option 2</strong>: You <a href="#generate-adaptive-forms-with-json-binding">generate an adaptive form with JSON data binding</a> using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps.<br>For step-by-step instructions to execute the workflows, see Use JSON schema as the data source.</p> </td> 
+  </tr>
+  <td><p>XSD schema</p></td> 
+   <td> 
+    <p>You select XSD schema as the data source. Based on the selected data source, you <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure XSD schema as the data source. You bind the adaptive form fields to XSD schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute the workflows, see Use XSD schema as the data source.</p>
+    </td> 
+  </tr>
+ </tbody> 
+</table>
 
 For more information on the Automated Forms Conversion service, see the following articles:
 
