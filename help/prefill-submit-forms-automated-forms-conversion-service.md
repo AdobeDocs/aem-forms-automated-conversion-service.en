@@ -31,15 +31,15 @@ This article describes the recommended workflows to prefill field values and sub
   <tr> 
    <td><p>Form data model, OData, or any other third-party service</p></td> 
    <td> 
-    <p><strong>Option 1</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields to form data model entities manually and use the Form Data Model Prefill Service option to prefill field values. You use the Submit using Form Data Model option to submit the adaptive form.<br><strong>Option 2</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields using the rule editor to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute these workflows, see Use database, OData, or any third-party service as the data source.</p> </td> 
+    <p><strong>Option 1</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields to form data model entities manually and use the Form Data Model Prefill Service option to prefill field values. You use the Submit using Form Data Model option to submit the adaptive form.<br><strong>Option 2</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields using the rule editor to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute these workflows, see <a href="#sqldatasource">Use database, OData, or any third-party service as the data source.</a></p> </td> 
   </tr>
   <td><p>JSON Schema</p></td> 
    <td> 
-    <p>You select JSON schema as the data source. Based on the selected data source:<br><strong>Option 1</strong>: You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure JSON schema as the data source. You bind the adaptive form fields to JSON schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute the workflows, see Use JSON schema as the data source.<br><strong>Option 2</strong>: You <a href="#generate-adaptive-forms-with-json-binding">generate an adaptive form with JSON data binding</a> using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps.<br>For step-by-step instructions to execute the workflows, see Use JSON schema as the data source.</p> </td> 
+    <p>You select JSON schema as the data source. Based on the selected data source:<br><strong>Option 1</strong>: You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure JSON schema as the data source. You bind the adaptive form fields to JSON schema manually and <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">use any of the supported protocols</a> to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute the workflows, see <a href="#jsondatasource">Use JSON schema as the data source.</a><br><strong>Option 2</strong>: You <a href="#generate-adaptive-forms-with-json-binding">generate an adaptive form with JSON data binding</a> using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps.<br>For step-by-step instructions to execute the workflows, see <a href="#jsonwithdatabinding">Use JSON schema as the data source.</a></p> </td> 
   </tr>
   <td><p>XSD schema</p></td> 
    <td> 
-    <p>You select XSD schema as the data source. Based on the selected data source, you <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure XSD schema as the data source. You bind the adaptive form fields to XSD schema manually and use any of the supported protocols to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute the workflows, see Use XSD schema as the data source.</p>
+    <p>You select XSD schema as the data source. Based on the selected data source, you <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure XSD schema as the data source. You bind the adaptive form fields to XSD schema manually and <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">use any of the supported protocols</a> to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<br>For step-by-step instructions to execute the workflows, see <a href="#xsddatasource">Use XSD schema as the data source.</a></p>
     </td> 
   </tr>
  </tbody> 
@@ -74,7 +74,7 @@ The PDF file serves as the input to the Automated Forms Conversion service. The 
 
 AEM Forms Data Integration allows you to configure and connect to disparate data sources. After generating an adaptive form using the conversion process, you can define the form model based on a form data model, XSD, or a JSON schema. You can use a database, Microsoft Dynamics, or any other third-party service to create a form data model.
 
-This tutorial uses the MySQL database as the source to create a form data model. Create a **loanapplication **schema in the database and add an **applicant** table to the schema based on the fields that are available in the adaptive form.
+This tutorial uses the MySQL database as the source to create a form data model. Create a **loanapplication** schema in the database and add an **applicant** table to the schema based on the fields that are available in the adaptive form.
 
 ![Sample data mysql](assets/sample_data_mysql.png)
 
@@ -178,15 +178,15 @@ For more information on using JSON schema as the form model in adaptive forms, s
 
 ## Generate adaptive forms with no data binding {#generate-adaptive-forms-with-no-data-binding}
 
-Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](prefill-submit-forms-automated-forms-conversion-service.md#sample-adaptive-form) to an adaptive form with no data binding. Ensure that you select the **Generate Form without data model** check box to generate the adaptive form with no data binding.
+Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](#sample-adaptive-form) to an adaptive form with no data binding. Ensure that you select the **Generate Form without data model** check box to generate the adaptive form with no data binding.
 
 ![Adaptive form with no data binding](assets/af_without_data_binding.png)
 
 After generating an adaptive form with no data binding, select a data source for the adaptive form:
 
-* [Database, OData, or any third-party service](prefill-submit-forms-automated-forms-conversion-service.md#sqldatasource)
-* [JSON schema](prefill-submit-forms-automated-forms-conversion-service.md#jsondatasource)
-* [XSD schema](prefill-submit-forms-automated-forms-conversion-service.md#xsddatasource)
+* [Database, OData, or any third-party service](#sqldatasource)
+* [JSON schema](#jsondatasource)
+* [XSD schema](#xsddatasource)
 
 ### Use database, OData, or any third-party service as the data source {#sqldatasource}
 
@@ -210,7 +210,7 @@ Execute the following steps:
 1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
 1. Tap the **Form Model** tab, select **Form Data Model** from the **Select From** drop-down list, and tap **Select Form Data Model** to select the **loanapplication** form data model. Tap **Save & Close** to save the form.
 1. Select the **sample loan application form** and tap **Edit**.
-1. In the **Content **tab, tap the configure icon:
+1. In the **Content** tab, tap the configure icon:
 
    ![configure form container](assets/configure_form_container.png)
 
@@ -256,7 +256,7 @@ Execute the following steps to use [rule editor](https://helpx.adobe.com/experie
 
     1. Create a binding for the adaptive form fields with the form data model entities using the Output section. For example, bind **Applicant Name** adaptive form field with the **name** entity.
 
-    1. Tap **Done. **Tap **Done** again on the Rule Editor page.
+    1. Tap **Done.** Tap **Done** again on the Rule Editor page.
 
    ![Rule editor to bind references](assets/rule_editor_bind_references.png)
 
@@ -268,7 +268,7 @@ Execute the following steps to use [rule editor](https://helpx.adobe.com/experie
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
-   `*http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;latest file available in the folder&gt;*`
+   `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
 ### Use JSON schema as the data source {#jsondatasource}
 
@@ -276,13 +276,13 @@ Execute the following steps to use [rule editor](https://helpx.adobe.com/experie
 
 Before executing the use case, ensure that you have:
 
-* [a valid JSON schema compliant with the JSON schema structure](prefill-submit-forms-automated-forms-conversion-service.md#prepare-data-for-form-model)
-* [an adaptive form with no data binding](prefill-submit-forms-automated-forms-conversion-service.md#generate-adaptive-forms-with-no-data-binding)
+* [a valid JSON schema compliant with the JSON schema structure](#prepare-data-for-form-model)
+* [an adaptive form with no data binding](#generate-adaptive-forms-with-no-data-binding)
 
 Execute the following steps:
 
 1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
-1. Tap the **Form Model** tab, select **Schema **from the **Select From** drop-down list, and tap **Select Schema **to upload the **demo.schema JSON** schema saved on the local file system. Tap **Save & Close** to save the form.
+1. Tap the **Form Model** tab, select **Schema** from the **Select From** drop-down list, and tap **Select Schema** to upload the **demo.schema JSON** schema saved on the local file system. Tap **Save & Close** to save the form.
 1. Select the **sample loan application form** and tap **Edit**.
 1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 
@@ -299,15 +299,15 @@ Execute the following steps:
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/loan_application_data_json*
 1. Tap **Preview** and edit the URL of the page to:
 
-   `*http://&lt;host name:port&gt;/editor.html/content/forms/af/&lt;Name of adaptive form&gt;.html?wcmmode=disabled&dataRef=crx://&lt;file path including slash&gt;*`
+   `http://host name:port/editor.html/content/forms/af/Name of adaptive form.html?wcmmode=disabled&dataRef=crx://file path including slash`
 
-   For example, `*http://localhost:4502/editor.html/content/forms/af/sample_loan_application_form-copy.html?wcmmode=disabled&dataRef=crx:///content/create_loan_application_data_json*`
+   For example, `http://localhost:4502/editor.html/content/forms/af/sample_loan_application_form-copy.html?wcmmode=disabled&dataRef=crx:///content/create_loan_application_data_json`
 
    The values in the adaptive form display based on the data available in the crx-repository file created in step 6.
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
-   `*http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;`latest file available in the folder&gt;*
+   `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
 ### Use XSD schema as the data source {#xsddatasource}
 
@@ -315,13 +315,13 @@ Execute the following steps:
 
 Before executing the use case, ensure that you have:
 
-* [a valid XSD schema compliant with the XML schema structure](prefill-submit-forms-automated-forms-conversion-service.md#prepare-data-for-form-model)
-* [an adaptive form with no data binding](prefill-submit-forms-automated-forms-conversion-service.md#generate-adaptive-forms-with-no-data-binding)
+* [a valid XSD schema compliant with the XML schema structure](#prepare-data-for-form-model)
+* [an adaptive form with no data binding](#generate-adaptive-forms-with-no-data-binding)
 
 Execute the following steps:
 
 1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
-1. Tap the **Form Model** tab, select **Schema **from the **Select From** drop-down list, and tap **Select Schema **to upload the **loanapplication** XSD schema saved on the local file system. Select root element for the XSD schema and tap **Save & Close** to save the form.
+1. Tap the **Form Model** tab, select **Schema** from the **Select From** drop-down list, and tap **Select Schema** to upload the **loanapplication** XSD schema saved on the local file system. Select root element for the XSD schema and tap **Save & Close** to save the form.
 1. Select the **sample loan application form** and tap **Edit**.
 1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 
@@ -331,26 +331,26 @@ Execute the following steps:
 
    Sample XML data file
 
-[Get File](assets/samplexmldata.zip)
+   [Get File](assets/samplexmldata.zip)
 
    As an example, use the crx:// protocol to prefill user data in the adaptive form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content in the XML file to the crx-repository file. For example, create a file at: */content/loan_application_data*
 1. Tap **Preview** and edit the URL of the page to:
 
-   `*http://&lt;host name:port&gt;/editor.html/content/forms/af/&lt;Name of adaptive form&gt;.html?wcmmode=disabled&dataRef=crx://&lt;file path including slash&gt;*`
+   `http://host name:port/editor.html/content/forms/af/Name of adaptive form.html?wcmmode=disabled&dataRef=crx://file path including slash`
 
-   For example, `*http://localhost:4502/editor.html/content/forms/af/sample_loan_application_form.html?wcmmode=disabled&dataRef=crx:///content/loan_application_data*`
+   For example, `http://localhost:4502/editor.html/content/forms/af/sample_loan_application_form.html?wcmmode=disabled&dataRef=crx:///content/loan_application_data`
 
    The values in the adaptive form display based on the data available in the XML file.
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
-   `*http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;latest file available in the folder&gt;*`
+   `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
 ## Generate adaptive forms with JSON binding {#generate-adaptive-forms-with-json-binding}
 
-Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](prefill-submit-forms-automated-forms-conversion-service.md#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **Generate Form without data model** check box while generating the adaptive form.
+Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **Generate Form without data model** check box while generating the adaptive form.
 
 ![Adaptive form with JSON binding](assets/generate_af_with_json_binding.png)
 
@@ -360,7 +360,7 @@ Use the [Automated Forms Conversion service to convert](convert-existing-forms-t
 
 Before executing the use case, ensure that you have:
 
-* [an adaptive form with data binding](prefill-submit-forms-automated-forms-conversion-service.md#generate-adaptive-forms-with-json-binding)
+* [an adaptive form with data binding](#generate-adaptive-forms-with-json-binding)
 
 Execute the following steps:
 
@@ -375,12 +375,12 @@ Execute the following steps:
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/json-prefill*
 1. Tap **Preview** and edit the URL of the page to:
 
-   `*http://&lt;host name:port&gt;/editor.html/content/forms/af/&lt;Name of adaptive form&gt;.html?wcmmode=disabled&dataRef=crx://&lt;file path including slash at the start&gt;*`
+   `http://host name:port/editor.html/content/forms/af/Name of adaptive form.html?wcmmode=disabled&dataRef=crx://file path including slash at the start`
 
-   For example, `*http://localhost:4502/editor.html/content/forms/af/sample_loan_application_form.html?wcmmode=disabled&dataRef=crx:///content/json-prefill*`
+   For example, `http://localhost:4502/editor.html/content/forms/af/sample_loan_application_form.html?wcmmode=disabled&dataRef=crx:///content/json-prefill`
 
    The values in the adaptive form display based on the data available in the sample file.
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
-   `*http://&lt;host name&gt;:&lt;port&gt;/crx/de/index.jsp#/content/forms/fp/admin/submit/data/&lt;latest file available in the folder&gt;*`
+   `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
