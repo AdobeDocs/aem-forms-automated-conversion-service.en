@@ -384,3 +384,23 @@ Execute the following steps:
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
+
+## Convert submitted adaptive form JSON data to XML format {#convert-submitted-adaptive-form-data-to-xml}
+
+When you enter values in adaptive form fields and submit it, the data is available in JSON format in the crx-repository. You can convert the format of JSON data to XML either using [org.apache.sling.commons.json.xml](https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString) API or the following sample code:
+
+```
+import org.apache.sling.commons.json.JSONException;
+import org.apache.sling.commons.json.JSONObject;
+import org.apache.sling.commons.json.xml.XML;
+ 
+public class ConversionUtils {
+ 
+    public static String jsonToXML(String jsonString) throws JSONException {
+        //https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString(java.lang.Object)
+        //jar - http://maven.ibiblio.org/maven2/org/apache/sling/org.apache.sling.commons.json/2.0.18/
+        //Note: Need to extract boundData part before converting to XML
+        return XML.toString(new JSONObject(jsonString));
+    }
+}
+```
