@@ -50,10 +50,12 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
         <td><img  src="assets/non-alingned-fields.png"/></td>
     </tr>
     <tr >
-        <td colspan="2">The service converts all the check-boxes of an AcroForm to separate choice groups. Separate choice-groups are created to preserve bindings with AcroForm. Don’t merge choice-groups in the adaptive form. It will lead to loss of bindings. If you merge the choice-groups, convert the form again to regain the lost bindings. </td>
+        <td>The service converts all the check-boxes of an AcroForm to separate choice groups. Separate choice-groups are created to preserve bindings with AcroForm. Don’t merge choice-groups in the adaptive form. It will lead to loss of bindings. If you merge the choice-groups, convert the form again to regain the lost bindings. </td>
+        <td></td>
     </tr>
     <tr >
-        <td colspan="2">Boundraries of some tables are extended out of the page in automatically generated document of record (DoR). </td>
+        <td>Boundraries of some tables are extended out of the page in automatically generated document of record (DoR). </td>
+        <td></td>
     </tr>
 </table>
 
