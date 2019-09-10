@@ -34,20 +34,20 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
 
 <table>
     <tr>
-        <td width=40%>Binding and data is lost for composite text fields. A composite text fields has multiple text boxes aligned with each other. For example, in an AcroForm, a credit card number is split in multiple text boxes and each text box has a separate binding. When the AcroForm is converted to adaptive form, the converted adaptive form has a single binding for all the text boxes. As a workaround, before converting a AcroForm to adaptive form, modify the AcroForm to use single text box to accept credit card numbers.</td>
-        <td><img src="assets/creditCard_Composite.png"/></td>
+        <td>Binding and data is lost for composite text fields. A composite text fields has multiple text boxes aligned with each other. For example, in an AcroForm, a credit card number is split in multiple text boxes and each text box has a separate binding. When the AcroForm is converted to adaptive form, the converted adaptive form has a single binding for all the text boxes. As a workaround, before converting a AcroForm to adaptive form, modify the AcroForm to use single text box to accept credit card numbers.</td>
+        <td><img width=100% src="assets/creditCard_Composite.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td>Binding and data is lost for composite date fields. A composite date fields is composed of three different fields. For example, a date of birth field in an AcroForm is split into three separate fields. The adaptive form provides an out-of-the-box date picker component. To use the date picker component of the adaptive form while retaining binding of the AcroForm, before converting a AcroForm to adaptive form, modify the AcroForm to use single date field.</td>
-        <td width= 60%><img src="assets/CompositeDateField.png"/></td>
+        <td><img width=100% src="assets/CompositeDateField.png"/></td>
     </tr>
     <tr>
         <td>If the size of the check boxes is larger than the accompanying text, then the check boxes are not detected and the binding in the AcroForm is lost. Modify the AcroForm to make the size of the check-boxes smaller than the accompanying text.</td>
-        <td width= 60%><img src="assets/large-text-box.png"/><br/><img src="assets/small-text-box.png"/></td>
+        <td><img width=100% src="assets/large-text-box.png"/><br/><img width=100% src="assets/small-text-box.png"/></td>
     </tr>
     <tr>
         <td>If the input fields do not align to corresponding text-field, the input field is not detected.  </td>
-        <td><img src="assets/non-alingned-fields.png"/></td>
+        <td><img width=100% src="assets/non-alingned-fields.png"/></td>
     </tr>
     <tr >
         <td colspan="2">The service converts all the check-boxes of an AcroForm to separate choice groups. Separate choice-groups are created to preserve bindings with AcroForm. Don’t merge choice-groups in the adaptive form. It will lead to loss of bindings. If you merge the choice-groups, convert the form again to regain the lost bindings. </td>
