@@ -130,12 +130,12 @@ Developers are members of your organization designated to run the conversion ser
 
    ![Specify details for the new profile.](assets/create-new-profile-details.png)
 
-1. Add developer to the profile. To add the developers: 
-   a. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab. 
+1. Add developer to the profile. To add the developers:
+   a. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
    b. Click **Assign Developers** on the required product card.![Add Developers](assets/add-developers.png)
    c. Enter the developers email address and, optionally, first and last names.
    d. elect product profiles. Tap **Save**.
-   
+
 Repeat above steps for all the users.  For more details about adding developers,see [Manage developers](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 Once an administrator adds developers to Adobe I/O profile, the developers are notified via email. After receiving the email, the developers can proceed to [connect a local AEM Forms instance with Automated Forms Conversion service on Adobe Cloud](#connectafcadobeio).

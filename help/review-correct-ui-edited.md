@@ -127,7 +127,7 @@ The conversion service might not identify some components of the print form. For
 
 ![](assets/add-component.gif)
 
-To add a component to the form, tap **+ **and tap **Field**. Draw a box covering label and input box of the field. For example, the above example image uses the field component to add the** Date of Birth** label and value box below it to the form. When you draw the box, the conversion service identifies the type of the field. You can change the type of field from properties browser, if required. After creating the component, open the properties browser, and set the properties of the component.
+To add a component to the form, tap **+** and tap **Field**. Draw a box covering label and input box of the field. For example, the above example image uses the field component to add the** Date of Birth** label and value box below it to the form. When you draw the box, the conversion service identifies the type of the field. You can change the type of field from properties browser, if required. After creating the component, open the properties browser, and set the properties of the component.
 
 Tap **Save** button to save the modifications or use the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service.
 
@@ -166,9 +166,9 @@ The conversion service aggregates related components and content of print forms 
 
 The conversion service can create panels that have components with no relationship to other or leaves a relative component out of the panel. You can use the group or ungroup tools to fix such panels:
 
-* To remove a panel, select the panel, and tap ungroup ![](assets/ungroup.svg). The panel is removed and the child components of the panel are merged to parent component. You can also use the [delete component](review-correct-ui-edited.md#delete-a-panel-or-component) option to delete a panel and its children.  
+* To remove a panel, select the panel, and tap ungroup ![Ungroup](assets/ungroupX18.png). The panel is removed and the child components of the panel are merged to parent component. You can also use the [delete component](review-correct-ui-edited.md#delete-a-panel-or-component) option to delete a panel and its children.  
 
-* To create a panel, use the Ctrl key (on Windows or Linux) or Control key (on Mac) to select related components, and tap ![](assets/group.jpg) to create a panel. Open the properties browser to specify properties of the panel.
+* To create a panel, use the Ctrl key (on Windows or Linux) or Control key (on Mac) to select related components, and tap ![group](assets/group.jpg) to create a panel. Open the properties browser to specify properties of the panel.
 
 Tap **Save** button to save the modifications or use the **Save & Convert** button to resend the PDF forms to conversion service.
 
@@ -203,7 +203,7 @@ Comment Type: draft
 
 <p>There can be instances where you require adaptive forms editor to make the changes like, applying a different theme to the form or fixing tables. Once you have made all the required changes in Review and Correct editor and converted the form, you can open your form in adaptive forms editor to make the final set of changes.</p>
 <p>To open the form with adaptive forms editor, tap the <img src="assets/properties.png" /> icon, and tap <strong>Open Adaptive Form Editor</strong>. The form opens in adaptive form editor. </p>
--->
+
 
 ## Previous {#previous}
 
