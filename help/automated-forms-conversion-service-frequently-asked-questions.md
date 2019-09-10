@@ -12,27 +12,20 @@ privatebeta: true
 # Frequently asked questions{#frequently-asked-questions}
 
 **Which version of AEM Forms does the Automated Forms Conversion service support?** 
- <p>Automated Forms Conversion service beta supports AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package and Conversion Manager (Connector) package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-the-automated-forms-conversion-service.md">Configure the Automated Forms Conversion</a> service.</p> 
- <p>We are in the process of adding support for more versions. Keep a watch on Automated Forms Conversion service documentation for information on the availability of more versions. </p> 
-
-
+ <p>Automated Forms Conversion service supports AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-the-automated-forms-conversion-service.md">Configure the Automated Forms Conversion</a> service.</p> 
 
  **Can the service be installed on-premise?** 
  <p>Adobe trains AI and ML algorithms of Automated Forms Conversion service on a regular basis with new data set to improve conversion accuracy. The updated algorithms are deployed to the conversion service running on Adobe Cloud at periodic intervals. All the customers of the service are benefitted from the updated algorithms. So, cloud-hosted central deployment is best suited for Automated Forms Conversion service to continuously learn and deliver improvements to all the customers.</p> 
  <p>The service converts blank forms to adaptive forms. The service does not support filled forms and extraction of data from filled forms. Remove data from filled forms and remove or whitelist proprietary information from the forms before sending the forms to service for conversion</p> 
 
-
-
- **Does the service support all formats of PDF forms? What all languages are supported?** 
+**Does the service support all formats of PDF forms? What all languages are supported?** 
  <p>The service can convert non-interactive PDF forms, XFA-based XDP and PDF forms, and AcroForms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.<br /> </p> 
  <p>We are regularly adding support for other source types. Keep the <a href="introduction-to-automated-form-conversion-service.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
 
 
 
  **Can the service produce an XDP instead of an adaptive form?**
- <p>The service does not produce an XDP output for the time being. We are regularly adding features and to the service. Keep the <a href="introduction-to-automated-form-conversion-service.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
-
-
+ <p>The service does not produce an XDP output. We are regularly adding features and to the service. Keep the <a href="introduction-to-automated-form-conversion-service.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
 
  **What is the type of generated schema?** 
  <p>You can use the service to generate: </p> 
@@ -41,18 +34,11 @@ privatebeta: true
   <li>an adaptive form not bound to any schema</li> 
  </ul> 
 
-
-
  **Can the service convert a Microsoft Word form to adaptive forms?**
- <p>No, the service does not convert a Microsoft Word form to adaptive yet. You can save a Microsoft Word forms to PDF form and convert the PDF form to an adaptive form.</p> 
+ <p>No, the service does not convert a Microsoft Word form to adaptive form. You can save a Microsoft Word forms to PDF form and convert the PDF form to an adaptive form.</p> 
 
-
-
- **Can the service convert scanned paper forms and colored forms to adaptive forms?** 
+ **Can the service convert scanned paper forms and colored forms to adaptive forms?**
  <p>The service can convert PDF forms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.</p> 
- <p>We are regularly adding features and to the service. Keep the <a href="introduction-to-automated-form-conversion-service.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
-
-
 
  **Can the service convert a scanned form or only image of a form to an adaptive form?**
  <p>The service does not support converting scanned forms or an image of a form to an adaptive out-of-the-box. However, you use Adobe Acrobat to convert the image of a form to a PDF Form. Then, use the service to convert the PDF Form to an adaptive form. Always use a high-quality image of the form for conversion in Acrobat. It improves the quality of the conversion. <br /> </p> 
@@ -75,18 +61,16 @@ privatebeta: true
  **The service has failed to convert forms. What is the reason and how to resolve the issue?** 
  <p>The most common reasons for the conversion to fail are:</p> 
  <ul> 
-  <li>Secured PDF forms are provided for the conversion. Do not use password protected, Document Security protected, or any other protected PDF forms for conversion.</li> 
+  <li>Secured PDF forms are provided for the conversion. Do not use password protected or secured PDF forms for conversion.</li> 
   <li>Internet connection is interrupted. Ensure that you are connected to the internet during the conversion.</li> 
   <li>Source PDF has an image of the form instead of the actual form.<br /> </li> 
-  <li>Service is configured incorrectly, service URL is not provided, or provided service URL is incorrect. Check the <a href="configure-the-automated-forms-conversion-service.md#configure-the-cloud-service">service configuration</a> at <span class="uicontrol">AEM </span>&amp;gt; <span class="uicontrol">Tools </span>&amp;gt; <span class="uicontrol">Cloud Services </span>&amp;gt; <span class="uicontrol">Automated Forms Conversion configuration</span>.</li> 
+  <li>Service is configured incorrectly, service URL is not provided, or provided service URL is incorrect. Check the <a href="configure-the-automated-forms-conversion-service.md#configure-the-cloud-service">service configuration</a> at <span class="uicontrol">AEM </span>> <span class="uicontrol">Tools </span> > <span class="uicontrol">Cloud Services </span> > <span class="uicontrol">Automated Forms Conversion configuration</span>.</li>
   <li>IMS Configuration is not configured properly. Perform a health check on the IMS configuration to ensure it is working properly. To check if the IMS Configuration is correct or not: 
    <ol> 
-    <li>Go to http://&amp;lt;servername&amp;gt;:&amp;lt;port&amp;gt;/libs/cq/adobeims-configuration/content/configurations.html</li> 
+    <li>Go to http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html</li> 
     <li>Select the configuration. Click the <strong>Check Health</strong> from the header and click <strong>Check</strong>. If successful, you get <strong>Token retrieved successfully! </strong>message.</li> 
    </ol> </li> 
  </ul> 
-
-
 
  **Does using custom fonts impact conversion?** 
  <p>When a non-interactive PDF form is converted to an adaptive form, to improve the quality of conversion, the fonts are embedded in the PDF form. The support for embedding fonts is restricted to non-interactive PDF forms. To optimize the conversion of AcroForm and XFA-based PDF forms, fallback fonts are used.</p> 
@@ -142,5 +126,5 @@ privatebeta: true
   <li>Start the AEM instance<br /> </li>
  </ol>
 
-  **How to automatically change casing of all the text of an adaptive form?**
+  **How to automatically change casing of aadaptive form text?**
   <p>You can use adaptive from themes or style editor to change casing of a field of adaptive form. For example, you can open the theme editor and set value of Case property of all the text of form to uppercase, lowercase, or camelCase. You can also use the CSS Override option in theme editor to create different types of styles.</p>
