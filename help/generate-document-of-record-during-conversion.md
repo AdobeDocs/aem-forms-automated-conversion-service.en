@@ -64,7 +64,7 @@ If you are using a non-interactive PDF form as the input form for Automated Form
 1. [Run the conversion](../help/convert-existing-forms-to-adaptive-forms.md). Ensure that you use the cloud configuration edited in step 1 of these instructions.
 The conversion service automatically generates the Document of Record for the converted adaptive form.
 
-### Edit adaptive form properties to generate Document of Record {#edit-adptive-form-properties-generate-document-of-record}
+### Edit adaptive form properties to generate Document of Record {#edit-adaptive-form-properties-generate-document-of-record}
 
 If you do not generate a Document of Record using the Automated Forms Conversion service, you can convert the non-interactive PDF form into an adaptive form and then edit its properties to generate a Document of Record.
 
