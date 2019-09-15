@@ -39,12 +39,12 @@ The following table illustrates an example of how the DoR template that you use 
    <td><strong>Generated DoR</strong></td> 
   </tr>
   <tr>
-   <td><p><img src="assets/source_xdp.png" /> </p> </td> 
-   <td> <p>If you use default template to generate DoR:<img src="assets/source_form_default.png" /></td> 
+   <td><img src="assets/source_xdp.png" /></td> 
+   <td><p>If you use default template to generate DoR:</p></br><img src="assets/source_form_default.png" /></td> 
   </tr>
   <tr>
    <td></p> </td> 
-   <td><p>If you use source form as the template to generate DoR:<img src="assets/source_form_dor.png" /></td> 
+   <td><p>If you use source form as the template to generate DoR:</p></br><img src="assets/source_form_dor.png" /></td> 
   </tr>
  </tbody>
 </table>
