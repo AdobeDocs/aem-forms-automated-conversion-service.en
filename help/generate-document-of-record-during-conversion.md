@@ -32,7 +32,7 @@ Based on the source form that you use for conversion, you can generate a DoR usi
 
 The following table illustrates an example of how the DoR template that you use impacts the layout of the generated DoR:
 
-<table border="1" cellpadding="1" cellspacing="0" style="border-collapse: separate; border-spacing: 0px;" width="100%"> 
+<table> 
  <tbody>
   <tr>
    <td width="50%"><strong>Source Form</strong></td> 
