@@ -35,8 +35,8 @@ The following table illustrates an example of how the DoR template that you use 
 <table> 
  <tbody>
   <tr>
-   <td width="50%"><strong>Source Form</strong></td> 
-   <td width="50%"><strong>Generated DoR</strong></td> 
+   <td><strong>Source Form</strong></td> 
+   <td><strong>Generated DoR</strong></td> 
   </tr>
   <tr>
    <td><p><img src="assets/source_xdp.png" /> </p> </td> 
