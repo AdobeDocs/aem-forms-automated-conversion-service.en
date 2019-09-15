@@ -35,20 +35,21 @@ The following table illustrates an example of how the DoR template that you use 
 <table> 
  <tbody>
   <tr>
-   <td><strong>Source Form</strong></td> 
-   <td><strong>Generated DoR</strong></td> 
-  </tr>
+  <td><p>An example of a source form to generate DoR</p></td>
+   <td><img src="assets/source_xdp.png"/></td> 
+   </tr>
   <tr>
-   <td><img src="assets/source_xdp.png" /></td> 
-   <td><p>If you use default template to generate DoR:</p></br><img src="assets/source_form_default.png" /></td> 
-  </tr>
-  <tr>
-   <td></p> </td> 
-   <td><p>If you use source form as the template to generate DoR:</p></br><img src="assets/source_form_dor.png" /></td> 
-  </tr>
+   <td><p>If you use default template to generate DoR</p> </td>
+   <td><p><img src="assets/source_form_default.png"/></td>
+   </tr>
+   <tr>
+   <td><p>If you use source form as the template to generate DoR</p> </td>
+   <td><p><img src="assets/source_form_dor.png"/></td>
+   </tr>
  </tbody>
 </table>
 
+As illustrated in the table, if you use source form as the template, the DoR retains the layout of the source form.
 This article describes the recommended paths to generate a DoR based on the three types of source forms.
 
 <table> 
