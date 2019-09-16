@@ -22,12 +22,12 @@ The [Automated Forms Conversion service](../help/introduction-to-automated-form-
 
 * non-interactive PDF forms
 * Acro Forms
-* XFA-based PDF forms to adaptive forms.
+* XFA-based PDF forms
 
 Based on the source form that you use for conversion, you can generate a DoR using:
 
 * a default template
-* the source form as template
+* the source form as template - If you select this option, the conversion service automatically associates the source form with the converted adaptive form as the DoR template.
 * associate any other template with the converted adaptive form
 
 The following table illustrates an example of how the DoR template that you use impacts the layout of the generated DoR:
