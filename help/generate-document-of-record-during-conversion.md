@@ -32,21 +32,21 @@ Based on the source form that you use for conversion, you can generate a DoR usi
 
 The following table illustrates an example of how the DoR template that you use impacts the layout of the generated DoR:
 
-<table> <col width="10"> <col width="10"> 
+<table width="100%"> 
  <tbody>
-  <tr>
-  <td><p>An example of a source form to generate DoR</p></td>
-  <td><img src="assets/source_xdp.png"/></td> 
+ <tr>
+  <td width="50%"><p><strong>Source Form</strong></p></td>
+  <td width="50%"><p><strong>Generated DoR</strong></p></td> 
    </tr>
   <tr>
-   <td><p>If you use default template to generate DoR</p> </td>
-   <td><p><img src="assets/source_form_default.png"/></td>
+   <td><img src="assets/source_xdp.png"/></td>
+   <td><p>If you use the default template to generate DoR:<img src="assets/source_form_default.png"/></td>
    </tr>
    <tr>
-   <td><p>If you use source form as the template to generate DoR</p> </td>
-   <td><p><img src="assets/source_form_dor.png"/></td>
+   <td></td>
+   <td><p>If you use source form as the template to generate DoR</p><img src="assets/source_form_dor.png"/></td>
    </tr>
- </tbody>
+  </tbody>
 </table>
 
 As illustrated in the table, if you use source form as the template, the DoR retains the layout of the source form.
@@ -63,7 +63,7 @@ This article describes the recommended paths to generate a DoR based on the thre
    <td> 
     <ul> 
      <li><a href="#generate-document-of-record-using-cloud-configuration">Enable DoR generation before adaptive form conversion to generate DoR using a default template</a></li> 
-     <li><a href="#edit-adaptive-form-properties-generate-document-of-record">Edit adaptive form properties after adaptive form conversion to generate DoR using default or any other form template</a></li> 
+     <li><a href="#edit-adaptive-form-properties-generate-document-of-record">Edit adaptive form properties after adaptive form conversion to enable DoR generation using default or any other form template</a></li> 
     </ul> </td> 
   </tr>
   <tr> 
@@ -71,7 +71,7 @@ This article describes the recommended paths to generate a DoR based on the thre
    <td> 
     <ul> 
      <li><a href="#use-input-form-as-template-to-generate-document-of-record">Enable DoR generation before adaptive form conversion to generate DoR using source form as the template</a></li> 
-     <li><a href="#edit-adaptive-form-properties-to-generate-document-of-record">Edit adaptive form properties after adaptive form conversion to generate Document of Record using default template, source form as the template, or any other form template</a></li> 
+     <li><a href="#edit-adaptive-form-properties-to-generate-document-of-record">Edit adaptive form properties after adaptive form conversion to enable DoR generation using default template, source form as the template, or any other form template</a></li> 
     </ul> </td> 
   </tr>    
  </tbody> 
@@ -82,7 +82,7 @@ This article describes the recommended paths to generate a DoR based on the thre
 If you are using a non-interactive PDF form as the source form for Automated Forms Conversion service, you can:
 
 * either enable DoR generation before adaptive form conversion to generate DoR using a default template
-* or edit adaptive form properties after adaptive form conversion to generate DoR using default or any other form template
+* or edit adaptive form properties after adaptive form conversion to enable DoR generation using default or any other form template
 
 ### Enable DoR generation before conversion to generate DoR using default template {#generate-document-of-record-using-cloud-configuration}
 
