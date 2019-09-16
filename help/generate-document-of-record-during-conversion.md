@@ -32,11 +32,11 @@ Based on the source form that you use for conversion, you can generate a DoR usi
 
 The following table illustrates an example of how the DoR template that you use impacts the layout of the generated DoR:
 
-<table width="100%"> 
+<table> 
  <tbody>
  <tr>
-  <td width="50%"><p><strong>Source Form</strong></p></td>
-  <td width="50%"><p><strong>Generated DoR</strong></p></td> 
+  <td><p><strong>Source Form</strong></p></td>
+  <td><p><strong>Generated DoR</strong></p></td> 
    </tr>
   <tr>
    <td><img src="assets/source_xdp.png"/></td>
