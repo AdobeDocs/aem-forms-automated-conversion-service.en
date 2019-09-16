@@ -16,7 +16,7 @@ The DoR uses a base template to define its layout. You can generate a DoR either
 
 ![Generated Document of Record](assets/document_of_record.gif)
 
-For more information on generating a Document of Record, see [Generate Document of Record for adaptive forms](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
+For more information on generating a DoR, see [Generate Document of Record for adaptive forms](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
 The [Automated Forms Conversion service](../help/introduction-to-automated-form-conversion-service.md) converts the following source forms to adaptive forms:
 
@@ -40,11 +40,11 @@ The following table illustrates an example of how the DoR template that you use 
    </tr>
   <tr>
    <td><img src="assets/source_xdp.png"/></td>
-   <td><p>If you use the default template to generate DoR:<img src="assets/source_form_default.png"/></td>
+   <td><p>If you use the default template to generate DoR:</br><img src="assets/source_form_default.png"/></td>
    </tr>
    <tr>
    <td></td>
-   <td><p>If you use source form as the template to generate DoR</p><img src="assets/source_form_dor.png"/></td>
+   <td><p>If you use source form as the template to generate DoR:</br></p><img src="assets/source_form_dor.png"/></td>
    </tr>
   </tbody>
 </table>
