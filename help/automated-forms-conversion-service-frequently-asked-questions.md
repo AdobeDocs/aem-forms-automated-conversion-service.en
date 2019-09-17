@@ -20,7 +20,9 @@ privatebeta: true
 
 **Does the service support all formats of PDF forms? What all languages are supported?** 
  <p>The service can convert non-interactive PDF forms, XFA-based XDP and PDF forms, and AcroForms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.<br /> </p> 
- <p>We are regularly adding support for other source types. Keep the <a href="introduction-to-automated-form-conversion-service.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
+ <p>We are regularly adding support for other source types. Keep the <a href="introduction-to-automated-form-conversion-service.md">supportedPDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
+
+ The service can convert only English-language forms to adaptive forms. You can translate the generated adaptive forms to another language using [AEM translation workflow.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)
 
 
 
