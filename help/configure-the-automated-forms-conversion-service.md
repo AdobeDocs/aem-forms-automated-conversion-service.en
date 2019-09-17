@@ -26,11 +26,10 @@ The information provided is based on the assumption that anyone reading this Hel
 
 * Configuring SMTP mail servers
 
-<!--
->[!VIDEO](Automated-Forms-Conversion-Service.mp4)
+
+>[!VIDEO](assets/Automated-Forms-Conversion-Service.mp4)
 
 ***Watch the video or read the article to configure Automated Forms Conversion service**
--->
 <!--
 Comment Type: draft
 
