@@ -17,7 +17,6 @@ AEM Forms Automated Forms Conversion service identifies fields, content, and lay
 * Identify the fields and content missed during conversion  
 * Verify the type of a field and change its type, if required
 * Verify the identified tables, resize the columns, and modify cell content  
-* Change layout of the form  
 * Remove wrongly identified fields
 
 After making the required changes, resend the PDF forms to conversion service. On a successful conversion, updated assets including the adaptive form, and schema are downloaded to your AEM Forms instance. You can repeat the process until the desired experience is achieved. ![](assets/stages-of-form-2.gif)
@@ -104,7 +103,7 @@ After making required changes, tap the **[!UICONTROL Save & Convert]** button to
 
 ![Save and Convert](assets/save-and-convert.png)
 
-After performing the basic checks, you can review the form to fix issues specific to your organization. These issues can be related to adding missing fields, changing layout, and more. You can view the [Use the Review and Correct editor tools](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) section to learn about all the tools the editor provides to fix such issues.
+After performing the basic checks, you can review the form to fix issues specific to your organization. These issues can be related to adding missing fields, and more. You can view the [Use the Review and Correct editor tools](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) section to learn about all the tools the editor provides to fix such issues.
 
 You can also work on recognizing identical issues which occur in almost all of your forms and report such patterns to Adobe. Use the Review and Correct editor until the desired experience is achieved.
 
@@ -166,7 +165,7 @@ The conversion service aggregates related components and content of print forms 
 
 The conversion service can create panels that have components with no relationship to other or leaves a relative component out of the panel. You can use the group or ungroup tools to fix such panels:
 
-* To remove a panel, select the panel, and tap ungroup ![Ungroup](assets/ungroupX18.png). The panel is removed and the child components of the panel are merged to parent component. You can also use the [delete component](review-correct-ui-edited.md#delete-a-panel-or-component) option to delete a panel and its children.  
+* To remove a panel, select the panel, and tap ungroup ![Ungroup](assets/ungroupX18.png). The panel is removed and the child components of the panel are moved to the parent component. You can also use the [delete component](review-correct-ui-edited.md#delete-a-panel-or-component) option to delete a panel and its children.  
 
 * To create a panel, use the Ctrl key (on Windows or Linux) or Control key (on Mac) to select related components, and tap ![group](assets/group.jpg) to create a panel. Open the properties browser to specify properties of the panel.
 
