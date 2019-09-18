@@ -64,6 +64,7 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
 * PDF forms with complex dynamic layout, fields with dotted outline, filled fields, or colored fields are not supported.
 * Images and text inside the images are not identified. Manually add images to converted forms.
 * Artwork XDP documents are not supported.
+* PDF forms larger than 15 pages are not supported.
 * Encrypted, password-protected, and secured documents are not converted. Remove encryption or passwords before running the conversion.
 * Complex tables like borderless tables, nested tables, table with colored rows, and tables with placeholder values are not supported. Use adaptive form editor to add or modify complex tables, after the conversion. Only simple tables, with empty fields, proper headers, and clear boundaries are supported.  
 * The service converts only English-language forms to adaptive forms. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
