@@ -26,7 +26,7 @@ The information provided is based on the assumption that anyone reading this Hel
 
 * Configuring SMTP mail servers
 
->[!VIDEO](assets/automated-forms-conversion-service.mp4)
+>[!VIDEO](assets/configure-automated-forms-conversion-service.mp4)
 
 ***Watch the video or read the article to configure Automated Forms Conversion service**
 <!--
