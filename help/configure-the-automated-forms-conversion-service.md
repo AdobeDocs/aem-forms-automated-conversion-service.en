@@ -24,7 +24,7 @@ The information provided is based on the assumption that anyone reading this Hel
 
 * Using Linux and Microsoft Windows operating systems,
 
-* Configuring SMTP mail servers
+* Configuring SMTP mail servers.
 
 >[!VIDEO](assets/configure-automated-forms-conversion-service.mp4)
 
