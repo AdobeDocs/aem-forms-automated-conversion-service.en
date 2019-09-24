@@ -85,8 +85,8 @@ privatebeta: true
     You can use meta-model to map the form objects to adaptive form component of your choice and pre-configure validations, rules, data patterns, help text, and accessibility properties for the components. All the specified properties are applied during the conversion. You can use meta-model to apply common properties to fields. It can help you reduce some repeated issues across forms.<br/><br/>
 
 1.  **What are the options for forms with sensitive data like personally identifiable information (PII) information?** 
-    The service supports only blank or unfilled forms. Do not upload filled forms or forms with personally identifiable information (PII). Also, remove pre-filled data and white-label PII, confidential, and proprietary information in source forms. 
-<br>
+    The service supports only blank or unfilled forms. Do not upload filled forms or forms with personally identifiable information (PII). Also, remove pre-filled data and white-label PII, confidential, and proprietary information in source forms. <br/>
+    
 1. **Where should the header and footers be placed?** 
     <p>Place header and footer in an adaptive forms template. If the source PDF form has header and footer, the service detects and replaces detected header and footer with header and footer available in adaptive form template, during the conversion. If any extra header or footer is included in the adaptive form, you can use the <a href="review-correct-ui-edited.md">Review and Correct</a> editor to fix or remove such header or footer.</p> <br />
 
