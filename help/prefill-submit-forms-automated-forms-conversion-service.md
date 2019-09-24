@@ -178,9 +178,9 @@ For more information on using JSON schema as the form model in adaptive forms, s
 
 ## Generate adaptive forms with no data binding {#generate-adaptive-forms-with-no-data-binding}
 
-Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](#sample-adaptive-form) to an adaptive form with no data binding. Ensure that you select the **Generate Form without data model** check box to generate the adaptive form with no data binding.
+Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](#sample-adaptive-form) to an adaptive form with no data binding. Ensure that you select the **[!UICONTROL Generate adaptive form(s) without data bindings]** check box to generate the adaptive form with no data binding.
 
-![Adaptive form with no data binding](assets/af_without_data_binding.png)
+![Adaptive form with no data binding](assets/generate_af_without_binding.png)
 
 After generating an adaptive form with no data binding, select a data source for the adaptive form:
 
@@ -190,14 +190,14 @@ After generating an adaptive form with no data binding, select a data source for
 
 ### Use database, OData, or any third-party service as the data source {#sqldatasource}
 
-Use Case: You generate an adaptive form with no data binding using the Automated Forms Conversion service and configure MYSQL database as the data source. You bind the adaptive form fields to form data model entities manually and use the **Form Data Model Prefill Service** option to prefill field values. You use the **Submit using Form Data Model** option to submit the adaptive form.
+Use Case: You generate an adaptive form with no data binding using the Automated Forms Conversion service and configure MYSQL database as the data source. You bind the adaptive form fields to form data model entities manually and use the **[!UICONTROL Form Data Model Prefill Service]** option to prefill field values. You use the **[!UICONTROL Submit using Form Data Model]** option to submit the adaptive form.
 
 Before executing the use case:
 
 * [Configure MySQL database as the data source](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
 * [Create the form data model](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-Based on the use case, create the **loanapplication** form data model and bind read service argument to a **Literal** value. The phone number literal value must be of one of the records configured in the **applicant** schema of the MySQL database. The services use the value as an argument to fetch details from the data source. You can also select [User Profile Attribute or Request Attribute](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) from the **Binding To** drop-down list
+Based on the use case, create the **loanapplication** form data model and bind read service argument to a **[!UICONTROL Literal]** value. The phone number literal value must be of one of the records configured in the **applicant** schema of the MySQL database. The services use the value as an argument to fetch details from the data source. You can also select [User Profile Attribute or Request Attribute](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) from the **[!UICONTROL Binding To]** drop-down list
 
 ![Configure form data model](assets/configure_model_object.png)
 
@@ -207,18 +207,18 @@ Based on the use case, create the **loanapplication** form data model and bind r
 
 Execute the following steps:
 
-1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
-1. Tap the **Form Model** tab, select **Form Data Model** from the **Select From** drop-down list, and tap **Select Form Data Model** to select the **loanapplication** form data model. Tap **Save & Close** to save the form.
-1. Select the **sample loan application form** and tap **Edit**.
-1. In the **Content** tab, tap the configure icon:
+1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder and tap **[!UICONTROL Properties]**.
+1. Tap the **[!UICONTROL Form Model]** tab, select **[!UICONTROL Form Data Model]** from the **[!UICONTROL Select From]** drop-down list, and tap **[!UICONTROL Select Form Data Model]** to select the **loanapplication** form data model. Tap **[!UICONTROL Save & Close]** to save the form.
+1. Select the **sample loan application form** and tap **[!UICONTROL Edit]**.
+1. In the **[!UICONTROL Content]** tab, tap the configure icon:
 
    ![configure form container](assets/configure_form_container.png)
 
-    1. In the **Basic** section, select **Form Data Model Prefill service** from the **Prefill Service** drop-down list.
+    1. In the **[!UICONTROL Basic]** section, select **[!UICONTROL Form Data Model Prefill service]** from the **[!UICONTROL Prefill Service]** drop-down list.
 
-    1. In the **Submission** section, select **Submit using Form Data Model** from the **Submit Action** drop-down list.
+    1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit using Form Data Model]** from the **[!UICONTROL Submit Action]** drop-down list.
 
-    1. Select the data model using the **Data Model to submit** field.
+    1. Select the data model using the **[!UICONTROL Data Model to submit]** field.
     1. Tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
 
 1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
@@ -227,44 +227,44 @@ Execute the following steps:
 
    ![Bind references](assets/bind_references.png)
 
-1. Tap **Preview** to view the prefilled adaptive form field values.
+1. Tap **[!UICONTROL Preview]** to view the prefilled adaptive form field values.
 1. Modify the field values, if necessary, and submit the adaptive form. The field values are submitted to the MySQL database. You can refresh the **applicant** table in the database to view the updated values in the table.
 
 **Use Case:** You generate an adaptive form with no data binding using the Automated Forms Conversion service and configure MYSQL database as the data source. You bind the adaptive form fields using the rule editor to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.
 
 Execute the following steps to use [rule editor](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) to invoke form data model service to bind fields and prefill values in an adaptive form:
 
-1. Select the **sample loan application form** in the **output** folder and tap **Edit**.
-1. In the **Content** tab, tap the configure icon:
+1. Select the **sample loan application form** in the **[!UICONTROL output]** folder and tap **[!UICONTROL Edit]**.
+1. In the **[!UICONTROL Content]** tab, tap the configure icon:
 
    ![configure form container](assets/configure_form_container.png)
 
-   In the **Basic** section, select **Form Data Model Prefill service** from the **Prefill Service** drop-down list.
+   In the **[!UICONTROL Basic]** section, select **[!UICONTROL Form Data Model Prefill service]** from the **[!UICONTROL Prefill Service]** drop-down list.
 
-1. Tap the **Applicant Name** text box and tap **Edit Rules.**
+1. Tap the **[!UICONTROL Applicant Name]** text box and tap **[!UICONTROL Edit Rules]**.
 
    ![Edit rules to create data binding](assets/edit_rules_bind_reference.png)
 
-1. Tap **Create** on the Rule Editor page.
-1. On the **Rule Editor** page:
+1. Tap **[!UICONTROL Create]** on the Rule Editor page.
+1. On the **[!UICONTROL Rule Editor]** page:
 
-    1. Select a state for the Applicant Name text box. For example, **is initialized**, which results in execution of the **Then** condition when you render the form in **Preview** mode.
+    1. Select a state for the Applicant Name text box. For example, **[!UICONTROL is initialized]**, which results in execution of the **[!UICONTROL Then]** condition when you render the form in **[!UICONTROL Preview]** mode.
 
-    1. In the **Then** section, select **Invoke Service** from the **Select Action** drop-down list. All services on your Forms instance display in the drop-down list.
+    1. In the **[!UICONTROL Then]** section, select **[!UICONTROL Invoke Service]** from the **[!UICONTROL Select Action]** drop-down list. All services on your Forms instance display in the drop-down list.
 
-    1. Select a **Get** service from the section listing the form data models. The Input field displays **phonenumber**, which is the primary key defined for the **applicant** data model. The system retrieves and prefills the values in the adaptive form for fields in the Output section based on this field.
+    1. Select a **[!UICONTROL Get]** service from the section listing the form data models. The Input field displays **phonenumber**, which is the primary key defined for the **applicant** data model. The system retrieves and prefills the values in the adaptive form for fields in the Output section based on this field.
 
-    1. Create a binding for the adaptive form fields with the form data model entities using the Output section. For example, bind **Applicant Name** adaptive form field with the **name** entity.
+    1. Create a binding for the adaptive form fields with the form data model entities using the Output section. For example, bind **[!UICONTROL Applicant Name]** adaptive form field with the **name** entity.
 
-    1. Tap **Done.** Tap **Done** again on the Rule Editor page.
+    1. Tap **[!UICONTROL Done]**. Tap **[!UICONTROL Done]** again on the Rule Editor page.
 
    ![Rule editor to bind references](assets/rule_editor_bind_references.png)
 
-1. Tap **Preview** to view the prefilled adaptive form field values.
+1. Tap **[!UICONTROL Preview]** to view the prefilled adaptive form field values.
 
    >[!NOTE]
    >
-   >Ensure that the **Return Array** Property is set to OFF for the **get** service property in the form data model associated with the adaptive form.
+   >Ensure that the **[!UICONTROL Return Array]** Property is set to OFF for the **get** service property in the form data model associated with the adaptive form.
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
@@ -281,16 +281,16 @@ Before executing the use case, ensure that you have:
 
 Execute the following steps:
 
-1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
-1. Tap the **Form Model** tab, select **Schema** from the **Select From** drop-down list, and tap **Select Schema** to upload the **demo.schema JSON** schema saved on the local file system. Tap **Save & Close** to save the form.
-1. Select the **sample loan application form** and tap **Edit**.
+1. Select the converted **sample loan application form** available in the **output** folder and tap **[!UICONTROL Properties]**.
+1. Tap the **[!UICONTROL Form Model]** tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down list, and tap **[!UICONTROL Select Schema]** to upload the **demo.schema JSON** schema saved on the local file system. Tap **[!UICONTROL Save & Close]** to save the form.
+1. Select the **sample loan application form** and tap **[!UICONTROL Edit]**.
 1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 
     In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the JSON schema entities.
 
-1. Select the converted **sample loan application form** available in the **output** folder again and select **Preview** > **Preview with Data**. If you use the **Preview with Data** option to view values in adaptive form fields, skip to step 9 of these instructions. Else, you can ignore this step.
+1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**. If you use the **[!UICONTROL Preview with Data]** option to view values in adaptive form fields, skip to step 9 of these instructions. Else, you can ignore this step.
 
-1. Create a file with data to prefill values in the adaptive form. Tap **Download** to download a sample file.
+1. Create a file with data to prefill values in the adaptive form. Tap **[!UICONTROL Download]** to download a sample file.
 
    Sample data file
 
@@ -299,7 +299,7 @@ Execute the following steps:
    form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/loan_application_data_json*
-1. Tap **Preview** and edit the URL of the page to:
+1. Tap **[!UICONTROL Preview]** and edit the URL of the page to:
 
    `http://host name:port/editor.html/content/forms/af/Name of adaptive form.html?wcmmode=disabled&dataRef=crx://file path including slash`
 
@@ -322,15 +322,15 @@ Before executing the use case, ensure that you have:
 
 Execute the following steps:
 
-1. Select the converted **sample loan application form** available in the **output** folder and tap **Properties**.
-1. Tap the **Form Model** tab, select **Schema** from the **Select From** drop-down list, and tap **Select Schema** to upload the **loanapplication** XSD schema saved on the local file system. Select root element for the XSD schema and tap **Save & Close** to save the form.
-1. Select the **sample loan application form** and tap **Edit**.
+1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder and tap **[!UICONTROL Properties]**.
+1. Tap the **[!UICONTROL Form Model]** tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down list, and tap **[!UICONTROL Select Schema]** to upload the **loanapplication** XSD schema saved on the local file system. Select root element for the XSD schema and tap **[!UICONTROL Save & Close]** to save the form.
+1. Select the **sample loan application form** and tap **[!UICONTROL Edit]**.
 1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done Icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the XSD schema entities.
 
-1. Select the converted **sample loan application form** available in the **output** folder again and select **Preview** > **Preview with Data**. If you use the **Preview with Data** option to view values in adaptive form fields, skip to step 9 of these instructions. Else, you can ignore this step.
+1. Select the converted **sample loan application form** available in the **output** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**. If you use the **[!UICONTROL Preview with Data]** option to view values in adaptive form fields, skip to step 9 of these instructions. Else, you can ignore this step.
 
-1. Create an XML file with data to prefill values in the adaptive form. Tap **Download** to download a sample file.
+1. Create an XML file with data to prefill values in the adaptive form. Tap **[!UICONTROL Download]** to download a sample file.
 
    Sample XML data file
 
@@ -339,7 +339,7 @@ In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done 
    As an example, use the crx:// protocol to prefill user data in the adaptive form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content in the XML file to the crx-repository file. For example, create a file at: */content/loan_application_data*
-1. Tap **Preview** and edit the URL of the page to:
+1. Tap **[!UICONTROL Preview]** and edit the URL of the page to:
 
    `http://host name:port/editor.html/content/forms/af/Name of adaptive form.html?wcmmode=disabled&dataRef=crx://file path including slash`
 
@@ -353,9 +353,9 @@ In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done 
 
 ## Generate adaptive forms with JSON binding {#generate-adaptive-forms-with-json-binding}
 
-Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **Generate Form without data model** check box while generating the adaptive form.
+Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **[!UICONTROL Generate adaptive form(s) without data bindings]** check box while generating the adaptive form.
 
-![Adaptive form with JSON binding](assets/generate_af_with_json_binding.png)
+![Adaptive form with JSON binding](assets/generate_af_with_binding.png)
 
 ### Use JSON schema as the data source {#jsonwithdatabinding}
 
@@ -367,11 +367,11 @@ Before executing the use case, ensure that you have:
 
 Execute the following steps:
 
-1. Select the converted **sample loan application form** available in the **output** folder again and select **Preview** > **Preview with Data**. If you use the **Preview with Data** option to view values in adaptive form fields, skip to step 6 of these instructions. Else, you can ignore this step.
+1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**. If you use the **[!UICONTROL Preview with Data]** option to view values in adaptive form fields, skip to step 6 of these instructions. Else, you can ignore this step.
 
-1. Select the **sample loan application form** in the **output** folder and tap **Preview &gt; Preview as HTML**.
+1. Select the **sample loan application form** in the **[!UICONTROL output]** folder and tap **[!UICONTROL Preview]** > **[!UICONTROL Preview as HTML]**.
 
-1. Create a file with data to prefill values in the adaptive form. Tap **Download** to download a sample file.
+1. Create a file with data to prefill values in the adaptive form. Tap **[!UICONTROL Download]** to download a sample file.
 
    Sample data file
 
@@ -379,7 +379,7 @@ Execute the following steps:
    As an example, use the crx:// protocol to prefill user data in the adaptive form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/json-prefill*
-1. Tap **Preview** and edit the URL of the page to:
+1. Tap **[!UICONTROL Preview]** and edit the URL of the page to:
 
    `http://host name:port/editor.html/content/forms/af/Name of adaptive form.html?wcmmode=disabled&dataRef=crx://file path including slash at the start`
 
