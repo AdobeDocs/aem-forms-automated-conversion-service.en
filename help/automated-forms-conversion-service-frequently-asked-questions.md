@@ -79,12 +79,12 @@ privatebeta: true
     <p>Automated Forms Conversion service is trained on a large set of forms. But AI/ML-based applications are limited by their training data and patterns. There could be multiple field types, layouts, patterns, and context discernible to human perception but difficult for automated recognition. The service may fail to identify such objects or may recognize them incorrectly. You may use <a href="review-correct-ui-edited.md" target="_blank">Review and Correct</a> editor to make necessary modifications in the familiar paper form based layout of the input form.</p> <br/>
 
 1. **Some corrections are repeated across forms. Can the service identify and fix all such instances in future conversions?**
-  <ul> 
-    <li>The service is consistently training on your forms and patterns. It learns new patterns on daily-basis. It is yet to start auto-applying corrections repeated across the forms. Keep an eye on prerelease forms for the availability of such a feature.<br /> </li> 
-    <li>You can use meta-model to map the form objects to adaptive form component of your choice and pre-configure validations, rules, data patterns, help text, and accessibility properties for the components. All the specified properties are applied during the conversion. You can use meta-model to apply common properties to fields. It can help you reduce some repeated issues across forms. </li> 
-  </ul>
+  
+    The service is consistently training on your forms and patterns. It learns new patterns on daily-basis. It is yet to start auto-applying corrections repeated across the forms. Keep an eye on prerelease forms for the availability of such a feature. <br/><br/>
 
-17.  **What are the options for forms with sensitive data like personally identifiable information (PII) information?** 
+    You can use meta-model to map the form objects to adaptive form component of your choice and pre-configure validations, rules, data patterns, help text, and accessibility properties for the components. All the specified properties are applied during the conversion. You can use meta-model to apply common properties to fields. It can help you reduce some repeated issues across forms.<br/><br/>
+
+1.  **What are the options for forms with sensitive data like personally identifiable information (PII) information?** 
     The service supports only blank or unfilled forms. Do not upload filled forms or forms with personally identifiable information (PII). Also, remove pre-filled data and white-label PII, confidential, and proprietary information in source forms. 
 <br>
 1. **Where should the header and footers be placed?** 
@@ -102,7 +102,7 @@ privatebeta: true
       <li>Add the following properties to the sling.properties file:<br /> <em>sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*<br /> sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*</em></li>
       <li>Save and Close the file. <br /> </li>
       <li>Start the AEM instance<br /> </li>
-    </ol> <br />
+    </ol> <br/>
 
   1. **How to automatically change casing of adaptive form text?**
       <p>You can use adaptive from themes or style editor to change casing of a field of adaptive form. For example, you can open the theme editor and set value of Case property of all the text of form to uppercase, lowercase, or camelCase. You can also use the CSS Override option in theme editor to create different types of styles.</p>
