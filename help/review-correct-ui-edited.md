@@ -37,7 +37,7 @@ The Review and Correct editor provides an easy to use interface. It has the foll
 * PDF form: The editor displays the source PDF document and overlays it with identified fields. You can use the tools from the toolbar to modify the fields. 
 * Pages: A source form can have multiple pages. The editor provides a button on upper-right corner to navigate between the pages.
 
-![Review and Correct UI](assets/review&correctui.png)
+![Review and Correct UI](assets/reviewcorrectui.png)
 
 **A.** Content Browser **B.** Properties Browser **C.** Toolbar **D.** Properties button **E.** Filter button **F.** Save button **G.** PDF form overlayed with identified fields
 
