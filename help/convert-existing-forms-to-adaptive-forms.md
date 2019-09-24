@@ -59,7 +59,7 @@ After you have uploaded the forms and configured the service, perform the follow
 
    ![Specify the configurations](assets/conversion-settings-dialog.png)
 
-1. In the **[!UICONTROL **Basic**]** tab of the Conversion Settings dialog:
+1. In the **[!UICONTROL Basic]** tab of the Conversion Settings dialog:
 
     * **[!UICONTROL Select a cloud configuration]**. When you select a configuration, default template and theme are already specified. You can specify a different template or a theme, if required.  
     * Specify a location to save generated adaptive forms and corresponding schema. You can use default paths or specify custom paths.  
@@ -75,13 +75,13 @@ After you have uploaded the forms and configured the service, perform the follow
    -->
 
 1. In the **[!UICONTROL Additional]** tab of Conversion Settings dialog,
-    * Select the **[!UICONTROL **Extract fragment from adaptive forms**]** option to allow the conversion service to identify, extract, and download form fragments for converted forms. When you select the **[!UICONTROL **Extract fragment from adaptive forms**]** option, the options to specify paths for saving extracted form fragments and corresponding form fragments schemas is enabled.  
+    * Select the **[!UICONTROL Extract fragment from adaptive forms]** option to allow the conversion service to identify, extract, and download form fragments for converted forms. When you select the **[!UICONTROL Extract fragment from adaptive forms]** option, the options to specify paths for saving extracted form fragments and corresponding form fragments schemas is enabled.  
     * Specify the location of **[!UICONTROL existing adaptive form fragments]**, if you have some existing JSON schema based and schema less adaptive form fragments and you plan to use these fragments in automatically generated adaptive forms. Conversion service matches available JSON schema based and schema less adaptive form fragments with input PDF Forms (non-interactive PDF Forms only), if there is a match, the matched adaptive form fragment is used in corresponding adaptive forms.
 
    >[!NOTE]
    >
    >
-   > * You can use only **[!UICONTROL  **Extract Fragment**]** or **[!UICONTROL Use existing adaptive form fragments]** option at a time. You cannot use both the options simultaneously.
+   > * You can use only **[!UICONTROL  Extract Fragment]** or **[!UICONTROL Use existing adaptive form fragments]** option at a time. You cannot use both the options simultaneously.
    > * You can use the **[!UICONTROL Use existing adaptive form fragments]** option only with non-interactive PDF Forms. Other form types are not supported yet.  
    > * You can use only unbound fragments or fragments bound to a JSON schema with Automated Conversion Service. Do not use XFA fragments. XFA fragments are not supported.
    > 
