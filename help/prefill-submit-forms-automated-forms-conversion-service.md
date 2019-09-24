@@ -67,6 +67,7 @@ To execute the use cases to prefill field values in an adaptive form and submit 
 Sample loan application form
 
 [Get File](assets/sample_loan_application_form.pdf)
+
 The PDF file serves as the input to the Automated Forms Conversion service. The service converts this file to an adaptive form. The following image depicts the sample loan application in a PDF format.
 
 ![sample loan application form](assets/sample_form_new.png)
@@ -175,6 +176,7 @@ Or download the JSON schema to the local file system.
 Sample loan application JSON schema
 
 [Get File](assets/demo_schema.json)
+
 For more information on using JSON schema as the form model in adaptive forms, see [Creating adaptive forms using JSON schema](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html).
 
 ## Generate adaptive forms with no data binding {#generate-adaptive-forms-with-no-data-binding}
@@ -296,6 +298,7 @@ Execute the following steps:
    Sample data file
 
    [Get File](assets/samplexmldata.zip)
+
    As an example, use the crx:// protocol to prefill user data in the adaptive
    form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
@@ -362,9 +365,7 @@ Use the [Automated Forms Conversion service to convert](convert-existing-forms-t
 
 **Use Case:** You generate an adaptive form with JSON data binding using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps.
 
-Before executing the use case, ensure that you have:
-
-* [an adaptive form with data binding](#generate-adaptive-forms-with-json-binding)
+Before executing the use case, ensure that you have [an adaptive form with data binding](#generate-adaptive-forms-with-json-binding).
 
 Execute the following steps:
 
@@ -377,6 +378,7 @@ Execute the following steps:
    Sample data file
 
    [Get File](assets/loan_application_data_json_binding.txt)
+
    As an example, use the crx:// protocol to prefill user data in the adaptive form. You can also use [other protocols](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#supportedprotocolsforprefillinguserdata) to prefill data.
 
 1. Create a file in the crx-repository and copy the content of the sample data file to the file in crx-repository. For example, create a file at: */content/json-prefill*
