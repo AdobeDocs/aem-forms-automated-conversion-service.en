@@ -10,21 +10,15 @@ discoiquuid: 43559311-50d4-4616-b84a-f54bdf9cc3fb
 privatebeta: true
 ---
 
-# About this help {#about-this-help}
+# Configure the Automated Forms Conversion service {#about-this-help}
 
-This help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This Help is for IT and AEM administrators at your organization.
-
-**IT administrator:** Responsible for IT deployment planning and hardware preparation. Knowledgeable about application servers, network administration, and email server configuration.
-
-**Product administrator:** Responsible for installing, monitoring, maintaining, and troubleshooting AEM Forms environment. AEM Forms administrator works with the IT administrator before installing the AEM software into the corporate network.
-
-The information provided is based on the assumption that anyone reading this Help is familiar with the following technologies:
+This help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This help is for IT and AEM administrators at your organization. The information provided is based on the assumption that anyone reading this Help is familiar with the following technologies:
 
 * Installing, configuring, and administering Adobe Experience Manager and AEM packages,  
 
 * Using Linux and Microsoft Windows operating systems,
 
-* Configuring SMTP mail servers.
+* Configuring SMTP mail servers
 
 >[!VIDEO](assets/configure-automated-forms-conversion-service.mp4)
 
@@ -53,7 +47,7 @@ You require the following to use the Automated Forms Conversion Service:
 
 * Automated Forms Conversion service is enabled for your organization
 * An Adobe ID account with administrator privileges for the conversion service
-* An up and running AEM 6.5 author instance with AEM 6.5 Service Pack 1 installed
+* An up and running AEM 6.5 author instance with latest AEM 6.5 Service Pack
 * An AEM user (on your AEM instance) which is member of forms-user group
 
 <!--
@@ -71,22 +65,22 @@ Comment Type: draft
 Before using the service, prepare your AEM author instance to connect to the service running on Adobe Cloud. Perform the following steps in the listed sequence to prepare your instance for the service:
 
 1. [Download and install AEM 6.5](#aemquickstart)
-1. [Download and install AEM 6.5 Service Pack 1](#servicepack)  
+1. [Download and install latest AEM 6.5 Service Pack](#servicepack)  
 1. [Download and install AEM Forms add-on package](#downloadaemformsaddon)
 
 ### Download and install AEM 6.5 {#aemquickstart}
 
 Automated Forms Conversion service runs on AEM 6.5 author instance. You require AEM 6.5 to set up an AEM 6.5 author instance. If you do not have AEM 6.5 up and running, download it from the following locations:
 
-* If you are an existing AEM customer, download AEM 6.5  from [Adobe Licensing website](http://licensing.adobe.com) or from [Adobe support website](https://daycare.day.com/home/products/cq_wcm.html).
+* If you are an existing AEM customer, download AEM 6.5  from [Adobe Licensing website](http://licensing.adobe.com).
 
 * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
 
 After you download AEM 6.5, for instructions to set up an AEM 6.5 author instance, see [deploying and maintaining](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
-### Download and install AEM 6.5 Service Pack 1 {#servicepack}
+### Download and install AEM 6.5 latest Service Pack {#servicepack}
 
-Download and install AEM Service Pack 1 (6.5.1.0). For detailed instructions see, [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
+Download and install latest AEM Service Pack (6.5.x.x). For detailed instructions see, [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### Download and install AEM Forms add-on package  {#downloadaemformsaddon}
 
@@ -129,10 +123,10 @@ Developers are members of your organization designated to run the conversion ser
    ![Specify details for the new profile.](assets/create-new-profile-details.png)
 
 1. Add developer to the profile. To add the developers:
-   a. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
-   b. Click **Assign Developers** on the required product card.![Add Developers](assets/add-developers.png)
-   c. Enter the developers email address and, optionally, first and last names.
-   d. elect product profiles. Tap **Save**.
+   1. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
+   1. Click **Assign Developers** on the required product card.![Add Developers](assets/add-developers.png)
+   1. Enter the developers email address and, optionally, first and last names.
+   1. elect product profiles. Tap **Save**.
 
 Repeat above steps for all the users.  For more details about adding developers,see [Manage developers](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
