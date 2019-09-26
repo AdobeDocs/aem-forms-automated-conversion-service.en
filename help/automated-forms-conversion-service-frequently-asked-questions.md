@@ -30,10 +30,9 @@ privatebeta: true
 
  1. **What is the type of generated schema?** 
     <p>You can use the service to generate: </p> 
-    <ul> 
-      <li>an adaptive form bound to a JSON schema and <br /> </li> 
-      <li>an adaptive form not bound to any schema</li> 
-    </ul> <br>
+
+    *   an adaptive form bound to a JSON schema and  
+    *   an adaptive form not bound to any schema <br><br>
 
  1. **Can the service convert a Microsoft Word form to adaptive forms?**
     <p>No, the service does not convert a Microsoft Word form to adaptive form. You can save a Microsoft Word forms to PDF form and convert the PDF form to an adaptive form.</p> <br>
