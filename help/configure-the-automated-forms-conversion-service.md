@@ -108,7 +108,7 @@ After Adobe enables access for your organization and provides required privilege
 
 Developers are members of your organization designated to run the conversion service. Only those developers which are added to Adobe Automated Forms Conversion service profile are entitled to use the Automated Forms Conversion service. Perform the below steps to create a profile and add developers to it:
 
-1. Log in to [Admin Console](https://adminconsole.adobe.com/). Use **Adobe ID** of administrator provisioned to use Automated Forms Conversion service to login. Do not any other ID or Federated ID to login
+1. Log in to [Admin Console](https://adminconsole.adobe.com/). Use **Adobe ID** of administrator provisioned to use Automated Forms Conversion service to login. Do not any other ID or Federated ID to login.
 
 1. Click the **Automated Forms Conversion** option.
 
@@ -125,7 +125,6 @@ Developers are members of your organization designated to run the conversion ser
 1. Add developer to the profile. To add the developers:
    1. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
    1. Click **Assign Developers** on the required product card.
-   ![Add Developers](assets/add-developers.png)
    1. Enter the developers email address and, optionally, first and last names.
    1. elect product profiles. Tap **Save**.
 
@@ -150,7 +149,7 @@ Automated Forms Conversion service uses the Day CQ mail service to send email no
 1. Go to AEM configuration manager at `http://localhost:4502/system/console/configMgr`
 1. Open the Day CQ Mail Service configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL From address]** fields. Click **[!UICONTROL Save]**.
 
-   You can contact ypuur email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in the from field. For example, notification@example.com or donotreply@example.com
+   You can contact ypuur email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in the from field. For example, notification@example.com or donotreply@example.com.
 
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
