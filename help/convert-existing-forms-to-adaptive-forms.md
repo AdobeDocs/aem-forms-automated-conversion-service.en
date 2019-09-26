@@ -55,7 +55,7 @@ Perform the following steps to upload the forms to be converted to a folder on y
 After you have uploaded the forms and configured the service, perform the following steps to start the conversion:
 
 1. On your AEM Forms instance, tap **[!UICONTROL Adobe Experience Manager]** ![Conversion Settings Dialog](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) **[!UICONTROL]**> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Select a form or the folder containing PDF forms (forms to be converted) and tap **[!UICONTROL  **Start Automated Conversion**]**. The **[!UICONTROL Conversion Settings]** dialog appears.
+1. Select a form or the folder containing PDF forms (forms to be converted) and tap [!UICONTROL  **Start Automated Conversion**]. The **[!UICONTROL Conversion Settings]** dialog appears.
 
    ![Specify the configurations](assets/conversion-settings-dialog.png)
 

@@ -32,7 +32,7 @@ The Review and Correct editor provides an easy to use interface. It has the foll
 * Toolbar: The toolbar is on the top of the editor. It displays tools to add, modify, group, ungroup, and delete fields.
 * Open properties: The Open properties option appears on tapping the ![](assets/properties.png) icon. You can click open properties to open form properties and view additional options. 
 * Filter button: The filter button ![](assets/toggle_eye.png) is on the top of the editor. It allows you to filter the fields to display only texts, fields, choice Groups, panels, or all the components. 
-* Save button: The **[!UICONTROL Save]**button is on the upper-right corner of the editor. You can also use arrow next to the Save button to view the option to send the form for conversion.  
+* Save button: The **[!UICONTROL Save]** button is on the upper-right corner of the editor. You can also use arrow next to the Save button to view the option to send the form for conversion.  
 
 * PDF form: The editor displays the source PDF document and overlays it with identified fields. You can use the tools from the toolbar to modify the fields. 
 * Pages: A source form can have multiple pages. The editor provides a button on upper-right corner to navigate between the pages.
@@ -126,7 +126,7 @@ The conversion service might not identify some components of the print form. For
 
 ![](assets/add-component.gif)
 
-To add a component to the form, tap **+** and tap **Field**. Draw a box covering label and input box of the field. For example, the above example image uses the field component to add the** Date of Birth** label and value box below it to the form. When you draw the box, the conversion service identifies the type of the field. You can change the type of field from properties browser, if required. After creating the component, open the properties browser, and set the properties of the component.
+To add a component to the form, tap **+** and tap **Field**. Draw a box covering label and input box of the field. For example, the above example image uses the field component to add the **Date of Birth** label and value box below it to the form. When you draw the box, the conversion service identifies the type of the field. You can change the type of field from properties browser, if required. After creating the component, open the properties browser, and set the properties of the component.
 
 Tap **Save** button to save the modifications or use the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service.
 
@@ -137,7 +137,7 @@ The conversion can leave a few cells, boundaries, or content of a table cell uni
 * To select a table, click on any cell of the table.
 * To modify properties of a cell such as, name, title, or type, double click a cell. You can also double click on the cell to modify the content, mark a field required, and select other properties.
 * To add/identify a completely unidentified or new table to the form, use the **+** tool.
-* To resize cells or rows of a table, single-click on the empty area of the table, hover on the row or column boundary, when the cursor pointer changes, select and move the boundary. After resizing, click **[!UICONTROL **Done**]** to commit the changes. You can press the **[!UICONTROL ESC]** key to discard the resizing.  
+* To resize cells or rows of a table, single-click on the empty area of the table, hover on the row or column boundary, when the cursor pointer changes, select and move the boundary. After resizing, click [!UICONTROL **Done**] to commit the changes. You can press the **[!UICONTROL ESC]** key to discard the resizing.  
 
 * To add or delete rows or columns, select a cell in the row of the table, and select the **[!UICONTROL Add Row]**, **[!UICONTROL Add Column]**, **[!UICONTROL Delete Row]**, or **[!UICONTROL Delete Column]** option from the ![](assets/table_18x18.png) menu.  
 

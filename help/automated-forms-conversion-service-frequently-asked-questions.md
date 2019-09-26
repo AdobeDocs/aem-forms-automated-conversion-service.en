@@ -51,22 +51,19 @@ privatebeta: true
     <p>Yes, the service supports schema-bound XDP forms and requires the schema to be embedded to the source XDP form. When you convert a schema-bound XDP form, the service generates a JSON schema. The JSON schema is structurally similar to the XSD schema of source XDP forms.</p> <br>
 
  1. **The service has failed to convert forms. What is the reason and how to resolve the issue?** 
-    <p>The most common reasons for the conversion to fail are:</p> 
-    <ul> 
-      <li>Secured PDF forms are provided for the conversion. Do not use password protected or secured PDF forms for conversion.</li> 
-      <li>Internet connection is interrupted. Ensure that you are connected to the internet during the conversion.</li> 
-      <li>Source PDF has an image of the form instead of the actual form.<br /> </li> 
-      <li>Service is configured incorrectly, service URL is not provided, or provided service URL is incorrect. Check the <a href="configure-the-automated-forms-conversion-service.md#configure-the-cloud-service">service configuration</a> at <span class="uicontrol">AEM </span>> <span class="uicontrol">Tools </span> > <span class="uicontrol">Cloud Services </span> > <span class="uicontrol">Automated Forms Conversion configuration</span>.</li>
-      <li>IMS Configuration is not configured properly. Perform a health check on the IMS configuration to ensure it is working properly. To check if the IMS Configuration is correct or not: 
-      <ol> 
-        <li>Go to http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html</li> 
-        <li>Select the configuration. Click the <strong>Check Health</strong> from the header and click <strong>Check</strong>. If successful, you get <strong>Token retrieved successfully! </strong>message.</li> 
-      </ol> </li> 
-    </ul> <br>
+The most common reasons for the conversion to fail are:</p> 
+    *   Secured PDF forms are provided for the conversion. Do not use password protected or secured PDF forms for conversion.
+    *   Internet connection is interrupted. Ensure that you are connected to the internet during the conversion.
+    *   Source PDF has an image of the form instead of the actual form.  
+
+    *   Service is configured incorrectly, service URL is not provided, or provided service URL is incorrect. Check the [service configuration](configure-the-automated-forms-conversion-service.md#configure-the-cloud-service) at **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
+    *   IMS Configuration is not configured properly. Perform a health check on the IMS configuration to ensure it is working properly. To check if the IMS Configuration is correct or not:
+        1.  Go to http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html
+        2.  Select the configuration. Click the **Check Health** from the header and click **Check**. If successful, you get **Token retrieved successfully!** message. <br> <br>
 
  1. **Does using custom fonts impact conversion?** 
     <p>When a non-interactive PDF form is converted to an adaptive form, to improve the quality of conversion, the fonts are embedded in the PDF form. The support for embedding fonts is restricted to non-interactive PDF forms. To optimize the conversion of AcroForm and XFA-based PDF forms, fallback fonts are used.</p> 
-    <p>Only forms available in the custom fonts directory listed in the <strong><span class="uicontrol">Customer fonts directory</span></strong> field of the <strong><span class="uicontrol">CQ-DAM-Handler-Gibson Font Manager Service</span></strong> configuration are embedded in non-interactive PDF form.</p> 
+    <p>Only forms available in the custom fonts directory listed in the <strong>Customer fonts directory</strong> field of the <strong> CQ-DAM-Handler-Gibson Font Manager Service</strong> configuration are embedded in non-interactive PDF form.</p> 
     <p> </p> <br>
 
 1. **Does the service identify and use fonts of source PDF in output adaptive forms?** 
@@ -101,7 +98,7 @@ privatebeta: true
       <li>Stop the AEM instance. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing. If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\. </li> 
       <li>Add the following properties to the sling.properties file:<br /> <em>sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*<br /> sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*</em></li>
       <li>Save and Close the file. <br /> </li>
-      <li>Start the AEM instance<br /> </li>
+      <li>Start the AEM instance.<br /> </li>
     </ol> <br/>
 
   1. **How to automatically change casing of adaptive form text?**

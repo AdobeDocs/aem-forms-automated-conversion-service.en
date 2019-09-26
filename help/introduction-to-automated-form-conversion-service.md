@@ -1,5 +1,5 @@
 ---
-title: Introduction to Automated Forms Conversion service
+title: Introduction
 seo-title: Introduction to Automated Forms Conversion service
 description: Speed up the conversion of print forms to adaptive forms 
 seo-description: Speed up the conversion of print forms to adaptive forms
@@ -10,7 +10,7 @@ discoiquuid: 1ba6f616-fb0d-4f3c-9889-aca7ac2aac22
 privatebeta: true
 ---
 
-# Introduction to Automated Forms Conversion service{#introduction-to-automated-forms-conversion-service}
+# Introduction {#introduction-to-automated-forms-conversion-service}
 
 Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion. The service helps:
 
@@ -82,7 +82,6 @@ Last Modified Date: 2018-11-21T09:33:33.003-0500
 The service supports non-interactive PDF forms, Forms created with Adobe Acrobat known as AcroForms, and XFA-based created using AEM Forms or Adobe LiveCycle.
 
 The service can convert only English-language forms to adaptive forms. You can translate the generated adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-
 
 <!--
 Comment Type: annotation
@@ -275,7 +274,3 @@ Comment Type: draft
 <li>The Automated Forms Conversion service is enabled for your organization.</li>
 </ul>
 -->
-
-## Next {#next}
-
-[Configure the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md)
