@@ -124,8 +124,7 @@ Developers are members of your organization designated to run the conversion ser
 
 1. Add developer to the profile. To add the developers:
    1. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
-   1. Click **Assign Developers** on the required product card. <br />
-   ![Add Developers](assets/add-developers.png) <br />
+   1. Click **Assign Developers** on the required product card.
    1. Enter the developers email address and, optionally, first and last names.
    1. elect product profiles. Tap **Save**.
 
