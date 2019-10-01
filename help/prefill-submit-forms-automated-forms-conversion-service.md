@@ -31,29 +31,54 @@ This article describes the recommended workflows to prefill field values and sub
   <tr> 
    <td><p>Form data model, OData, or any other third-party service</p></td> 
    <td> 
-    <p><strong>Option 1</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields to form data model entities manually and use the Form Data Model Prefill Service option to prefill field values. You use the Submit using Form Data Model option to submit the adaptive form.<p></p>
-    </br>
-    <strong>Option 2</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields using the rule editor to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<p></p>
-    </br>
-    For step-by-step instructions to execute these workflows, see <a href="#sqldatasource">Use database, OData, or any third-party service as the data source.</a></p> </td> 
+    <p><strong>Option 1</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields to form data model entities manually and use the Form Data Model Prefill Service option to prefill field values. You use the Submit using Form Data Model option to submit the adaptive form.</p></td> 
   </tr>
+  <tr> 
+   <td></td> 
+   <td> 
+   <p><strong>Option 2</strong>: You select form data model, OData, or any other third-party service as the data source. You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service. You bind the adaptive form fields using the rule editor to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.</p>
+    </td> 
+  </tr>
+  <tr> 
+   <td></td> 
+   <td> 
+    <p>For step-by-step instructions to execute these workflows, see <a href="#sqldatasource">Use database, OData, or any third-party service as the data source.</a></p> </td> 
+  </tr>
+  <tr>
   <td><p>JSON Schema</p></td> 
    <td> 
-    <p>You select JSON schema as the data source. Based on the selected data source:<p></p>
-    </br>
-    <strong>Option 1</strong>: You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure JSON schema as the data source. You bind the adaptive form fields to JSON schema manually and <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">use any of the supported protocols</a> to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<p></p>
-    </br>
-    For step-by-step instructions to execute the workflows, see <a href="#jsondatasource">Use JSON schema as the data source.</a><p></p>
-    </br>
-    <strong>Option 2</strong>: You <a href="#generate-adaptive-forms-with-json-binding">generate an adaptive form with JSON data binding</a> using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps.<p></p>
-    </br>
-    For step-by-step instructions to execute the workflows, see <a href="#jsonwithdatabinding">Use JSON schema as the data source.</a></p> </td> 
+    <p>You select JSON schema as the data source. Based on the selected data source:</p></td> 
   </tr>
+  <tr>
+  <td></td> 
+   <td> 
+    <p><strong>Option 1</strong>: You <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure JSON schema as the data source. You bind the adaptive form fields to JSON schema manually and <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">use any of the supported protocols</a> to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.</p></td> 
+  </tr>
+  <tr>
+  <td></td> 
+   <td> 
+    <p>For step-by-step instructions to execute the workflows, see <a href="#jsondatasource">Use JSON schema as the data source.</p></td> 
+  </tr>
+  <tr>
+  <td></td> 
+   <td> 
+    <p><strong>Option 2</strong>: You <a href="#generate-adaptive-forms-with-json-binding">generate an adaptive form with JSON data binding</a> using the Automated Forms Conversion service. The prefill service and form submission function seamlessly. You do not need any configuration steps.</p> </td> 
+  </tr>
+   <tr>
+  <td></td> 
+   <td> 
+    <p>For step-by-step instructions to execute the workflows, see <a href="#jsonwithdatabinding">Use JSON schema as the data source.</a></p> </td> 
+  </tr>
+  <tr>
   <td><p>XSD schema</p></td> 
    <td> 
-    <p>You select XSD schema as the data source. Based on the selected data source, you <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure XSD schema as the data source. You bind the adaptive form fields to XSD schema manually and <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">use any of the supported protocols</a> to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.<p></p>
-    </br>
-    For step-by-step instructions to execute the workflows, see <a href="#xsddatasource">Use XSD schema as the data source.</a></p>
+    <p>You select XSD schema as the data source. Based on the selected data source, you <a href="#generate-adaptive-forms-with-no-data-binding">generate an adaptive form with no data binding</a> using the Automated Forms Conversion service and configure XSD schema as the data source. You bind the adaptive form fields to XSD schema manually and <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">use any of the supported protocols</a> to prefill field values. Modify the field values, if necessary, and submit data to the crx-repository.</p>
+    </td> 
+  </tr>
+  <tr>
+  <td></td> 
+   <td> 
+    <p>For step-by-step instructions to execute the workflows, see <a href="#xsddatasource">Use XSD schema as the data source.</a></p>
     </td> 
   </tr>
  </tbody> 
@@ -373,7 +398,7 @@ In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done 
 
 Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [sample loan application form](#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **[!UICONTROL Generate adaptive form(s) without data bindings]** check box while generating the adaptive form.
 
-![Adaptive form with JSON binding](assets/generate_af_with_binding.png)
+![Adaptive form with JSON binding](assets/generate_af_with_data_bindings.png)
 
 ### Use JSON schema as the data source {#jsonwithdatabinding}
 
