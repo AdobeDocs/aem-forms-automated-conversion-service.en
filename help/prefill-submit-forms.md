@@ -230,6 +230,9 @@ After generating an adaptive form with no data binding, select a data source for
 * [JSON schema](#jsondatasource)
 * [XSD schema](#xsddatasource)
 
+>[!NOTE]
+> If the adaptive form that you convert using Automated Forms Conversion service contains multiple fields with the same name, ensure that those fields are bound to data source entities to avoid a possible data loss during submission.
+>
 ### Use database, OData, or any third-party service as the data source {#sqldatasource}
 
 Use Case: You generate an adaptive form with no data binding using the Automated Forms Conversion service and configure MYSQL database as the data source. You bind the adaptive form fields to form data model entities manually and use the **[!UICONTROL Form Data Model Prefill Service]** option to prefill field values. You use the **[!UICONTROL Submit using Form Data Model]** option to submit the adaptive form.
