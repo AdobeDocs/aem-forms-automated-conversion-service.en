@@ -24,7 +24,7 @@ The service would start identifying and assigning correct fields or panels to th
 |**Pattern** <br> Service does not convert colored PDF forms to adaptive form. <br><br>**Resolution** <br> Use black and white or grayscale PDF forms.|![Coloured Form](assets/best-practice-coloured-forms.png)|
 |**Pattern** <br>Service does not convert filled PDF forms to adaptive form. <br><br>**Resolution** <br>Use empty adaptive forms.| ![Filled Form](assets/best-practice-filled-forms.png) |
 |**Pattern** <br>Service can fail to recognize text and fields in a dense form. <br><br>**Resolution** <br> Increase the width between text and fields of a dense form before starting the conversion.||
-|**Pattern** <br>Service does not support scanned forms. <br><br>**Resolution** <br>Do not use scanned forms.|![Scanned Form](assets/scanned-form.jpg)|
+|**Pattern** <br>Service does not support scanned forms. <br><br>**Resolution** <br>Do not use scanned forms.|![Scanned Form](assets/scanned-form.jpg)| 
 |**Pattern** <br>Service does not extract images and text within images. <br><br>**Resolution** <br> Manually add images or text to converted forms.|![Image with text Form](assets/best-practice-image-with-text.png)|
 |**Pattern** <br>Tables with dotted or non-clear boundaries and borders do not convert. <br><br>**Resolution** <br>Use tables with clear explicit boundaries and borders. supported.|![Non-clear table Form](assets/best-practice-table-dotted-non-clear.png) |
 
