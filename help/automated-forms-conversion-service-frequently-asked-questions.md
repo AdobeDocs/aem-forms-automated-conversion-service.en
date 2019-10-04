@@ -12,7 +12,7 @@ privatebeta: true
 # Frequently asked questions{#frequently-asked-questions}
 
 1. **Which version of AEM Forms does the Automated Forms Conversion service support?** 
-    <p>Automated Forms Conversion service supports AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-the-automated-forms-conversion-service.md">Configure the Automated Forms Conversion</a> service.</p> 
+    <p>Automated Forms Conversion service supports AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
     <br>
 
  1. **Can the service be installed on-premise?** 
@@ -55,7 +55,7 @@ The most common reasons for the conversion to fail are:</p>
     *   Internet connection is interrupted. Ensure that you are connected to the internet during the conversion.
     *   Source PDF has an image of the form instead of the actual form.  
 
-    *   Service is configured incorrectly, service URL is not provided, or provided service URL is incorrect. Check the [service configuration](configure-the-automated-forms-conversion-service.md#configure-the-cloud-service) at **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
+    *   Service is configured incorrectly, service URL is not provided, or provided service URL is incorrect. Check the [service configuration](configure-service.md#configure-the-cloud-service) at **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
     *   IMS Configuration is not configured properly. Perform a health check on the IMS configuration to ensure it is working properly. To check if the IMS Configuration is correct or not:
         1.  Go to `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
         2.  Select the configuration. Click the **Check Health** from the header and click **Check**. If successful, you get **Token retrieved successfully!** message. <br> <br>

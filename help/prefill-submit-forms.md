@@ -88,7 +88,7 @@ This article describes the recommended workflows to prefill field values and sub
 For more information on the Automated Forms Conversion service, see the following articles:
 
 * [Introduction to Automated Forms Conversion service](introduction.md)
-* [Configure the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md)
+* [Configure the Automated Forms Conversion service](configure-service.md)
 * [Convert print forms to adaptive forms](convert-existing-forms-to-adaptive-forms.md)
 * [Review and correct converted forms](review-correct-ui-edited.md)
 
@@ -97,7 +97,7 @@ The information provided in this article is based on the assumption that anyone 
 ## Pre-requisites {#pre-requisites}
 
 * Configure an [AEM author instance](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
-* Configure [Automated Forms Conversion service on the AEM author instance](configure-the-automated-forms-conversion-service.md)
+* Configure [Automated Forms Conversion service on the AEM author instance](configure-service.md)
 
 ## Sample adaptive form {#sample-adaptive-form}
 
