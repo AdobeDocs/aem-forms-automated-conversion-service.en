@@ -7,7 +7,7 @@ user-guide: null
 
 # Table of Contents {#table-of-contents}
 
-+ [Introduction to Automated Forms Conversion service](introduction-to-automated-form-conversion-service.md)
++ [Introduction to Automated Forms Conversion service](introduction.md)
 + [Configure the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md)
 + [Convert print forms to adaptive forms](convert-existing-forms-to-adaptive-forms.md)
 + [Review and correct converted forms](review-correct-ui-edited.md)
