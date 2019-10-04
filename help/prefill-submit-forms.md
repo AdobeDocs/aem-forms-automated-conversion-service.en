@@ -87,7 +87,7 @@ This article describes the recommended workflows to prefill field values and sub
 
 For more information on the Automated Forms Conversion service, see the following articles:
 
-* [Introduction to Automated Forms Conversion service](introduction-to-automated-form-conversion-service.md)
+* [Introduction to Automated Forms Conversion service](introduction.md)
 * [Configure the Automated Forms Conversion service](configure-the-automated-forms-conversion-service.md)
 * [Convert print forms to adaptive forms](convert-existing-forms-to-adaptive-forms.md)
 * [Review and correct converted forms](review-correct-ui-edited.md)
