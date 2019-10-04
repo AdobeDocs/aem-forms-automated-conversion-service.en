@@ -16,7 +16,7 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 ## Pre-requisites {#pre-requisites}
 
-* [**Configure the conversion service**](configure-the-automated-forms-conversion-service.md)  
+* [**Configure the conversion service**](configure-service.md)  
 
 * **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms:** Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form(s) during conversion.  
 
@@ -91,7 +91,7 @@ After you have uploaded the forms and configured the service, perform the follow
 1. Tap **[!UICONTROL Start Conversion]**. The Conversion is started. Conversion progress is displayed on the folder or the form until the conversion is in progress. The message is replaced another status message (Converted, Partially Converted, or Conversion Failed) after the conversion is complete. A status email is also sent on the configured email address on completion of conversion:
     
     * On a successful conversion, the converted adaptive form and related schema are downloaded to the path specified in the **[!UICONTROL Basic]** tab of the conversion dialog. Form fragments and corresponding schema are downloaded only if the Extract Fragment option is selected before starting the conversion.
-    * On a failed conversion, the **[!UICONTROL Conversion Failed]** message is displayed if all the input forms fail to convert or the **[!UICONTROL Partially Failed]** message is displayed when only a few of all the input forms fail to convert. A status email is sent on the [configured email address](configure-the-automated-forms-conversion-service.md#main-pars-header-242943920) and an error is logged to the error.log file.
+    * On a failed conversion, the **[!UICONTROL Conversion Failed]** message is displayed if all the input forms fail to convert or the **[!UICONTROL Partially Failed]** message is displayed when only a few of all the input forms fail to convert. A status email is sent on the [configured email address](configure-service.md#main-pars-header-242943920) and an error is logged to the error.log file.
 
    If you are converting an XFA-based PDF form in to an adaptive form,the conversion service automatically associates the PDF form to the converted adaptive form as the Document of Record template. After conversion, you can open the adaptive form properties to view the Document of Record template in the **[!UICONTROL Document of Record Template Configuration]** section of **[!UICONTROL Form Model]** tab. </br>
 

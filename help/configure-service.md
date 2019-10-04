@@ -136,11 +136,11 @@ Once an administrator adds developers to Adobe I/O profile, the developers are n
 
 After an administrator provides you developer access, you can connect your local AEM Forms instance to Automated Forms conversion service running on Adobe Cloud. Perform the following steps in the listed sequence to connect your AEM Forms instance to the service:
 
-* [Configure email notifications](configure-the-automated-forms-conversion-service.md#configureemailnotification)
+* [Configure email notifications](configure-service.md#configureemailnotification)
 * [Add user to the forms-users group](#adduserstousergroup)
 * [Obtain public certificates](#obtainpubliccertificates)
 * [Create Adobe I/O integration](#createintegration)
-* [Configure the cloud service](configure-the-automated-forms-conversion-service.md#configure-the-cloud-service)
+* [Configure the cloud service](configure-service.md#configure-the-cloud-service)
 
 #### Configure email notification {#configureemailnotification}
 
