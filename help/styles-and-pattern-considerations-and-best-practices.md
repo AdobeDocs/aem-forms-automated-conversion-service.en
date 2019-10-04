@@ -21,27 +21,27 @@ The service would start identifying and assigning correct fields or panels to th
 
 |Pattern|Resolution|
 |--- |--- |
-|Service does not convert colored PDF forms to adaptive form.|Use black and white or grayscale PDF forms.|
-|Service does not convert filled PDF forms to adaptive form.|Use empty adaptive forms.|
-|Service can fail to recognize text and fields in a dense form.|Increase the width between text and fields of a dense form before starting the conversion.|
-|Service does not support scanned forms.|Do not use scanned forms.|
-|Service does not extract images and text within images.|Manually add images or text to converted forms.|
-|Tables with dotted or non-clear boundaries and borders do not convert.|Use tables with clear explicit boundaries and borders. supported.|
+|**Pattern** <br> Service does not convert colored PDF forms to adaptive form. <br><br>**Resolution** <br> Use black and white or grayscale PDF forms.|![Coloured Form](assets/best-practice-coloured-forms.png)|
+|**Pattern** <br>Service does not convert filled PDF forms to adaptive form. <br><br>**Resolution** <br>Use empty adaptive forms.| ![Filled Form](assets/best-practice-filled-forms.png) |
+|**Pattern** <br>Service can fail to recognize text and fields in a dense form. <br><br>**Resolution** <br> Increase the width between text and fields of a dense form before starting the conversion.||
+|**Pattern** <br>Service does not support scanned forms. <br><br>**Resolution** <br>Do not use scanned forms.|![Scanned Form](assets/scanned-form.jpg)|
+|**Pattern** <br>Service does not extract images and text within images. <br><br>**Resolution** <br> Manually add images or text to converted forms.|![Image with text Form](assets/best-practice-image-with-text.png)
+|**Pattern** <br>Tables with dotted or non-clear boundaries and borders do not convert. <br><br>**Resolution** <br>Use tables with clear explicit boundaries and borders. supported.|![Non-clear table Form](assets/best-practice-table-dotted-non-clear.png) |
 
 ## Choice Group  {#choice-group}
 
 |Pattern|Resolution|
 |--- |--- |
-|Choice group options with shapes other than box or circle are not converted to corresponding adaptive form components.|Change choice options shapes to box or circle or use Review and Correct editor to identify the shapes.|
+|**Pattern** <br> Choice group options with shapes other than box or circle are not converted to corresponding adaptive form components. <br><br>**Resolution** <br> Change choice options shapes to box or circle or use Review and Correct editor to identify the shapes.|![Choice fileds ](assets/best-practice-choice-group-options.png) |
 
 ## Form fields {#form-fields}
 
 |Pattern|Resolution|
 |--- |--- |
-|Service does not identify fields without clear borders.|Use Review and Correct editor to identify such fields.|
-|Service may not identify some choice group form fields with captions at the bottom or right side of a form.|Use Review and Correct editor to identify such fields|
-|Service merges or assigns a wrong type to some form fields which are placed very near to each other or do not have clear borders.|Use Review and Correct editor to identify such fields.|
-|Service can fail to recognize fields with far away captions or a dotted line between the caption and input field.|Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.|
+|**Pattern** <br> Service does not identify fields without clear borders. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields.|![Choice fileds ](assets/best-practice-fields-without-clear-borders.png) |
+|**Pattern** <br> Service may not identify some choice group form fields with captions at the bottom or right side of a form. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields| ![Choice fileds ](assets/best-practice-caption-bottom-right.png)|
+|**Pattern** <br> Service merges or assigns a wrong type to some form fields which are placed very near to each other or do not have clear borders. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields.| |
+|**Pattern** <br> Service can fail to recognize fields with far away captions or a dotted line between the caption and input field. <br><br>**Resolution** <br> Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.| |
 
 ## Lists {#lists}
 
