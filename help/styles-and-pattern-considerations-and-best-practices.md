@@ -38,10 +38,10 @@ The service would start identifying and assigning correct fields or panels to th
 
 |Pattern|Resolution|
 |--- |--- |
-|**Pattern** <br> Service does not identify fields without clear borders. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields.|![Choice fileds ](assets/best-practice-fields-without-clear-borders.png) |
-|**Pattern** <br> Service may not identify some choice group form fields with captions at the bottom or right side of a form. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields| ![Choice fileds ](assets/best-practice-caption-bottom-right.png)|
-|**Pattern** <br> Service merges or assigns a wrong type to some form fields which are placed very near to each other or do not have clear borders. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields.| |
-|**Pattern** <br> Service can fail to recognize fields with far away captions or a dotted line between the caption and input field. <br><br>**Resolution** <br> Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.| |
+|**Pattern** <br> Service does not identify fields without clear borders. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields.|![fileds wih non-clear boundaries](assets/best-practice-fields-without-clear-borders.png) |
+|**Pattern** <br> Service may not identify some choice group form fields with captions at the bottom or right side of a form. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields| ![Choice fileds](assets/best-practice-caption-bottom-right.png)|
+|**Pattern** <br> Service merges or assigns a wrong type to some form fields which are placed very near to each other or do not have clear borders. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields.|![Choice fileds](assets/best-practice-placed-very-near.png) |
+|**Pattern** <br> Service can fail to recognize fields with far away captions or a dotted line between the caption and input field. <br><br>**Resolution** <br> Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.|![Far away fields or dotted line between field of caption](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ## Lists {#lists}
 
