@@ -49,7 +49,7 @@ The service would start identifying and assigning correct fields or panels to th
 |--- |--- |
 |**Pattern** <br>Lists containing form fields are merged or not converted to corresponding adaptive form components <br><br>**Resolution** <br>Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.|![lists containing choice groups](assets/best-practice-lists-containing-form-fields.png)|
 |**Pattern** <br>Service can leave a few nested lists unidentified <br><br>**Resolution** <br> Use Review and Correct editor to fix such issues.|![lists containing choice groups](assets/best-practice-nested-lists.png)|
-|**Pattern** <br> Service merges some lists containing choice groups with each other <br><br>**Resolution** <br> Use Review and Correct editor to fix such issues.|![lists containing choice groups](assets/best-practice-check-box-in-table.png)  |
+|**Pattern** <br> Service merges some lists containing choice groups with each other <br><br>**Resolution** <br> Use Review and Correct editor to fix such issues.|![lists containing choice groups](assets/best-practice-check-box-in-table-cells.png)  |
 
 <!--
 Comment Type: draft
