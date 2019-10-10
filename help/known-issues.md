@@ -1,12 +1,11 @@
 ---
 title: Known Issues
 seo-title: Known Issues
-description: null
-seo-description: null
+description: known issues and limitations for Automated Forms Conversion Service
+seo-description: Before you begin using AEM Forms Automated Forms Conversion service, learn about the known issues and limitations of the service
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-privatebeta: true
 ---
 # Known issues and limitations {#known-issues-limitations}
 

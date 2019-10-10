@@ -6,7 +6,6 @@ seo-description: Review and correct the adaptive forms converted by the Automate
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
-privatebeta: true
 ---
 
 # Review and correct converted forms{#review-and-correct-converted-forms}

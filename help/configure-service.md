@@ -7,7 +7,6 @@ uuid: b136f5a1-7770-4b13-9255-feacb7220f70
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 43559311-50d4-4616-b84a-f54bdf9cc3fb
-privatebeta: true
 ---
 
 # Configure the Automated Forms Conversion service {#about-this-help}

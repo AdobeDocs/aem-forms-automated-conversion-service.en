@@ -7,7 +7,6 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-privatebeta: true
 ---
 
 # Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
