@@ -7,7 +7,6 @@ uuid: d0f04fac-7917-4852-a85c-51dd5a1bded6
 contentOwner: khsingh
 topic-tags: introduction
 discoiquuid: 1ba6f616-fb0d-4f3c-9889-aca7ac2aac22
-privatebeta: true
 ---
 
 # Introduction {#introduction-to-automated-forms-conversion-service}

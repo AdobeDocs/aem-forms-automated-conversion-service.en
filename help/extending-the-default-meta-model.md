@@ -6,7 +6,6 @@ seo-description: Extend the default meta-model to add pattern, validations, and 
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-privatebeta: true
 ---
 
 # Extend the default meta-model {#extend-the-default-meta-model}

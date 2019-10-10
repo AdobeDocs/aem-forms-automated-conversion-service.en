@@ -1,12 +1,11 @@
 ---
 title: Frequently asked questions
 seo-title: Frequently asked questions
-description: null
-seo-description: null
+description: Common queries or frequently asked questions
+seo-description: frequently asked questions for Automated Forms Conversion Service
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-privatebeta: true
 ---
 
 # Frequently asked questions{#frequently-asked-questions}
