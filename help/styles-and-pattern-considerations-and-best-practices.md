@@ -1,12 +1,11 @@
 ---
 title: Best practices and considerations 
 seo-title: Best practices and considerations 
-description: null
-seo-description: null
+description: Best practices and considerations for Automated Forms Conversion service
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
-privatebeta: true
 ---
 
 # Best practices and considerations {#Best-practices-and-considerations2}
