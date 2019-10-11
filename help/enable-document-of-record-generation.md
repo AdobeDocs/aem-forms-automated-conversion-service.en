@@ -1,8 +1,8 @@
 ---
 title: Generate Document of Record during conversion
 seo-title: Generate Document of Record during conversion
-description: null
-seo-description: null
+description: Recommended paths to generate a DoR based on the type of source forms used for conversion.
+seo-description: Recommended paths to generate a DoR based on the type of source forms used for conversion.
 page-status-flag: never-activated
 uuid: 7f0f5bf3-21be-449a-b23e-5946a9fd7ed4
 contentOwner: khsingh
