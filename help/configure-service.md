@@ -102,7 +102,8 @@ The connector package allows you to connect your AEM instance with conversion se
 
 The pacakge is installed.
 
-### Download and install the reference package{#referencepackage}
+### Download and install the reference package {#referencepackage}
+
 If you have installed AEM and AEM Forms add-on package in your production environment without samples or using nosample option, then the AEM author instance does not contain any sample themes. So, create a few themes of your own before using the service or install the sample themes provided in the [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package. Automated Forms Conversion service requires atleast one theme and one template to convert a PDF forms to an adaptive form.
 
 
