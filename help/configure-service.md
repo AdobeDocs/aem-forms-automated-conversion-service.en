@@ -97,11 +97,13 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 The connector package allows you to connect your AEM instance with conversion service running on Adobe Cloud. It also provides the ability to create cloud configurations for the service and Review and Correct editor. Perform the following steps to download and install the package:
 
 1. Log in your AEM instance. Navigate to [!UICONTROL **Tools**] > [!UICONTROL **Deployment**] > [!UICONTROL **Package Share**] 
-1. Search Automated Forms Conversion service connector package.
-1. Click the package applicable to your operating system, and click Download. Read and accept the license agreement and click OK. The download starts. Once downloaded, the word Downloaded appears next to the package.
-1. After the download completes, click Downloaded. You are redirected to package manager.  In the package manager, search the downloaded package, and click Install.  
+1. Search for keyword [!DNL **AFCS-Connector-2019.10.1**].
+1. Click the package and click Download. Read and accept the license agreement and click OK. The download starts. Once downloaded, the word Downloaded appears next to the package.
 
-The package is installed.
+   You can also download the package from the link: [https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2019.10.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2019.10.1)  
+
+1. After the download completes, click [!UICONTROL **Downloaded**]. You are redirected to package manager.  In the package manager, search the downloaded package, and click [!UICONTROL **Install**].  
+   If you have directly downloaded the package from the aforementioned link, upload the package to package manager and click [!UICONTROL **Install**]. The package is installed.
 
 ### Download and install the reference package {#referencepackage}
 
