@@ -64,8 +64,10 @@ Comment Type: draft
 Before using the service, prepare your AEM author instance to connect to the service running on Adobe Cloud. Perform the following steps in the listed sequence to prepare your instance for the service:
 
 1. [Download and install AEM 6.5](#aemquickstart)
-1. [Download and install latest AEM 6.5 Service Pack](#servicepack)  
+1. [Download and install latest AEM 6.5 Service Pack](#servicepack)
 1. [Download and install AEM Forms add-on package](#downloadaemformsaddon)
+1. [Download and install the Connector package](#downloadconnectorpackage)
+1. [Download and install the reference package](#referencepackage)
 
 ### Download and install AEM 6.5 {#aemquickstart}
 
@@ -88,6 +90,21 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 >[!NOTE]
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
+
+### Download and install the Connector package {#downloadconnectorpackage}
+
+The connector package allows you to connect your AEM instance with conversion service running on Adobe Cloud. It also provides the ability to create cloud configurations for the service and Review and Correct editor. Perform the following steps to download and install the package:
+
+1. Log in your AEM instance. Navigate to [!UICONTROL **Tools**] > [!UICONTROL **Deployment**] > [!UICONTROL **Package Share**] 
+1. Search Automated Forms Conversion service connector package.
+1. Click the package applicable to your operating system, and click Download. Read and accept the license agreement and click OK. The download starts. Once downloaded, the word Downloaded appears next to the package.
+1. After the download completes, click Downloaded. You are redirected to package manager.  In the package manager, search the downloaded package, and click Install.  
+
+The pacakge is installed.
+
+### Download and install the reference package{#referencepackage}
+If you have installed AEM and AEM Forms add-on package in your production environment without samples or using nosample option, then the AEM author instance does not contain any sample themes. So, create a few themes of your own before using the service or install the sample themes provided in the [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package. Automated Forms Conversion service requires atleast one theme and one template to convert a PDF forms to an adaptive form.
+
 
 ## Configure the service {#configure-the-service}
 
