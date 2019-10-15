@@ -100,11 +100,13 @@ The connector package allows you to connect your AEM instance with conversion se
 1. Click the package applicable to your operating system, and click Download. Read and accept the license agreement and click OK. The download starts. Once downloaded, the word Downloaded appears next to the package.
 1. After the download completes, click Downloaded. You are redirected to package manager.  In the package manager, search the downloaded package, and click Install.  
 
-The pacakge is installed.
+The package is installed.
 
 ### Download and install the reference package {#referencepackage}
 
-If you have installed AEM and AEM Forms add-on package in your production environment without samples or using nosample option, then the AEM author instance does not contain any sample themes. So, create a few themes of your own before using the service or install the sample themes provided in the [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package. Automated Forms Conversion service requires atleast one theme and one template to convert a PDF forms to an adaptive form.
+If you start AEM [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent runmode), the AEM author instance does not install reference package. The reference package contains sample themes and templates. Automated Forms Conversion service requires at least one theme and one template to convert a PDF forms to an adaptive form.
+
+Create a few themes and templates of your own and point [service configuration](#configure-the-cloud-service) to use your custom templates and themes or install the [reference package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package to get sample themes and templates. 
 
 
 ## Configure the service {#configure-the-service}
