@@ -13,14 +13,15 @@ discoiquuid: 43559311-50d4-4616-b84a-f54bdf9cc3fb
 
 This help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This help is for IT and AEM administrators at your organization. The information provided is based on the assumption that anyone reading this Help is familiar with the following technologies:
 
-* Installing, configuring, and administering Adobe Experience Manager and AEM packages,  
+* Installing, configuring, and administering Adobe Experience Manager and AEM packages,
 
 * Using Linux and Microsoft Windows operating systems,
 
 * Configuring SMTP mail servers
 
 >[!VIDEO](https://video.tv.adobe.com/v/29267/)
-***Watch the video or read the article to configure Automated Forms Conversion service**
+
+**Watch the video or read the article to configure Automated Forms Conversion service**
 
 <!--
 Comment Type: draft
