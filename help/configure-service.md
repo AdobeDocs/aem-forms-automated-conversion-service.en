@@ -19,8 +19,10 @@ This help describes how an AEM administrator can configure Automated Forms Conve
 
 * Configuring SMTP mail servers
 
->[!VIDEO](https://video.tv.adobe.com/v/29267/) 
+>[!VIDEO](https://video.tv.adobe.com/v/29267/)
+***Watch the video or read the article to configure Automated Forms Conversion service**
 
+>[!VIDEO](https://www.youtube.com/watch?v=FVq0gVS96w0)
 ***Watch the video or read the article to configure Automated Forms Conversion service**
 <!--
 Comment Type: draft
