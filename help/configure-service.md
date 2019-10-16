@@ -96,14 +96,14 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 
 The connector package allows you to connect your AEM instance with conversion service running on Adobe Cloud. It also provides the ability to create cloud configurations for the service and Review and Correct editor. Perform the following steps to download and install the package:
 
-1. Log in your AEM instance. Navigate to [!UICONTROL **Tools**] > [!UICONTROL **Deployment**] > [!UICONTROL **Package Share**] 
-1. Search for keyword [!DNL **AFCS-Connector-2019.10.1**].
+1. Log in your AEM instance. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Package Share]**
+1. Search for keyword **[!DNL AFCS-Connector-2019.10.1]**.
 1. Click the package and click Download. Read and accept the license agreement and click OK. The download starts. Once downloaded, the word Downloaded appears next to the package.
 
    You can also download the package from the link: [https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2019.10.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2019.10.1)  
 
-1. After the download completes, click [!UICONTROL **Downloaded**]. You are redirected to package manager.  In the package manager, search the downloaded package, and click [!UICONTROL **Install**].  
-   If you have directly downloaded the package from the aforementioned link, upload the package to package manager and click [!UICONTROL **Install**]. The package is installed.
+1. After the download completes, click **[!UICONTROL Downloaded]**. You are redirected to package manager.  In the package manager, search the downloaded package, and click **[!UICONTROL Install]**.  
+   If you have directly downloaded the package from the aforementioned link, upload the package to package manager and click **[!UICONTROL Install]**. The package is installed.
 
 ### Download and install the reference package {#referencepackage}
 
@@ -118,11 +118,11 @@ Before you proceed to configure the service and connect your local instance with
 
 * **Administrators**: Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect to Automated Forms Conversion service running on Adobe Cloud. When an administrator is provisioned for an organization, the administrator receives an email with title **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. If you are an administrator, check your mailbox for email with aforementioned title and proceed to [grant access to developers of your organization](#adduseranddevs).
 
-![admin access grant email](assets/admin-console-adobe-io-access-granted.png)
+![admin access grant email](assets/admin-console-adobe-io-access-grantedx75.png)
 
 * **Developers**: A developer connects a local AEM Forms author instance to Automated Forms Conversion service running on Adobe Cloud. When an administrator grants rights to a developer to connect to Automated Forms Conversion service, an email with title You now have developer access to manage Adobe API integrations for your organization is sent to the developer. If you are a developer, check your mailbox for email with aforementioned title and proceed to [Connect your local AEM instance to Automated Forms Conversion service on Adobe Cloud.](#connectafcadobeio)  
   
-![developer access grant email](assets/email-developer-access.png)  
+![developer access grant email](assets/email-developer-accessx94.png)  
 
 ### (For administrators only) Grant access to developers of your organization {#adduseranddevs}
 
@@ -131,15 +131,8 @@ After Adobe enables access for your organization and provides required privilege
 Developers are members of your organization designated to run the conversion service. Only those developers which are added to Adobe Automated Forms Conversion service profile are entitled to use the Automated Forms Conversion service. Perform the below steps to create a profile and add developers to it:
 
 1. Log in to [Admin Console](https://adminconsole.adobe.com/). Use **Adobe ID** of administrator provisioned to use Automated Forms Conversion service to login. Do not any other ID or Federated ID to login.
-
 1. Click the **Automated Forms Conversion** option.
-
-   ![Click the Automated Forms Converion option under Products.  ](assets/create-profile-open-automated-forms-conversion-service-adminconsole.png)
-
 1. Click **New Profile** in the **Products** tab.
-
-   ![Click the New Profile option. ](assets/create-new-profile.png)
-
 1. Specify **Name**, **Display Name**, and **Description** for the profile. Click **Done**. A profile is created.
 
    ![Specify details for the new profile.](assets/create-new-profile-details.png)
@@ -238,7 +231,7 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
 
 1. Specify name and description for the integration. Tap **Select a File from your computer** and upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section.
 1. Select the profile created while [granting access to developers of your organization](#adduseranddevs) and tap **Create Integration**. The integration is created.
-1. Tap **Continue to integration** **details** to view the integration information. The page contains API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
+1. Tap **Continue to integration details** to view the integration information. The page contains API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
 
    ![API Key, Client Secret, and payload information of an integration](assets/integration-details.png)
 
@@ -288,7 +281,7 @@ Create a cloud service configuration to connect your AEM instance to the convers
    |Existing Fragments|Location of existing fragments, if any.|
    |Custom Meta-model|Path of the .schema.json file of custom meta-model.|
 
-   ![Conversion Settings Dialog](assets/conversion-settings.png)
+   
 
 1. In the **[!UICONTROL Advanced]** tab of the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following field:
 
