@@ -1,8 +1,9 @@
 ---
 cloud: experience-cloud
-product: adobe
-archtype: end-user
-user-guide: null
+product: experience manager
+sub-product: forms conversion service
+audience: end-user
+user-guide: Adobe Experience Manager Forms Automated Conversion Service
 ---
 
 # Table of Contents {#table-of-contents}
