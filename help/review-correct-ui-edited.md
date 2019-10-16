@@ -136,7 +136,7 @@ The conversion can leave a few cells, boundaries, or content of a table cell uni
 * To select a table, click on any cell of the table.
 * To modify properties of a cell such as, name, title, or type, double click a cell. You can also double click on the cell to modify the content, mark a field required, and select other properties.
 * To add/identify a completely unidentified or new table to the form, use the **+** tool.
-* To resize cells or rows of a table, single-click on the empty area of the table, hover on the row or column boundary, when the cursor pointer changes, select and move the boundary. After resizing, click [!UICONTROL **Done**] to commit the changes. You can press the **[!UICONTROL ESC]** key to discard the resizing.  
+* To resize cells or rows of a table, single-click on the empty area of the table, hover on the row or column boundary, when the cursor pointer changes, select and move the boundary. After resizing, click **[!UICONTROL Done]** to commit the changes. You can press the **[!UICONTROL ESC]** key to discard the resizing.  
 
 * To add or delete rows or columns, select a cell in the row of the table, and select the **[!UICONTROL Add Row]**, **[!UICONTROL Add Column]**, **[!UICONTROL Delete Row]**, or **[!UICONTROL Delete Column]** option from the ![](assets/table_18x18.png) menu.  
 

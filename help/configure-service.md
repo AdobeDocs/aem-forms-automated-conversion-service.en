@@ -220,9 +220,9 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
 
 1. Log in to [https://console.adobe.io/](https://console.adobe.io/). Use your Adobe ID, developer account that your administrator has provisioned to login to Adobe I/O console to login.
 
-1. Tap [!UICONTROL **View Integrations**]. A screen with all the available integrations appears.
+1. Tap **[!UICONTROL View Integrations]**. A screen with all the available integrations appears.
 1. Select your organization from the drop-down under **[!UICONTROL Integrations]**. Tap **[!UICONTROL New Integration]**, select **[!UICONTROL Access an API]**, and tap **[!UICONTROL Continue]**.
-1. Select [!UICONTROL **Experience Cloud** > **Automated Forms Conversion**] and tap **[!UICONTROL Continue]**. If the Automated Forms Conversion option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. If you do not know your organization, contact your administrator.
+1. Select **[!UICONTROL Experience Cloud]** > **[!UICONTROL Automated Forms Conversion]** and tap **[!UICONTROL Continue]**. If the Automated Forms Conversion option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. If you do not know your organization, contact your administrator.
 
    ![Select Automated Forms Conversion](assets/create-new-integration.png)
 
