@@ -56,7 +56,7 @@ After the first successful conversion, the conversion service overlays the sourc
 
 ### Before you start {#before-you-start}
 
-* Review and Correct editor does not support fragments. Do not use the editor to review conversions that had the **Extract Fragment** option enabled during conversions. You can use the [adaptive form editor](review-correct-ui-edited.md#open-adaptive-forms-editor) for such conversions.  
+* Review and Correct editor does not support fragments. Do not use the editor to review conversions that had the **Extract Fragment** option enabled during conversions. You can use the [adaptive form editor](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) for such conversions.  
 
 * Review and Correct editor does not have undo action. Use the Save button only for permanently saving the changes.
 
@@ -186,7 +186,7 @@ Tap **Save** button to save the modifications or use the **Save & Convert** butt
 
 Once you have made all the required changes in Review and Correct editor, you can resend the form for conversion. To send the form for conversion, tap **[!UICONTROL Save & Convert]**. The **[!UICONTROL Sent for conversion label]** is applied to the folder containing the source document and the updated source form is uploaded to conversion service running on Adobe I/O.
 
-Depending on the complexity of the form, the conversion service can take some time to convert the form. After the conversion is complete the converted adaptive form and related assets is downloaded to your machine. You can review the form in the editor after the conversion is complete and open the adaptive form in [adaptive form editor](review-correct-ui-edited.md#open-adaptive-forms-editor) for the final set of fixes, if required.
+Depending on the complexity of the form, the conversion service can take some time to convert the form. After the conversion is complete the converted adaptive form and related assets is downloaded to your machine. You can review the form in the editor after the conversion is complete and open the adaptive form in [adaptive form editor](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) for the final set of fixes, if required.
 
 If you resend a form for conversion after updating the form in adaptive form editor, all the changes made in adaptive form are lost. You can open a form in review and correct editor only after a successful conversion.
 
