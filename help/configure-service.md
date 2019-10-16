@@ -68,7 +68,7 @@ Before using the service, prepare your AEM author instance to connect to the ser
 1. [Download and install latest AEM 6.5 Service Pack](#servicepack)
 1. [Download and install AEM Forms add-on package](#downloadaemformsaddon)
 1. [Download and install the Connector package](#downloadconnectorpackage)
-1. [Download and install the reference package](#referencepackage)
+1. [Create custom themes and templates](#referencepackage)
 
 ### Download and install AEM 6.5 {#aemquickstart}
 
@@ -105,12 +105,9 @@ The connector package allows you to connect your AEM instance with conversion se
 1. After the download completes, click **[!UICONTROL Downloaded]**. You are redirected to package manager.  In the package manager, search the downloaded package, and click **[!UICONTROL Install]**.  
    If you have directly downloaded the package from the aforementioned link, upload the package to package manager and click **[!UICONTROL Install]**. The package is installed.
 
-### Download and install the reference package {#referencepackage}
+### Create custom themes and templates {#referencepackage}
 
-If you start AEM in [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent runmode), the reference packages are not installed. The reference packages contain sample themes and templates. Automated Forms Conversion service requires at least one theme and one template to convert a PDF forms to an adaptive form. To avoid the issue, you can perform one of the following action:
-
-* Create themes and templates of your own and point [service configuration](#configure-the-cloud-service) to use your templates and themes.
-* Install the [themes reference package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package and templates reference package to get sample themes and templates.
+If you start AEM in [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent runmode), the reference packages are not installed. The reference packages contain sample themes and templates. Automated Forms Conversion service requires at least one theme and one template to convert a PDF forms to an adaptive form. Create a custom theme and template of your own and point [service configuration](#configure-the-cloud-service) to use custom templates and themes before using the service.
 
 ## Configure the service {#configure-the-service}
 
@@ -317,4 +314,4 @@ Create a cloud service configuration to connect your AEM instance to the convers
       }
    ```
 
-1. Tap **Create**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
+1. Tap **Create.** The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
