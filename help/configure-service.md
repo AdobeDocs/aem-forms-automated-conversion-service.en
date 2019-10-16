@@ -92,7 +92,7 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
 
-### Download and install the Connector package {#downloadconnectorpackage}
+### Download and install the connector package {#downloadconnectorpackage}
 
 The connector package allows you to connect your AEM instance with conversion service running on Adobe Cloud. It also provides the ability to create cloud configurations for the service and Review and Correct editor. Perform the following steps to download and install the package:
 
@@ -107,10 +107,10 @@ The connector package allows you to connect your AEM instance with conversion se
 
 ### Download and install the reference package {#referencepackage}
 
-If you start AEM [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent runmode), the AEM author instance does not install reference package. The reference package contains sample themes and templates. Automated Forms Conversion service requires at least one theme and one template to convert a PDF forms to an adaptive form.
+If you start AEM in [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent runmode), the reference packages are not installed. The reference packages contain sample themes and templates. Automated Forms Conversion service requires at least one theme and one template to convert a PDF forms to an adaptive form. To avoid the issue, you can perform one of the following action:
 
-Create a few themes and templates of your own and point [service configuration](#configure-the-cloud-service) to use your custom templates and themes or install the [reference package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package to get sample themes and templates. 
-
+* Create themes and templates of your own and point [service configuration](#configure-the-cloud-service) to use your templates and themes.
+* Install the [themes reference package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package and templates reference package to get sample themes and templates.
 
 ## Configure the service {#configure-the-service}
 
