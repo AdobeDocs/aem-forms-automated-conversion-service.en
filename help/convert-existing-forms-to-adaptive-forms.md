@@ -44,7 +44,7 @@ Perform the following steps to upload the forms to be converted to a folder on y
 
 1. Log in to the AEM Forms instance.   
 
-1. Tap **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) **[!UICONTROL]**> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Tap **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Tap **[!UICONTROL Create]**> **[!UICONTROL Folder]**. Specify **Title** and **Name** of the folder. Tap **[!UICONTROL Create]**. A folder is created.
 1. Tap to open the newly created folder.
 1. Tap **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. Select the forms to upload, click **[!UICONTROL Open]**, and click **[!UICONTROL Upload]**. The forms are uploaded.
@@ -53,8 +53,8 @@ Perform the following steps to upload the forms to be converted to a folder on y
 
 After you have uploaded the forms and configured the service, perform the following steps to start the conversion:
 
-1. On your AEM Forms instance, tap **[!UICONTROL Adobe Experience Manager]** ![Conversion Settings Dialog](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) **[!UICONTROL]**> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Select a form or the folder containing PDF forms (forms to be converted) and tap [!UICONTROL  **Start Automated Conversion**]. The **[!UICONTROL Conversion Settings]** dialog appears.
+1. On your AEM Forms instance, tap **[!UICONTROL Adobe Experience Manager]** ![Conversion Settings Dialog](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Select a form or the folder containing PDF forms (forms to be converted) and tap **[!UICONTROL Start Automated Conversion]**. The **[!UICONTROL Conversion Settings]** dialog appears.
 
    ![Specify the configurations](assets/conversion-settings-dialog.png)
 
@@ -94,7 +94,7 @@ After you have uploaded the forms and configured the service, perform the follow
 
    If you are converting an XFA-based PDF form in to an adaptive form,the conversion service automatically associates the PDF form to the converted adaptive form as the Document of Record template. After conversion, you can open the adaptive form properties to view the Document of Record template in the **[!UICONTROL Document of Record Template Configuration]** section of **[!UICONTROL Form Model]** tab. </br>
 
-   The conversion service automatically uploads the PDF form to the converted adaptive form as the Document of Record template only if you enable the **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > `Properties of selected configuration` **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** option.
+   The conversion service automatically uploads the PDF form to the converted adaptive form as the Document of Record template only if you enable the **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** option.
 
    <!--
    Comment Type: draft
