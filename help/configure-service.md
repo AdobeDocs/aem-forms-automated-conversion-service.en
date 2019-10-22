@@ -257,6 +257,7 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
    <p>If you do not see the options bar, open the Adobe IMS Configuration page in Microsoft Internet Explorer and check health.<br /> </p>
    </note>
    -->
+   <br/> <br/>
 
 #### Configure the cloud service {#configure-the-cloud-service}
 
