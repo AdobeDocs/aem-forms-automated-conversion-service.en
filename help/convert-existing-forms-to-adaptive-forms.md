@@ -62,7 +62,9 @@ After you have uploaded the forms and configured the service, perform the follow
 
     * **[!UICONTROL Select a cloud configuration]**. When you select a configuration, default template and theme are already specified. You can specify a different template or a theme, if required.  
     * Specify a location to save generated adaptive forms and corresponding schema. You can use default paths or specify custom paths.  
-    * Use the **Generate adaptive form(s) without data model bindings** option to bind or not bind generated adaptive forms with a data model. If you choose to bind, then you can specify a location to save the data model schema. If you do not select the option, the conversion service automatically associates the adaptive form(s) with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. After a successful conversion, you can also associate an adaptive form with a Form Data Model, XML schema, or a JSON schema. For more information, see [Creating an adaptive form](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+    * Use the **Generate adaptive form(s) without data model bindings** option to select if you want to generate an adaptive form with or without data model binding(s).
+    If you do not select this option, the conversion service automatically associates the adaptive form(s) with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. The **[!UICONTROL Save generated data model schema at]** field displays the default location to save the generated JSON schema. You can also customize the location to save the generated schema.
+    If you select this option, the conversion service generates an adaptive form without data model bindings. After a successful conversion, you can associate an adaptive form with a Form Data Model, XML schema, or a JSON schema. For more information, see [Creating an adaptive form](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
    Comment Type: draft
