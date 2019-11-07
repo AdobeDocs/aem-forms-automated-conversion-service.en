@@ -8,15 +8,30 @@ topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 ---
 
-# Best practices and considerations {#Best-practices-and-considerations2}
+# Best practices and known complex patterns {#Best-practices-and-considerations2}
 
-AEM Forms Automated Conversion service converts a PDF form to an adaptive form. The service uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Every machine learning service continuously learns from source data and produces an improved output with every churn. These services learn from the experience like humans.
+This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with Automated Forms Conversion service. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and ouput of Automated Forms Conversion service.
+
+## Best Practices
+
+The conversion service converts PDF forms available on your AEM Forms instance to adaptive forms. You can upload all the PDF forms at once or in a phased manner, as required. Before uploading the forms, consider the following:
+
+* Keep the number of forms in a folder less than 15 and keep the total number of pages in a folder less than 50.
+* Keep the size of folder less than 10 MB. Do not keep forms in a sub-folder.
+* Keep the number of pages in a form less than 15.
+* Do not upload the protected forms. The service does not convert password-protected and secured forms.
+* Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.
+* Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms. 
+
+## Know complex patterns
+
+AEM Forms Automated Conversion service uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Every machine learning service continuously learns from source data and produces an improved output with every churn. These services learn from the experience like humans.
 
 Automated Forms Conversion service is trained on a large set of forms. It easily identifies fields in a source form and produces adaptive forms. However, there are some fields and styles in PDF forms which are easily visible to the human eye but difficult to understand for the service. The service can assign different than applicable field types or panels to some fields or styles. All such field and style patterns are listed below.
 
 The service would start identifying and assigning correct fields or panels to these patterns as it keeps learning from the source data. For the time being, you can use [Review and Correct](review-correct-ui-edited.md) editor to fix such issues. Before start fixing the issues or reading further, familiarize yourself with [adaptive form components](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
-## General {#general}
+### General patterns {#general}
 
 |Pattern|Resolution|
 |--- |--- |
@@ -27,13 +42,13 @@ The service would start identifying and assigning correct fields or panels to th
 |**Pattern** <br>Service does not extract images and text within images. <br><br>**Resolution** <br> Manually add images or text to converted forms.|![Image with text Form](assets/best-practice-image-with-text.png)|
 |**Pattern** <br>Tables with dotted or non-clear boundaries and borders do not convert. <br><br>**Resolution** <br>Use tables with clear explicit boundaries and borders. supported.|![Non-clear table Form](assets/best-practice-table-dotted-non-clear.png) |
 
-## Choice Group  {#choice-group}
+### Choice Group  {#choice-group}
 
 |Pattern|Resolution|
 |--- |--- |
 |**Pattern** <br> Choice group options with shapes other than box or circle are not converted to corresponding adaptive form components. <br><br>**Resolution** <br> Change choice options shapes to box or circle or use Review and Correct editor to identify the shapes.|![Choice fileds ](assets/best-practice-choice-group-options.png) |
 
-## Form fields {#form-fields}
+### Form fields {#form-fields}
 
 |Pattern|Resolution|
 |--- |--- |
@@ -42,7 +57,7 @@ The service would start identifying and assigning correct fields or panels to th
 |**Pattern** <br> Service merges or assigns a wrong type to some form fields which are placed very near to each other or do not have clear borders. <br><br>**Resolution** <br> Use Review and Correct editor to identify such fields.|![Choice fileds](assets/best-practice-placed-very-near.png) |
 |**Pattern** <br> Service can fail to recognize fields with far away captions or a dotted line between the caption and input field. <br><br>**Resolution** <br> Use forms fields with clear boundaries or use Review and Correct editor to fix such issues.|![Far away fields or dotted line between field of caption](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
-## Lists {#lists}
+### Lists {#lists}
 
 |Pattern|Resolution|
 |--- |--- |
