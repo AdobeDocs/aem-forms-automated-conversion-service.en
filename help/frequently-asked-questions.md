@@ -35,11 +35,10 @@ discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 
  1. **Can the service convert a Microsoft Word form to adaptive forms?**
     <p>No, the service does not convert a Microsoft Word form to adaptive form. You can save a Microsoft Word forms to PDF form and convert the PDF form to an adaptive form. The complete process is </p> <br>
-    
-    1. Use Adobe Acrobat to <a href="https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html"> convert Word Dococument to an non-interactive PDF. </a>
-    
-    1. Use Adobe Acrobat to <a href="https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html "> convert the produced PDF forms to fillable PDF Form </a>
-    1. Use Adobe Acrobat to manually update and fix form fields. 
+
+    1. Use Adobe Acrobat to [convert Word Dococument to an non-interactive PDF](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html).
+    1. Use Adobe Acrobat to [convert the produced PDF forms to fillable PDF Form](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
+    1. Use Adobe Acrobat to manually update and fix form fields.
     1. Save the PDF form. Now, you can use the form with the conversion service to generate an adaptive form. You can also use the form as a Document of Record template.
 
 
