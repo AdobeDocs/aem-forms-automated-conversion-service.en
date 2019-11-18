@@ -17,6 +17,7 @@ The following figure depicts different stages of integrating a converted adaptiv
 ![database integration](assets/database_integration.gif)
 
 This article describes the step-by-step instructions to successfully execute all these integration stages.
+
 The sample, discussed in this article, is a reference implementation of customized data and metadata services to integrate a Forms Portal page with a database. The database used in the sample implementation is MySQL 5.6.24. However, you can integrate Forms Portal page with any database of your choice.
 
 ## Pre-requisites {#pre-requisites}
