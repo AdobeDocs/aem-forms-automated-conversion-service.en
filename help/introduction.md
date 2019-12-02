@@ -146,7 +146,8 @@ After your AEM Forms environment is configured, to convert your PDF forms to ada
 
 * Do not upload the secured forms. The service does not convert password-protected and encrypted forms.
 * Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.  
-* Do not upload PDF forms with spaces in the filename.  
+* Do not upload PDF forms with spaces in the filename.
+* Do not upload [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive forms.
 * Make the suggested changes in PDF forms described in the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) article.
 * Read the [Known issues](known-issues.md) article to avoid pitfalls.
 

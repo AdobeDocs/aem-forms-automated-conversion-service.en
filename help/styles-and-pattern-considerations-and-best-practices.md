@@ -20,8 +20,9 @@ The conversion service converts PDF forms available on your AEM Forms instance t
 * Keep the size of folder less than 10 MB. Do not keep forms in a sub-folder.
 * Keep the number of pages in a form less than 15.
 * Do not upload the protected forms. The service does not convert password-protected and secured forms.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive forms.
 * Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.
-* Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms. 
+* Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms.
 
 ## Know complex patterns
 
