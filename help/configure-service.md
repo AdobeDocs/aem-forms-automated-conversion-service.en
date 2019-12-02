@@ -67,7 +67,7 @@ Before using the service, prepare your AEM author instance to connect to the ser
 1. [Download and install AEM 6.5](#aemquickstart)
 1. [Download and install latest AEM 6.5 Service Pack](#servicepack)
 1. [Download and install AEM Forms add-on package](#downloadaemformsaddon)
-1. [Download and install the Connector package](#downloadconnectorpackage)
+
 1. [Create custom themes and templates](#referencepackage)
 
 ### Download and install AEM 6.5 {#aemquickstart}
@@ -91,19 +91,6 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 >[!NOTE]
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
-
-### Download and install the connector package {#downloadconnectorpackage}
-
-The connector package allows you to connect your AEM instance with conversion service running on Adobe Cloud. It also provides the ability to create cloud configurations for the service and Review and Correct editor. Perform the following steps to download and install the package:
-
-1. Log in your AEM instance. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Package Share]**
-1. Search for keyword **[!DNL AFCS-Connector-2019.10.1]**.
-1. Click the package and click Download. Read and accept the license agreement and click OK. The download starts. Once downloaded, the word Downloaded appears next to the package.
-
-   You can also download the package from the link: [https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2019.10.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2019.10.1)  
-
-1. After the download completes, click **[!UICONTROL Downloaded]**. You are redirected to package manager.  In the package manager, search the downloaded package, and click **[!UICONTROL Install]**.  
-   If you have directly downloaded the package from the aforementioned link, upload the package to package manager and click **[!UICONTROL Install]**. The package is installed.
 
 ### Create custom themes and templates {#referencepackage}
 
