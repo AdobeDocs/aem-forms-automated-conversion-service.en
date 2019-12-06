@@ -23,6 +23,7 @@ The conversion service converts PDF forms available on your AEM Forms instance t
 * Do not upload the [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive forms.
 * Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.
 * Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms.
+* Use adaptive form templates to specify header and footer for the output adaptive form. The service ignores header-footer of source PDF documents and uses header-footer specified in the adaptive form template.
 
 ## Know complex patterns
 
