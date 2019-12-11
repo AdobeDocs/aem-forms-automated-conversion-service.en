@@ -67,3 +67,5 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
 * Encrypted, password-protected, and secured documents are not converted. Remove encryption or passwords before running the conversion.
 * Complex tables like borderless tables, nested tables, table with colored rows, and tables with placeholder values are not supported. Use adaptive form editor to add or modify complex tables, after the conversion. Only simple tables, with empty fields, proper headers, and clear boundaries are supported.  
 * The service converts only English-language forms to adaptive forms. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* AEM 6.4 Forms does not support automatic detection of multi-column layout of input forms.
+
