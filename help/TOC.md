@@ -19,3 +19,4 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 + [Frequently asked questions](frequently-asked-questions.md)
 + [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md)
 + [Known Issues](known-issues.md)
++ [Integrate adaptive form with database using AEM workflow](submit-converted-adaptive-form-to-database.md)
