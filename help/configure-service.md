@@ -36,7 +36,7 @@ You require the following to use the Automated Forms Conversion Service:
 
 * Automated Forms Conversion service is enabled for your organization
 * An Adobe ID account with administrator privileges for the conversion service
-* An up and running AEM 6.5 author instance with latest AEM 6.5 Service Pack
+* An up and running AEM 6.5 or AEM 6.4 author instance with latest AEM Service Pack
 * An AEM user (on your AEM instance) which is member of forms-user group
 
 
@@ -69,6 +69,7 @@ Download and install latest AEM Service Pack. For detailed instructions see, [AE
 An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service. For detailed instructions, see [Install and configure data capture capabilities.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
+> If you are an existing user of Automated Forms Conversion service, install the latest service pack to continue using the service.
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
 
