@@ -106,7 +106,7 @@ Developers are members of your organization designated to run the conversion ser
    1. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
    1. Click **Assign Developers** on the required product card.
    1. Enter the developers email address and, optionally, first and last names.
-   1. elect product profiles. Tap **Save**.
+   1. Select product profiles. Tap **Save**.
 
 Repeat above steps for all the users.  For more details about adding developers,see [Manage developers](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
@@ -129,7 +129,7 @@ Automated Forms Conversion service uses the Day CQ mail service to send email no
 1. Go to AEM configuration manager at `http://localhost:4502/system/console/configMgr`
 1. Open the Day CQ Mail Service configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL From address]** fields. Click **[!UICONTROL Save]**.
 
-   You can contact ypuur email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in the from field. For example, notification@example.com or donotreply@example.com.
+   You can contact your email service provider or IT administrator for information about host name and port of SMTP server. You can use any valid email address in the from field. For example, notification@example.com or donotreply@example.com.
 
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
