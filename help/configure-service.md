@@ -69,7 +69,7 @@ Download and install latest AEM Service Pack. For detailed instructions see, [AE
 An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service. For detailed instructions, see [Install and configure data capture capabilities.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
-> If you are an existing user of Automated Forms Conversion service, install the latest service pack to continue using the service.
+> If you are an existing user of Automated Forms Conversion service, install the latest AEM Forms Add-on to continue using the service. The connector package is merged to the AEM Forms Add-on package. The additional connector package is not required, anymore. 
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
 
