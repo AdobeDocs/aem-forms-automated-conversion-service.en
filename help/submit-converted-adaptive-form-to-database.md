@@ -213,7 +213,7 @@ You need to create a workflow model now that can process this data and submit it
 
 Execute the following steps to create a workflow model to submit the adaptive form data to the database:
 
-1. Open the Workflow Models console. The default URL is https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Open the Workflow Models console. The default URL is `https://server:port/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`.
 
 1. Select **[!UICONTROL Create]**, then **[!UICONTROL Create Model]**. The **[!UICONTROL Add Workflow Model]** dialog appears.
 
