@@ -334,7 +334,11 @@ Execute the following steps:
 
     In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the JSON schema entities.
 
-1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.
+1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+
+   Download sample data file</br>
+  
+   [Get File](assets/json_data_file.txt)</br>
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
@@ -357,7 +361,12 @@ Execute the following steps:
 1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done Icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the XSD schema entities.
 
-1. Select the converted **sample loan application form** available in the **output** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.
+1. Select the converted **sample loan application form** available in the **output** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+
+   Download sample data file</br>
+  
+   [Get File](assets/loan_application_data_no_data_binding_xsd.xml)</br>
+
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
@@ -377,7 +386,11 @@ Before executing the use case, ensure that you have [an adaptive form with data 
 
 Execute the following steps:
 
-1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.
+1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+
+   Download sample data file</br>
+  
+   [Get File](assets/loan_application_data_source_json_data_binding.txt)</br>
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
 
