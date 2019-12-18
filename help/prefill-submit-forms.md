@@ -365,7 +365,7 @@ In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done 
 
    Download sample data file</br>
   
-   [Get File](assets/loan_application_data_xml_data.zip)</br>
+   [Get File](assets/loan-application-data-xml-data.zip)</br>
 
 
 1. Modify the field values, if necessary, and submit the adaptive form. The submitted data is available at the following location in the crx-repository:
