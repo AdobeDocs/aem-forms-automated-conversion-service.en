@@ -7,7 +7,7 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 
 ---
 
-# Table of Contents {#table-of-contents}
+# Table of Contents {#using}
 
 + [Introduction to Automated Forms Conversion service](introduction.md)
 + [Configure the Automated Forms Conversion service](configure-service.md)
