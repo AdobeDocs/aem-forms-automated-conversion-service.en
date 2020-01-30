@@ -76,9 +76,9 @@ To start reviewing conversions, select the source PDF document used for conversi
 
    You can delete or ungroup a panel to remove it. On using the delete option, the child fields or components of the panel are also deleted:
 
-    * To delete a panel, select the panel, and tap the delete ![](assets/delete-icon.png) icon in the toolbar. On the confirmation dialog, tap **Confirm**. Tap **Save** to save the changes.  
+    * To delete a panel, select the panel, and tap the delete ![](assets/delete-icon.png) icon in the toolbar. On the confirmation dialog, tap **[!UICONTROL Confirm]**. Tap **[!UICONTROL Save]** to save the changes.  
     
-    * To ungroup a panel, select the panel, and tap the ungroup icon in the toolbar. The panel is ungrouped and child fields of the ungrouped panel are adjusted to parent field. Tap **Save**to save the changes.
+    * To ungroup a panel, select the panel, and tap the ungroup icon in the toolbar. The panel is ungrouped and child fields of the ungrouped panel are adjusted to parent field. Tap **[!UICONTROL Save]**to save the changes.
 
 1. **Create logical groups of text**: Validate the identified texts for completeness and correctness. Also check, the texts are logically placed in correct panels or groups. For example, in a multicolumn layout, the texts of one logical group and placed in another group.
 
@@ -88,15 +88,9 @@ To start reviewing conversions, select the source PDF document used for conversi
 
 1. **Review tables:** Ensure that all the borders of the table are identified. Also ensure, the content of the cells are identified correctly.
 
-    * To identify missed borders, use the **Add Column** or **Add Row** option.
+    * To identify missed borders, use the **[!UICONTROL Add Column]** or **[!UICONTROL Add Row]** option.
     
-    * To remove extra borders, use the **Delete Column** or **Delete Row** option.
-
-   <!--
-   Comment Type: draft
-
-   <li>Step text</li>
-   -->
+    * To remove extra borders, use the **[!UICONTROL Delete Column]** or **[!UICONTROL Delete Row]** option.
 
 After making required changes, tap the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service. Each field is converted to a corresponding adaptive field component. After conversion, the updated assets including the adaptive form, and schema are downloaded to your AEM Forms instance. Depending on the complexity of the form, the service can take some time to complete the conversion.
 
@@ -125,9 +119,9 @@ The conversion service might not identify some components of the print form. For
 
 ![](assets/add-component.gif)
 
-To add a component to the form, tap **+** and tap **Field**. Draw a box covering label and input box of the field. For example, the above example image uses the field component to add the **Date of Birth** label and value box below it to the form. When you draw the box, the conversion service identifies the type of the field. You can change the type of field from properties browser, if required. After creating the component, open the properties browser, and set the properties of the component.
+To add a component to the form, tap **[!UICONTROL +]** and tap **[!UICONTROL Field]**. Draw a box covering label and input box of the field. For example, the above example image uses the field component to add the **Date of Birth** label and value box below it to the form. When you draw the box, the conversion service identifies the type of the field. You can change the type of field from properties browser, if required. After creating the component, open the properties browser, and set the properties of the component.
 
-Tap **Save** button to save the modifications or use the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service.
+Tap **[!UICONTROL Save]** button to save the modifications or use the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service.
 
 ### Add or edit a table {#addedittable}
 
@@ -135,7 +129,7 @@ The conversion can leave a few cells, boundaries, or content of a table cell uni
 
 * To select a table, click on any cell of the table.
 * To modify properties of a cell such as, name, title, or type, double click a cell. You can also double click on the cell to modify the content, mark a field required, and select other properties.
-* To add/identify a completely unidentified or new table to the form, use the **+** tool.
+* To add/identify a completely unidentified or new table to the form, use the **[!UICONTROL +]** tool.
 * To resize cells or rows of a table, single-click on the empty area of the table, hover on the row or column boundary, when the cursor pointer changes, select and move the boundary. After resizing, click **[!UICONTROL Done]** to commit the changes. You can press the **[!UICONTROL ESC]** key to discard the resizing.  
 
 * To add or delete rows or columns, select a cell in the row of the table, and select the **[!UICONTROL Add Row]**, **[!UICONTROL Add Column]**, **[!UICONTROL Delete Row]**, or **[!UICONTROL Delete Column]** option from the ![](assets/table_18x18.png) menu.  
@@ -156,7 +150,7 @@ Select the field to convert, tap ![](assets/smock_shuffle_18_n.svg) and tap a fi
 | Field |Text or Choice Group |
 | Choice Group |Text or Panel |
 
-Once converted, open the properties browser, specify label, and specify other required properties. Tap **Save** button to save the modifications or use the Save & Convert button to resend the PDF forms to conversion service.
+Once converted, open the properties browser, specify label, and specify other required properties. Tap **[!UICONTROL Save]** button to save the modifications or use the Save & Convert button to resend the PDF forms to conversion service.
 
 ### Create or remove a panel {#create-or-remove-a-panel}
 
@@ -168,7 +162,7 @@ The conversion service can create panels that have components with no relationsh
 
 * To create a panel, use the Ctrl key (on Windows or Linux) or Control key (on Mac) to select related components, and tap ![group](assets/group.jpg) to create a panel. Open the properties browser to specify properties of the panel.
 
-Tap **Save** button to save the modifications or use the **Save & Convert** button to resend the PDF forms to conversion service.
+Tap **[!UICONTROL Save]** button to save the modifications or use the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service.
 
 ### Delete a panel or component {#delete-a-panel-or-component}
 
@@ -180,7 +174,7 @@ To delete a panel or a component, select a panel or a component, and tap the del
 
 Every component of the form has a set of properties like name, title, type. To set the properties of a component, select the component, and tap properties browser. Properties of the selected component are displayed. Change or set the properties.
 
-Tap **Save** button to save the modifications or use the **Save & Convert** button to resend the PDF forms to conversion service.
+Tap **[!UICONTROL Save]** button to save the modifications or use the **[!UICONTROL Save & Convert]** button to resend the PDF forms to conversion service.
 
 ### Send a form for conversion {#send-a-form-for-conversion}
 

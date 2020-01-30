@@ -59,11 +59,10 @@ The most common reasons for the conversion to fail are:</p>
     *   Secured PDF forms are provided for the conversion. Do not use password protected or secured PDF forms for conversion.
     *   Internet connection is interrupted. Ensure that you are connected to the internet during the conversion.
     *   Source PDF has an image of the form instead of the actual form.  
-
     *   Service is configured incorrectly, service URL is not provided, or provided service URL is incorrect. Check the [service configuration](configure-service.md#configure-the-cloud-service) at **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
     *   IMS Configuration is not configured properly. Perform a health check on the IMS configuration to ensure it is working properly. To check if the IMS Configuration is correct or not:
         1.  Go to `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-        2.  Select the configuration. Click the **Check Health** from the header and click **Check**. If successful, you get **Token retrieved successfully!** message. <br> <br>
+        2.  Select the configuration. Click the **[!UICONTROL Check Health]** from the header and click **[!UICONTROL Check]**. If successful, you get **[!UICONTROL Token retrieved successfully!]** message. <br> <br>
 
  1. **Does using custom fonts impact conversion?** 
     <p>When a non-interactive PDF form is converted to an adaptive form, to improve the quality of conversion, the fonts are embedded in the PDF form. The support for embedding fonts is restricted to non-interactive PDF forms. To optimize the conversion of AcroForm and XFA-based PDF forms, fallback fonts are used.</p> 
@@ -95,7 +94,7 @@ The most common reasons for the conversion to fail are:</p>
     <p>The amount of time depends on the size and complexity of input forms and number of requests. The service intends to significantly reduce time to value by converting PDF Forms to adaptive forms at a much faster pace in comparison to the manual process of converting forms. </p> <br />
 
  1. **What to do if I encounter an error related to RSA libraries? The error message is similar to the message mentioned below:** <br/>
-    '*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]' <br>
+    `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
     The aforementioned error occurs when boot delegation is not configured for RSA/BouncyCastle libraries. Perform the below steps to resolve the issue:
     <p> </p> 
 

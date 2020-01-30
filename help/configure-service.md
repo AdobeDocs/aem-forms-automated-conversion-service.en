@@ -1,12 +1,6 @@
 ---
 title: Configure the Automated Forms Conversion service
-seo-title: Configure the Automated Forms Conversion service
 description: Ready your AEM instance to use Automated Forms Conversion service
-seo-description: Ready your AEM instance to use Automated Forms Conversion service
-uuid: b136f5a1-7770-4b13-9255-feacb7220f70
-contentOwner: khsingh
-topic-tags: forms
-discoiquuid: 43559311-50d4-4616-b84a-f54bdf9cc3fb
 ---
 
 # Configure the Automated Forms Conversion service {#about-this-help}
@@ -23,7 +17,6 @@ This help describes how an AEM administrator can configure Automated Forms Conve
 
 **Watch the video or read the article to configure Automated Forms Conversion service**
 
-
 ## Onboarding{#onboarding}
 
 The service is available for free to AEM 6.5 Forms and AEM 6.4 Forms On-Premise term customers and Adobe Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service.
@@ -38,7 +31,6 @@ You require the following to use the Automated Forms Conversion Service:
 * An Adobe ID account with administrator privileges for the conversion service
 * An up and running AEM 6.5 or AEM 6.4 author instance with latest AEM Service Pack
 * An AEM user (on your AEM instance) which is member of forms-user group
-
 
 ## Set up the environment {#setuptheservice}
 
@@ -96,17 +88,17 @@ After Adobe enables access for your organization and provides required privilege
 Developers are members of your organization designated to run the conversion service. Only those developers which are added to Adobe Automated Forms Conversion service profile are entitled to use the Automated Forms Conversion service. Perform the below steps to create a profile and add developers to it:
 
 1. Log in to [Admin Console](https://adminconsole.adobe.com/). Use **Adobe ID** of administrator provisioned to use Automated Forms Conversion service to login. Do not any other ID or Federated ID to login.
-1. Click the **Automated Forms Conversion** option.
-1. Click **New Profile** in the **Products** tab.
-1. Specify **Name**, **Display Name**, and **Description** for the profile. Click **Done**. A profile is created.
+1. Click the **[!UICONTROL Automated Forms Conversion]** option.
+1. Click **[!UICONTROL New Profile]** in the **[!UICONTROL Products]** tab.
+1. Specify **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, and **[!UICONTROL Description]** for the profile. Click **[!UICONTROL Done]**. A profile is created.
 
    ![Specify details for the new profile.](assets/create-new-profile-details.png)
 
 1. Add developer to the profile. To add the developers:
    1. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
-   1. Click **Assign Developers** on the required product card.
+   1. Click **[!UICONTROL Assign Developers]** on the required product card.
    1. Enter the developers email address and, optionally, first and last names.
-   1. Select product profiles. Tap **Save**.
+   1. Select product profiles. Tap **[!UICONTROL Save]**.
 
 Repeat above steps for all the users.  For more details about adding developers,see [Manage developers](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
@@ -142,12 +134,6 @@ Specify an email address in the profile of the AEM user designated to run the se
 1. Select a user designated to run the conversion service and tap **[!UICONTROL Properties]**. The Edit User Settings page opens.
 1. Specify an email address in the **[!UICONTROL Email]** field and tap **[!UICONTROL Save]**. The emails are sent to specified email address on successful completion or failure of the conversion.
 1. Tap the **Groups** tab. In the select group tab, type and select the **forms-users** group. Tap **Save & Close**. The user is now a member of the forms-users group.
-
-   <!--
-   Comment Type: draft
-
-   <li>Step text</li>
-   -->
 
 #### Obtain public certificates {#obtainpubliccertificates}
 
@@ -194,9 +180,9 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
 
    ![Select Automated Forms Conversion](assets/create-new-integration.png)
 
-1. Specify name and description for the integration. Tap **Select a File from your computer** and upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section.
-1. Select the profile created while [granting access to developers of your organization](#adduseranddevs) and tap **Create Integration**. The integration is created.
-1. Tap **Continue to integration details** to view the integration information. The page contains API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
+1. Specify name and description for the integration. Tap **[!UICONTROL Select a File from your computer]** and upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section.
+1. Select the profile created while [granting access to developers of your organization](#adduseranddevs) and tap **[!UICONTROL Create Integration]**. The integration is created.
+1. Tap **[!UICONTROL Continue to integration details]** to view the integration information. The page contains API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
 
    ![API Key, Client Secret, and payload information of an integration](assets/integration-details.png)
 
@@ -214,17 +200,10 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
    >
    >Create only one IMS configuration. Do not create more than one IMS configurations.
 
-1. Select the IMS configuration and tap **Check Health**. A dialog box appears. Tap **Check**. On successful connection, the *Token retrieved successfully* message appears.
+1. Select the IMS configuration and tap **[!UICONTROL Check Health]**. A dialog box appears. Tap **[!UICONTROL Check]**. On successful connection, the *Token retrieved successfully* message appears.
 
    ![On successful connection, the token retrieved successfully message appears. ](assets/health-check.png)
 
-   <!--
-   Comment Type: draft
-
-   <note type="note">
-   <p>If you do not see the options bar, open the Adobe IMS Configuration page in Microsoft Internet Explorer and check health.<br /> </p>
-   </note>
-   -->
    <br/> <br/>
 
 #### Configure the cloud service {#configure-the-cloud-service}
@@ -234,7 +213,7 @@ Create a cloud service configuration to connect your AEM instance to the convers
 1. On your AEM Forms instance, tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
 1. Tap the **[!UICONTROL Global]** folder and tap **[!UICONTROL Create]**. The page to create Automated Forms Conversion configuration appears. The configuration is created in the Global folder. You can also create the configuration in a different folder that already exists or create a new folder for your configurations.
 
-1. On the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following fields and tap **Next**.
+1. On the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following fields and tap **[!UICONTROL Next]**.
 
    |Field|Description|
    |--- |--- |
@@ -283,4 +262,4 @@ Create a cloud service configuration to connect your AEM instance to the convers
       }
    ```
 
-1. Tap **Create.** The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
+1. Tap **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
