@@ -45,7 +45,7 @@ The schema of meta-model is derived from schema entities at https://schema.org/d
 Perform the following steps to download the default meta-model to the local file system:
 
 1. Log in to your AEM Forms instance. 
-1. Navigate to the ****[!UICONTROL Forms]**** > ****[!UICONTROL Forms & Documents]** **>** **[!UICONTROL Meta Model]**** folder.
+1. Navigate to the **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** **>** **[!UICONTROL Meta Model]** folder.
 1. Select the **[!UICONTROL global.schema.json]** file and tap **[!UICONTROL Download]**. A download dialog box appears. Select the **[!UICONTROL Download asset(s) as binary files]** option. Tap **[!UICONTROL Download]**. An archive is downloaded.
 
    <!--
@@ -224,7 +224,7 @@ However, you can save a custom meta-model in a folder and modify the conversion 
 
 Execute the following steps to use a custom meta-model during conversion:
 
-1. Create a folder in ****[!UICONTROL Forms]**** > **[!UICONTROL Forms & Documents]** and upload the custom meta-model JSON schema file to the folder.
+1. Create a folder in **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** and upload the custom meta-model JSON schema file to the folder.
 1. Open the conversion service properties using:
 
    **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]**&gt; **&lt;**Properties of selected configuration**&gt;**
