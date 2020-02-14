@@ -59,6 +59,7 @@ Perform the following steps to create schema and tables in the database:
     ```sql
     CREATE SCHEMA `formsportal` ;
     ```
+
     where **formsportal** refers to the name of the schema.
 
 1. Create a **data** table in the database schema using the following SQL statement:
