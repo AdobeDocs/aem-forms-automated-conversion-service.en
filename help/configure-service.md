@@ -19,7 +19,7 @@ This help describes how an AEM administrator can configure Automated Forms Conve
 
 ## Onboarding{#onboarding}
 
-The service is available for free to AEM 6.5 Forms and AEM 6.4 Forms On-Premise term customers and Adobe Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service.
+The service is available for free to AEM 6.4 Forms and AEM 6.5 Forms On-Premise term customers and Adobe Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service.
 
 Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service.
 
