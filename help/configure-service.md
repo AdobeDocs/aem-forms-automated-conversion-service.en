@@ -29,32 +29,32 @@ You require the following to use the Automated Forms Conversion Service:
 
 * Automated Forms Conversion service is enabled for your organization
 * An Adobe ID account with administrator privileges for the conversion service
-* An up and running AEM 6.5 or AEM 6.4 author instance with latest AEM Service Pack
+* An up and running AEM 6.4 or AEM 6.5 author instance with latest AEM Service Pack
 * An AEM user (on your AEM instance) which is member of forms-user group
 
 ## Set up the environment {#setuptheservice}
 
 Before using the service, prepare your AEM author instance to connect to the service running on Adobe Cloud. Perform the following steps in the listed sequence to prepare your instance for the service:
 
-1. [Download and install AEM 6.5 or AEM 6.4](#aemquickstart)
+1. [Download and install AEM 6.4 or AEM 6.5](#aemquickstart)
 1. [Download and install latest AEM Service Pack](#servicepack)
 1. [Download and install latest AEM Forms add-on package](#downloadaemformsaddon)
 1. [Create custom themes and templates](#referencepackage)
 
-### Download and install AEM 6.5 or AEM 6.4 {#aemquickstart}
+### Download and install AEM 6.4 or AEM 6.5 {#aemquickstart}
 
 
-Automated Forms Conversion service runs on AEM author instance. You require AEM 6.5 or AEM 6.4 to set up an AEM author instance. If you do not have AEM up and running, download it from the following locations:
+Automated Forms Conversion service runs on AEM author instance. You require AEM 6.4 or AEM 6.5 to set up an AEM author instance. If you do not have AEM up and running, download it from the following locations:
 
-* If you are an existing AEM customer, download AEM 6.5 or AEM 6.4 from [Adobe Licensing website](http://licensing.adobe.com).
+* If you are an existing AEM customer, download AEM 6.4 or AEM 6.5 from [Adobe Licensing website](http://licensing.adobe.com).
 
-* If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5 or AEM 6.4.
+* If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.4 or AEM 6.5.
 
 After you download AEM, for instructions to set up an AEM author instance, see [deploying and maintaining](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### Download and install AEM latest Service Pack {#servicepack}
 
-Download and install latest AEM Service Pack. For detailed instructions see, [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html) or [AEM 6.4 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html).
+Download and install latest AEM Service Pack. For detailed instructions see,  or [AEM 6.4 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) or [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### Download and install AEM Forms add-on package  {#downloadaemformsaddon}
 
