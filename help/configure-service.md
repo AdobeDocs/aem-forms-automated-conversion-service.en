@@ -65,7 +65,7 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
 
-### Download and install connector package  {#downloadaemformsaddon}
+### Download and install connector package  {#installConnectorPackage}
 
 You require the connector package 1.1.38 or above to use the latest features and improvements delivered in release AFC-2020.03.1. You can download the connector package from AEM Package Share.
 
