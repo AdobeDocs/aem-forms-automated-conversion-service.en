@@ -12,9 +12,7 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 * Bug fixes
 * Deprecated functionality
 * Special instructions
-* Future Plans for changes
-
-This page is updated monthly, so revisit it regularly.
+* Future plans for changes
 
 ## 20 March 2020 (AFC-2020.03.1)
 
