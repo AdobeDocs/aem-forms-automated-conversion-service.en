@@ -8,7 +8,7 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 ---
 
 # Table of Contents {#using}
-
++ [Release Notes](release-notes.md)
 + [Introduction to Automated Forms Conversion service](introduction.md)
 + [Configure the Automated Forms Conversion service](configure-service.md)
 + [Convert print forms to adaptive forms](convert-existing-forms-to-adaptive-forms.md)
