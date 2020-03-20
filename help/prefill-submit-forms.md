@@ -265,11 +265,11 @@ Execute the following steps:
     1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit using Form Data Model]** from the **[!UICONTROL Submit Action]** drop-down list.
 
     1. Select the data model using the **[!UICONTROL Data Model to submit]** field.
-    1. Tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
+    1. Tap ![done icon](assets/save_icon.svg) to save the properties.
 
-1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Tap the Applicant Name text box and select ![configure icon](assets/configure_icon.svg) (Configure).
 
-    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the form data model entities.
+    1. In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](assets/save_icon.svg) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the form data model entities.
 
    ![Bind references](assets/bind_references.png)
 
@@ -330,9 +330,9 @@ Execute the following steps:
 1. Select the converted **sample loan application form** available in the **output** folder and tap **[!UICONTROL Properties]**.
 1. Tap the **[!UICONTROL Form Model]** tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down list, and tap **[!UICONTROL Select Schema]** to upload the **demo.schema JSON** schema saved on the local file system. Tap **[!UICONTROL Save & Close]** to save the form.
 1. Select the **sample loan application form** and tap **[!UICONTROL Edit]**.
-1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Tap the Applicant Name text box and select ![configure icon](assets/configure_icon.svg) (Configure).
 
-    In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the JSON schema entities.
+    In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![done icon](assets/save_icon.svg) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the JSON schema entities.
 
 1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -358,8 +358,8 @@ Execute the following steps:
 1. Select the converted **sample loan application form** available in the **[!UICONTROL output]** folder and tap **[!UICONTROL Properties]**.
 1. Tap the **[!UICONTROL Form Model]** tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down list, and tap **[!UICONTROL Select Schema]** to upload the **loanapplication** XSD schema saved on the local file system. Select root element for the XSD schema and tap **[!UICONTROL Save & Close]** to save the form.
 1. Select the **sample loan application form** and tap **[!UICONTROL Edit]**.
-1. Tap the Applicant Name text box and select ![configure icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
-In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done Icon](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the XSD schema entities.
+1. Tap the Applicant Name text box and select ![configure icon](assets/configure_icon.svg) (Configure).
+In the Bind Reference field, select **Applicant** &gt; **Name**, and tap ![Done Icon](assets/save_icon.svg) to save the properties. Similarly, create a data binding for the **Address**, **Phone Number**, **E-mail**, **Occupation**, **Annual Salary (in dollars)**, and **No. of dependent family members** fields with the XSD schema entities.
 
 1. Select the converted **sample loan application form** available in the **output** folder again and select **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
