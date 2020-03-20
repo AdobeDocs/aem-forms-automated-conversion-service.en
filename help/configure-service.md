@@ -39,6 +39,7 @@ Before using the service, prepare your AEM author instance to connect to the ser
 1. [Download and install AEM 6.5 or AEM 6.4](#aemquickstart)
 1. [Download and install latest AEM Service Pack](#servicepack)
 1. [Download and install latest AEM Forms add-on package](#downloadaemformsaddon)
+1. [Download and install latest connector package](#installConnectorPackage)
 1. [Create custom themes and templates](#referencepackage)
 
 ### Download and install AEM 6.5 or AEM 6.4 {#aemquickstart}
@@ -61,9 +62,16 @@ Download and install latest AEM Service Pack. For detailed instructions see, [AE
 An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service. For detailed instructions, see [Install and configure data capture capabilities.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
-> If you are an existing user of Automated Forms Conversion service, install the latest AEM Forms Add-on to continue using the service. The connector package is merged to the AEM Forms Add-on package. The additional connector package is not required, anymore. 
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
+
+### Download and install connector package  {#downloadaemformsaddon}
+
+You require the connector package 1.1.38 or above to use the latest features and improvements delivered in release AFC-2020.03.1. You can download the connector package from [AEM Package Share](PackageShareLink).
+
+>[!NOTE]
+> if you already have an up and running Automated Forms Conversion service environment, to use the latest features of the conversion service, install the latest service pack, latest AEM Forms add-on package, and latest connector package in the aforementioned order.
+
 
 ### Create custom themes and templates {#referencepackage}
 
