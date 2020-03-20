@@ -22,10 +22,11 @@ The sample, discussed in this article, is a reference implementation of customiz
 
 ## Pre-requisites {#pre-requisites}
 
-* AEM 6.5 author instance with latest AEM 6.5 Service Pack
+* Setup an AEM 6.4 or 6.5 author instance 
+* Install [latest service pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) for your AEM instance
 * Latest version of the AEM Forms add-on package
-* [Automated Forms Conversion service](configure-service.md)
-* A database to integrate with. The database used in the sample implementation is MySQL 5.6.24. However, you can integrate Forms Portal with any database of your choice.
+* Configure [Automated Forms Conversion service](configure-service.md)
+* Setup a database. The database used in the sample implementation is MySQL 5.6.24. However, you can integrate the converted adaptive form with any database of your choice.
 
 ## Set up connection between AEM instance and database {#set-up-connection-aem-instance-database}
 

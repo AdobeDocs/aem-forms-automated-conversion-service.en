@@ -11,7 +11,7 @@ discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 # Frequently asked questions{#frequently-asked-questions}
 
 1. **Which version of AEM Forms does the Automated Forms Conversion service support?** 
-    <p>Automated Forms Conversion service supports AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
+    <p>Automated Forms Conversion service supports AEM 6.4 Forms and AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
     <br>
 
  1. **Can the service be installed on-premise?** 
