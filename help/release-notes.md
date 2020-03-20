@@ -36,4 +36,4 @@ The service is now more efficient in detecting bulleted and numbered lists. It c
 
 You require the connector package 1.1.38 or above to use the latest features and improvements delivered in release AFC-2020.03.1. You can download the connector package from [AEM Package Share](PackageShareLink).
 
-if you already have an up and running Automated Forms Conversion service environment, to use the latest features of the conversion service, install the latest service pack, latest AEM Forms add-on package, and latest connector package in the aforementioned order. For detailed instructions, see the [Configure the Automated Forms Conversion service](configure-service.md) article.
+If you already have an up and running Automated Forms Conversion service environment, to use the latest features of the conversion service, install the latest service pack, latest AEM Forms add-on package, and latest connector package in the aforementioned order. For detailed instructions, see the [Configure the Automated Forms Conversion service](configure-service.md) article.
