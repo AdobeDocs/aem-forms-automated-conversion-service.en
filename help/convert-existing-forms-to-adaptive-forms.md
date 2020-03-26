@@ -17,7 +17,7 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 * [**Configure the conversion service**](configure-service.md)  
 
-* **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms:** Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form(s) during conversion.  
+* **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms:** Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form during conversion.  
 
 * **Prepare the [themes](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) to be applied to converted forms:** Using a theme allows you to apply a consistent style to all the adaptive forms of your organization.
 
@@ -34,11 +34,11 @@ After you connect your AEM instance with AEM Forms Conversion Service, you can c
 The conversion service converts PDF forms available on your AEM Forms instance to adaptive forms. You can upload all the PDF forms at once or in a phased manner, as required. Before uploading the forms, consider the following:
 
 * Keep the number of forms in a folder less than 15 and keep the total number of pages in a folder less than 50.  
-* Keep the size of folder less than 10 MB. Do not keep forms in a sub-folder.
+* Keep the size of folder less than 10 MB. Do not keep forms in a subfolder.
 * Keep the number of pages in a form less than 15.  
 * Do not upload the protected forms. The service does not convert password-protected and secured forms. 
 * Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms.
-* Do not upload [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive forms.
+* Do not upload [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive form.
 * Read the [Known issues](known-issues.md) and the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) sections and make suggested changes to forms.
 
 Perform the following steps to upload the forms to be converted to a folder on your AEM Forms instance:
@@ -63,8 +63,8 @@ After you have uploaded the forms and configured the service, perform the follow
 
     * **[!UICONTROL Select a cloud configuration]**. When you select a configuration, default template and theme are already specified. You can specify a different template or a theme, if required.  
     * Specify a location to save generated adaptive forms and corresponding schema. You can use default paths or specify custom paths.  
-    * Use the **Generate adaptive form(s) without data model bindings** option to select if you want to generate an adaptive form with or without data model binding(s).
-    If you do not select this option, the conversion service automatically associates the adaptive form(s) with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. The **[!UICONTROL Save generated data model schema at]** field displays the default location to save the generated JSON schema. You can also customize the location to save the generated schema.
+    * Use the **Generate adaptive forms without data model bindings** option to select if you want to generate an adaptive form with or without data model bindings.
+    If you do not select this option, the conversion service automatically associates the adaptive forms with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. The **[!UICONTROL Save generated data model schema at]** field displays the default location to save the generated JSON schema. You can also customize the location to save the generated schema.
     If you select this option, the conversion service generates an adaptive form without data model bindings. After a successful conversion, you can associate an adaptive form with a Form Data Model, XML schema, or a JSON schema. For more information, see [Creating an adaptive form](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
@@ -89,7 +89,7 @@ After you have uploaded the forms and configured the service, perform the follow
    > 
     
     * Select the **[!UICONTROL Auto-detect multi-column layout of input forms]** option to retain the layout of the source form for large screens like desktops and laptops. The option is helpful in preserving the multi-column layout of source forms. For example, when a source PDF has a two-column layout, the service generates an output adaptive form with a two-column layout for large screen displays and single-column layout for small screen devices like mobile phones. The feature has some known issues with data source schema structure. For details, see the [known-issues](known-issues.md) article.
-    * By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to drop page level panels (page number based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preeceeding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section.  
+    * By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to not create page level panels (page number-based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preceding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section.  
 
         >[!NOTE]
         > You require the connector package 1.1.38 or above to use the  **[!UICONTROL Auto-detect logical sections]** feature.
@@ -99,7 +99,7 @@ After you have uploaded the forms and configured the service, perform the follow
     * On a successful conversion, the converted adaptive form and related schema are downloaded to the path specified in the **[!UICONTROL Basic]** tab of the conversion dialog. Form fragments and corresponding schema are downloaded only if the Extract Fragment option is selected before starting the conversion.
     * On a failed conversion, the **[!UICONTROL Conversion Failed]** message is displayed if all the input forms fail to convert or the **[!UICONTROL Partially Failed]** message is displayed when only a few of all the input forms fail to convert. A status email is sent on the [configured email address](configure-service.md#configureemailnotification) and an error is logged to the error.log file.
 
-   If you are converting an XFA-based PDF form in to an adaptive form,the conversion service automatically associates the PDF form to the converted adaptive form as the Document of Record template. After conversion, you can open the adaptive form properties to view the Document of Record template in the **[!UICONTROL Document of Record Template Configuration]** section of **[!UICONTROL Form Model]** tab. </br>
+   If you are converting an XFA-based PDF form in to an adaptive form, the conversion service automatically associates the PDF form to the converted adaptive form as the Document of Record template. After conversion, you can open the adaptive form properties to view the Document of Record template in the **[!UICONTROL Document of Record Template Configuration]** section of **[!UICONTROL Form Model]** tab. </br>
 
    The conversion service automatically uploads the PDF form to the converted adaptive form as the Document of Record template only if you enable the **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** option.
 
@@ -126,7 +126,7 @@ After you have uploaded the forms and configured the service, perform the follow
 
    >[!NOTE]
    >
-   >If the conversion process takes more than 60 minutes and the PDF form is still not converted to an adaptive form, create a new folder on AEM Forms instance, upload the PDF form to the newly created folder, and restart the conversion.
+   >If the conversion process takes more than 60 minutes and the PDF form is still not converted to an adaptive form, create a folder on AEM Forms instance, upload the PDF form to the newly created folder, and restart the conversion.
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 

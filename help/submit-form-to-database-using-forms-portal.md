@@ -10,7 +10,7 @@ discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 
 Automated Forms Conversion service allows you to convert a non-interactive PDF form, an Acro Form, or an XFA based PDF form into an adaptive form. While initiating the conversion process, you have the option of generating an adaptive form either with or without data bindings.
 
-If you select to generate an adaptive form without data bindings, you can integrate the converted adaptive form with a Form Data Model, XML schema, or a JSON schema after conversion. However, if you generate an adaptive form with data bindings, the conversion service automatically associates the adaptive form(s) with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. You can then integrate the adaptive form with a database of your choice, fill data in the form, and submit it to the database using the Forms Portal.
+If you select to generate an adaptive form without data bindings, you can integrate the converted adaptive form with a Form Data Model, XML schema, or a JSON schema after conversion. However, if you generate an adaptive form with data bindings, the conversion service automatically associates the adaptive forms with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. You can then integrate the adaptive form with a database of your choice, fill data in the form, and submit it to the database using the Forms Portal.
 
 The following figure depicts different stages of integrating a converted adaptive form with a database using Forms Portal:
 
