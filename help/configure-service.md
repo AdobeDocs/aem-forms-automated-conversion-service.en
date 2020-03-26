@@ -39,7 +39,7 @@ Before using the service, prepare your AEM author instance to connect to the ser
 1. [Download and install AEM 6.4 or AEM 6.5](#aemquickstart)
 1. [Download and install latest AEM Service Pack](#servicepack)
 1. [Download and install latest AEM Forms add-on package](#downloadaemformsaddon)
-1. [Download and install latest connector package](#installConnectorPackage)
+1. (optional) [Download and install latest connector package](#installConnectorPackage)
 1. [Create custom themes and templates](#referencepackage)
 
 ### Download and install AEM 6.4 or AEM 6.5 {#aemquickstart}
@@ -65,9 +65,9 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
 
-### Download and install connector package  {#installConnectorPackage}
+### (Optional) Download and install connector package  {#installConnectorPackage}
 
-You require the connector package 1.1.38 or above to use the latest features and improvements delivered in release AFC-2020.03.1. You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Install connector package 1.1.38 or above to use the the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 >[!NOTE]
 > If you already have an up and running Automated Forms Conversion service environment, to use the latest features of the conversion service, install the latest service pack, latest AEM Forms add-on package, and latest connector package in the mentioned order.
