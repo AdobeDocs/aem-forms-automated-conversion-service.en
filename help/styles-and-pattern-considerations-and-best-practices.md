@@ -35,7 +35,7 @@ The service would start identifying and assigning correct fields or panels to th
 
 ### General patterns {#general}
 
-|Pattern|Resolution|
+|Pattern|Example|
 |--- |--- |
 |**Pattern** <br> Service does not convert colored PDF forms to adaptive form. <br><br>**Resolution** <br> Use black and white or grayscale PDF forms.|![Coloured Form](assets/best-practice-coloured-forms.png)|
 |**Pattern** <br>Service does not convert filled PDF forms to adaptive form. <br><br>**Resolution** <br>Use empty adaptive forms.| ![Filled Form](assets/best-practice-filled-forms.png) |
