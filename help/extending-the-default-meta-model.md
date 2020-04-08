@@ -185,9 +185,9 @@ You can use the **aem:afProperties** property in the meta-model to define follow
    <th><strong>Description</strong></th> 
   </tr> 
   <tr> 
-   <td><p>multiline</p></td> 
+   <td><p>multiLine</p></td> 
    <td> 
-    <p>The multiline property converts a source form field into a multi-line field in the adaptive form after conversion. For more information, see <strong>Convert a string field to a multi-line field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
+    <p>The multiLine property converts a source form field into a multi-line field in the adaptive form after conversion. For more information, see <strong>Convert a string field to a multi-line field</strong> in <a href="#custommetamodelexamples">Custom meta-model examples.</a></p> </td> 
   </tr>
   <td><p>mandatory</p></td> 
    <td> 
@@ -445,17 +445,17 @@ To add an extra option, update the **enum** property with the new option. In thi
 
 **Example:** Convert the **Address** field of string type to a multi-line field in the form after conversion.
 
-In this custom meta-model, the conversion service uses text within **aem:affKeyword** as the search keyword. After retrieving the **Address** text in the form, the service converts the text field to a multi-line field using the **multiline** property defined in the **aem:afProperties** section.
+In this custom meta-model, the conversion service uses text within **aem:affKeyword** as the search keyword. After retrieving the **Address** text in the form, the service converts the text field to a multi-line field using the **multiLine** property defined in the **aem:afProperties** section.
 
 ```
 {
- "multiline" : {
+ "multiLine" : {
    "aem:affKeyword": [
       "Address"
     ],
     "type" : "string",
     "aem:afProperties": {
-      "multiline": "true"
+      "multiLine": "true"
     }
   }
 }
