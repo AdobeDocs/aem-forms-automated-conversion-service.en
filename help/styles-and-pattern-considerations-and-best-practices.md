@@ -10,20 +10,42 @@ discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 
 # Best practices and known complex patterns {#Best-practices-and-considerations2}
 
-This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with Automated Forms Conversion service. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and ouput of Automated Forms Conversion service.
+This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with Automated Forms Conversion service. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the Automated Forms Conversion service.
 
 ## Best Practices
 
-The conversion service converts PDF forms available on your AEM Forms instance to adaptive forms. You can upload all the PDF forms at once or in a phased manner, as required. Before uploading the forms, consider the following:
+The conversion service converts PDF forms available on your AEM Forms instance to adaptive forms. The best practices listed below help you improve the conversion speed and accuracy. Moreover, these best practices help you save time spent on after conversion activities.
+
+### Before you upload source forms
+You can upload all the PDF forms at once or in a phased manner, as required. Before uploading the forms, consider the following:
 
 * Keep the number of forms in a folder less than 15 and keep the total number of pages in a folder less than 50.
 * Keep the size of folder less than 10 MB. Do not keep forms in a sub-folder.
 * Keep the number of pages in a form less than 15.
+* Organize source documents into a batch of 8-15 documents. Keep source forms with common Adaptive Form Fragments in a single batch.
 * Do not upload the protected forms. The service does not convert password-protected and secured forms.
-* Do not upload the [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive forms.
-* Do not upload scanned, coloured, non-English language, and filled forms. Such forms are not supported.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive form.
+* Do not upload scanned, colored, non-English language, and filled forms. Such forms are not supported.
 * Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms.
-* Use adaptive form templates to specify header and footer for the output adaptive form. The service ignores header-footer of source PDF documents and uses header-footer specified in the adaptive form template.
+
+When you use an XDP form for conversion, perform the following steps before uploading the source XPD forms: 
+
+* Analyze the XDP form and fix visual issues. Ensure the source document uses intended controls and structures. For example, the source form may have checkboxes instead of radio buttons for a single selection. Change checkboxes to radio buttons to produce an adaptive form with intended components.  
+* [Add bindings to the XDP form](http://www.adobe.com/go/learn_aemforms_designer_65) before starting the conversion. When bindings are available in the source XDP form, the service automatically applies bindings to corresponding adaptive form fields during conversion. It saves you the time required to manually apply the bindings.  
+* [Add Adobe Sign tags](https://helpx.adobe.com/sign/using/text-tag.html) to the XDP file. The service automatically converts Adobe Sign tags to corresponding adaptive form fields. Adaptive Forms support a limited number of Adobe Sign fields. For the complete list of supported fields, see [Using Adobe Sign in an adaptive form](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) documentation.  
+* Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to an adaptive form panel during conversion. 
+* Convert complex tables in XDP documents to simple tables, if possible.
+
+### Before you start the conversion
+
+* Create adaptive form templates. Templates help specify a uniform structure to forms of your organization or department.
+* Specify the header and footer in the adaptive form templates. The service ignores header-footer of source documents and uses header-footer specified in the adaptive form template.
+* Create adaptive form themes. Themes help provide a uniform look and feel to forms of your organization or department.
+* Configure Form Data Model to save and retrieve from a data source. Create and configure read and write services for the Form Data Model.
+* Create Adaptive Form Fragments and configure the service to use your Adaptive Form Fragments.
+* Prepare common workflow models for the forms that require business process automation.  
+* Configure Adobe Analytics, if required
+
 
 ## Know complex patterns
 
