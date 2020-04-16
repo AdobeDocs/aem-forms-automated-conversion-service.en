@@ -16,7 +16,8 @@ This document provides guidelines and recommendations that forms administrator, 
 
 The conversion service converts PDF forms available on your AEM Forms instance to adaptive forms. The best practices listed below help you improve the conversion speed and accuracy. Moreover, these best practices help you save time spent on after conversion activities.
 
-### Before you upload source forms
+### Before you upload source 
+
 You can upload all the PDF forms at once or in a phased manner, as required. Before uploading the forms, consider the following:
 
 * Keep the number of forms in a folder less than 15 and keep the total number of pages in a folder less than 50.
