@@ -9,8 +9,8 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 
 # Table of Contents {#using}
 + [Release Notes](release-notes.md)
-+ [Introduction to Automated Forms Conversion service](introduction.md)
-+ [Configure the Automated Forms Conversion service](configure-service.md)
++ [Introduction](introduction.md)
++ [Configure the service](configure-service.md)
 + [Convert print forms to adaptive forms](convert-existing-forms-to-adaptive-forms.md)
 + [Review and correct converted forms](review-correct-ui-edited.md)
 + [Extend the default meta-model](extending-the-default-meta-model.md)
@@ -20,4 +20,5 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 + [Frequently asked questions](frequently-asked-questions.md)
 + [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md)
 + [Known Issues](known-issues.md)
++ [Troubleshoot the service](troubleshoot-afcs.md)
 
