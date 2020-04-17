@@ -20,5 +20,5 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 + [Frequently asked questions](frequently-asked-questions.md)
 + [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md)
 + [Known Issues](known-issues.md)
-+ [Troubleshoot the service](troubleshoot-afcs.md)
++ [Troubleshoot](troubleshoot-afcs.md)
 
