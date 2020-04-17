@@ -16,7 +16,7 @@ topic-tags: forms
 
 |Error|Example|
 |--- |--- |
-|**Error Message** <br> The access token header is not available. <br><br> **Reason** <br> An administrator has created multiple IMS configurations or IMS configuration is not able to reach AFCS service on Adobe Cloud. <br><br>**Resolution** <br> If there are multiple configurations, delete all the configurations and [create a new configuration](configure-service.md#obtainpubliccertificates). <br> If there is a single configuration, use **Health Check** to [check connectivity](configure-service.md#createintegrationoption).| ![The access token header is not available](assets/invalid-ims-configuration.png) |
+|**Error Message** <br> The access token header is not available. <br><br> **Reason** <br> An administrator has created multiple IMS configurations or IMS configuration is not able to reach AFCS service on Adobe Cloud. <br><br>**Resolution** <br> If there are multiple configurations, delete all the configurations and [create a new configuration](configure-service.md#obtainpubliccertificates). <br> If there is a single configuration, use **Health Check** to [check connectivity](configure-service.md#createintegrationoption).| ![The access token header is not available](assets/invalid-ims-configurations.png) |
 
 |Error|Example|
 |--- |--- |
