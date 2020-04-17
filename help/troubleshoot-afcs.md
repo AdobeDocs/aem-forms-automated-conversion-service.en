@@ -13,6 +13,7 @@ topic-tags: forms
 <!--The article provides information on installation, configuration and administration issues that may arise in an Automated Forms Conversion Service production environment. --> The document  provides basic troubleshooting steps for common errors.
 
 ## Common errors {#commonerrors}
+
 <!--
 |Error|Example|
 |--- |--- |
