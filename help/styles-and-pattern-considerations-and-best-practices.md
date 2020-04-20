@@ -10,11 +10,11 @@ discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 
 # Best practices and known complex patterns {#Best-practices-and-considerations2}
 
-This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with Automated Forms Conversion service. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the Automated Forms Conversion service.
+This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [!DNL Automated Forms Conversion service]. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service].
 
 ## Best practices
 
-The conversion service converts PDF forms available on your AEM Forms instance to adaptive forms. The best practices listed below help you improve the conversion speed and accuracy. Moreover, these best practices help you save time spent on after conversion activities.
+The conversion service converts PDF forms available on your AEM [!DNL Forms] instance to adaptive forms. The best practices listed below help you improve the conversion speed and accuracy. Moreover, these best practices help you save time spent on after conversion activities.
 
 ### Before you upload source 
 
@@ -50,9 +50,9 @@ When you use an XDP form for conversion, perform the following steps before uplo
 
 ## Know complex patterns
 
-AEM Forms Automated Conversion service uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Every machine learning service continuously learns from source data and produces an improved output with every churn. These services learn from experience like humans.
+AEM [!DNL Forms Automated Conversion service] uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Every machine learning service continuously learns from source data and produces an improved output with every churn. These services learn from experience like humans.
 
-Automated Forms Conversion service is trained on a large set of forms. It easily identifies fields in a source form and produces adaptive forms. However, there are some fields and styles in PDF forms which are easily visible to the human eye but difficult to understand for the service. The service can assign different from applicable field types or panels to some fields or styles. All such field and style patterns are listed below.
+[!DNL Automated Forms Conversion service] is trained on a large set of forms. It easily identifies fields in a source form and produces adaptive forms. However, there are some fields and styles in PDF forms which are easily visible to the human eye but difficult to understand for the service. The service can assign different from applicable field types or panels to some fields or styles. All such field and style patterns are listed below.
 
 The service would start identifying and assigning correct fields or panels to these patterns as it keeps learning from the source data. For the time being, you can use [Review and Correct](review-correct-ui-edited.md) editor to fix such issues. Before start fixing the issues or reading further, familiarize yourself with [adaptive form components](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
