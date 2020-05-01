@@ -11,6 +11,7 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 
 + [Release Notes](release-notes.md)
 + [Introduction](introduction.md)
++ [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md)
 + [Configure the service](configure-service.md)
 + [Convert print forms to adaptive forms](convert-existing-forms-to-adaptive-forms.md)
 + [Review and correct converted forms](review-correct-ui-edited.md)
@@ -19,6 +20,5 @@ user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 + [Recommended workflows to enable Document of Record generation for adaptive forms](enable-document-of-record-generation.md)
 + [Integrate adaptive form with database using AEM workflow](submit-converted-adaptive-form-to-database.md)
 + [Frequently asked questions](frequently-asked-questions.md)
-+ [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md)
 + [Known Issues](known-issues.md)
 + [Troubleshoot](troubleshoot-afcs.md)
