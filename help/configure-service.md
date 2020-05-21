@@ -179,11 +179,11 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
 
 1. Log in to https://console.adobe.io/. Use your Adobe ID, developer account that your administrator has provisioned to login to Adobe I/O console to login.
 1. Select your organization from the top right corner. If you do not know your organization, contact your administrator.
-1. Tap [!UICONTROL Create new project]. A screen to get started with your new project appears. Tap [!UICONTROL Add API]. A screen with list of all the APIs enabled for your account appears.
-1.	Select [!UICONTROL Automated Forms Conversion service] and tap [!UICONTROL Next]. A screen to configure the API appears.
-1. Select the [!UICONTROL Upload your public key] option, upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section and tap [!UICONTROL Next]. The Create a new Service Account (JWT) credential option appears. Tap [!UICONTROL Next].
-1. Select a Product Profile and Tap [!UICONTROL Save configured API]. Select the profile created while [granting access to developers of your organization](#adduseranddevs). If you do not know the profile to select, contact your administrator.
-1. Tap [!UICONTROL Service Account (JWT) ] to view the API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
+1. Tap **[!UICONTROL Create new project]**. A screen to get started with your new project appears. Tap **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
+1. Select **[!UICONTROL Automated Forms Conversion service]** and tap **[!UICONTROL Next]**. A screen to configure the API appears.
+1. Select the [!UICONTROL Upload your public key] option, upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section and tap **[!UICONTROL Next]**. The Create a new Service Account (JWT) credential option appears. Tap **[!UICONTROL Next]**.
+1. Select a Product Profile and Tap **[!UICONTROL Save configured API]**. Select the profile created while [granting access to developers of your organization](#adduseranddevs). If you do not know the profile to select, contact your administrator.
+1. Tap **[!UICONTROL Service Account (JWT)]** to view the API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
 
 1. Open the IMS Configuration page on your local instance. You kept the page open at the end of section, [Obtain public certificate](#obtainpubliccertificates).
 
