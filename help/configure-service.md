@@ -13,15 +13,15 @@ This help describes how an AEM administrator can configure Automated Forms Conve
 
 * Configuring SMTP mail servers
 
->[!VIDEO](https://video.tv.adobe.com/v/29267/)
+<!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
-**Watch the video or read the article to configure Automated Forms Conversion service**
+**Watch the video or read the article to configure Automated Forms Conversion service** -->
 
 ## Onboarding{#onboarding}
 
 The service is available for free to AEM 6.4 Forms and AEM 6.5 Forms On-Premise term customers and Adobe Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service.
 
-Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service.
+Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service. 
 
 ## Prerequisites {#prerequisites}
 
@@ -67,10 +67,7 @@ An AEM instance contains basic forms capabilities. The conversion service requir
 
 ### (Optional) Download and install connector package  {#installConnectorPackage}
 
-Install connector package 1.1.38 or above to use the the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
-
->[!NOTE]
-> If you already have an up and running Automated Forms Conversion service environment, to use the latest features of the conversion service, install the latest service pack, latest AEM Forms add-on package, and latest connector package in the mentioned order.
+The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 
 ### Create custom themes and templates {#referencepackage}
@@ -180,27 +177,26 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
 
 To use Automated Forms Conversion service, create an integration in Adobe I/O. The integration generates API Key, Client Secret, Payload (JWT).
 
-1. Log in to [https://console.adobe.io/](https://console.adobe.io/). Use your Adobe ID, developer account that your administrator has provisioned to login to Adobe I/O console to login.
-
-1. Tap **[!UICONTROL View Integrations]**. A screen with all the available integrations appears.
-1. Select your organization from the drop-down under **[!UICONTROL Integrations]**. Tap **[!UICONTROL New Integration]**, select **[!UICONTROL Access an API]**, and tap **[!UICONTROL Continue]**.
-1. Select **[!UICONTROL Experience Cloud]** > **[!UICONTROL Automated Forms Conversion]** and tap **[!UICONTROL Continue]**. If the Automated Forms Conversion option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. If you do not know your organization, contact your administrator.
-
-   ![Select Automated Forms Conversion](assets/create-new-integration.png)
-
-1. Specify name and description for the integration. Tap **[!UICONTROL Select a File from your computer]** and upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section.
-1. Select the profile created while [granting access to developers of your organization](#adduseranddevs) and tap **[!UICONTROL Create Integration]**. The integration is created.
-1. Tap **[!UICONTROL Continue to integration details]** to view the integration information. The page contains API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
-
-   ![API Key, Client Secret, and payload information of an integration](assets/integration-details.png)
+1. Log in to https://console.adobe.io/. Use your Adobe ID, developer account that your administrator has provisioned to login to Adobe I/O console to login.
+1. Select your organization from the top right corner. If you do not know your organization, contact your administrator.
+1. Tap **[!UICONTROL Create new project]**. A screen to get started with your new project appears. Tap **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
+1. Select **[!UICONTROL Automated Forms Conversion service]** and tap **[!UICONTROL Next]**. A screen to configure the API appears.
+1. Select the [!UICONTROL Upload your public key] option, upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section and tap **[!UICONTROL Next]**. The Create a new Service Account (JWT) credential option appears. Tap **[!UICONTROL Next]**.
+1. Select a Product Profile and Tap **[!UICONTROL Save configured API]**. Select the profile created while [granting access to developers of your organization](#adduseranddevs). If you do not know the profile to select, contact your administrator.
+1. Tap **[!UICONTROL Service Account (JWT)]** to view the API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service. The information on the page is used to create IMS configuration on your local machine.
 
 1. Open the IMS Configuration page on your local instance. You kept the page open at the end of section, [Obtain public certificate](#obtainpubliccertificates).
 
    ![Specify Title, API Key, Client Secret, and payload ](assets/ims-configuration-details.png)
 
-1. On the Adobe IMS Technical page, specify API Key and Client Secret. Use the values specified on the integration page.
+1. On the Adobe IMS Technical page, specify API Key and Client Secret. Use the values specified on Service Account (JWT) of the Adobe Developer console page.
 
-   **For payload, use the code provided in the JWT tab of the integration page.** Tap  **[!UICONTROL Save]**. The IMS configuration is created. Close the integration page.
+   >[!NOTE]
+   >
+   >
+   >For payload, use the code provided in the Generate JWT tab of the Service Account(JWT) page of Adobe Developer Console. 
+   
+1. Tap **[!UICONTROL Save]**. The IMS configuration is created.
 
    ![Use values of JWT field for payload field](assets/jwt.png)
 
