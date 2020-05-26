@@ -116,7 +116,7 @@ After an administrator provides you developer access, you can connect your local
 * [Configure email notifications](configure-service.md#configureemailnotification)
 * [Add user to the forms-users group](#adduserstousergroup)
 * [Obtain public certificates](#obtainpubliccertificates)
-* [Create Adobe I/O integration](#createintegration)
+* [Configure the service APIs on Adobe Developer Console](#createintegration)
 * [Configure the cloud service](configure-service.md#configure-the-cloud-service)
 
 #### Configure email notification {#configureemailnotification}
@@ -152,12 +152,12 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
 
 1. Select the **[!UICONTROL Create new certificate]** check box and specify an alias. The alias serves as name of the dialog. Tap **[!UICONTROL Create certificate]**. A dialog appears. Click **[!UICONTROL OK]**. The certificate is created.
 
-1. Tap **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Tap **[!UICONTROL Next]**.  
+1. Tap **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [Configure the service APIs on Adobe Devloper Console](#createintegration). Tap **[!UICONTROL Next]**.  
 
 1. Specify the below:
 
     * Title: Specify a title.  
-    * Authorization Server: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
+    * Authorization Server: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
 
    Leave the other fields blank for now (to be provided later). Keep the page open.
 
@@ -173,9 +173,9 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
    <li>Step text</li>
    -->
 
-#### Create Adobe I/O integration {#createintegration}
+#### Configure the service APIs on Adobe Devloper Console {#createintegration}
 
-To use Automated Forms Conversion service, create an integration in Adobe I/O. The integration generates API Key, Client Secret, Payload (JWT).
+To use Automated Forms Conversion service, create a project and add Automated Forms Configuration Service API to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT).
 
 1. Log in to https://console.adobe.io/. Use your Adobe ID, developer account that your administrator has provisioned to login to Adobe I/O console to login.
 1. Select your organization from the top right corner. If you do not know your organization, contact your administrator.
@@ -197,8 +197,6 @@ To use Automated Forms Conversion service, create an integration in Adobe I/O. T
    >For payload, use the code provided in the Generate JWT tab of the Service Account(JWT) page of Adobe Developer Console. 
    
 1. Tap **[!UICONTROL Save]**. The IMS configuration is created.
-
-   ![Use values of JWT field for payload field](assets/jwt.png)
 
    >[!CAUTION]
    >
