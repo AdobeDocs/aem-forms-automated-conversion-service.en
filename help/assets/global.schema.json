@@ -1,0 +1,282 @@
+{
+  "definitions": {
+    "Entity": {
+      "id": "Entity",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "description": "Specify the entity description."
+        }
+      }
+    },
+    "Person": {
+      "id": "Person",
+      "allOf": [
+        {
+          "$ref": "#Entity"
+        },
+        {
+          "properties": {
+            "familyName": {
+              "type": "string",
+              "description": "In the United States, a family name represents the last name of a person. Use this property along with the givenName property instead of the name property."
+            },
+            "givenName": {
+              "type": "string",
+              "aem:affKeyword": "first name",
+              "description": "In the Unites States, a given name represents the first name of a person. Use this property along with familyName property instead of the name property."
+            },
+            "middleName": {
+              "type": "string",
+              "aem:affKeyword": "middle name",
+              "description": "A person's name placed after givenName and before familyName."
+            },
+            "signature": {
+              "type": "string",
+              "aem:affKeyword": ["signature", "sign"],
+              "format": "sign"
+            },
+            "title": {
+              "type": "string",
+              "description": "Specify an honorific prefix preceding a person's name, such as Dr./Mrs./Mr."
+            },
+            "deathDate": {
+              "type": "string",
+              "format": "date",
+              "description": "Specify the date of birth in ISO 8601 format. For example 1901-01-01"
+            },
+            "birthDate": {
+              "type": "string",
+              "format": "date",
+              "aem:affKeyword": ["DOB", "birth"],
+              "description": "Specify the date of birth in ISO 8601 format.For example 1901-01-01"
+            },
+            "birthPlace": {
+              "type": "string",
+              "description": "Specify the place of birth."
+            },
+            "address": {
+              "$ref": "#PostalAddress"
+            },
+            "gender": {
+              "type": "string",
+              "enum": ["0", "1"],
+              "enumNames": ["Male", "Female"],
+              "description": "Select the gender."
+            },
+            "jobTitle": {
+              "type": "string",
+              "description": "Specify the job title"
+            },
+            "maritalStatus": {
+              "type": "string",
+              "enum": ["0", "1", "2", "3"],
+              "enumNames": ["Married", "Single", "Divorced", "Widow"],
+              "description": "Specify your marital status"
+            },
+            "SSN": {
+              "type": "string",
+              "pattern": "/\\d{9}/",
+              "description": "In the United States, a Social Security Number is a nine-digit number issued to citizens, permanent residents, and temporary working residents.",
+              "aem:affKeyword": "social security number",
+              "aem:afProperties": {
+                "shortDescription": "In the United States, a Social Security Number is a nine-digit number issued to citizens, permanent residents, and temporary working residents.",
+                "displayPatternType": "num{zzzzzzzzzzzzzzzz}",
+                "displayPictureClause": "num{zzzzzzzzzzzzzzz}",
+                "validatePictureClause": "\\d{9}",
+                "validationPatternType": "custom",
+                "validatePictureClauseMessage": "SSN must be 9 digit long"
+              }
+            },
+            "NINO": {
+              "type": "string",
+              "aem:affKeyword": "national insurance",
+              "description": "In the United Kingdom, NINO represents a national insurance number that is issued to administer the national insurance or social security system. For example, AB 12 34 56 C."
+            },
+            "taxId": {
+              "type": "string",
+              "description": "The Tax or the Fiscal ID of the person. The Tax ID is referred to as a Tax Identification Number (TIN) in the Unites States and CIF or NIF in Spain."
+            },
+            "nationality": {
+              "type": "string",
+              "description": "Specify the nationality of the person."
+            },
+            "spouse": {
+              "$ref": "#Person"
+            },
+            "parent": {
+              "$ref": "#Person"
+            }
+          }
+        }
+      ]
+    },
+    "ContactPoint": {
+      "id": "ContactPoint",
+      "allOf": [
+        {
+          "$ref": "Entity"
+        },
+        {
+          "properties": {
+            "emailAddress": {
+              "type": "string",
+              "description": "Specify the e-mail address for the contact point.",
+              "format": "email",
+              "aem:affKeyword": ["e-mail", "e-mail address", "email"]
+            },
+            "faxNumber": {
+              "type": "number",
+              "aem:affKeyword": "fax",
+              "description": "Specify the fax number for the contact point."
+            },
+            "telephone": {
+              "type": "string",
+              "pattern": "/\\d{10}/",
+              "aem:affKeyword": [
+                "phone number",
+                "telephone number",
+                "phone",
+                "telephone",
+                "mobile phone"
+              ],
+              "description": "Specify the telephone number for the contact point.",
+              "aem:afProperties": {
+                "sling:resourceType": "fd/af/components/guidetelephone",
+                "guideNodeClass": "guideTelephone"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "PostalAddress": {
+      "id": "PostalAddress",
+      "aem:affKeyword": ["address", "location"],
+      "allOf": [
+        {
+          "$ref": "#ContactPoint"
+        },
+        {
+          "properties": {
+            "postalCode": {
+              "aem:affKeyword": ["postcode", "zipcode", "zip code"],
+              "type": "number",
+              "description": "Specify the postal code that is included as a part of the postal address. For example, 94043."
+            },
+            "addressRegion": {
+              "aem:affKeyword": "state",
+              "type": "string",
+              "description": "Specify the state that is included as a part of the postal address. For example, CA."
+            },
+            "addressLocality": {
+              "aem:affKeyword": "city",
+              "type": "string",
+              "description": "Specify the city that is included as a part of the postal address. For example, Mountain View."
+            },
+            "addressCountry": {
+              "aem:affKeyword": "country",
+              "type": "string",
+              "description": "Specify the country that is included as a part of the postal address. For example, USA. You can also provide the two-letter"
+            },
+            "streetAddress": {
+              "aem:affKeyword": "street address",
+              "type": "string",
+              "description": "Specify the street address that is included as a part of the postal address. For example, 1600 Amphitheatre Pkwy."
+            }
+          }
+        }
+      ]
+    },
+    "Organization": {
+      "id": "Organization",
+      "allOf": [
+        {
+          "$ref": "#Entity"
+        },
+        {
+          "properties": {
+            "address": {
+              "$ref": "#PostalAddress"
+            },
+            "contactPoint": {
+              "$ref": "#ContactPoint"
+            },
+            "legalName": {
+              "type": "string"
+            },
+            "memberOf": {
+              "$ref": "#Organization",
+              "description": "Specify an organization name that this organization belongs to."
+            },
+            "parentOrganization": {
+              "$ref": "#Organization",
+              "description": "Specify the larger organization name, if any, for this sub-organization."
+            },
+            "taxId": {
+              "type": "string",
+              "description": "The Tax or the Fiscal ID of the person. The Tax ID is referred to as a Tax Identification Number (TIN) in the Unites States and CIF or NIF in Spain."
+            }
+          }
+        }
+      ]
+    },
+    "LocalBusiness": {
+      "id": "LocalBusiness",
+      "allOf": [
+        {
+          "$ref": "#Organization"
+        },
+        {
+          "properties": {
+            "currenciesAccepted": {
+              "type": "string",
+              "description": "Specify the accepted currencies in ISO 4217 currency format. For instance USD for United States Dollar"
+            },
+            "openingHours": {
+              "type": "string",
+              "description": "Specify the general operating hours for a business."
+            },
+            "paymentAccepted": {
+              "type": "string",
+              "description": "Specify the accepted payment types. For example, cash or credit card"
+            },
+            "priceRange": {
+              "type": "string",
+              "description": "Specify the price range for the business. For example $$$"
+            }
+          }
+        }
+      ]
+    },
+    "Event": {
+      "id": "Event",
+      "allOf": [
+        {
+          "$ref": "#Entity"
+        },
+        {
+          "properties": {
+            "startDate": {
+              "type": "string",
+              "format": "date",
+              "description": "Specify the start date and time of the event in ISO 8601 date format. For example 1901-01-01"
+            },
+            "endDate": {
+              "type": "string",
+              "format": "date",
+              "description": "Specify the end date and time of the event in ISO 8601 date format. For example 2020-01-01"
+            },
+            "location": {
+              "$ref": "#PostalAddress",
+              "description": "Specify the location of the event."
+            }
+          }
+        }
+      ]
+    }
+  }
+}
