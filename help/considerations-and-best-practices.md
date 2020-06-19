@@ -25,7 +25,7 @@ The service would start identifying and assigning correct fields or panels to th
 Comment Type: draft
 
 <ul>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use black and white or grayscale adaptive forms. <br /> </li>
+<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use  and white or grayscale adaptive forms. <br /> </li>
 <li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.</li>
 <li>Service does not support scanned forms. Do not use scanned forms. </li>
 <li>Service can fail to recognize text and fields in a dense form. Increase the width between text and fields of a dense form before starting the conversion.</li>
