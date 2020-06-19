@@ -16,7 +16,7 @@ discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 
  1. **Can the service be installed on-premise?** 
     <p>Adobe trains AI and ML algorithms of Automated Forms Conversion service on a regular basis with new data set to improve conversion accuracy. The updated algorithms are deployed to the conversion service running on Adobe Cloud at periodic intervals. All the customers of the service are benefitted from the updated algorithms. So, cloud-hosted central deployment is best suited for Automated Forms Conversion service to continuously learn and deliver improvements to all the customers.</p> 
-    <p>The service converts blank forms to adaptive forms. The service does not support filled forms and extraction of data from filled forms. Remove data from filled forms and remove or whitelist proprietary information from the forms before sending the forms to service for conversion</p> <br>
+    <p>The service converts blank forms to adaptive forms. The service does not support filled forms and extraction of data from filled forms. Remove data from filled forms and remove or allowlist proprietary information from the forms before sending the forms to service for conversion</p> <br>
 
 1. **Does the service support all formats of PDF forms? What all languages are supported?** 
     <p>The service can convert non-interactive PDF forms, XFA-based XDP and PDF forms, and AcroForms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.<br /> </p> 
