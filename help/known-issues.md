@@ -21,6 +21,8 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
     * Does not support repeatable panels for XFA-based form.
     * If you modify a list in a table using the Review and Correct editor, the row width does not adjust automatically and the text might spill over to the next row of the table.
     * The **[!UICONTROL Auto-detect multi-column layout from input forms]** feature does not work with Review and Correct editor and Form Fragments.
+    * Scribble Signature created with Review and Correct editor fail to load in published adaptive forms. Users cannot sign an adaptive form using such scribble signature components.
+
 
 * For XFA-based forms:
   * Extracting fragments from an XFA-based form is not supported.
