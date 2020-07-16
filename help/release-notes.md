@@ -17,7 +17,7 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 * Future plans for changes
 
 
-## 16 July 2020 (AFC-2020.07.1)
+## 16 July 2020 (AFC-2020.07.0)
 
 ### What's improved
 
