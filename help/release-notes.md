@@ -21,7 +21,7 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 
 ### What's improved
 
-Improvement in automated conversion of text, form, and choice group fields to corresponding adaptive form components.  
+Improvements in the automated conversion of text, form, and choice group fields to corresponding adaptive form components.  
 
 ## 20 March 2020 (AFC-2020.03.1)
 
