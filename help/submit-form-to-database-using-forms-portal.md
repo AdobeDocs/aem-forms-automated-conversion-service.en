@@ -73,7 +73,7 @@ Perform the following steps to create schema and tables in the database:
         `id` varchar(45) NOT NULL,
         PRIMARY KEY (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-    ```
+   ```
 
 1. Create a **metadata** table in the database schema using the following SQL statement:
 
