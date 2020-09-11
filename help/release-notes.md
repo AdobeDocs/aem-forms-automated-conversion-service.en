@@ -19,9 +19,14 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 
 ## 16 July 2020 (AFC-2020.07.0)
 
+### What's New
+
+You can now use the service to also convert colored PDF form to adaptive forms.
+
 ### What's improved
 
 Improvements in the automated conversion of text, form, and choice group fields to corresponding adaptive form components.  
+
 
 ## 20 March 2020 (AFC-2020.03.1)
 

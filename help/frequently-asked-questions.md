@@ -43,7 +43,7 @@ discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 
 
  1. **Can the service convert scanned paper forms and colored forms to adaptive forms?**
-    <p>The service can convert PDF forms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.</p> <br>
+    <p>The service can convert color PDF forms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.</p> <br>
 
  1. **Can the service convert a scanned form or only image of a form to an adaptive form?**
     <p>The service does not support converting scanned forms or an image of a form to an adaptive out-of-the-box. However, you use Adobe Acrobat to convert the image of a form to a PDF Form. Then, use the service to convert the PDF Form to an adaptive form. Always use a high-quality image of the form for conversion in Acrobat. It improves the quality of the conversion.</p> <br>
