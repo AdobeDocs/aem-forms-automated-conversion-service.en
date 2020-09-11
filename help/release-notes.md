@@ -21,7 +21,7 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 
 ### What's New
 
-Added support to convert colored PDF form to adaptive forms.
+Added support to convert colored PDF forms to adaptive forms.
 
 ### What's improved
 
