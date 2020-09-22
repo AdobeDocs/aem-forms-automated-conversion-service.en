@@ -21,6 +21,11 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 * **Prepare the [themes](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) to be applied to converted forms:** Using a theme allows you to apply a consistent style to all the adaptive forms of your organization.
 
+* **Add Adobe Sign text tags to source PDF documents:** When the source PDF form has [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html), the service automatically those tags are converted to corresponding adaptive form fields and signer details are automatically populated. The feature is available for only for AcroForms and adaptive forms support a limited number of Adobe Sign fields.
+
+    
+    For the complete list of supported tags, open a form in adaptive forms editor and add an Adobe Sign block. Use Adobe Sign block to find all supported Adobe Sign fields. It provides a drop-down to select all the supported fields.
+
 ## Start the conversion process {#start-the-conversion-process}
 
 After you connect your AEM instance with AEM Forms Conversion Service, you can convert your PDF forms to adaptive forms. Perform the following steps in the listed order to convert the forms:
