@@ -1,6 +1,6 @@
 ---
-title: [DO NOT PUBLISH] Extend the default meta-model
-seo-title: [DO NOT PUBLISH] Extend the default meta-model
+title: Extend the default meta-model
+seo-title: Extend the default meta-model
 description: null
 seo-description: null
 page-status-flag: never-activated
@@ -11,4 +11,8 @@ privatebeta: true
 index: no
 ---
 
-# [DO NOT PUBLISH] Extend the default meta-model{#do-not-publish-extend-the-default-meta-model}
+# Extend the default meta-model{#do-not-publish-extend-the-default-meta-model}
+
+<!--
+[DO NOT PUBLISH] 
+-->
