@@ -90,14 +90,14 @@ Before you proceed to configure the service and connect your local instance with
 
 After Adobe enables access for your organization and provides required privileges to the administrator, the administrator can log into Admin Console (detailed instructions below), create a profile, and add developers to the profile. Developers can connect a local instance of AEM Forms to Automated Forms Conversion service on Adobe Cloud.
 
-Developers are members of your organization designated to run the conversion service. Only those developers which are added to Adobe Automated Forms Conversion service profile are entitled to use the Automated Forms Conversion service. Perform the below steps to create a profile and add developers to it:
+Developers are members of your organization designated to run the conversion service. Only those developers which are added to Adobe Automated Forms Conversion service profile are entitled to use the Automated Forms Conversion service. Perform the below steps to create a profile and add developers to it. A minimum of one profile is required to grant required access to developers of your organization:
 
 1. Log in to [Admin Console](https://adminconsole.adobe.com/). Use **Adobe ID** of administrator provisioned to use Automated Forms Conversion service to login. Do not any other ID or Federated ID to login.
 1. Click the **[!UICONTROL Automated Forms Conversion]** option.
 1. Click **[!UICONTROL New Profile]** in the **[!UICONTROL Products]** tab.
 1. Specify **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, and **[!UICONTROL Description]** for the profile. Click **[!UICONTROL Done]**. A profile is created.
 
-   ![Specify details for the new profile.](assets/create-new-profile-details.png)
+   ![Specify details for the new profile.](assets/create-new-profile-details.png) 
 
 1. Add developer to the profile. To add the developers:
    1. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
