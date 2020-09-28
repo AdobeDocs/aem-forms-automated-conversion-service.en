@@ -23,8 +23,8 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 * **Add Adobe Sign text tags to source PDF documents:** When the source PDF form has [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html), the service automatically those tags are converted to corresponding adaptive form fields and signer details are automatically populated. The feature is available for only for AcroForms and adaptive forms support a limited number of Adobe Sign fields.
 
-    
-    For the complete list of supported tags, open a form in adaptive forms editor and add an Adobe Sign block. Use Adobe Sign block to find all supported Adobe Sign fields. It provides a drop-down to select all the supported fields.
+    </br>
+    Adaptive form supports only, signature, text, number, date, dropdown, radio button,checkbox, initial, signature block, digital signature, Signer's title, Signer's email, Signer's company, Signing date, and Signer's full name Adobe Sign fields. So, the service converts text tags of only aforementioned fields to corresponding adaptive form fields. 
 
 ## Start the conversion process {#start-the-conversion-process}
 
