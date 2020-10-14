@@ -2,17 +2,19 @@
 cloud: experience-cloud
 product: experience manager
 sub-product: forms conversion service
+solution: Experience Manager
+type: Documentation
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
-user-guide-description: Speed up the conversion of print forms to adaptive forms.
+user-guide-description: Convert PDF Forms to responsive and mobile-ready HTML Forms.
 breadcrumb-title: Forms Automated Conversion Guide
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
 ---
 
 # Adobe Experience Manager Forms Automated Conversion Service {#using}
 
-+ [Release Notes](release-notes.md)
 + [Introduction](introduction.md)
++ [Release Notes](release-notes.md)
 + [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md)
 + [Configure the service](configure-service.md)
 + [Convert print forms to adaptive forms](convert-existing-forms-to-adaptive-forms.md)
