@@ -36,7 +36,7 @@ Improvements in the automated conversion of text, form, and choice group fields 
 
 By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to drop page level panels (page number-based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preceding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section. 
 
-### What's improved
+### What's improved {#improvements}
 
 **Improvements in list detection**
 
