@@ -21,7 +21,7 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 * **Prepare the [themes](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) to be applied to converted forms:** Using a theme allows you to apply a consistent style to all the adaptive forms of your organization.
 
-* **Add Adobe Sign text tags to source PDF documents:** When a source PDF form has [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html), the service preserves all the signer related information during conversion. The generated adaptive form populates all the signer details while sending the adaptive form to Adobe Sign service for signing. The feature is available only for AcroForms, and the Adaptive form properties exactly align with the AcroForm properties.
+* **Add Adobe Sign text tags to source PDF documents:** When a source PDF form has [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html), the service preserves all the Adobe Sign related information during conversion. The generated adaptive form keeps signer info related corresponding adaptive form fields intact while sending the adaptive form to the Adobe Sign service for signing. The feature is available only for AcroForms, and the Adaptive form properties exactly align with the AcroForm properties.
 
     To add Adobe Sign text tags to your source PDF documents, replace name of field in source PDF document with a [Text Tag](https://helpx.adobe.com/sign/using/text-tag.html) or use the Convert to Adobe Sign Form as described in [Create forms using Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) article. 
  
