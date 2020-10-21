@@ -113,4 +113,6 @@ The most common reasons for the conversion to fail are:</p>
     <p> For the complete list of supported tags, open a form in adaptive forms editor and add an Adobe Sign block. Use Adobe Sign block to find all supported Adobe Sign fields. It provides a drop-down to select all the supported fields.</p>
 
  1. **How to create an Adobe Sign enabled PDF form?**
-      </p>To create an Adobe Sign enabled PDF form:</p> Add [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html) to field names or use the [Convert to Adobe Sign Form](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) option. </br>
+      </p>To create an Adobe Sign enabled PDF form:</p> 
+      
+      Add [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html) to field names or use the [Convert to Adobe Sign Form](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) option. 
