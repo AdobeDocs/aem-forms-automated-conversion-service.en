@@ -70,4 +70,7 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
 * Complex tables like borderless tables, nested tables, and tables with placeholder values are not supported. Use adaptive form editor to add or modify complex tables, after the conversion. Only simple tables, with empty fields, proper headers, and clear boundaries are supported.  
 * The service converts only English-language forms to adaptive forms. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms does not support automatic detection of multi-column layout of input forms.
+* Information encoded using colors in source PDF form is not carried over to adaptive form.
+* Colors of source PDF Form are carried over to adaptive form themes.
+* Colored PDF Forms are treated as greyscale forms and fields are detected accordingly.
 
