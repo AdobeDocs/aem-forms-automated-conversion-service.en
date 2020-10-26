@@ -110,8 +110,6 @@ The most common reasons for the conversion to fail are:</p>
  1. **Can I use Adobe Sign text tags with Automated Forms Conversion service?**
       <p> When you use Automated Forms Conversion Service to convert a PDF form to an adaptive form and the PDF form has Adobe Sign text tags, those tags are converted to corresponding adaptive form fields and signer details are automatically populated.  The feature is available for only for Acro Forms and adaptive forms support a limited number of Adobe Sign fields.</p>  </br>
 
-    <p> For the complete list of supported tags, open a form in adaptive forms editor and add an Adobe Sign block. Use Adobe Sign block to find all supported Adobe Sign fields. It provides a drop-down to select all the supported fields.</p>
-
  1. **How to create an Adobe Sign enabled PDF form?**
       </p>To create an Adobe Sign enabled PDF form:</p> 
       
