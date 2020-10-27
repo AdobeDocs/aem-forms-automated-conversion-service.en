@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: experience manager
 sub-product: forms conversion service
-solution: Experience Manager
+solution: Experience Manager, Experience Manager Forms
 type: Documentation
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
