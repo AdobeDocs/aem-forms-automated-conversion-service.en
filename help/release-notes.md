@@ -19,6 +19,8 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 
 ## 01 Feb 2021 (AFC-2021.01.2)
 
+### What's improved
+
 Improvements in organizing form content into panels and generating titles for panels while converting a source form to an adaptive form.
 
 ## 16 July 2020 (AFC-2020.07.2)
