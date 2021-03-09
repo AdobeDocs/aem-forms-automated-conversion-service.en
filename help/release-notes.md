@@ -16,6 +16,10 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 * Special instructions
 * Future plans for changes
 
+## 03 Mar 2021 (AFC-2021.02.2)
+
+Improvements in organizing form content into choice groups and fields while converting a source form to an adaptive form.
+
 ## 02 Feb 2021 (AFC-2021.01.2)
 
 ### What's improved
