@@ -1,6 +1,7 @@
 ---
 title: Configure the Automated Forms Conversion service
 description: Ready your AEM instance to use Automated Forms Conversion service
+role: "Business Practitioner, Administrator"
 ---
 
 # Configure the Automated Forms Conversion service {#about-this-help}
