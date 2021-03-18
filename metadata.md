@@ -1,15 +1,9 @@
 ---
 cloud: experience-cloud
-solution-title: Automated Forms Conversion Service
-solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-5.html
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/aem-forms-automated-conversion-service.en
 index: y
+feature-set: Experience Manager Forms
 ---
 
 # Metadata for internal use
