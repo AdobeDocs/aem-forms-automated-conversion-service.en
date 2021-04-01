@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/aem-forms-automated-conversion-service.en
 index: y

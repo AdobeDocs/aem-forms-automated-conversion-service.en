@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: experience manager
 sub-product: forms conversion service
 solution: Experience Manager, Experience Manager Forms
