@@ -77,6 +77,8 @@ The connector package provides early access to the [Auto-detect logical sections
 
 If you start AEM 6.4 or AEM 6.5 in [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent run mode), the reference packages are not installed. The reference packages contain sample themes and templates. Automated Forms Conversion service requires at least one theme and one template to convert a PDF form to an adaptive form. Create a custom theme and template of your own and point [service configuration](#configure-the-cloud-service) to use custom templates and themes before using the service.
 
+You can also download and install the [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) package on your Author instance. It creates some reference themes and template. 
+
 ## Configure the service {#configure-the-service}
 
 Before you proceed to configure the service and connect your local instance with the service running on Adobe Cloud, learn about the personas and privileges required to connect to the service. The service uses two different types of personas, administrators and developers:
@@ -147,7 +149,7 @@ Specify an email address in the profile of the AEM user designated to run the se
 1. Specify an email address in the **[!UICONTROL Email]** field and tap **[!UICONTROL Save]**. The emails are sent to specified email address on successful completion or failure of the conversion.
 1. Tap the **Groups** tab. In the select group tab, type and select the **forms-users** group. Tap **Save & Close**. The user is now a member of the forms-users group.
 
-#### Obtain public certificates {#obtainpubliccertificates}
+#### (For AEM 6.4 and AEM 6.5 only) Obtain public certificates {#obtainpubliccertificates}
 
 A public certificate allows you to authenticate your profile on Adobe I/O.
 
@@ -180,7 +182,7 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
    <li>Step text</li>
    -->
 
-#### Configure the service APIs on Adobe Developer Console {#createintegration}
+#### (For AEM 6.4 and AEM 6.5 only) Configure the service APIs on Adobe Developer Console {#createintegration}
 
 To use Automated Forms Conversion service, create a project and add Automated Forms Configuration Service API to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT).
 
@@ -253,7 +255,7 @@ Create a Cloud Service configuration to connect your AEM instance to the convers
    </tr>
    <tr>
    <td>Enable Analytics</td>
-   <td>Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure that Adobe Analytics is enabled for your AEM Forms instance.</td>
+   <td>(For AEM 6.4 and AEM 6.5 only) Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure that Adobe Analytics is enabled for your AEM Forms instance.</td>
    </tr>
    </tbody>
    </table>
