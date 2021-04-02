@@ -54,7 +54,7 @@ Automated Forms Conversion service runs on AEM author instance. You require AEM 
 
   * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.4 or AEM 6.5.
 
-* If you are using AEM Forms as a Cloud Service for instructions to set up an AEM author instance, see onboard to [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment).
+* If you are using AEM Forms as a Cloud Service see onboard to [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) and [setup a local development environment](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
 
 ### (For AEM 6.4 and AEM 6.5 only) Download and install AEM latest Service Pack {#servicepack}
 
