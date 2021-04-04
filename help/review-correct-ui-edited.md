@@ -6,8 +6,8 @@ seo-description: Review and correct the adaptive forms converted by the Automate
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
+exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
 ---
-
 # Review and correct converted forms{#review-and-correct-converted-forms}
 
 AEM Forms Automated Forms Conversion service identifies fields, content, and layout of input PDF document and converts the PDF document to an adaptive form. The output adaptive form can have a few missing or improperly converted fields. You can use the Review and Correct editor to make improvements to identified fields and regenerate the adaptive form to get an output closer to the desired experience. After the first conversion, you can open the input PDF document in the editor to:

@@ -7,8 +7,8 @@ page-status-flag: never-activated
 uuid: 7f0f5bf3-21be-449a-b23e-5946a9fd7ed4
 contentOwner: khsingh
 discoiquuid: 75f6e6bc-7636-4b40-919c-8b20a6ccbb1f
+exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
 ---
-
 # Recommended workflows to enable Document of Record generation for adaptive forms {#recommended-workflows-dor-generation}
 
 The Document of Record (DoR) enables you to keep a record of the information that you provide and submit in an adaptive form so that you can refer to it later.

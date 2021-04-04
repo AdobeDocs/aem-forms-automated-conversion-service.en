@@ -6,6 +6,7 @@ seo-description: Before you begin using AEM Forms Automated Forms Conversion ser
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
+exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 ---
 # Known issues and limitations {#known-issues-limitations}
 
@@ -73,4 +74,3 @@ Before you begin using AEM Forms Automated Forms Conversion service, review the 
 * Information encoded using colors in source PDF form is not carried over to adaptive form.
 * Colors of source PDF Form are not carried over to adaptive form themes.
 * Colored PDF Forms are treated as greyscale forms and fields are detected accordingly.
-

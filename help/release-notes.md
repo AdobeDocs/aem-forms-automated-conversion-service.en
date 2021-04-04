@@ -1,8 +1,8 @@
 ---
 title: What's new? Release notes - Automated Forms Conversion Service
-description: Learn about the latest features and bug fixed for Automated Forms Conversion Service 
+description: Learn about the latest features and bug fixed for Automated Forms Conversion Service
+exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 ---
-
 # Release Notes
 
 Automated Forms Conversion Service receives improvements on an ongoing basis. To stay up to date with the most recent developments, visit this page regularly. This page provides you with information about:

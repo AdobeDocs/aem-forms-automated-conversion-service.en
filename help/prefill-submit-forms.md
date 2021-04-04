@@ -8,8 +8,8 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
+exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
 ---
-
 # Recommended data source-based prefill and submit workflows for adaptive forms {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
 You can use any of the following data sources with adaptive forms converted using Automated Forms Conversion service:

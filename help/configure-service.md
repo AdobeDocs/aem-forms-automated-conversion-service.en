@@ -2,8 +2,8 @@
 title: Configure the Automated Forms Conversion service
 description: Ready your AEM instance to use Automated Forms Conversion service
 role: Business Practitioner, Administrator
+exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 ---
-
 # Configure the Automated Forms Conversion service {#about-this-help}
 
 This help describes how an AEM administrator can configure Automated Forms Conversion service to automate conversion of their PDF forms to adaptive forms. This help is for IT and AEM administrators at your organization. The information provided is based on the assumption that anyone reading this Help is familiar with the following technologies:

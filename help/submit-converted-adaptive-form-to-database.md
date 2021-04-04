@@ -4,8 +4,8 @@ description: Submit the converted adaptive forms with a JSON schema to database 
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
+exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
 ---
-
 # Integrate adaptive form with database using AEM workflow {#submit-forms-to-database-using-forms-portal}
 
 Automated Forms Conversion service allows you to convert a non-interactive PDF form, an Acro Form, or an XFA based PDF form into an adaptive form. While initiating the conversion process, you have the option of generating an adaptive form either with or without data bindings.

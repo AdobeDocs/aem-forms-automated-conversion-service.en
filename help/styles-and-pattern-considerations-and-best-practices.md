@@ -6,8 +6,8 @@ seo-description: List of styles and patterns in source PDF forms which Automated
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
+exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 ---
-
 # Best practices and known complex patterns {#Best-practices-and-considerations2}
 
 This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [!DNL Automated Forms Conversion service]. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service].

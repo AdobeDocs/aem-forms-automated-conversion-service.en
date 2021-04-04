@@ -1,8 +1,8 @@
 ---
 title: Introduction
-description: Speed up the conversion of print forms to adaptive forms 
+description: Speed up the conversion of print forms to adaptive forms
+exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 ---
-
 # Introduction {#introduction-to-automated-forms-conversion-service}
 
 Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion. The service helps:

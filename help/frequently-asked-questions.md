@@ -6,8 +6,8 @@ seo-description: frequently asked questions for Automated Forms Conversion Servi
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
+exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 ---
-
 # Frequently asked questions{#frequently-asked-questions}
 
 1. **Which version of AEM Forms does the Automated Forms Conversion service support?** 
@@ -113,4 +113,4 @@ The most common reasons for the conversion to fail are:</p>
  1. **How to create an Adobe Sign enabled PDF form?**
       </p>To create an Adobe Sign enabled PDF form:</p> 
       
-      Add [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html) to field names or use the [Convert to Adobe Sign Form](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) option. 
+      Add [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html) to field names or use the [Convert to Adobe Sign Form](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) option.
