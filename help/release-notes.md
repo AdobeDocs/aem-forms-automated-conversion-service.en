@@ -16,6 +16,12 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 * Special instructions
 * Future plans for changes
 
+## 24 June 2021 (AFC-2021.06.2) {#june-2021}
+
+### What's improved {#june-2021-improvements}
+
+Improved accuracy for automatically detecting logical sections in the source forms and converting those into corresponding adaptive form panels.
+
 ## 03 Mar 2021 (AFC-2021.02.2) {#mar-2021}
 
 ### What's improved {#march-2021-improvements}
