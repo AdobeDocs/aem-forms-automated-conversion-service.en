@@ -27,7 +27,7 @@ The service supports non-interactive PDF forms, Forms created with Adobe Acrobat
 
 The service also supports Adobe Sign enabled PDF Forms. If the source PDF form has Adobe Sign text tags, the service preserves all the Adobe Sign related information during the conversion and associates signer info present in the source PDF with corresponding adaptive form fields. The feature is available only for AcroForms. 
 
-The service can convert only English-language forms to adaptive forms. You can translate the generated adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+The service can convert English, French, German, and Spanish language forms to adaptive forms. You can also translate the generated adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Conversion workflow  {#conversion-workflow}
 
