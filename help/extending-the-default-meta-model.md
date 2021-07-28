@@ -228,10 +228,18 @@ Add the *aem:Language* metatag tag to the top a meta-model to specify its langua
 ### Considerations for Creating a language specific meta-model
 
 * Ensure name of every key is in English language. For example, emailAddress.
-* Ensure all the entity references (Paths) and pre-defined values of IDs are in English language. For example, aem:affKeyword": ["e-mail", "e-mail address", "email"]
-* Ensure adaptive form and description or message configured to be displayed in adaptive forms use same language.
-* Ensure all JSON schema properties use only supported values.
-* Translate all the values for the aem:affKeyword. 
+* Ensure all the entity references (paths) and pre-defined values of all the *id* key are in English language. For example, *id = PostalAddress*
+* Ensure description or messages included in a  meta-model for the following keys correspond to the language of the meta-model:
+  * aem:affKeyword
+  * title
+  * description
+  * enumNames
+  * shortDescription
+  * validatePictureClauseMessage
+  
+  For example, when the language of meta-model is French ("aem:Language": "de"), ensure that all the descriptions and messages in French language.
+
+* Ensure all [JSON schema properties](#jsonschemaproperties) use only supported values.
 
 The following image displays examples of English language meta-model and corresponding French Language meta-model:
 
