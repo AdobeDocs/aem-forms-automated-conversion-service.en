@@ -208,7 +208,7 @@ You can use the **aem:afProperties** property in the meta-model to define follow
  </tbody> 
 </table>
 
-## Create a language specific meta-model {#language-specific-meta-model}
+## Create a custom metamodel in your own language{#language-specific-meta-model}
 
 You can create a language specific meta-model. Such meta-model helps you create mapping rules in language of your choice. Automated Forms Conversion service allows you to create meta-models in the following languages:
 
@@ -225,10 +225,12 @@ Add the *aem:Language* metatag tag to the top a meta-model to specify its langua
     }
 ```
 
+English is the default language of meta-models.
+
 ### Considerations for Creating a language specific meta-model
 
 * Ensure name of every key is in English language. For example, emailAddress.
-* Ensure all the entity references (paths) and pre-defined values of all the *id* key are in English language. For example, *id = PostalAddress*
+* Ensure all the entity references and pre-defined values of all the *id* key are in English language. For example "id": "ContactPoint" / "$ref": "Entity".
 * Ensure description or messages included in a  meta-model for the following keys correspond to the language of the meta-model:
   * aem:affKeyword
   * title
@@ -237,7 +239,7 @@ Add the *aem:Language* metatag tag to the top a meta-model to specify its langua
   * shortDescription
   * validatePictureClauseMessage
   
-  For example, when the language of meta-model is French ("aem:Language": "de"), ensure that all the descriptions and messages in French language.
+  For example, when the language of meta-model is French ("aem:Language": "fr"), ensure that all the descriptions and messages in French language.
 
 * Ensure all [JSON schema properties](#jsonschemaproperties) use only supported values.
 
