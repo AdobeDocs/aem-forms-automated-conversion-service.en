@@ -18,7 +18,7 @@ Meta-model is a JSON schema. Before you start with meta-model, ensure that you a
 
 ## Default meta-model {#default-meta-model}
 
-Automated Forms Conversion service has a default meta-model. It is a JSON schema and resides on Adobe Cloud with other components of Automated Forms Conversion service. You can find a copy of the meta-model on your local AEM server at: http://&lt;server&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. You can also [click here](assets/global.schema.json) to access or download the default schema.
+Automated Forms Conversion service has a default meta-model. It is a JSON schema and resides on Adobe Cloud with other components of Automated Forms Conversion service. You can find a copy of the meta-model on your local AEM server at: http://&lt;server&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. You can also [click here](assets/en.globalschema.json) to access or download the English language schema. The meta-model for [French](assets/fr.globalschema.json), [German](assets/de.globalschema.json), and [Spanish](assets/es.globalschema.json) languages are also available for download.
 
 The schema of meta-model is derived from schema entities at https://schema.org/docs/schemas.html. It has Person, PostalAddress, LocalBusiness, and more entities as defined on https://schema.org. Every entity of the meta-model adheres to the JSON schema object type. The following code represents a sample meta-model structure:
 
@@ -207,6 +207,45 @@ You can use the **aem:afProperties** property in the meta-model to define follow
   </tr>
  </tbody> 
 </table>
+
+## Create a custom metamodel in your own language{#language-specific-meta-model}
+
+You can create a language specific meta-model. Such meta-model helps you create mapping rules in language of your choice. Automated Forms Conversion service allows you to create meta-models in the following languages:
+
+* English(en)
+* French(fr) 
+* German(de)
+* Spanish()
+
+Add the *aem:Language* metatag tag to the top a meta-model to specify its language. For example,  
+
+```JSON
+"metaTags": {
+        "aem:Language": "de"
+    }
+```
+
+English is the default language of meta-models.
+
+### Considerations for Creating a language specific meta-model
+
+* Ensure name of every key is in English language. For example, emailAddress.
+* Ensure all the entity references and pre-defined values of all the *id* key are in English language. For example "id": "ContactPoint" / "$ref": "Entity".
+* Ensure description or messages included in a  meta-model for the following keys correspond to the language of the meta-model:
+  * aem:affKeyword
+  * title
+  * description
+  * enumNames
+  * shortDescription
+  * validatePictureClauseMessage
+  
+  For example, when the language of meta-model is French ("aem:Language": "fr"), ensure that all the descriptions and messages in French language.
+
+* Ensure all [JSON schema properties](#jsonschemaproperties) use only supported values.
+
+The following image displays examples of English language meta-model and corresponding French Language meta-model:
+
+![](assets/language-specific-meta-model-comparison.png)
 
 ## Modify adaptive form fields using custom meta-model {#modify-adaptive-form-fields-using-custom-meta-model}
 
