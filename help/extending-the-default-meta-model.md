@@ -215,23 +215,23 @@ You can create a language specific meta-model. Such meta-model helps you create 
 * English(en)
 * French(fr) 
 * German(de)
-* Spanish()
+* Spanish(es)
 
 Add the *aem:Language* metatag tag to the top a meta-model to specify its language. For example,  
 
 ```JSON
 "metaTags": {
-        "aem:Language": "de"
+        "aem:Language": "fr"
     }
 ```
 
-English is the default language of meta-models.
+When no language is specified, the service considers that the meta-model is in English language. 
 
 ### Considerations for Creating a language specific meta-model
 
 * Ensure name of every key is in English language. For example, emailAddress.
-* Ensure all the entity references and pre-defined values of all the *id* key are in English language. For example "id": "ContactPoint" / "$ref": "Entity".
-* Ensure description or messages included in a  meta-model for the following keys correspond to the language of the meta-model:
+* Ensure all the entity references and pre-defined values of all the id key comprise only ASCII characters. For example "id": "ContactPoint" / "$ref": "#ContactPoint". 
+* Ensure all the values corresponding to the following keys are in the specified meta-model language:
   * aem:affKeyword
   * title
   * description
@@ -239,9 +239,11 @@ English is the default language of meta-models.
   * shortDescription
   * validatePictureClauseMessage
   
-  For example, when the language of meta-model is French ("aem:Language": "fr"), ensure that all the descriptions and messages in French language.
+  For example, when the language of meta-model is French ("aem:Language": "fr"), ensure that all the descriptions and messages are in French language.
 
-* Ensure all [JSON schema properties](#jsonschemaproperties) use only supported values.
+* Ensure all [JSON schema properties](#jsonschemaproperties) use only supported values. For example, the type property can only span selected values of String, Number, Integer, and Boolean.
+
+
 
 The following image displays examples of English language meta-model and corresponding French Language meta-model:
 
