@@ -243,8 +243,6 @@ When no language is specified, the service considers that the meta-model is in E
 
 * Ensure all [JSON schema properties](#jsonschemaproperties) use only supported values. For example, the type property can only span selected values of String, Number, Integer, and Boolean.
 
-
-
 The following image displays examples of English language meta-model and corresponding French Language meta-model:
 
 ![](assets/language-specific-meta-model-comparison.png)

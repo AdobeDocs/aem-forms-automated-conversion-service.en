@@ -10,7 +10,7 @@ exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 ---
 # Best practices and known complex patterns {#Best-practices-and-considerations2}
 
-This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [!DNL Automated Forms Conversion service]. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service].
+This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [! Automated Forms Conversion service]. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service].
 
 ## Best practices
 
