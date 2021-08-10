@@ -44,7 +44,7 @@ Automated Forms Conversion service runs on Adobe Cloud. [Configure Adobe I/O acc
 After your AEM Forms environment is configured, to convert your PDF forms to adaptive forms, [upload PDF forms](convert-existing-forms-to-adaptive-forms.md) to your AEM instance and [start the conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Before uploading the forms, consider the following:
 
 * Do not upload the secured forms. The service does not convert password-protected and encrypted forms.
-* Do not upload scanned, colored, non-English language, and filled forms. Such forms are not supported.  
+* Do not upload scanned, colored, filled forms, and forms in any language other than  English, French, German, and Spanish. Such forms are not supported.  
 * Do not upload PDF forms with spaces in the filename.
 * Do not upload [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive form.
 * Make the suggested changes in PDF forms described in the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) article.
