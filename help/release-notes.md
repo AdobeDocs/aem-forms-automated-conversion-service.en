@@ -16,6 +16,10 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 * Special instructions
 * Future plans for changes
 
+## 29 July 2021 (AFC-2021.08.0) {#aug-2021}
+
+* Added capability to convert PDF Forms in Italian  and Portuguese languages to an Adaptive Form.
+
 ## 29 July 2021 (AFC-2021.07.2) {#july-2021}
 
 * Added capability to convert a PDF Form in French, German, and Spanish language to an Adaptive Form.
