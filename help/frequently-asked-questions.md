@@ -22,7 +22,7 @@ exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
     <p>The service can convert non-interactive PDF forms, XFA-based XDP and PDF forms, and AcroForms to adaptive forms. The service does not support scanned or filled forms. For other limitations, see the <a href="known-issues.md">known issues</a> article.<br /> </p> 
     <p>We are regularly adding support for other source types. Keep the <a href="introduction.md">supportedPDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> 
 
-    The service can convert only English, French, German, and Spanish language forms to adaptive forms. You can translate the generated adaptive forms to another language using [AEM translation workflow.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+    The service can convert only English, French, German, Spanish, Italian, and Portuguese language forms to adaptive forms. You can translate the generated adaptive forms to another language using [AEM translation workflow.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Can the service produce an XDP instead of an adaptive form?**
     <p>The service does not produce an XDP output. We are regularly adding features and to the service. Keep the <a href="introduction.md">supported languages and PDF forms</a> section on your watchlist for a regular update on newly added features and capabilities.</p> <br>
