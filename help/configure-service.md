@@ -235,7 +235,7 @@ Create a Cloud Service configuration to connect your AEM instance to the convers
    |Template|Default template to be applied to converted forms. You can always specify a different template before starting the conversion. A template contains basic structure and initial content for an adaptive form. You can choose a template from the templates provided out-of-the-box. You can also create a custom template.|
    |Theme|Default theme to be applied to converted forms. You can always specify a different theme before starting the conversion.  You can click the icon to choose a theme provided out-of the box. You can also create a custom theme.|
    |Existing Fragments|Location of existing fragments, if any.|
-   |Custom Meta-model|Path of the .schema.json file of custom meta-model. You can create separate meta-models for English, French, German, and Spanish languages.|
+   |Custom Meta-model|Path of the .schema.json file of custom meta-model. You can create separate meta-models for English, French, German, Spanish, Italian, and Portuguese languages.|
 
 1. In the **[!UICONTROL Advanced]** tab of the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following field:
 

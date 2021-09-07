@@ -27,7 +27,7 @@ You can upload all the PDF forms at once or in a phased manner, as required. Bef
 * Do not upload the protected forms. The service does not convert password-protected and secured forms.
 * Do not upload the [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive form.
 * Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms.
-* Do not upload scanned, filled, and forms in any language other than English, French, German, and Spanish. Such forms are not supported.
+* Do not upload scanned, filled, and forms in any language other than English, French, German, Spanish, Italian, and Portuguese. Such forms are not supported.
 
 When you use an XDP form for conversion, perform the following steps before uploading the source XPD forms: 
 

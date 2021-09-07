@@ -1,0 +1,418 @@
+{
+   "metaTags":{
+      "aem:Language":"it"
+   },
+   "definitions":{
+      "Entity":{
+         "id":"Entity",
+         "properties":{
+            "name":{
+               "type":"string"
+            },
+            "description":{
+               "type":"string",
+               "description":"Specifica la descrizione dell’entità."
+            }
+         }
+      },
+      "Person":{
+         "id":"Person",
+         "allOf":[
+            {
+               "$ref":"#Entity"
+            },
+            {
+               "properties":{
+                  "familyName":{
+                     "aem:affKeyword":[
+                        "cognome"
+                     ],
+                     "type":"string",
+                     "description":"Negli Stati Uniti, come in Italia, un cognome rappresenta l’ultimo nome di una persona. Utilizza questa proprietà insieme alla proprietà givenName invece della proprietà name."
+                  },
+                  "givenName":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "nome"
+                     ],
+                     "description":"Negli Stati Uniti, come in Italia, il nome rappresenta il primo nome di una persona. Utilizza questa proprietà insieme alla proprietà familyName (cognome) invece della proprietà name."
+                  },
+                  "middleName":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "secondo nome"
+                     ],
+                     "description":"Nome di una persona inserito dopo il nome (givenName) e prima del cognome (familyName)."
+                  },
+                  "signature":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "firma",
+                        "firma"
+                     ],
+                     "format":"sign"
+                  },
+                  "title":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "titolo"
+                     ],
+                     "description":"Specifica un prefisso che preceda il nome di una persona, ad esempio Dr/Sig.ra/Sig."
+                  },
+                  "deathDate":{
+                     "type":"string",
+                     "format":"date",
+                     "aem:affKeyword":[
+                        "data del decesso"
+                     ],
+                     "description":"Specifica la data del decesso nel formato ISO 8601. Ad esempio 1901-01-01"
+                  },
+                  "birthDate":{
+                     "type":"string",
+                     "format":"date",
+                     "aem:affKeyword":[
+                        "Data di nascita",
+                        "nascita",
+                        "data di nascita"
+                     ],
+                     "description":"Specifica la data di nascita nel formato ISO 8601. Ad esempio 1901-01-01"
+                  },
+                  "birthPlace":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "luogo di nascita"
+                     ],
+                     "description":"Specifica il luogo di nascita."
+                  },
+                  "address":{
+                     "$ref":"#PostalAddress",
+                     "aem:affKeyword":[
+                        "indirizzo"
+                     ]
+                  },
+                  "gender":{
+                     "type":"string",
+                     "enum":[
+                        "0",
+                        "1"
+                     ],
+                     "enumNames":[
+                        "Maschio",
+                        "Femmina"
+                     ],
+                     "aem:affKeyword":[
+                        "genere"
+                     ],
+                     "description":"Seleziona il genere."
+                  },
+                  "jobTitle":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "qualifica"
+                     ],
+                     "description":"Specifica la qualifica professionale"
+                  },
+                  "maritalStatus":{
+                     "type":"string",
+                     "enum":[
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                     ],
+                     "aem:affKeyword":[
+                        "stato civile"
+                     ],
+                     "enumNames":[
+                        "Coniugato/a",
+                        "Celibe/Nubile",
+                        "Divorziato/a",
+                        "Vedovo/o"
+                     ],
+                     "description":"Specifica lo stato civile"
+                  },
+                  "SSN":{
+                     "type":"string",
+                     "pattern":"/\\d{9}/",
+                     "description":"Negli Stati Uniti, il codice SSN è un numero di previdenza sociale di nove cifre rilasciato a cittadini, residenti permanenti e lavoratori residenti temporanei.",
+                     "aem:affKeyword":[
+                        "ssn",
+                        "numero di previdenza sociale"
+                     ],
+                     "aem:afProperties":{
+                        "shortDescription":"Negli Stati Uniti, il codice SSN è un numero di previdenza sociale di nove cifre rilasciato a cittadini, residenti permanenti e lavoratori residenti temporanei.",
+                        "displayPatternType":"num{zzzzzzzzzzzzzzzz}",
+                        "displayPictureClause":"num{zzzzzzzzzzzzzzz}",
+                        "validatePictureClause":"\\d{9}",
+                        "validationPatternType":"custom",
+                        "validatePictureClauseMessage":"Il codice SSN deve contenere 9 cifre"
+                     }
+                  },
+                  "NINO":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "assicurazione nazionale",
+                        "nino"
+                     ],
+                     "description":"Nel Regno Unito, NINO rappresenta il codice di assicurazione nazionale emesso dal sistema nazionale di assicurazione o previdenza sociale. Ad esempio, AB 12 34 56 C."
+                  },
+                  "taxId":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "codice fiscale"
+                     ],
+                     "description":"Codice fiscale della persona. Il codice fiscale è denominato codice TIN (Tax Identification Number) negli Stati Uniti e CIF o NIF in Spagna."
+                  },
+                  "nationality":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "nazionalità"
+                     ],
+                     "description":"Specifica la nazionalità della persona."
+                  },
+                  "spouse":{
+                     "$ref":"#Person",
+                     "aem:affKeyword":[
+                        "coniuge"
+                     ]
+                  },
+                  "parent":{
+                     "$ref":"#Person",
+                     "aem:affKeyword":[
+                        "madre/padre"
+                     ]
+                  }
+               }
+            }
+         ]
+      },
+      "ContactPoint":{
+         "id":"ContactPoint",
+         "allOf":[
+            {
+               "$ref":"Entity"
+            },
+            {
+               "properties":{
+                  "emailAddress":{
+                     "type":"string",
+                     "description":"Specifica l’indirizzo e-mail del punto di contatto.",
+                     "format":"email",
+                     "aem:affKeyword":[
+                        "e-mail",
+                        "indirizzo e-mail",
+                        "e-mail",
+                        "indirizzo e-mail"
+                     ]
+                  },
+                  "faxNumber":{
+                     "type":"number",
+                     "aem:affKeyword":[
+                        "fax",
+                        "numero di fax"
+                     ],
+                     "description":"Specifica il numero di fax del punto di contatto."
+                  },
+                  "telephone":{
+                     "type":"string",
+                     "pattern":"/\\d{10}/",
+                     "aem:affKeyword":[
+                        "telefono",
+                        "numero di telefono",
+                        "phone",
+                        "telefono",
+                        "telefono cellulare"
+                     ],
+                     "description":"Specifica il numero di telefono del punto di contatto.",
+                     "aem:afProperties":{
+                        "sling:resourceType":"fd/af/components/guidetelephone",
+                        "guideNodeClass":"guideTelephone"
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      "PostalAddress":{
+         "id":"PostalAddress",
+         "aem:affKeyword":[
+            "indirizzo",
+            "luogo"
+         ],
+         "allOf":[
+            {
+               "$ref":"#ContactPoint"
+            },
+            {
+               "properties":{
+                  "postalCode":{
+                     "aem:affKeyword":[
+                        "codice postale",
+                        "zipcode",
+                        "codice postale",
+                        "codice postale"
+                     ],
+                     "type":"number",
+                     "description":"Specifica il codice postale incluso nell’indirizzo postale. Ad esempio, 94043."
+                  },
+                  "addressRegion":{
+                     "aem:affKeyword":[
+                        "stato",
+                        "regione nell’indirizzo"
+                     ],
+                     "type":"string",
+                     "description":"Specifica lo stato o la provincia incluso come parte dell’indirizzo postale. Ad esempio, FI."
+                  },
+                  "addressLocality":{
+                     "aem:affKeyword":[
+                        "città",
+                        "località indirizzo"
+                     ],
+                     "type":"string",
+                     "description":"Specifica la città inclusa nell’indirizzo postale. Ad esempio, Firenze."
+                  },
+                  "addressCountry":{
+                     "aem:affKeyword":[
+                        "paese",
+                        "paese nell'indirizzo"
+                     ],
+                     "type":"string",
+                     "description":"Specifica il Paese incluso nell’indirizzo postale. Ad esempio, Italia. È anche possibile fornirne il codice di due lettere, ad esempio IT"
+                  },
+                  "streetAddress":{
+                     "aem:affKeyword":"indirizzo stradale",
+                     "type":"string",
+                     "description":"Specifica l’indirizzo stradale incluso nell’indirizzo postale. Ad esempio, Via Roma 24."
+                  }
+               }
+            }
+         ]
+      },
+      "Organization":{
+         "id":"Organization",
+         "allOf":[
+            {
+               "$ref":"#Entity"
+            },
+            {
+               "properties":{
+                  "address":{
+                     "$ref":"#PostalAddress",
+                     "aem:affKeyword":[
+                        "indirizzo"
+                     ]
+                  },
+                  "contactPoint":{
+                     "$ref":"#ContactPoint",
+                     "aem:affKeyword":[
+                        "punto di contatto"
+                     ]
+                  },
+                  "legalName":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "ragione sociale"
+                     ]
+                  },
+                  "memberOf":{
+                     "$ref":"#Organization",
+                     "aem:affKeyword":[
+                        "membro di"
+                     ],
+                     "description":"Specifica il nome dell'organizzazione a cui appartiene questa organizzazione."
+                  },
+                  "parentOrganization":{
+                     "$ref":"#Organization",
+                     "aem:affKeyword":[
+                        "organizzazione principale"
+                     ],
+                     "description":"Specifica il nome dell’eventuale organizzazione principale per questa organizzazione secondaria."
+                  },
+                  "taxId":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "codice fiscale"
+                     ],
+                     "description":"Codice fiscale della persona. Il codice fiscale è denominato codice TIN (Tax Identification Number) negli Stati Uniti e CIF o NIF in Spagna."
+                  }
+               }
+            }
+         ]
+      },
+      "LocalBusiness":{
+         "id":"LocalBusiness",
+         "allOf":[
+            {
+               "$ref":"#Organization"
+            },
+            {
+               "properties":{
+                  "currenciesAccepted":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "valute accettate"
+                     ],
+                     "description":"Specifica le valute accettate nel formato valuta ISO 4217. Ad esempio EUR per Euro"
+                  },
+                  "openingHours":{
+                     "type":"string",
+                     "description":"Specifica l’orario di lavoro generale di un’azienda.",
+                     "aem:affKeyword":[
+                        "orari di apertura"
+                     ]
+                  },
+                  "paymentAccepted":{
+                     "type":"string",
+                     "description":"Specifica i tipi di pagamento accettati. Ad esempio, contanti o carta di credito",
+                     "aem:affKeyword":[
+                        "pagamento accettato"
+                     ]
+                  },
+                  "priceRange":{
+                     "type":"string",
+                     "aem:affKeyword":[
+                        "fascia di prezzo"
+                     ],
+                     "description":"Specifica l’intervallo di prezzo per l’attività. Ad esempio $$$"
+                  }
+               }
+            }
+         ]
+      },
+      "Event":{
+         "id":"Event",
+         "allOf":[
+            {
+               "$ref":"#Entity"
+            },
+            {
+               "properties":{
+                  "startDate":{
+                     "type":"string",
+                     "format":"date",
+                     "aem:affKeyword":[
+                        "data di inizio"
+                     ],
+                     "description":"Specifica la data e l'ora di inizio dell’evento nel formato data ISO 8601. Ad esempio 1901-01-01"
+                  },
+                  "endDate":{
+                     "type":"string",
+                     "format":"date",
+                     "aem:affKeyword":[
+                        "data di fine"
+                     ],
+                     "description":"Specifica la data e l'ora di fine dell’evento nel formato data ISO 8601. Ad esempio 2020-01-01"
+                  },
+                  "location":{
+                     "$ref":"#PostalAddress",
+                     "aem:affKeyword":[
+                        "luogo"
+                     ],
+                     "description":"Specifica il luogo dell’evento."
+                  }
+               }
+            }
+         ]
+      }
+   }
+}
