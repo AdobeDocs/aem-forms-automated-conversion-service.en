@@ -8,7 +8,6 @@ audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 user-guide-description: Convert PDF Forms to responsive and mobile-ready HTML Forms.
 breadcrumb-title: Forms Automated Conversion Guide
-breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
 feature: Adaptive Forms
 role: User
 ---
