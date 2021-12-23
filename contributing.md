@@ -1,6 +1,6 @@
-# Contributing to Adobe Experience Manager Cloud Service Documentation
+# Contributing to AEM Forms Automated Conversion Service Documentation
 
-Thank you for choosing to contribute to Adobe Experience Manager Cloud Service documentation! We welcome content contributions from our entire reader community as well as from fellow Adobe employees.
+Thank you for choosing to contribute to AEM Forms Automated Conversion Service documentation! We welcome content contributions from our entire reader community as well as from fellow Adobe employees.
 
 This file describes how you can contribute as well as points out the guidelines to follow when making your contributions.
 
