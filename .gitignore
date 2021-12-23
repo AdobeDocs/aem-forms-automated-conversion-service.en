@@ -1,2 +1,9 @@
-
+.DS_Store
+.Trashes
+.Spotlight-V100
+settings.json
+.history
+Thumbs.db
+.gitignore
+desktop.ini
 help/custom-submit-action-form.md
