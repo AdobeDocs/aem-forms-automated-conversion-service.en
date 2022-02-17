@@ -17,12 +17,11 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 * [**Configure the conversion service**](configure-service.md)  
 
-* **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms:** Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form during conversion. When you create a folder for the templates, select the **[!UICONTROL Browse configurations]** option for everyone. 
+* **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms:** Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form during conversion. When you create a folder for the templates, select the **[!UICONTROL Browse configurations]** option for everyone.
 
 * **Prepare the [themes](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) to be applied to converted forms:** Using a theme allows you to apply a consistent style to all the adaptive forms of your organization.
 
 * **(optional)** [**Convert your source PDF Forms to Adobe Sign form**](frequently-asked-questions.md)
-
 
 ## Start the conversion process {#start-the-conversion-process}
 
@@ -39,14 +38,14 @@ The conversion service converts PDF forms available on your AEM Forms instance t
 * Keep the number of forms in a folder less than 15 and keep the total number of pages in a folder less than 50.  
 * Keep the size of folder less than 10 MB. Do not keep forms in a subfolder.
 * Keep the number of pages in a form less than 15.  
-* Do not upload the protected forms. The service does not convert password-protected and secured forms. 
+* Do not upload the protected forms. The service does not convert password-protected and secured forms.
 * Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms.
 * Do not upload [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive form.
 * Read the [Known issues](known-issues.md) and the [Best practices and considerations](styles-and-pattern-considerations-and-best-practices.md) sections and make suggested changes to forms.
 
 Perform the following steps to upload the forms to be converted to a folder on your AEM Forms instance:
 
-1. Log in to the AEM Forms instance.   
+1. Log in to the AEM Forms instance.
 
 1. Tap **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Tap **[!UICONTROL Create]**> **[!UICONTROL Folder]**. Specify **Title** and **Name** of the folder. Tap **[!UICONTROL Create]**. A folder is created.
@@ -71,6 +70,7 @@ After you have uploaded the forms and configured the service, perform the follow
     If you select this option, the conversion service generates an adaptive form without data model bindings. After a successful conversion, you can associate an adaptive form with a Form Data Model, XML schema, or a JSON schema. For more information, see [Creating an adaptive form](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
+
    Comment Type: draft
 
    <note type="note">
@@ -89,16 +89,18 @@ After you have uploaded the forms and configured the service, perform the follow
    > * You can use only **[!UICONTROL  Extract Fragment]** or **[!UICONTROL Use existing adaptive form fragments]** option at a time. You cannot use both the options simultaneously.
    > * You can use the **[!UICONTROL Use existing adaptive form fragments]** option only with non-interactive PDF Forms. Other form types are not supported yet.  
    > * You can use only unbound fragments or fragments bound to a JSON schema with Automated Conversion Service. Do not use XFA fragments. XFA fragments are not supported.
-   > 
-    
+   >
+
     * Select the **[!UICONTROL Auto-detect multi-column layout of input forms]** option to retain the layout of the source form for large screens like desktops and laptops. The option is helpful in preserving the multi-column layout of source forms. For example, when a source PDF has a two-column layout, the service generates an output adaptive form with a two-column layout for large screen displays and single-column layout for small screen devices like mobile phones. The feature has some known issues with data source schema structure. For details, see the [known-issues](known-issues.md) article.
     * By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to not create page level panels (page number-based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preceding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section.  
 
         >[!NOTE]
         > You require the connector package 1.1.38 or above to use the  **[!UICONTROL Auto-detect logical sections]** feature.
-    
+
+* The [Auto-convert sections to fragments] option applies to PDF Forms with more than 15 pages. It converts the detected top level sections to fragments. It also enables lazy-loading for all the created fragments. It helps improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.
+
 1. Tap **[!UICONTROL Start Conversion]**. The Conversion is started. Conversion progress is displayed on the folder or the form until the conversion is in progress. The message is replaced another status message (Converted, Partially Converted, or Conversion Failed) after the conversion is complete. A status email is also sent on the configured email address on completion of conversion:
-    
+
     * On a successful conversion, the converted adaptive form and related schema are downloaded to the path specified in the **[!UICONTROL Basic]** tab of the conversion dialog. Form fragments and corresponding schema are downloaded only if the Extract Fragment option is selected before starting the conversion.
     * On a failed conversion, the **[!UICONTROL Conversion Failed]** message is displayed if all the input forms fail to convert or the **[!UICONTROL Partially Failed]** message is displayed when only a few of all the input forms fail to convert. A status email is sent on the [configured email address](configure-service.md#configureemailnotification) and an error is logged to the error.log file.
 
@@ -107,6 +109,7 @@ After you have uploaded the forms and configured the service, perform the follow
    The conversion service automatically uploads the PDF form to the converted adaptive form as the Document of Record template only if you enable the **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** option.
 
    <!--
+
    Comment Type: draft
 
    <note type="note">

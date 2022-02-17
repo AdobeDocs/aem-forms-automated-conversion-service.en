@@ -16,7 +16,11 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 * Special instructions
 * Future plans for changes
 
-## 29 July 2021 (AFC-2021.08.0) {#aug-2021}
+## 24 Feb 2022 (AFC-2022.02.0) {#feb-2022}
+
+* Added capability to [automaticaly convert sections](convert-existing-forms-to-adaptive-forms.md) to fragments to help improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.
+
+## 29 Aug 2021 (AFC-2021.08.0) {#aug-2021}
 
 * Added capability to convert PDF Forms in Italian  and Portuguese languages to an Adaptive Form.
 
@@ -52,20 +56,19 @@ Added support to convert colored PDF forms to adaptive forms.
 
 Improvements in the automated conversion of text, form, and choice group fields to corresponding adaptive form components.  
 
-
 ## 20 March 2020 (AFC-2020.03.1) {#mar-2020}
 
 ### Early Access {#early-access}
 
 **Automatically detect logical sections in a form**
 
-By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to drop page level panels (page number-based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preceding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section. 
+By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to drop page level panels (page number-based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preceding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section.
 
 ### What's improved {#mar-2020-improvements}
 
 **Improvements in list detection**
 
-The service is now more efficient in detecting bulleted and numbered lists. 
+The service is now more efficient in detecting bulleted and numbered lists.
 
 ### Special instructions {#special-instructions}
 
