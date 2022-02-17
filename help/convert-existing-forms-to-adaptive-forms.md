@@ -102,7 +102,7 @@ After you have uploaded the forms and configured the service, perform the follow
     >[!NOTE]
     > Do not use responsive layout template while using the Auto-convert sections to fragments option.
     > Use the review and correct editor to merge small panels to a large one. It helps reduce the number of fragments in the converted adaptive form.
-    > If you experience the "too many calls" error, restructure the form to create a simplified hierarchy or [increase the value of the sling.max.calls](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-6-2-toomanycallsexception/m-p/163988) attribute. The error occurs if the form is too complex, has a large number of tables, and multi-level hierarchical structure.
+    > If you experience the "too many calls" error, restructure the form to create a simplified hierarchy or [increase the value of the sling.max.calls](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-6-2-toomanycallsexception/m-p/163988) attribute, and [increase size of the cache](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). The error occurs if the form is too complex, has a large number of tables, and multi-level hierarchical structure.
 
 1. Tap **[!UICONTROL Start Conversion]**. The Conversion is started. Conversion progress is displayed on the folder or the form until the conversion is in progress. The message is replaced another status message (Converted, Partially Converted, or Conversion Failed) after the conversion is complete. A status email is also sent on the configured email address on completion of conversion:
 
