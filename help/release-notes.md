@@ -18,7 +18,7 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 
 ## 24 Feb 2022 (AFC-2022.02.0) {#feb-2022}
 
-* Added capability to [automaticaly convert sections](convert-existing-forms-to-adaptive-forms.md) to fragments to help improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.
+* Added capability to [automaticaly convert sections to fragments](convert-existing-forms-to-adaptive-forms.md) to help improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.
 
 ## 29 Aug 2021 (AFC-2021.08.0) {#aug-2021}
 
