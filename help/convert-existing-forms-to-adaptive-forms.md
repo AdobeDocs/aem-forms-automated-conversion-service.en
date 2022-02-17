@@ -99,6 +99,11 @@ After you have uploaded the forms and configured the service, perform the follow
 
 * The [Auto-convert sections to fragments] option applies to PDF Forms with more than 15 pages. It converts the detected top level sections to fragments. It also enables lazy-loading for all the created fragments. It helps improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.
 
+    >[!NOTE]
+    > Do not use responsive layout template while using the Auto-convert sections to fragments option.
+    > Use the review and correct editor to merge small panels to a large one. It helps reduce the number of fragments in the converted adaptive form.
+    > If you experience the "too many calls" error, restructure the form to create a simplified hierarchy or [increase the value of the sling.max.calls](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-6-2-toomanycallsexception/m-p/163988) attribute. The error occurs if the form is too complex, has a large number of tables, and multi-level hierarchical structure.
+
 1. Tap **[!UICONTROL Start Conversion]**. The Conversion is started. Conversion progress is displayed on the folder or the form until the conversion is in progress. The message is replaced another status message (Converted, Partially Converted, or Conversion Failed) after the conversion is complete. A status email is also sent on the configured email address on completion of conversion:
 
     * On a successful conversion, the converted adaptive form and related schema are downloaded to the path specified in the **[!UICONTROL Basic]** tab of the conversion dialog. Form fragments and corresponding schema are downloaded only if the Extract Fragment option is selected before starting the conversion.
