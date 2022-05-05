@@ -266,7 +266,7 @@ Execute the following steps to use a custom meta-model during conversion:
 1. Create a folder in **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** and upload the custom meta-model JSON schema file to the folder.
 1. Open the conversion service properties using:
 
-   **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]**&gt; **&lt;**Properties of selected configuration**&gt;**
+   **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **&lt;Properties of selected configuration&gt;**
 
 1. In the **[!UICONTROL Basic]** tab, specify the location of the custom meta-model in the **[!UICONTROL Custom Meta-model]** field and tap **[!UICONTROL Save & Close]**.
 1. [Run the conversion](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) to apply the custom meta-model to the conversion process.
