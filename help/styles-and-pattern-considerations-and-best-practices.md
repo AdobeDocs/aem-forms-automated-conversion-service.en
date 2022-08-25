@@ -22,7 +22,8 @@ You can upload all the PDF forms at once or in a phased manner, as required. Bef
 
 * Keep the number of forms in a folder less than 15 and keep the total number of pages in a folder less than 50.
 * Keep the size of the folder less than 10 MB. Do not keep forms in a sub-folder.
-* Keep the number of pages in a form less than 15.
+* (AEM 6.4 Forms) Keep the number of pages in a form less than 15. 
+* (AEM Forms as a Cloud Service and AEM 6.5 Forms Service Pack 14 (6.5.14.0) and later only) You can upload PDF Forms with more than 15 pages (upto 40 pages) and use the [**[!UICONTROL Auto-convert sections to fragments]**](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) option to convert such pages. The option supports PDF Forms between 15-40 pages.
 * Organize source documents into a batch of 8-15 documents. Keep source forms with common Adaptive Form Fragments in a single batch.
 * Do not upload the protected forms. The service does not convert password-protected and secured forms.
 * Do not upload the [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive form.
