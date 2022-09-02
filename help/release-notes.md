@@ -16,10 +16,6 @@ Automated Forms Conversion Service receives improvements on an ongoing basis. To
 * Special instructions
 * Future plans for changes
 
-## 1 Sep 2022 {#Sep-2022}
-
-* Added capability to convert PDF forms larger than 15 pages (up to 40 pages) for AEM Forms as a Cloud Service and AEM 6.5 Forms Service Pack 14 (6.5.14.0) or later.
-
 ## 24 Feb 2022 (AFC-2022.02.0) {#feb-2022}
 
 * Added capability to [automaticaly convert sections to fragments](convert-existing-forms-to-adaptive-forms.md) to help improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.

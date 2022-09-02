@@ -11,7 +11,7 @@ exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
 ---
 # Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
 
-AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms. Whether you are using non-interactive PDF forms, Acroforms, or XFA-based PDF forms, the Automated Forms Conversion service can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information see [Automated Forms Conversion](introduction.md) service.
+AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms. Whether you are using non-interactive PDF forms, Acro Forms, or XFA-based PDF forms, the Automated Forms Conversion service can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information see [Automated Forms Conversion](introduction.md) service.
 
 ## Pre-requisites {#pre-requisites}
 
@@ -27,18 +27,17 @@ AEM Forms Automated Forms Conversion service, powered by Adobe Sensei, automatic
 
 After you connect your AEM instance with AEM Forms Conversion Service, you can convert your PDF forms to adaptive forms. Perform the following steps in the listed order to convert the forms:
 
-* [Upload PDF forms to your AEM Forms Server](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
+* [Upload PDF forms to your AEM Forms server](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [Run the conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
 * [Review and correct the converted forms](review-correct-ui-edited.md)
 
-### Upload PDF forms to your AEM Forms Server {#upload-pdf-forms-to-your-aem-forms-server}
+### Upload PDF forms to your AEM Forms server {#upload-pdf-forms-to-your-aem-forms-server}
 
 The conversion service converts PDF forms available on your AEM Forms instance to adaptive forms. You can upload all the PDF forms at once or in a phased manner, as required. Before uploading the forms, consider the following:
 
 * Keep the number of forms in a folder less than 15 and keep the total number of pages in a folder less than 50.  
 * Keep the size of folder less than 10 MB. Do not keep forms in a subfolder.
-* (AEM 6.4 Forms only) Keep the number of pages in a form less than 15.
-* (AEM Forms as a Cloud Service and AEM 6.5 Forms Service Pack 14 (6.5.14.0) and later only) You can upload PDF Forms with more than 15 pages (up to 40 pages) and use the **[!UICONTROL Auto-convert sections to fragments]** option to convert such pages.
+* Keep the number of pages in a form less than 15.  
 * Do not upload the protected forms. The service does not convert password-protected and secured forms.
 * Do not upload source forms with spaces in the filename. Remove the space from the name of the file before uploading the forms.
 * Do not upload [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). The service does not convert a PDF Portfolio to an adaptive form.
@@ -64,7 +63,7 @@ After you have uploaded the forms and configured the service, perform the follow
 
 1. In the **[!UICONTROL Basic]** tab of the Conversion Settings dialog:
 
-    * **[!UICONTROL Select a cloud configuration]**. When you select a configuration, default template and theme are already specified. You can specify a different template or a theme, if necessary.  
+    * **[!UICONTROL Select a cloud configuration]**. When you select a configuration, default template and theme are already specified. You can specify a different template or a theme, if required.  
     * Specify a location to save generated adaptive forms and corresponding schema. You can use default paths or specify custom paths.  
     * Use the **Generate adaptive forms without data model bindings** option to select if you want to generate an adaptive form with or without data model bindings.
     If you do not select this option, the conversion service automatically associates the adaptive forms with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. The **[!UICONTROL Save generated data model schema at]** field displays the default location to save the generated JSON schema. You can also customize the location to save the generated schema.
@@ -93,21 +92,21 @@ After you have uploaded the forms and configured the service, perform the follow
    >
 
     * Select the **[!UICONTROL Auto-detect multi-column layout of input forms]** option to retain the layout of the source form for large screens like desktops and laptops. The option is helpful in preserving the multi-column layout of source forms. For example, when a source PDF has a two-column layout, the service generates an output adaptive form with a two-column layout for large screen displays and single-column layout for small screen devices like mobile phones. The feature has some known issues with data source schema structure. For details, see the [known-issues](known-issues.md) article.
-    * By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to not create page level panels (page-number-based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preceding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section.  
+    * By default, the service creates a separate top-level panel for each page of a PDF form. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to not create page level panels (page number-based panels) and create only logical panels. It also clubs the fields which do not belong to any section with preceding logical section and fields of a logical section spread across two adjacent pages into a single logical section. For example, if some fields of a logical section are at the end of page one and some are in the starting of page two, all such fields are clubbed into a single logical section.  
 
         >[!NOTE]
         > You require the connector package 1.1.38 or above to use the  **[!UICONTROL Auto-detect logical sections]** feature.
 
-    * (AEM Forms as a Cloud Service and AEM 6.5 Forms Service Pack 14 (6.5.14.0) and later only) The **[!UICONTROL Auto-convert sections to fragments]** option applies to PDF Forms with more than 15 pages. It converts the detected top level sections to fragments. It also enables lazy-loading for all the created fragments. It helps improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.
+* (AEM Forms as a Cloud Service Only) The [Auto-convert sections to fragments] option applies to PDF Forms with more than 15 pages. It converts the detected top level sections to fragments. It also enables lazy-loading for all the created fragments. It helps improve rendering speed of converted forms and makes it easier to load large forms in adaptive form editor.
 
-       >[!NOTE]
-       > Do not use responsive layout template while using the Auto-convert sections to fragments option.
-       > Use the review and correct editor to merge small panels to a large one. It helps reduce the number of fragments in the    converted adaptive form.
-       > If you experience the "too many calls" exception,
-       >
-       > * Restructure the form to create a simplified hierarchy
-       > * Increase the value of the sling.max.calls parameter to a high enough number until the exception disappears.  
-       > * [increase size of the cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). The error occurs if the form is too complex, has many tables, and multi-level hierarchical structure.
+    >[!NOTE]
+    > Do not use responsive layout template while using the Auto-convert sections to fragments option.
+    > Use the review and correct editor to merge small panels to a large one. It helps reduce the number of fragments in the converted adaptive form.
+    > If you experience the "too many calls" exception,
+    >
+    > * restructure the form to create a simplified hierarchy
+    > * [increase the value of the sling.max.calls parameter]to a high enough number until the exception disappears.  
+    > * [increase size of the cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). The error occurs if the form is too complex, has a large number of tables, and multi-level hierarchical structure.
 
 1. Tap **[!UICONTROL Start Conversion]**. The Conversion is started. Conversion progress is displayed on the folder or the form until the conversion is in progress. The message is replaced another status message (Converted, Partially Converted, or Conversion Failed) after the conversion is complete. A status email is also sent on the configured email address on completion of conversion:
 
