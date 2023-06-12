@@ -18,7 +18,7 @@ The DoR uses a base template to define its layout. You can generate a DoR either
 
 For more information on generating a DoR, see [Generate Document of Record for adaptive forms](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
-The [Automated Forms Conversion service](../help/introduction.md) converts the following source forms to adaptive forms:
+The [Automated Forms Conversion service](/help/using/introduction.md) converts the following source forms to adaptive forms:
 
 * non-interactive PDF forms
 * Acro Forms
@@ -92,14 +92,14 @@ If you are using a non-interactive PDF form as the source form for Automated For
 
 1. Tap **[!UICONTROL Save & Close]** to save the settings.
 
-1. [Run the conversion](../help/convert-existing-forms-to-adaptive-forms.md). Ensure that you use the cloud configuration edited in step 1 of these instructions.
+1. [Run the conversion](/help/using/convert-existing-forms-to-adaptive-forms.md). Ensure that you use the cloud configuration edited in step 1 of these instructions.
 On submitting the converted adaptive form, the DoR gets automatically generated using the default template.
 
 ### Edit adaptive form properties after conversion to enable DoR generation {#edit-adaptive-form-properties-generate-document-of-record}
 
 If you do not enable DoR generation before converting the source form in to an adaptive form, you can still do so after conversion.
 
-1. [Run the conversion](../help/convert-existing-forms-to-adaptive-forms.md) on the non-interactive PDF form to generate an adaptive form.
+1. [Run the conversion](/help/using/convert-existing-forms-to-adaptive-forms.md) on the non-interactive PDF form to generate an adaptive form.
 
 1. Select the adaptive form in the **[!UICONTROL output]** folder and tap **[!UICONTROL Properties]**.
 
@@ -125,7 +125,7 @@ If you are using an Acro Form or XFA-based PDF form as the source form for Autom
 
 1. Tap **[!UICONTROL Save & Close]** to save the settings.
 
-1. [Run the conversion](../help/convert-existing-forms-to-adaptive-forms.md). Ensure that you use the cloud configuration edited in step 1 of these instructions.
+1. [Run the conversion](/help/using/convert-existing-forms-to-adaptive-forms.md). Ensure that you use the cloud configuration edited in step 1 of these instructions.
 The conversion service automatically associates the Acro Form or XFA-based PDF form to the converted adaptive form as the DoR template.
 You can open the adaptive form properties to view the DoR template in the **[!UICONTROL Document of Record Template Configuration]** section of **[!UICONTROL Form Model]** tab.
 
@@ -135,7 +135,7 @@ You can open the adaptive form properties to view the DoR template in the **[!UI
 
 ### Edit adaptive form properties after conversion to enable DoR generation {#edit-adaptive-form-properties-to-generate-document-of-record}
 
-1. [Run the conversion](../help/convert-existing-forms-to-adaptive-forms.md) on the non-interactive PDF form to generate an adaptive form.
+1. [Run the conversion](/help/using/convert-existing-forms-to-adaptive-forms.md) on the non-interactive PDF form to generate an adaptive form.
 
 1. Select the adaptive form in the **[!UICONTROL output]** folder and tap **[!UICONTROL Properties]**.
 
