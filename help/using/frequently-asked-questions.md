@@ -1,11 +1,12 @@
 ---
 title: Frequently asked questions
-seo-title: Frequently asked questions
 description: Common queries or frequently asked questions
-seo-description: frequently asked questions for Automated Forms Conversion Service
-uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
 topic-tags: introduction
-discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 ---
 # Frequently asked questions{#frequently-asked-questions}

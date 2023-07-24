@@ -1,7 +1,12 @@
 ---
 title: Configure the Automated Forms Conversion service
 description: Ready your AEM instance to use Automated Forms Conversion service
-role: User, Admin
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer, User
+level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 ---
 # Configure the Automated Forms Conversion service {#about-this-help}

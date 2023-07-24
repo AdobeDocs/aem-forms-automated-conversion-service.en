@@ -1,12 +1,14 @@
 ---
 title: Generate Document of Record during conversion
-seo-title: Generate Document of Record during conversion
 description: Recommended paths to generate a DoR based on the type of source forms used for conversion.
-seo-description: Recommended paths to generate a DoR based on the type of source forms used for conversion.
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer
+level: Beginner, Intermediate
 page-status-flag: never-activated
-uuid: 7f0f5bf3-21be-449a-b23e-5946a9fd7ed4
 contentOwner: khsingh
-discoiquuid: 75f6e6bc-7636-4b40-919c-8b20a6ccbb1f
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
 ---
 # Recommended workflows to enable Document of Record generation for adaptive forms {#recommended-workflows-dor-generation}

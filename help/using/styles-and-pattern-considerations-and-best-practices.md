@@ -1,11 +1,12 @@
 ---
 title: Best practices and considerations 
-seo-title: Best practices and considerations 
 description: Best practices and considerations for Automated Forms Conversion service
-seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
-uuid: e24773a2-be14-4184-a168-48aa976d459a
-topic-tags: introduction
-discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 ---
 # Best practices and known complex patterns {#Best-practices-and-considerations2}

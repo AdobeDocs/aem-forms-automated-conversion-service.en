@@ -1,6 +1,12 @@
 ---
-title: Introduction
+title: Introduction to automated forms conversion service
 description: Speed up the conversion of print forms to adaptive forms
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 ---
 # Introduction {#introduction-to-automated-forms-conversion-service}
