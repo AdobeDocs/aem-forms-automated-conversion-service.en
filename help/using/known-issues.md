@@ -4,10 +4,9 @@ description: known issues and limitations for Automated Forms Conversion Service
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
-topic-tags: forms
+topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
-topic-tags: introduction
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 ---
 # Known issues and limitations {#known-issues-limitations}
