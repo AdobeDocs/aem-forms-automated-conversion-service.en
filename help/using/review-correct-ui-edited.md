@@ -1,11 +1,12 @@
 ---
 title: Review and correct converted forms
-seo-title: Review and correct converted forms
 description: Review and correct the adaptive forms converted by the Automated Forms Conversion service.
-seo-description: Review and correct the adaptive forms converted by the Automated Forms Conversion service
-uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
 topic-tags: forms
-discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
 ---
 # Review and correct converted forms{#review-and-correct-converted-forms}

@@ -1,10 +1,13 @@
 ---
 title: Troubleshoot Automated Forms Conversion Service 
-seo-title: Troubleshoot Automated Forms Conversion Service (AFCS) 
-description: Common AFCS issues and their solutions 
-seo-description: Common AFCS issues and their solutions
-contentOwner: khsingh
+description: Common AFCS issues and their solutions
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
 topic-tags: forms
+role: Admin, Developer
+level: Beginner, Intermediate
+contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 ---
 # Troubleshoot Automated Forms Conversion Service

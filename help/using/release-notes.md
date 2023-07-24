@@ -1,6 +1,12 @@
 ---
 title: What's new? Release notes - Automated Forms Conversion Service
 description: Learn about the latest features and bug fixed for Automated Forms Conversion Service
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 ---
 # Release Notes
