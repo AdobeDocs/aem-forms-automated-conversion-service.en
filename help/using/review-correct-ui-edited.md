@@ -2,7 +2,7 @@
 title: Review and correct converted forms
 description: Review and correct the adaptive forms converted by the Automated Forms Conversion service.
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer

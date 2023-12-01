@@ -2,7 +2,7 @@
 title: Introduction to automated forms conversion service
 description: Speed up the conversion of print forms to adaptive forms
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
