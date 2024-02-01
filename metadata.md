@@ -4,6 +4,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/aem-forms-automated-conversion-service.en
 index: y
 feature-set: Experience Manager Forms
+recommendations: noDisplay
 ---
 
 # Metadata for internal use
