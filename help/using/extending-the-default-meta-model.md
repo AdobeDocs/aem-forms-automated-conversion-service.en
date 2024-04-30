@@ -1,6 +1,6 @@
 ---
 title: Extend the default meta-model
-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
+description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -11,7 +11,7 @@ exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 ---
 # Extend the default meta-model {#extend-the-default-meta-model}
 
-Automated Forms Conversion service identifies and extracts form objects from source forms. Semantic mapper helps the service to decide how the extracted objects are represented in an adaptive form. For example, a source form can have many different types of representations of a date. The semantic mapper helps map all the representations of date form objects of the source form with date component of the adaptive forms. Semantic mapper also allows the service to pre-configure and apply validations, rules, data patterns, Help text, and accessibility properties to adaptive form components during conversion.
+Automated Forms Conversion service (AFCS) identifies and extracts form objects from source forms. Semantic mapper helps the service to decide how the extracted objects are represented in an adaptive form. For example, a source form can have many different types of representations of a date. The semantic mapper helps map all the representations of date form objects of the source form with date component of the adaptive forms. Semantic mapper also allows the service to pre-configure and apply validations, rules, data patterns, Help text, and accessibility properties to adaptive form components during conversion.
 
 ![](assets/meta-model.gif)
 
@@ -19,7 +19,7 @@ Meta-model is a JSON schema. Before you start with meta-model, ensure that you a
 
 ## Default meta-model {#default-meta-model}
 
-Automated Forms Conversion service has a default meta-model. It is a JSON schema and resides on Adobe Cloud with other components of Automated Forms Conversion service. You can find a copy of the meta-model on your local AEM server at: http://&lt;server&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. You can also [click here](assets/en.globalschema.json) to access or download the English language schema. The meta-model for [French](assets/fr.globalschema.json), [German](assets/de.globalschema.json) [Spanish](assets/es.globalschema.json), [Italian](assets/it.globalschema.json), and [Portuguese](assets/pt_br.globalschema.json) languages are also available for download.
+Automated Forms Conversion service (AFCS) has a default meta-model. It is a JSON schema and resides on Adobe Cloud with other components of Automated Forms Conversion service (AFCS). You can find a copy of the meta-model on your local AEM server at: http://&lt;server&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. You can also [click here](assets/en.globalschema.json) to access or download the English language schema. The meta-model for [French](assets/fr.globalschema.json), [German](assets/de.globalschema.json) [Spanish](assets/es.globalschema.json), [Italian](assets/it.globalschema.json), and [Portuguese](assets/pt_br.globalschema.json) languages are also available for download.
 
 The schema of meta-model is derived from schema entities at https://schema.org/docs/schemas.html. It has Person, PostalAddress, LocalBusiness, and more entities as defined on https://schema.org. Every entity of the meta-model adheres to the JSON schema object type. The following code represents a sample meta-model structure:
 
@@ -114,7 +114,7 @@ In this example, the conversion service searches for the phone, telephone, mobil
 
 ### JSON schema properties for generated adaptive form fields {#jsonschemaproperties}
 
-The meta-model supports the following JSON schema common properties for adaptive form fields generated using the Automated Forms Conversion service:
+The meta-model supports the following JSON schema common properties for adaptive form fields generated using the Automated Forms Conversion service (AFCS):
 
 <table> 
  <tbody> 
@@ -158,7 +158,7 @@ The meta-model supports the following JSON schema common properties for adaptive
 
 ### Keyword-based search to apply properties to generated adaptive form fields {#keywordsearch}
 
-Automated Forms Conversion service performs a keyword search on the source form during conversion. After filtering the fields that meet the search criteria, the conversion service applies the properties defined for those fields in the meta-model to the generated adaptive form fields.
+Automated Forms Conversion service (AFCS) performs a keyword search on the source form during conversion. After filtering the fields that meet the search criteria, the conversion service applies the properties defined for those fields in the meta-model to the generated adaptive form fields.
 
 Keywords are referenced using the **aem:affKeyword** property.
 
@@ -175,7 +175,7 @@ In this example, the conversion service uses the text within **aem:affKeyword** 
 
 ### Additional properties for generated adaptive form fields {#additionalproperties}
 
-You can use the **aem:afProperties** property in the meta-model to define following additional properties for adaptive forms fields generated using Automated Forms Conversion service:
+You can use the **aem:afProperties** property in the meta-model to define following additional properties for adaptive forms fields generated using Automated Forms Conversion service (AFCS):
 
 <table> 
  <tbody> 
@@ -211,7 +211,7 @@ You can use the **aem:afProperties** property in the meta-model to define follow
 
 ## Create a custom metamodel in your own language{#language-specific-meta-model}
 
-You can create a language specific meta-model. Such meta-model helps you create mapping rules in language of your choice. Automated Forms Conversion service allows you to create meta-models in the following languages:
+You can create a language specific meta-model. Such meta-model helps you create mapping rules in language of your choice. Automated Forms Conversion service (AFCS) allows you to create meta-models in the following languages:
 
 * English(en)
 * French(fr)
@@ -252,9 +252,9 @@ The following image displays examples of English language meta-model and corresp
 
 ## Modify adaptive form fields using custom meta-model {#modify-adaptive-form-fields-using-custom-meta-model}
 
-Your organization can have patterns and validations in addition to the ones listed in the default meta-model. You can extend the default meta-model to add pattern, validations, and entities specific to your organization. Automated Forms Conversion service applies the custom meta-model to the form fields during conversion. You can keep updating the meta-model as new patterns, validations, and entities specific to your organization are discovered.
+Your organization can have patterns and validations in addition to the ones listed in the default meta-model. You can extend the default meta-model to add pattern, validations, and entities specific to your organization. Automated Forms Conversion service (AFCS) applies the custom meta-model to the form fields during conversion. You can keep updating the meta-model as new patterns, validations, and entities specific to your organization are discovered.
 
-Automated Forms Conversion service uses a default meta-model saved at the following location to map source form fields to the adaptive form fields during conversion:
+Automated Forms Conversion service (AFCS) uses a default meta-model saved at the following location to map source form fields to the adaptive form fields during conversion:
 
 http://&lt;server&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 

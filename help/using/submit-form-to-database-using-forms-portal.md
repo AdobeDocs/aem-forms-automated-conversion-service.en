@@ -1,6 +1,6 @@
 ---
 title: Submit adaptive forms to database using Forms Portal
-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
+description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service (AFCS).
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
@@ -8,7 +8,7 @@ discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 
 # Integrate adaptive forms with database using Forms Portal {#submit-forms-to-database-using-forms-portal}
 
-Automated Forms Conversion service allows you to convert a non-interactive PDF form, an Acro Form, or an XFA based PDF form into an adaptive form. While initiating the conversion process, you have the option of generating an adaptive form either with or without data bindings.
+Automated Forms Conversion service (AFCS) allows you to convert a non-interactive PDF form, an Acro Form, or an XFA based PDF form into an adaptive form. While initiating the conversion process, you have the option of generating an adaptive form either with or without data bindings.
 
 If you select to generate an adaptive form without data bindings, you can integrate the converted adaptive form with a Form Data Model, XML schema, or a JSON schema after conversion. However, if you generate an adaptive form with data bindings, the conversion service automatically associates the adaptive forms with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. You can then integrate the adaptive form with a database of your choice, fill data in the form, and submit it to the database using the Forms Portal.
 
@@ -25,7 +25,7 @@ The sample, discussed in this article, is a reference implementation of customiz
 * Setup an AEM 6.4 or 6.5 author instance 
 * Install [latest service pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) for your AEM instance
 * Latest version of the AEM Forms add-on package
-* Configure [Automated Forms Conversion service](configure-service.md)
+* Configure [Automated Forms Conversion service (AFCS)](configure-service.md)
 * Setup a database. The database used in the sample implementation is MySQL 5.6.24. However, you can integrate the converted adaptive form with any database of your choice.
 
 ## Set up connection between AEM instance and database {#set-up-connection-aem-instance-database}

@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot Automated Forms Conversion Service 
+title: Troubleshoot Automated Forms Conversion Service (AFCS)
 description: Common AFCS issues and their solutions
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 ---
-# Troubleshoot Automated Forms Conversion Service
+# Troubleshoot Automated Forms Conversion Service (AFCS)
 
 The document provides basic troubleshooting steps for common errors.
 
@@ -21,7 +21,7 @@ The document provides basic troubleshooting steps for common errors.
 |Error|Example|
 |--- |--- |
 |**Error Message** <br> The access token header is not available. <br><br> **Reason** <br> An administrator has created multiple IMS configurations or IMS configuration is not able to reach AFCS service on Adobe Cloud. <br><br>**Resolution** <br> If there are multiple configurations, delete all the configurations and [create a new configuration](configure-service.md#obtainpubliccertificates). <br> If there is a single configuration, use **Health Check** to [check connectivity](configure-service.md#createintegrationoption).| ![The access token header is not available](assets/invalid-ims-configurations.png) |
-|**Error Message** <br> Unable to connect to the service.  <br><br>**Reason** <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service cloud services. <br><br>**Resolution** <br> Correct [Service URL](configure-service.md#configure-the-cloud-service) in Automated Forms Conversion Service Cloud services.|![Unable to connect to the service.](assets/wrong-service-url-configured.png)|
+|**Error Message** <br> Unable to connect to the service.  <br><br>**Reason** <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service (AFCS) cloud services. <br><br>**Resolution** <br> Correct [Service URL](configure-service.md#configure-the-cloud-service) in Automated Forms Conversion Service (AFCS) Cloud services.|![Unable to connect to the service.](assets/wrong-service-url-configured.png)|
 |**Error Message** <br> The service failed to convert the form.  <br><br>**Reason** <br> Network connectivity issues at your end, the service is down due to scheduled maintenance, or outage on Adobe Cloud. <br><br>**Resolution** <br> Resolve network connectivity issues at your end and check the status of the service on https://status.adobe.com/ for a planned or unplanned outage.|![Unable to connect to the service.](assets/conversion-failure.png)|
 |**Error Message** <br> The number of pages is more than 15.  <br><br>**Reason** <br> The source form is more than 15 pages long.  <br><br>**Resolution** <br> Use Adobe Acrobat to split forms with more than 15 pages. Bring the number of pages in a form to less than 15. |![Unable to connect to the service.](assets/number-of-pages.png)|
 |**Error Message** <br> The number of files is more than 15.  <br><br>**Reason** <br>  The folder contains more than 15 forms. <br><br>**Resolution** <br> Bring the number of forms in a folder to less than or equal to 15. Bring the total number of pages in a folder less than 50. Bring the size of the folder to less than 10 MB. Do not keep forms in a sub-folder. Organize source forms into a batch of 8-15 forms. |![Unable to connect to the service.](assets/number-of-pages.png)|
@@ -46,7 +46,7 @@ The document provides basic troubleshooting steps for common errors.
 <td><img alt="The access token header is not available" src="assets/invalid-ims-configuration.png" /></td>
 </tr>
 <tr>
-<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service Cloud services.</td>
+<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service (AFCS) cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service (AFCS) Cloud services.</td>
 <td><img alt="Unable to connect to the service." src="assets/wrong-endpoint-configured.png" /></td>
 </tr>
 <tr>

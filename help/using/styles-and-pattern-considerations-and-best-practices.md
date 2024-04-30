@@ -1,6 +1,6 @@
 ---
 title: Best practices and considerations 
-description: Best practices and considerations for Automated Forms Conversion service
+description: Best practices and considerations for Automated Forms Conversion service (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -11,7 +11,7 @@ exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 ---
 # Best practices and known complex patterns {#Best-practices-and-considerations2}
 
-This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [!DNL Automated Forms Conversion service]. It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service].
+This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [!DNL Automated Forms Conversion service] (AFCS). It discusses best practices right from preparing source forms to fixing complex patterns that require some extra effort for automated conversion. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Best practices
 
@@ -53,7 +53,7 @@ When you use an XDP form for conversion, perform the following steps before uplo
 
 AEM [!DNL Forms Automated Conversion service] uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Every machine learning service continuously learns from source data and produces an improved output with every churn. These services learn from experience like humans.
 
-[!DNL Automated Forms Conversion service] is trained on a large set of forms. It easily identifies fields in a source form and produces adaptive forms. However, there are some fields and styles in PDF forms which are easily visible to the human eye but difficult to understand for the service. The service can assign different from applicable field types or panels to some fields or styles. All such field and style patterns are listed below.
+[!DNL Automated Forms Conversion service](AFCS) is trained on a large set of forms. It easily identifies fields in a source form and produces adaptive forms. However, there are some fields and styles in PDF forms which are easily visible to the human eye but difficult to understand for the service. The service can assign different from applicable field types or panels to some fields or styles. All such field and style patterns are listed below.
 
 The service would start identifying and assigning correct fields or panels to these patterns as it keeps learning from the source data. For the time being, you can use [Review and Correct](review-correct-ui-edited.md) editor to fix such issues. Before start fixing the issues or reading further, familiarize yourself with [adaptive form components](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 

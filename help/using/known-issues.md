@@ -1,6 +1,6 @@
 ---
 title: Known Issues
-description: known issues and limitations for Automated Forms Conversion Service
+description: known issues and limitations for Automated Forms Conversion Service (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -11,7 +11,7 @@ exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 ---
 # Known issues and limitations {#known-issues-limitations}
 
-Before you begin using AEM Forms Automated Forms Conversion service, review the following known issues and limitations:
+Before you begin using AEM Forms Automated Forms Conversion service (AFCS), review the following known issues and limitations:
 
 ## Known issues {#known-issues}
 
