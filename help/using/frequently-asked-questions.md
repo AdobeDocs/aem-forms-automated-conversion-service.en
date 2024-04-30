@@ -11,12 +11,12 @@ exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 ---
 # Frequently asked questions{#frequently-asked-questions}
 
-1. **Which version of AEM Forms does the Automated Forms Conversion service support?** 
-    <p>Automated Forms Conversion service supports AEM 6.4 Forms and AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
+1. **Which version of AEM Forms does the Automated Forms Conversion service (AFCS) support?** 
+    <p>Automated Forms Conversion service (AFCS) supports AEM 6.4 Forms and AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
     <br>
 
  1. **Can the service be installed on-premise?** 
-    <p>Adobe trains AI and ML algorithms of Automated Forms Conversion service on a regular basis with new data set to improve conversion accuracy. The updated algorithms are deployed to the conversion service running on Adobe Cloud at periodic intervals. All the customers of the service are benefitted from the updated algorithms. So, cloud-hosted central deployment is best suited for Automated Forms Conversion service to continuously learn and deliver improvements to all the customers.</p> 
+    <p>Adobe trains AI and ML algorithms of Automated Forms Conversion service (AFCS) on a regular basis with new data set to improve conversion accuracy. The updated algorithms are deployed to the conversion service running on Adobe Cloud at periodic intervals. All the customers of the service are benefitted from the updated algorithms. So, cloud-hosted central deployment is best suited for Automated Forms Conversion service (AFCS) to continuously learn and deliver improvements to all the customers.</p> 
     <p>The service converts blank forms to adaptive forms. The service does not support filled forms and extraction of data from filled forms. Remove data from filled forms and remove or allowlist proprietary information from the forms before sending the forms to service for conversion</p> <br>
 
 1. **Does the service support all formats of PDF forms? What all languages are supported?** 
@@ -77,7 +77,7 @@ The most common reasons for the conversion to fail are:</p>
      <p>The service does not automatically convert scripts of XFA-based forms or Acro Forms to corresponding adaptive form rules. You (form-authors) can use the <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">Rule editor</a> to add interactivity to an adaptive form.</p> <br>
 
 1. **Some form objects are not converted correctly to adaptive form components. How to resolve the issue?** 
-    <p>Automated Forms Conversion service is trained on a large set of forms. But AI/ML-based applications are limited by their training data and patterns. There could be multiple field types, layouts, patterns, and context discernible to human perception but difficult for automated recognition. The service may fail to identify such objects or may recognize them incorrectly. You may use <a href="review-correct-ui-edited.md" target="_blank">Review and Correct</a> editor to make necessary modifications in the familiar paper form based layout of the input form.</p> <br/>
+    <p>Automated Forms Conversion service (AFCS) is trained on a large set of forms. But AI/ML-based applications are limited by their training data and patterns. There could be multiple field types, layouts, patterns, and context discernible to human perception but difficult for automated recognition. The service may fail to identify such objects or may recognize them incorrectly. You may use <a href="review-correct-ui-edited.md" target="_blank">Review and Correct</a> editor to make necessary modifications in the familiar paper form based layout of the input form.</p> <br/>
 
 1. **Some corrections are repeated across forms. Can the service identify and fix all such instances in future conversions?**
   
@@ -108,8 +108,8 @@ The most common reasons for the conversion to fail are:</p>
   1. **How to automatically change casing of adaptive form text?**
       <p>You can use adaptive from themes or style editor to change casing of a field of adaptive form. For example, you can open the theme editor and set value of Case property of all the text of form to uppercase, lowercase, or camelCase. You can also use the CSS Override option in theme editor to create different types of styles.</p> 
 
- 1. **Can I use Adobe Sign text tags with Automated Forms Conversion service?**
-      <p> When you use Automated Forms Conversion Service to convert a PDF form to an adaptive form and the PDF form has Adobe Sign text tags, those tags are converted to corresponding adaptive form fields and signer details are automatically populated.  The feature is available for only for Acro Forms and adaptive forms support a limited number of Adobe Sign fields.</p>  </br>
+ 1. **Can I use Adobe Sign text tags with Automated Forms Conversion service (AFCS)?**
+      <p> When you use Automated Forms Conversion Service (AFCS) to convert a PDF form to an adaptive form and the PDF form has Adobe Sign text tags, those tags are converted to corresponding adaptive form fields and signer details are automatically populated.  The feature is available for only for Acro Forms and adaptive forms support a limited number of Adobe Sign fields.</p>  </br>
 
  1. **How to create an Adobe Sign enabled PDF form?**
       </p>To create an Adobe Sign enabled PDF form:</p> 

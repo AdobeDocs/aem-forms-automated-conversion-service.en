@@ -1,5 +1,5 @@
 ---
-title: Introduction to automated forms conversion service
+title: Introduction to automated forms conversion service (AFCS)
 description: Speed up the conversion of print forms to adaptive forms
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
@@ -9,9 +9,9 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 ---
-# Introduction {#introduction-to-automated-forms-conversion-service}
+# Automated Forms Conversion service (AFCS) {#introduction-to-automated-forms-conversion-service}
 
-Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion. The service helps:
+Automated Forms Conversion service (AFCS) helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion. The service helps:
 
 * Save manual effort required to convert print forms to adaptive forms
 * Applies patterns and appropriate validations during conversion
@@ -37,13 +37,13 @@ The service can convert English, French, German, Spanish, Italian, and Portugues
 
 ## Conversion workflow  {#conversion-workflow}
 
-Automated Forms Conversion service runs on Adobe Cloud. You connect your AEM instance to the service, upload forms to your AEM instance, and start the conversion. The complete conversion process is as listed below:
+Automated Forms Conversion service (AFCS) runs on Adobe Cloud. You connect your AEM instance to the service, upload forms to your AEM instance, and start the conversion. The complete conversion process is as listed below:
 
 ![Workflow](assets/conversion-workflow.png)
 
 ### 1. Set up the environment {#set-up-the-environment}
 
-Automated Forms Conversion service runs on Adobe Cloud. [Configure Adobe I/O account of your organization and connect your local AEM instance](configure-service.md) to the conversion service running on Adobe Cloud.
+Automated Forms Conversion service (AFCS) runs on Adobe Cloud. [Configure Adobe I/O account of your organization and connect your local AEM instance](configure-service.md) to the conversion service running on Adobe Cloud.
 
 ### 2. Convert PDF forms to adaptive forms {#use-the-conversion-service}
 

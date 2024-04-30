@@ -11,7 +11,7 @@ exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
 ---
 # Integrate adaptive form with database using AEM workflow {#submit-forms-to-database-using-forms-portal}
 
-Automated Forms Conversion service allows you to convert a non-interactive PDF form, an Acro Form, or an XFA based PDF form into an adaptive form. While initiating the conversion process, you have the option of generating an adaptive form either with or without data bindings.
+Automated Forms Conversion service (AFCS) allows you to convert a non-interactive PDF form, an Acro Form, or an XFA based PDF form into an adaptive form. While initiating the conversion process, you have the option of generating an adaptive form either with or without data bindings.
 
 If you select to generate an adaptive form without data bindings, you can integrate the converted adaptive form with a form data model, XML schema, or a JSON schema after conversion. For form data model, you need to bind adaptive form fields manually with the form data model. However, if you generate an adaptive form with data bindings, the conversion service automatically associates the adaptive form(s) with a JSON schema and creates a data binding between the fields available in the adaptive form and JSON schema. You can then integrate the adaptive form with a database of your choice, fill data in the form, and submit it to the database. Similarly, after successful integration with the database, you can configure fields in the converted adaptive form to retrieve values from the database and prefill adaptive form fields.
 
@@ -37,7 +37,7 @@ You can download the sample Contact Us form using:
 
 [Get File](assets/sample_contact_us_form.pdf)
 
-The PDF file serves as the input to the Automated Forms Conversion service. The service converts this file to an adaptive form. The following image depicts the sample contact us form in a PDF format.
+The PDF file serves as the input to the Automated Forms Conversion service (AFCS). The service converts this file to an adaptive form. The following image depicts the sample contact us form in a PDF format.
 
 ![sample loan application form](assets/sample_contact_us_form.png)
 
@@ -178,7 +178,7 @@ You can download the sample Form Data Model using:
 
 ## Generate adaptive forms with JSON binding {#generate-adaptive-forms-with-json-binding}
 
-Use the [Automated Forms Conversion service to convert](convert-existing-forms-to-adaptive-forms.md) the [Contact Us form](#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **[!UICONTROL Generate adaptive form(s) without data bindings]** check box while generating the adaptive form.
+Use the [Automated Forms Conversion service (AFCS) to convert](convert-existing-forms-to-adaptive-forms.md) the [Contact Us form](#sample-adaptive-form) to an adaptive form with data binding. Ensure that you do not select the **[!UICONTROL Generate adaptive form(s) without data bindings]** check box while generating the adaptive form.
 
 ![Adaptive form with JSON binding](assets/generate_af_with_data_bindings.png)
 

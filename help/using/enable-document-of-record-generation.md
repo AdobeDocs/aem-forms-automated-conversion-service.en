@@ -20,7 +20,7 @@ The DoR uses a base template to define its layout. You can generate a DoR either
 
 For more information on generating a DoR, see [Generate Document of Record for adaptive forms](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
-The [Automated Forms Conversion service](/help/using/introduction.md) converts the following source forms to adaptive forms:
+The [Automated Forms Conversion service (AFCS)](/help/using/introduction.md) converts the following source forms to adaptive forms:
 
 * non-interactive PDF forms
 * Acro Forms
@@ -81,7 +81,7 @@ This article describes the recommended paths to generate a DoR based on the thre
 
 ## Generate Document of Record for Non-interactive PDF forms {#generate-document-of-record-non-interactive-pdf}
 
-If you are using a non-interactive PDF form as the source form for Automated Forms Conversion service, you can:
+If you are using a non-interactive PDF form as the source form for Automated Forms Conversion service (AFCS), you can:
 
 * either enable DoR generation before adaptive form conversion to generate DoR using a default template
 * or edit adaptive form properties after adaptive form conversion to enable DoR generation using default or any other form template
@@ -115,7 +115,7 @@ On submitting the converted adaptive form, the DoR gets automatically generated 
 
 ## Generate Document of Record for Acro Forms or XFA-based PDF forms {#generate-document-of-record-acroform-xfaform}
 
-If you are using an Acro Form or XFA-based PDF form as the source form for Automated Forms Conversion service, you can:
+If you are using an Acro Form or XFA-based PDF form as the source form for Automated Forms Conversion service (AFCS), you can:
 
 * either enable DoR generation before adaptive form conversion to generate DoR using source form as the template
 

@@ -1,6 +1,6 @@
 ---
 title: Review and correct converted forms
-description: Review and correct the adaptive forms converted by the Automated Forms Conversion service.
+description: Review and correct the adaptive forms converted by the Automated Forms Conversion service (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -11,7 +11,7 @@ exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
 ---
 # Review and correct converted forms{#review-and-correct-converted-forms}
 
-AEM Forms Automated Forms Conversion service identifies fields, content, and layout of input PDF document and converts the PDF document to an adaptive form. The output adaptive form can have a few missing or improperly converted fields. You can use the Review and Correct editor to make improvements to identified fields and regenerate the adaptive form to get an output closer to the desired experience. After the first conversion, you can open the input PDF document in the editor to:
+AEM Forms Automated Forms Conversion service (AFCS) identifies fields, content, and layout of input PDF document and converts the PDF document to an adaptive form. The output adaptive form can have a few missing or improperly converted fields. You can use the Review and Correct editor to make improvements to identified fields and regenerate the adaptive form to get an output closer to the desired experience. After the first conversion, you can open the input PDF document in the editor to:
 
 * View all the fields and contents identified during the conversion  
 * Identify the fields and content missed during conversion  
