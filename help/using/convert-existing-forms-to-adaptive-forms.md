@@ -58,15 +58,15 @@ After you have uploaded the forms and configured the service, perform the follow
 
    ![Specify the configurations](assets/conversion-settings-dialog.png)
 
-   #### Convert PDFs to Adaptive Form Core Components(#convert-pdf-to-afcc)
+   **Convert PDFs to Adaptive Form Core Components**
 
     <span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
     
-    Above converted form is the foundation based forms, you can also create core components based adaptive form. For converting a PDF form to a Core Components based adaptive form: 
+    The above conversion setting is to convert to the foundation based forms, you can also create core components based adaptive form. To convert a PDF form to a Core Components based adaptive form:
 
     1. Ensure you have enabled [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) on your AEM Forms instance. If it is not enabled, you can [enable core components on your AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) or [Cloud Service environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
     1. Select a [core components based adaptive form template and theme](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) as shown in the image below:
-    ![Select adaptive form template](assets/select-af-template.png).
+    ![Select adaptive form template](assets/select-af-template-1.png).
     1. Tap **[!UICONTROL Start Conversion]** to convert the PDF to a core components based form.
     >[!NOTE]
     > * Properties such as data binding or data model schema are not available for core component based adaptive form but the same are available for foundation components as described in the next points.
