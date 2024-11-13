@@ -58,6 +58,8 @@ After you have uploaded the forms and configured the service, perform the follow
 
    ![Specify the configurations](assets/conversion-settings-dialog.png)
 
+   #### Convert PDFs to Adaptive Form Core Components(#convert-pdf-to-afcc)
+
     <span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
     
     Above converted form is the foundation based forms, you can also create core components based adaptive form. For converting a PDF form to a Core Components based adaptive form: 
