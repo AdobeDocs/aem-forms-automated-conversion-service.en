@@ -1,7 +1,7 @@
 ---
 title: Convert PDF forms to adaptive forms
 description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
-feature: Adaptive Forms, Foundation Components, Core Components
+feature: Adaptive Forms, Foundation Components
 ---
 # Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
 
