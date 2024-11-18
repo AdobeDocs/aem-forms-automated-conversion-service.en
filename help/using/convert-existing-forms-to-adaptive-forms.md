@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 ---
 # Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
 
-AEM Forms Automated Forms Conversion service (AFCS), powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms. Whether you are using non-interactive PDF forms, Acro Forms, or XFA-based PDF forms, the Automated Forms Conversion service (AFCS) can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information see [Automated Forms Conversion](introduction.md) service.
+AEM Forms Automated Forms Conversion service (AFCS), powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction). Whether you are using non-interactive PDF forms, Acro Forms, or XFA-based PDF forms, the Automated Forms Conversion service (AFCS) can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information see [Automated Forms Conversion](introduction.md) service.
 
 ## Pre-requisites {#pre-requisites}
 
@@ -58,7 +58,7 @@ After you have uploaded the forms and configured the service, perform the follow
 
     <span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
     
-    The above conversion setting is to convert to the foundation based forms, you can also create core components based adaptive form. To convert a PDF form to a Core Components based adaptive form:
+    The above conversion setting is helpful to convert PDF forms to foundation based forms. To convert a PDF form to a Core Components based adaptive form:
 
     1. Ensure you have enabled [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) on your AEM Forms instance. If it is not enabled, you can [enable core components on your AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) or [Cloud Service environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
     1. Select a [core components based adaptive form template and theme](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) as shown in the image below:
