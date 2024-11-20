@@ -75,3 +75,5 @@ Before you begin using AEM Forms Automated Forms Conversion service (AFCS), revi
 * Information encoded using colors in source PDF form is not carried over to adaptive form.
 * Colors of source PDF Form are not carried over to adaptive form themes.
 * Colored PDF Forms are treated as greyscale forms and fields are detected accordingly.
+* Properties such as data binding or data model schema are not available for core component based adaptive form.
+* Review and correct the converted forms is not available for core components based form.
