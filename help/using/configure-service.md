@@ -189,26 +189,26 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
 
 #### (For AEM 6.4 and AEM 6.5 only) Configure the service APIs on Adobe Developer Console {#createintegration}
 
-To use Automated Forms Conversion service (AFCS), create a project and add Automated Forms Configuration Service API to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT).
+To use Automated Forms Conversion service (AFCS), create a project and add Automated Forms Configuration Service API to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (OAuth).
 
 1. Log in to [https://console.adobe.io/](https://console.adobe.io/). Use your Adobe ID, developer account that your administrator has provisioned to login to Adobe I/O console to login.
 1. Select your organization from the top-right corner. If you do not know your organization, contact your administrator.
 1. Tap **[!UICONTROL Create new project]**. A screen to get started with your new project appears. Tap **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
 1. Select **[!UICONTROL Automated Forms Conversion service]** and tap **[!UICONTROL Next]**. A screen to configure the API appears.
-1. Select the [!UICONTROL Upload your public key] option, upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section and tap **[!UICONTROL Next]**. The Create a new Service Account (JWT) credential option appears. Tap **[!UICONTROL Next]**.
+1. Select the [!UICONTROL Upload your public key] option, upload the AEM-Adobe-IMS.crt file downloaded in the [Obtain Public Certificates](#obtainpubliccertificates) section and tap **[!UICONTROL Next]**. The Create a new Service Account (OAuth) credential option appears. Tap **[!UICONTROL Next]**.
 1. Select a Product Profile and Tap **[!UICONTROL Save configured API]**. Select the profile created while [granting access to developers of your organization](#adduseranddevs). If you do not know the profile to select, contact your administrator.
-1. Tap **[!UICONTROL Service Account (JWT)]** to view the API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service (AFCS). The information on the page is used to create IMS configuration on your local machine.
+1. Tap **[!UICONTROL Service Account (OAuth)]** to view the API Key, Client Secret, and other information required to connect your local AEM instance to Automated Forms Conversion service (AFCS). The information on the page is used to create IMS configuration on your local machine.
 
 1. Open the IMS Configuration page on your local instance. You kept the page open at the end of section, [Obtain public certificate](#obtainpubliccertificates).
 
    ![Specify Title, API Key, Client Secret, and payload ](assets/ims-configuration-details.png)
 
-1. On the Adobe IMS Technical page, specify API Key and Client Secret. Use the values specified on Service Account (JWT) of the Adobe Developer console page.
+1. On the Adobe IMS Technical page, specify API Key and Client Secret. Use the values specified on Service Account (OAuth) of the Adobe Developer console page.
 
    >[!NOTE]
    >
    >
-   >For payload, use the code provided in the Generate JWT tab of the Service Account(JWT) page of Adobe Developer Console. 
+   >For payload, use the code provided in the Generate OAuth tab of the Service Account(OAuth) page of Adobe Developer Console. 
    
 1. Tap **[!UICONTROL Save]**. The IMS configuration is created.
 
