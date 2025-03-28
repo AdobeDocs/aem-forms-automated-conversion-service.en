@@ -169,23 +169,24 @@ To configure the Automated Forms Conversion service API on Adobe Developer Conso
    ![Create new API Project](/help/using/assets/create-new-api-project.png)
 
 1. Click **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
-   ![Add API](/help/using/assets/add-api.png)
+    ![Add API](/help/using/assets/add-api.png)
 
 1. Select **[!UICONTROL Automated Forms Conversion service]** and click [**!UICONTROL Next]**. A screen to configure the API appears.
-   ![Select AFCS API](/help/using/assets/select-afcs-api.png)
+    ![Select AFCS API](/help/using/assets/select-afcs-api.png)
+   
 1. Select **OAuth Server-to-Server** authentication method.
 1. Specify the **[!UICONTROL Credential Name]** and click [**!UICONTROL Next]**.
-   ![Specify Credential Name](/help/using/assets/specify-credential-name.png)
+    ![Specify Credential Name](/help/using/assets/specify-credential-name.png)
 1. Select a **Product Profile**. For example, select a profile as **AFC_Flamingo_Test_Dev**. 
 1. Click **[!UICONTROL Save configured API]**. 
-   ![Select Profile](/help/using/assets/select-profile.png)
+    ![Select Profile](/help/using/assets/select-profile.png)
    
    >[!NOTE]
    >
    > Select the profile created while granting access to developers of your organization. If you do not know the profile to select, contact your administrator.
 
 1. Click **[!UICONTROL OAuth Server-to-Server]** to view the API Key, Client Secret, and other information required to connect your AEM instance to Automated Forms Conversion service (AFCS). 
-   ![Select Oath Credential](/help/using/assets/select-oauth-credential.png)
+    ![Select Oath Credential](/help/using/assets/select-oauth-credential.png)
    
       The information on the page is used to create IMS configuration, as explained in the [Create IMS Technical Configuration on AEM Author Instance](#2-create-ims-technical-configuration-on-aem-author-instance) section.
 
