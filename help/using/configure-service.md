@@ -17,8 +17,6 @@ This article describes how an AEM administrator can configure Automated Forms Co
 
 * Using Linux® and Microsoft® Windows® operating systems,
 
-* Configuring SMTP mail servers
-
 <!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
 **Watch the video or read the article to configure Automated Forms Conversion service (AFCS)** -->
@@ -165,28 +163,28 @@ To use Automated Forms Conversion service (AFCS), create a project and add **Aut
 To configure the Automated Forms Conversion service API on Adobe Developer Console, perform the followin steps:
 
 1. Log in to https://developer.adobe.com/console . Use your Adobe ID, developer account that your administrator has provisioned to login to Adobe I/O console to login.
-2. Select your organization from the top-right corner. If you do not know your organization, contact your administrator.
-3. Click **[!UICONTROL Create new project]**. A screen to get started with your new project appears. 
+1. Select your organization from the top-right corner. If you do not know your organization, contact your administrator.
+1. Click **[!UICONTROL Create new project]**. A screen to get started with your new project appears. 
 
    ![Create new API Project](/help/using/assets/create-new-api-project.png)
 
-4. Click **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
+1. Click **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
    ![Add API](/help/using/assets/add-api.png)
 
-5. Select **[!UICONTROL Automated Forms Conversion service]** and click [**!UICONTROL Next]**. A screen to configure the API appears.
+1. Select **[!UICONTROL Automated Forms Conversion service]** and click [**!UICONTROL Next]**. A screen to configure the API appears.
    ![Select AFCS API](/help/using/assets/select-afcs-api.png)
-6. Select **OAuth Server-to-Server** authentication method.
-7. Specify the **[!UICONTROL Credential Name]** and click [**!UICONTROL Next]**.
+1. Select **OAuth Server-to-Server** authentication method.
+1. Specify the **[!UICONTROL Credential Name]** and click [**!UICONTROL Next]**.
    ![Specify Credential Name](/help/using/assets/specify-credential-name.png)
-8. Select a **Product Profile**. For example, select a profile as **AFC_Flamingo_Test_Dev**. 
-9. Click **[!UICONTROL Save configured API]**. 
+1. Select a **Product Profile**. For example, select a profile as **AFC_Flamingo_Test_Dev**. 
+1. Click **[!UICONTROL Save configured API]**. 
    ![Select Profile](/help/using/assets/select-profile.png)
    
    >[!NOTE]
    >
    > Select the profile created while granting access to developers of your organization. If you do not know the profile to select, contact your administrator.
 
-10. Click **[!UICONTROL OAuth Server-to-Server]** to view the API Key, Client Secret, and other information required to connect your AEM instance to Automated Forms Conversion service (AFCS). 
+1. Click **[!UICONTROL OAuth Server-to-Server]** to view the API Key, Client Secret, and other information required to connect your AEM instance to Automated Forms Conversion service (AFCS). 
    ![Select Oath Credential](/help/using/assets/select-oauth-credential.png)
    
       The information on the page is used to create IMS configuration, as explained in the [Create IMS Technical Configuration on AEM Author Instance](#2-create-ims-technical-configuration-on-aem-author-instance) section.
@@ -245,9 +243,12 @@ Create an Automated Forms Conversion  configuration to connect your AEM instance
 For example, you can have a separate configuration for sales department forms and a separate one for customer support forms. Perform the following steps to create a cloud service configuration:
 
 1. On your AEM Forms instance, click **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
-1. Select the **[!UICONTROL Global]** folder and click **[!UICONTROL Create]**. The page to create Automated Forms Conversion configuration appears. The configuration is created in the Global folder. You can also create the configuration in a different folder that exists or create a folder for your configurations.
+1. Select the **[!UICONTROL Global]** folder and click **[!UICONTROL Create]**. 
+   The page to **Create Automated Forms Conversion Configuration** appears. The configuration is created in the **Global** folder. You can also create the configuration in a different folder that exists or create a folder for your configurations.
+   ![Select Global folder](/help/using/assets/create-afcs-cloud-conf.png)
+1. On the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following fields and click **[!UICONTROL Next]**.
 
-3. On the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following fields and click **[!UICONTROL Next]**.
+   ![AFCS Configuration](/help/using/assets/create-afcs-config.png)
 
    |Field|Description|
    |--- |--- |
@@ -260,7 +261,8 @@ For example, you can have a separate configuration for sales department forms an
    |Existing Fragments|Location of existing fragments, if any.|
    |Custom Meta-model|Path of the .schema.json file of custom meta-model. You can create separate meta-models for English, French, German, Spanish, Italian, and Portuguese languages.|
 
-4. In the **[!UICONTROL Advanced]** tab of the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following field:
+1. In the **[!UICONTROL Advanced]** tab of the **[!UICONTROL Create Automated Forms Conversion Configuration]** page, specify value for the following field:
+   ![AFCS Configuration](/help/using/assets/afcs-config.png)
 
    <table>
    <thead>
@@ -294,4 +296,4 @@ For example, you can have a separate configuration for sales department forms an
       }
    ```
 
-5. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
+2. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
