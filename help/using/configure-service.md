@@ -103,15 +103,15 @@ Perform the below steps to create a profile and add developers to it. A minimum 
 1. Log in to [Admin Console](https://adminconsole.adobe.com/). Use **Adobe ID** of administrator provisioned to use Automated Forms Conversion service (AFCS) to login.
 1. Click the **[!UICONTROL Automated Forms Conversion]** option.
 1. Click **[!UICONTROL New Profile]** in the **[!UICONTROL Products]** tab.
-2. Specify **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, and **[!UICONTROL Description]** for the profile. Click **[!UICONTROL Done]**. For example, create a profile as **AFC_Flamingo_Test_Dev**.
+1. Specify **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, and **[!UICONTROL Description]** for the profile. Click **[!UICONTROL Done]**. For example, create a profile as **AFC_Flamingo_Test_Dev**.
 
    ![Specify details for the new profile.](assets/create-new-profile-details.png) 
 
-3. Add developer to the profile. To add the developers:
+1. Add developer to the profile. To add the developers:
    1. In the [Admin Console](https://adminconsole.adobe.com/enterprise), navigate to the Overview tab.
-   2. Click **[!UICONTROL Assign Developers]** on the required product card.
-   3. Enter the developers email address and, optionally, first and last names.
-   4. Select product profiles. Click  **[!UICONTROL Save]**.
+   1. Click **[!UICONTROL Assign Developers]** on the required product card.
+   1. Enter the developers email address and, optionally, first and last names.
+   1. Select product profiles. Click  **[!UICONTROL Save]**.
 
 Repeat above steps for all the users. For more details about adding developers, see [Manage developers](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
@@ -138,13 +138,13 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 Specify an email address in the profile of the AEM user designated to run the service. Ensure that the user is the member of the **forms-users** group. Emails are sent to the email address of user running the conversion. To specify an email address for the user and add user to the forms user group:
 
 1. Log in to your AEM Forms author instance as an AEM administrator. Use your local AEM credentials to login. 
-2. Click **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
-3. Select a user designated to run the conversion service and click **[!UICONTROL Properties]**. The **Edit User Settings** page opens.
-4. Specify an email address in the **[!UICONTROL Email]** field and click **[!UICONTROL Save]**. The emails are sent to specified email address on successful completion or failure of the conversion.
+1. Click **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+1. Select a user designated to run the conversion service and click **[!UICONTROL Properties]**. The **Edit User Settings** page opens.
+1. Specify an email address in the **[!UICONTROL Email]** field and click **[!UICONTROL Save]**. The emails are sent to specified email address on successful completion or failure of the conversion.
 
    ![Specify Email](/help/using/assets/specify-email.png)
-5. Click the **Groups** tab. In the select group tab, type and select the **forms-users** group. 
-6. Click **Save & Close**. The user is now a member of the forms-users group.
+1. Click the **Groups** tab. In the select group tab, type and select the **forms-users** group. 
+1. Click **Save & Close**. The user is now a member of the forms-users group.
 
    ![Add Users Group](/help/using/assets/add-user-group.png)
 
