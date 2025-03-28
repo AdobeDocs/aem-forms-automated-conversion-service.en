@@ -171,11 +171,11 @@ To configure the Automated Forms Conversion service API on Adobe Developer Conso
 1. Click **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
     ![Add API](/help/using/assets/add-api.png)
 
-1. Select **[!UICONTROL Automated Forms Conversion service]** and click [**!UICONTROL Next]**. A screen to configure the API appears.
+1. Select **[!UICONTROL Automated Forms Conversion service]** and click **[!UICONTROL Next]**. A screen to configure the API appears.
     ![Select AFCS API](/help/using/assets/select-afcs-api.png)
    
 1. Select **OAuth Server-to-Server** authentication method.
-1. Specify the **[!UICONTROL Credential Name]** and click [**!UICONTROL Next]**.
+1. Specify the **[!UICONTROL Credential Name]** and click **[!UICONTROL Next]**.
     ![Specify Credential Name](/help/using/assets/specify-credential-name.png)
 1. Select a **Product Profile**. For example, select a profile as **AFC_Flamingo_Test_Dev**. 
 1. Click **[!UICONTROL Save configured API]**. 
@@ -297,4 +297,4 @@ For example, you can have a separate configuration for sales department forms an
       }
    ```
 
-2. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
+1. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
