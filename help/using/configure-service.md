@@ -15,7 +15,7 @@ This article describes how an AEM administrator can configure Automated Forms Co
 
 * Installing, configuring, and administering Adobe Experience Manager and AEM packages,
 
-* Using Linux® and Microsoft® Windows® operating systems,
+* Using Linux&reg; and Microsoft&reg; Windows&reg; operating systems,
 
 <!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
@@ -154,7 +154,9 @@ After an administrator provides you developer access, you can connect your AEM F
 Perform the following steps, to connect AEM Forms instance to Automated Forms Conversion service:
 
 [1. Configure the service APIs on Adobe Developer Console](#configure-the-service-apis-on-adobe-developer-console)
+
 [2. Create Adobe IMS configurations](#2-create-adobe-ims-configurations)
+
 [3. Create Automated Forms Conversion Configuration](#3-create-automated-forms-conversion-configuration)
 
 ### 1. Configure the service APIs on Adobe Developer Console
@@ -234,7 +236,7 @@ Log in to your author instance to create the Adobe IMS configurations. Use the *
    
    On successful connection, the *Token retrieved successfully* message appears.
 
-   ![On successful connection, the token retrieved successfully message appears. ](assets//health-check.png)
+   ![On successful connection, the token retrieved successfully message appears. ](/help/using/assets/healthy-dialog.png)
 
 1. Click **Close**.
 
@@ -279,7 +281,7 @@ For example, you can have a separate configuration for sales department forms an
    </tr>
    <tr>
    <td>Enable Analytics</td>
-   <td>(For AEM 6.4 and AEM 6.5 only) Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure that Adobe Analytics is enabled for your AEM Forms instance.</td>
+   <td>(For AEM 6.5) Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure that Adobe Analytics is enabled for your AEM Forms instance.</td>
    </tr>
    </tbody>
    </table>
@@ -297,4 +299,4 @@ For example, you can have a separate configuration for sales department forms an
       }
    ```
 
-1. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to adaptive forms.
+2. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to Adaptive Forms.
