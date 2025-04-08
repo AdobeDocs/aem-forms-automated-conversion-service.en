@@ -299,4 +299,4 @@ For example, you can have a separate configuration for sales department forms an
       }
    ```
 
-2. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to Adaptive Forms.
+1. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to Adaptive Forms.
