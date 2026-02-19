@@ -15,7 +15,7 @@ This help describes how an AEM administrator can configure Automated Forms Conve
 
 * Installing, configuring, and administering Adobe Experience Manager and AEM packages,
 
-* Using Linux® and Microsoft® Windows® operating systems,
+* Using Linux&reg; and Microsoft&reg; Windows&reg; operating systems,
 
 * Configuring SMTP mail servers
 
@@ -25,7 +25,7 @@ This help describes how an AEM administrator can configure Automated Forms Conve
 
 ## Onboarding{#onboarding}
 
-The service is available for free to AEM 6.4 Forms and AEM 6.5 Forms On-Premise term customers and Adobe-Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service. The service is also available for free and pre-enabled for AEM Forms as a Cloud Service customers.
+The service is available for free to AEM 6.5 Forms and AEM 6.5 LTS Forms On-Premise term customers and Adobe-Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service. The service is also available for free and pre-enabled for AEM Forms as a Cloud Service customers.
 
 Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service. 
 
@@ -35,37 +35,37 @@ You require the following to use the Automated Forms Conversion Service (AFCS):
 
 * Automated Forms Conversion service (AFCS) is enabled for your organization
 * An Adobe ID account with administrator privileges for the conversion service
-* An up and running AEM 6.4, AEM 6.5, or AEM Forms as a Cloud Service author instance with latest AEM Service Pack or latest updates.
+* An up and running AEM 6.5, AEM 6.5 LTS, or AEM Forms as a Cloud Service author instance with latest AEM Service Pack or latest updates.
 * An AEM user (on your AEM instance) which is member of forms-user group
 
 ## Set up the environment {#setuptheservice}
 
 Before using the service, prepare your AEM author instance to connect to the service running on Adobe Cloud. Perform the following steps in the listed sequence to prepare your instance for the service:
 
-1. [Download and install AEM 6.4, AEM 6.5, or onboard AEM Forms as a Cloud Service](#aemquickstart)
-1. [Download and install latest AEM Service Pack](#servicepack)
-1. [Download and install latest AEM Forms add-on package](#downloadaemformsaddon)
+1. [Download and install AEM 6.5 or AEM 6.5 LTS, or onboard AEM Forms as a Cloud Service](#aemquickstart)
+1. (For AEM 6.5 and AEM 6.5 LTS only) [Download and install latest AEM Service Pack](#servicepack)
+1. (For AEM 6.5 and AEM 6.5 LTS only) [Download and install latest AEM Forms add-on package](#downloadaemformsaddon)
 1. (optional) [Download and install latest connector package](#installConnectorPackage)
-1. [Create custom themes and templates](#referencepackage)
+1. [Create custom themes and templates (AEM 6.5 / 6.5 LTS) or use defaults (Cloud Service)](#referencepackage)
 
-### Download and install AEM 6.4 or AEM 6.5 or onboard AEM Forms as a Cloud Service {#aemquickstart}
+### Download and install AEM 6.5 or AEM 6.5 LTS or onboard AEM Forms as a Cloud Service {#aemquickstart}
 
 
-Automated Forms Conversion service (AFCS) runs on AEM author instance. You require AEM 6.4, AEM 6.5, or AEM Forms as a Cloud Service to set up an AEM author instance. 
+Automated Forms Conversion service (AFCS) runs on AEM author instance. You require AEM 6.5, AEM 6.5 LTS, or AEM Forms as a Cloud Service to set up an AEM author instance. 
 
-* If you do not have AEM 6.4 or AEM 6.5 up and running, download it from the below locations. After you download AEM, for instructions to set up an AEM author instance, see [deploying and maintaining](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).:
+* If you do not have AEM 6.5 or AEM 6.5 LTS up and running, download it from the below locations. After you download AEM, for instructions to set up an AEM author instance, see [deploying and maintaining](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).:
 
-  * If you are an existing AEM customer, download AEM 6.4 or AEM 6.5 from [Adobe Licensing website](http://licensing.adobe.com).
+  * If you are an existing AEM customer, download AEM 6.5 or AEM 6.5 LTS from [Adobe Licensing website](http://licensing.adobe.com).
 
-  * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.4 or AEM 6.5.
+  * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5 or AEM 6.5 LTS.
 
 * If you are using AEM Forms as a Cloud Service see onboard to [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) and [setup a local development environment](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
 
-### (For AEM 6.4 and AEM 6.5 only) Download and install AEM latest Service Pack {#servicepack}
+### (For AEM 6.5 and AEM 6.5 LTS only) Download and install AEM latest Service Pack {#servicepack}
 
-Download and install latest AEM Service Pack. For detailed instructions see,  or [AEM 6.4 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) or [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
+Download and install latest AEM Service Pack. For detailed instructions see [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### (For AEM 6.4 and AEM 6.5 only) Download and install AEM Forms add-on package  {#downloadaemformsaddon}
+### (For AEM 6.5 and AEM 6.5 LTS only) Download and install AEM Forms add-on package  {#downloadaemformsaddon}
 
 An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service. For detailed instructions, see [Install and configure data capture capabilities.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -80,9 +80,9 @@ The connector package provides early access to the [Auto-detect logical sections
 
 ### Create custom themes and templates {#referencepackage}
 
-If you start AEM 6.4 or AEM 6.5 in [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent run mode), the reference packages are not installed. The reference packages contain sample themes and templates. Automated Forms Conversion service (AFCS) requires at least one theme and one template to convert a PDF form to an adaptive form. Create a custom theme and template of your own and point [service configuration](#configure-the-cloud-service) to use custom templates and themes before using the service.
+**AEM Forms as a Cloud Service:** Default templates and themes are available for conversion. You can use the out-of-the-box templates and themes or create custom ones and point [service configuration](#configure-the-cloud-service) to them.
 
-You can also download and install the [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) package on your Author instance. It creates some reference themes and template. 
+**(For AEM 6.5 and AEM 6.5 LTS only)** Automated Forms Conversion service (AFCS) requires at least one theme and one template to convert a PDF form to an adaptive form. You must [enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) if you want to use Core Components-based templates and themes; instructions are documented there. If you start AEM 6.5 or AEM 6.5 LTS in [production mode](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplecontent run mode), the reference packages are not installed. Either create a custom theme and template of your own, or download and install the [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) package on your Author instance to get reference themes and templates. Then point [service configuration](#configure-the-cloud-service) to use the templates and themes before using the service. 
 
 ## Configure the service {#configure-the-service}
 
@@ -96,7 +96,7 @@ Before you proceed to configure the service and connect your local instance with
   
 ![Developer access grant email](assets/email-developer-accessx94.png)  
 
-### (For administrators of AEM 6.4 and AEM 6.5 only) Grant access to developers of your organization {#adduseranddevs}
+### (For administrators of AEM 6.5 and AEM 6.5 LTS only) Grant access to developers of your organization {#adduseranddevs}
 
 After Adobe enables access for your organization and provides required privileges to the administrator, the administrator can log into Admin Console (detailed instructions below), create a profile, and add developers to the profile. Developers can connect a local instance of AEM Forms to Automated Forms Conversion service (AFCS) on Adobe Cloud.
 
@@ -133,7 +133,7 @@ After an administrator provides you developer access, you can connect your local
 
 Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send email notifications. These email notifications contain information about successful or failed conversions. If you choose not receive notification, skip these steps. Perform the following steps to configure the Day CQ Mail Service:
 
-* For AEM 6.4 Forms or AEM 6.5 Forms:
+* For AEM 6.5 Forms or AEM 6.5 LTS Forms:
 
    1. Go to AEM configuration manager at `http://localhost:4502/system/console/configMgr`
    1. Open the Day CQ Mail Service configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL From address]** fields. Click **[!UICONTROL Save]**.
@@ -154,7 +154,7 @@ Specify an email address in the profile of the AEM user designated to run the se
 1. Specify an email address in the **[!UICONTROL Email]** field and tap **[!UICONTROL Save]**. The emails are sent to specified email address on successful completion or failure of the conversion.
 1. Tap the **Groups** tab. In the select group tab, type and select the **forms-users** group. Tap **Save & Close**. The user is now a member of the forms-users group.
 
-#### (For AEM 6.4 and AEM 6.5 only) Obtain public certificates {#obtainpubliccertificates}
+#### (For AEM 6.5 and AEM 6.5 LTS only) Obtain public certificates {#obtainpubliccertificates}
 
 A public certificate allows you to authenticate your profile on Adobe I/O.
 
@@ -187,7 +187,7 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
    <li>Step text</li>
    -->
 
-#### (For AEM 6.4 and AEM 6.5 only) Configure the service APIs on Adobe Developer Console {#createintegration}
+#### (For AEM 6.5 and AEM 6.5 LTS only) Configure the service APIs on Adobe Developer Console {#createintegration}
 
 To use Automated Forms Conversion service (AFCS), create a project and add Automated Forms Configuration Service API to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT).
 
@@ -258,7 +258,7 @@ Create a Cloud Service configuration to connect your AEM instance to the convers
    </tr>
    <tr>
    <td>Enable Analytics</td>
-   <td>(For AEM 6.4 and AEM 6.5 only) Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure that Adobe Analytics is enabled for your AEM Forms instance.</td>
+   <td>(For AEM 6.5 and AEM 6.5 LTS only) Select the option to enable Adobe Analytics on all the converted forms. Before using the option, ensure that Adobe Analytics is enabled for your AEM Forms instance.</td>
    </tr>
    </tbody>
    </table>

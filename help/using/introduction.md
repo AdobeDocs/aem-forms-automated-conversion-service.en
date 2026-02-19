@@ -23,7 +23,7 @@ Automated Forms Conversion service (AFCS) helps accelerate digitization and mode
 
 ## Onboarding {#onboarding}
 
-The service is available for free to AEM 6.4 Forms and AEM 6.5 Forms On-Premise term customers and Adobe-Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service. The service is also available for free and pre-enabled for AEM Forms as a Cloud Service customers.
+The service is available for free to AEM 6.5 Forms and AEM 6.5 LTS Forms On-Premise term customers and Adobe-Managed Service enterprise customers. You can contact Adobe Sales team or your Adobe representative to request access to the service. The service is also available for free and pre-enabled for AEM Forms as a Cloud Service customers.
 
 Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. The administrator can grant access to your AEM Forms developers (users) of your organization to connect to the service. See [Configure the Automated Forms Conversion service](configure-service.md) for details.
 
@@ -43,7 +43,7 @@ Automated Forms Conversion service (AFCS) runs on Adobe Cloud. You connect your 
 
 ### 1. Set up the environment {#set-up-the-environment}
 
-Automated Forms Conversion service (AFCS) runs on Adobe Cloud. [Configure Adobe I/O account of your organization and connect your local AEM instance](configure-service.md) to the conversion service running on Adobe Cloud.
+Automated Forms Conversion service (AFCS) runs on Adobe Cloud. [Configure Adobe I/O account of your organization and connect your local AEM instance](configure-service.md) to the conversion service running on Adobe Cloud. For AEM 6.5 and AEM 6.5 LTS, you must enable Adaptive Form Core Components if you use Core Components-based templates and themes; see [Configure the service](configure-service.md#referencepackage).
 
 ### 2. Convert PDF forms to adaptive forms {#use-the-conversion-service}
 

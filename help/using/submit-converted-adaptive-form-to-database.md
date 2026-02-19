@@ -23,7 +23,7 @@ This article describes the step-by-step instructions to successfully execute all
 
 ## Pre-requisites {#pre-requisites}
 
-* Setup an AEM 6.4 or 6.5 author instance 
+* Setup an AEM 6.5 or AEM 6.5 LTS author instance 
 * Install [latest service pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) for your AEM instance
 * Latest version of the AEM Forms add-on package
 * Configure [Automated Forms Conversion service](configure-service.md)
