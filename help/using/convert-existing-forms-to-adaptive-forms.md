@@ -90,7 +90,13 @@ After you have uploaded the forms and configured the service, perform the follow
 
     1. Ensure you have enabled Core Components on your AEM Forms instance. For AEM 6.5 and AEM 6.5 LTS, see [enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html), if not already enabled. For AEM Forms as a Cloud Service, no additional steps are needed.
     1. Select a Core Components-based adaptive form template and theme in the **[!UICONTROL Basic]** tab of the Conversion Settings dialog.
+
+        ![Specify the configurations](assets/adaptive-forms-core-components-afcs.png)
+        
     1. Tap **[!UICONTROL Start Conversion]** to convert the PDF to a Core Components-based adaptive form.
+
+     
+
 
    >[!NOTE]
    >
