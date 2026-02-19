@@ -1,9 +1,11 @@
 ---
 title: Convert PDF forms to adaptive forms
 description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
-feature: Adaptive Forms, Foundation Components
+seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
+contentOwner: khsingh
 role: Admin, Developer
-level: Beginner, Intermediate
+topic-tags: forms
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
 ---
 # Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
@@ -14,9 +16,9 @@ AEM Forms Automated Forms Conversion service (AFCS), powered by Adobe Sensei, au
 
 * [**Configure the conversion service**](configure-service.md)  
 
-* **Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) to be applied to converted forms:** Using a template allows you to apply consistent branding across all the adaptive forms. Moreover, Automated Forms Conversion service (AFCS) does not extract and use header and footer of source PDF documents. You can use adaptive form templates to specify header and footer. Header and footer specified in the template are applied to the adaptive form during conversion. When you create a folder for the templates, select the **[!UICONTROL Browse configurations]** option for everyone.
-
-* **Prepare the [themes](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) to be applied to converted forms:** Using a theme allows you to apply a consistent style to all the adaptive forms of your organization.
+* **Templates and themes for converted forms:**
+  * **AEM Forms as a Cloud Service:** Default templates and themes are available; you can use them for conversion or prepare custom ones.
+  * **AEM 6.5 and AEM 6.5 LTS:** Prepare the [templates](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) and [themes](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) to be applied to converted forms. You must [enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) if you want to use Core Components-based templates and themes (see [Configure the service](configure-service.md#referencepackage)). Using a template allows you to apply consistent branding; AFCS does not extract header and footer from source PDFs—specify them in the adaptive form template. Using a theme applies a consistent style across forms. When you create a folder for templates, select the **[!UICONTROL Browse configurations]** option for everyone.
 
 * **(optional)** [**Convert your source PDF Forms to Adobe Sign form**](frequently-asked-questions.md)
 
@@ -69,7 +71,7 @@ After you have uploaded the forms and configured the service, perform the follow
     1. Tap **[!UICONTROL Start Conversion]** to convert the PDF to a core components based form.
     >[!NOTE]
     > * Properties such as data binding or data model schema are not available for core component based adaptive form but the same are available for foundation components.
-    > * [Review and correct the converted forms](#review-and-correct-the-converted-forms) is not available for core components based form.
+
 
 
 1. In the **[!UICONTROL Basic]** tab of the Conversion Settings dialog:
@@ -89,6 +91,29 @@ After you have uploaded the forms and configured the service, perform the follow
    <p> </p>
    </note>
    -->
+
+   **Convert PDFs to Core Components-Based Adaptive Forms**
+
+   >[!NOTE]
+   >
+   > This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability.
+
+   The above conversion settings apply to converting PDF forms to Foundation Components-based adaptive forms. To convert a PDF form to a Core Components-based adaptive form:
+
+    1. Ensure you have enabled Core Components on your AEM Forms instance. For AEM 6.5 and AEM 6.5 LTS, see [enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html), if not already enabled. For AEM Forms as a Cloud Service, no additional steps are needed.
+    1. Select a Core Components-based adaptive form template and theme in the **[!UICONTROL Basic]** tab of the Conversion Settings dialog.
+
+        ![Specify the configurations](assets/adaptive-forms-core-components-afcs.png)
+        
+    1. Tap **[!UICONTROL Start Conversion]** to convert the PDF to a Core Components-based adaptive form.
+
+     
+
+
+   >[!NOTE]
+   >
+   > * Properties such as data binding or data model schema are not available for Core Components-based adaptive forms but are available for Foundation Components-based forms.
+   > * [Review and correct the converted forms](review-correct-ui-edited.md) is not available for Core Components-based adaptive forms.
 
 1. In the **[!UICONTROL Additional]** tab of Conversion Settings dialog,
     * Select the **[!UICONTROL Extract fragment from adaptive forms]** option to allow the conversion service to identify, extract, and download form fragments for converted forms. When you select the **[!UICONTROL Extract fragment from adaptive forms]** option, the options to specify paths for saving extracted form fragments and corresponding form fragments schemas is enabled.  

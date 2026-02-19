@@ -12,7 +12,7 @@ exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 # Frequently asked questions{#frequently-asked-questions}
 
 1. **Which version of AEM Forms does the Automated Forms Conversion service (AFCS) support?** 
-    <p>Automated Forms Conversion service (AFCS) supports AEM 6.4 Forms and AEM 6.5 Forms. It works with both AEM Forms on OSGi and AEM forms on JEE. You require the latest AEM Forms add-on package on top of AEM author instance to use the service. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
+    <p>Automated Forms Conversion service (AFCS) supports AEM 6.5 Forms, AEM 6.5 LTS Forms, and AEM Forms as a Cloud Service. It works with both AEM Forms on OSGi and AEM forms on JEE. For AEM 6.5 and AEM 6.5 LTS, you need the latest AEM Forms add-on package on top of the AEM author instance and must <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html">enable Adaptive Form Core Components</a> if you want to use Core Components-based templates and themes. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
     <br>
 
  1. **Can the service be installed on-premise?** 

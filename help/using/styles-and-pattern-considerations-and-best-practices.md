@@ -40,6 +40,8 @@ When you use an XDP form for conversion, perform the following steps before uplo
 
 ### Before you start the conversion
 
+* **AEM Forms as a Cloud Service:** Default templates and themes are available; you can use them or create custom templates and themes.
+* **AEM 6.5 and AEM 6.5 LTS:** Create adaptive form templates and themes (or install reference assets as described in [Configure the service](configure-service.md#referencepackage)). You must enable [Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) if you want to use Core Components-based templates and themes.
 * Create adaptive form templates. Templates help specify a uniform structure to forms of your organization or department.
 * Specify the header and footer in the adaptive form templates. The service ignores the header-footer of source documents and uses header-footer specified in the adaptive form template.
 * Create adaptive form themes. Themes help provide a uniform look and feel to forms of your organization or department.
