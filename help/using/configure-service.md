@@ -60,8 +60,6 @@ Automated Forms Conversion service (AFCS) runs on AEM author instance. You requi
 
   * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5 or AEM 6.5 LTS.
 
-  * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
-
 * If you are using AEM Forms as a Cloud Service, see onboard to [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) and [setup a local development environment](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
 
 
@@ -71,12 +69,7 @@ Download and install latest AEM Service Pack. For detailed instructions see [AEM
 
 ### (For AEM 6.5 and AEM 6.5 LTS only) Download and install AEM Forms add-on package  {#downloadaemformsaddon}
 
-
-
-### 3. (For AEM 6.5 only) Download and install AEM Forms add-on package  {#downloadaemformsaddon}
-
 An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service. For detailed instructions, see [Install and configure data capture capabilities.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
-https://adminconsole.adobe.com/
 >[!NOTE]
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
@@ -86,7 +79,7 @@ https://adminconsole.adobe.com/
 The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1). -->
 
 
-### 4. Create custom themes and templates {#referencepackage}
+### Create custom themes and templates {#referencepackage}
 
 **AEM Forms as a Cloud Service:** You can use the out-of-the-box templates or create custom ones and point [service configuration](#configure-the-cloud-service) to them.
 
