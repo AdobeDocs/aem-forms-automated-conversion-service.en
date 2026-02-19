@@ -10,7 +10,7 @@ exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
 ---
 # Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
 
-AEM Forms Automated Forms Conversion service (AFCS), powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Whether you are using non-interactive PDF forms, Acro Forms, or XFA-based PDF forms, the Automated Forms Conversion service (AFCS) can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information see [Automated Forms Conversion](introduction.md) service.
+AEM Forms Automated Forms Conversion service (AFCS), powered by Adobe Sensei, automatically converts your PDF forms to device-friendly and responsive adaptive forms<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Whether you are using non-interactive PDF forms, Acro Forms, or XFA-based PDF forms, the Automated Forms Conversion service (AFCS) can easily convert these forms into adaptive forms. For information about the capabilities, conversion workflow, and onboarding information, see [Automated Forms Conversion](introduction.md) service.
 
 ## Pre-requisites {#pre-requisites}
 
@@ -167,3 +167,4 @@ After you have uploaded the forms and configured the service, perform the follow
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
 Real world forms have complex data capture requirements. Once the automated conversion is complete, customers can review the conversion quality of the form and make necessary updates to the form. AEM Forms provides a [review and correct](review-correct-ui-edited.md) editor to make required changes. It allows you to improve automated identification of form fields and convert identified fields from one type to another. For example, you can help identify two-column layout of a form and change a field automatically identified as radio button to multiple choices field.
+

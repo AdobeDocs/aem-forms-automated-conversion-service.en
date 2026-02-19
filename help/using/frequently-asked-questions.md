@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 ---
-# Frequently asked questions{#frequently-asked-questions}
+# Frequently Asked Questions{#frequently-asked-questions}
 
 1. **Which version of AEM Forms does the Automated Forms Conversion service (AFCS) support?** 
     <p>Automated Forms Conversion service (AFCS) supports AEM 6.5 Forms, AEM 6.5 LTS Forms, and AEM Forms as a Cloud Service. It works with both AEM Forms on OSGi and AEM forms on JEE. For AEM 6.5 and AEM 6.5 LTS, you need the latest AEM Forms add-on package on top of the AEM author instance and must <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html">enable Adaptive Form Core Components</a> if you want to use Core Components-based templates and themes. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
@@ -115,3 +115,4 @@ The most common reasons for the conversion to fail are:</p>
       </p>To create an Adobe Sign enabled PDF form:</p> 
       
       Add [Adobe Sign text tags](https://helpx.adobe.com/sign/using/text-tag.html) to field names or use the [Convert to Adobe Sign Form](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) option.
+

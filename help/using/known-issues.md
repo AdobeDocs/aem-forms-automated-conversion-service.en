@@ -11,7 +11,7 @@ exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 ---
 # Known issues and limitations {#known-issues-limitations}
 
-Before you begin using AEM Forms Automated Forms Conversion service (AFCS), review the following known issues and limitations:
+Before you begin using the AEM Forms Automated Forms Conversion service (AFCS), review the following known issues and limitations:
 
 ## Known issues {#known-issues}
 
@@ -77,3 +77,4 @@ Before you begin using AEM Forms Automated Forms Conversion service (AFCS), revi
 * Colored PDF Forms are treated as greyscale forms and fields are detected accordingly.
 * Properties such as data binding or data model schema are not available for core component based adaptive form.
 * Review and correct the converted forms is not available for core components based form.
+

@@ -11,7 +11,7 @@ exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 ---
 # Configure the Automated Forms Conversion service (AFCS) {#about-this-help}
 
-This article describes how an AEM administrator can configure Automated Forms Conversion service (AFCS) to automate conversion of their PDF forms to Adaptive Forms. This article is for IT and AEM administrators at your organization. The information provided is based on the assumption that anyone reading this article is familiar with the following technologies:
+This article describes how an AEM administrator can configure Automated Forms Conversion service (AFCS) to automate conversion of their PDF forms to Adaptive Forms. This article is for IT and AEM administrators at your organization. The information provided assumes that anyone reading this article is familiar with the following technologies:
 
 * Installing, configuring, and administering Adobe Experience Manager and AEM packages,
 
@@ -308,3 +308,4 @@ For example, you can have a separate configuration for sales department forms an
    ```
 
 1. Click **[!UICONTROL Create]**. The cloud configuration is created. Your AEM Forms instance is ready to start converting legacy forms to Adaptive Forms.
+

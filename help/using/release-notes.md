@@ -11,7 +11,7 @@ exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 ---
 # Release Notes
 
-Automated Forms Conversion Service receives improvements on an ongoing basis. To stay up to date with the most recent developments, visit this page regularly. This page provides you with information about:
+Automated Forms Conversion Service receives improvements on an ongoing basis. To stay up to date with the latest developments, visit this page regularly. This page provides you with information about:
 
 * Early Access
 * Latest releases
@@ -83,3 +83,4 @@ The service is now more efficient in detecting bulleted and numbered lists.
 You require the connector package 1.1.38 or above to use the latest features and improvements delivered in release AFC-2020.03.1.
 
 If you already have an up and running Automated Forms Conversion service environment (AEM 6.5 or AEM 6.5 LTS), to use the latest features of the conversion service, install the latest service pack, latest AEM Forms add-on package, and latest connector package in the mentioned order. For AEM Forms as a Cloud Service, updates are delivered automatically. For detailed instructions, see the [Configure the Automated Forms Conversion service](configure-service.md) article.
+
