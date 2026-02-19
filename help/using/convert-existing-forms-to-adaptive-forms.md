@@ -5,7 +5,7 @@ seo-description: Run the Automated Forms Conversion service (AFCS) to convert PD
 contentOwner: khsingh
 role: Admin, Developer
 topic-tags: forms
-feature: Adaptive Forms, Foundation Components, Core Components
+feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
 ---
 # Convert PDF forms to adaptive forms {#convert-print-forms-to-adaptive-forms}
@@ -104,7 +104,7 @@ After you have uploaded the forms and configured the service, perform the follow
     1. Select a Core Components-based adaptive form template and theme in the **[!UICONTROL Basic]** tab of the Conversion Settings dialog.
 
         ![Specify the configurations](assets/adaptive-forms-core-components-afcs.png)
-        
+
     1. Tap **[!UICONTROL Start Conversion]** to convert the PDF to a Core Components-based adaptive form.
 
      
