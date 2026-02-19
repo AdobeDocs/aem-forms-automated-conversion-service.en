@@ -11,7 +11,7 @@ exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 ---
 # Automated Forms Conversion service (AFCS) {#introduction-to-automated-forms-conversion-service}
 
-Automated Forms Conversion service (AFCS) helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion. The service helps:
+Automated Forms Conversion service (AFCS) helps accelerate the digitization and modernization of data capture experiences through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While leveraging the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion. The service helps:
 
 * Save manual effort required to convert print forms to adaptive forms
 * Applies patterns and appropriate validations during conversion
@@ -61,3 +61,4 @@ After your AEM Forms environment is configured, to convert your PDF forms to ada
 Real world forms can have complex data capture requirements in terms of field layout, naming, or implicit suggestions which may not be accurately captured by AI/ML based detection logic. Once automated conversion is complete, you can use the [Review and Correct editor](review-correct-ui-edited.md) to review converted form and make necessary updates and generate an enhanced output closer to desired experience. After making required changes, send the form again for the conversion.
 
 The time taken for automated conversion depends on various factor such as size of input form, complexity of the form, loan on the processing queue of the service. The user is notified of the progress regularly via status indicator on folder / file. When the conversion is complete, an email notification is also sent to configured email address.
+
