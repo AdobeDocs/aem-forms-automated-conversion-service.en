@@ -19,9 +19,11 @@ This article describes how an AEM administrator can configure Automated Forms Co
 
 * Configuring SMTP mail servers
 =======
-<!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
-**Watch the video or read the article to configure Automated Forms Conversion service (AFCS)** -->
+**Watch the video or read the article to configure Automated Forms Conversion service (AFCS)**
+-->
 
 ## Onboarding{#onboarding}
 
@@ -70,13 +72,16 @@ Download and install latest AEM Service Pack. For detailed instructions see [AEM
 ### (For AEM 6.5 and AEM 6.5 LTS only) Download and install AEM Forms add-on package  {#downloadaemformsaddon}
 
 An AEM instance contains basic forms capabilities. The conversion service requires full capabilities of AEM Forms. Download and install AEM Forms add-on package to avail all the capabilities of AEM Forms. The package is required to set up and run the conversion service. For detailed instructions, see [Install and configure data capture capabilities.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
+
 >[!NOTE]
 > Ensure that you perform the mandatory post-installation configurations after installing the add-on package.
 >
 
-<!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
+<!--
+### (Optional) Download and install connector package  {#installConnectorPackage}
 
-The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1). -->
+The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+-->
 
 
 ### Create custom themes and templates {#referencepackage}
@@ -135,7 +140,8 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). -->
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+-->
 
 ### Add user to the forms-users group {#adduserstousergroup}
 
