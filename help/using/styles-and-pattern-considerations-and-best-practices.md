@@ -1,5 +1,5 @@
 ---
-title: Best practices and considerations 
+title: Best practices and considerations
 description: Best practices and considerations for Automated Forms Conversion service (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -8,6 +8,32 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
+TQID: https://experienceleague.adobe.com/EixW6MGzAyHz-JcPYmnKQBLWqnEFOwUepUFOcG8DBUo
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Best practices and known complex patterns {#Best-practices-and-considerations2}
 
