@@ -229,7 +229,7 @@ Log in to your author instance to create the Adobe IMS configurations. Use the *
       * **Client Id**: Copy and paste **API Key(Client ID)**.
       * **Client Secret**: Copy and paste **Client Secret**.
       * **Scope**: Copy and paste **Scopes**. 
-      * **Org ID**: Copy and paste **Technical Account ID**.
+      * **Org ID**: Copy and paste **Organization ID**.
 
       ![Create IMS Adobe Configuration](/help/using/assets/save-ims-configuration.png)
 
