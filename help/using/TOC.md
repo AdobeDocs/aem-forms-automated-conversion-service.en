@@ -5,9 +5,9 @@ sub-product: forms conversion service
 solution: Experience Manager, Experience Manager Forms
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-    label: "Experience Manager"
+    internal-label: "Experience Manager"
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-    label: "Experience Manager Forms"
+    internal-label: "Experience Manager Forms"
 type: Documentation
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
