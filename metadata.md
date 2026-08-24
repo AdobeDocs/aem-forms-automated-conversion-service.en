@@ -1,5 +1,13 @@
 ---
 cloud: Experience Cloud
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: "Experience Manager"
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: "Experience Manager Forms"
+usetq: true
+type: Documentation
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/aem-forms-automated-conversion-service.en
 index: true

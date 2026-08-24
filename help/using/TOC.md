@@ -2,14 +2,6 @@
 cloud: Experience Cloud
 product: experience manager
 sub-product: forms conversion service
-solution: Experience Manager, Experience Manager Forms
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-    internal-label: "Experience Manager"
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-    internal-label: "Experience Manager Forms"
-usetq: true
-type: Documentation
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 user-guide-description: Convert PDF Forms to responsive and mobile-ready HTML Forms.
