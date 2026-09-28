@@ -4,6 +4,11 @@ description: Extend the default meta-model to add pattern, validations, and enti
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
 ---
 
 # Integrate adaptive forms with database using Forms Portal {#submit-forms-to-database-using-forms-portal}
