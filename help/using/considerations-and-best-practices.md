@@ -1,5 +1,5 @@
 ---
-title: Best practices and considerations 
+title: Best practices and considerations
 description: DO NOT PUBLISH
 seo-description: DO NOT PUBLISH
 page-status-flag: never-activated
@@ -8,6 +8,11 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
 ---
 
 # Best practices and considerations {#do-not-publish-best-practices-and-considerations}
